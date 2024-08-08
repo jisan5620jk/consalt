@@ -1,49 +1,70 @@
 import { Link } from "react-router-dom";
 import bannerThumb from "/images/banner-thumb.png";
 import bannerShape from "/images/hero_shape.png";
-import { BiRightTopArrowCircle } from "react-icons/bi";
+import { FaPhoneAlt } from "react-icons/fa";
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { IoPlayOutline } from "react-icons/io5";
 
 const Banner = () => {
+    const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+    <section className="mx-5 mt bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[852px] flex items-center relative z-10 overflow-hidden rounded-[40px] 2xl:rounded-none">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
           <div className="relative">
-            <h5 className="font-FiraSans text-white text-[19px] font-medium flex items-center gap-2 mb-4">
-              IT SOLUTION AGENCY IN USA
-            </h5>
-            <h1 className="font-FiraSans font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[69px] 2xl:leading-[79px]">
-              BUSINESS INNOVATION
+            <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
+              Crafting the Digital
               <br />
-              WITH IT EXPERT
+              Solutions for your
+              <br />
+              <span className="relative before:absolute before:bottom-3 before:left-0 before:w-full before:h-[10px] before:bg-PrimaryColor-0 before:-z-10">
+                Business
+              </span>
             </h1>
-            <p className="font-FiraSans sm:text-lg text-TextColor-0 mb-[46px] mt-1">
-              Professionally optimize interdependent intellectual interoperable
-              connect <br className="hidden 2xl:block" /> best practices.
-              Progressively fabricate done
+            <p className="font-FiraSans text-TextColor-0 mb-[38px] mt-[22px]">
+              Continually plagiarize virtual web services with home one{" "}
+              <br className="hidden lg:block 2xl:hidden" />
+              maximizing <br className="hidden 2xl:block" /> action items.
+              Globally build front-end
             </p>
-            <div className="flex flex-col sm:flex-row gap-5">
+            <div className="flex flex-col sm:flex-row items-center gap-8">
               <Link to={"/contact"}>
-                <button className="primary-btn">
-                  {`Let's Talk`}
-                  <BiRightTopArrowCircle size={"20"} />
-                </button>
+                <button className="primary-btn">{`Get Started now`}</button>
               </Link>
               <Link to={"/about"}>
-                <button className="primary-btn">{`Read More`}</button>
+                <button className="flex items-center gap-3 text-white font-FiraSans font-medium">
+                  <FaPhoneAlt />
+                  {`CALL : +123 (45678) 000`}
+                </button>
               </Link>
             </div>
           </div>
           <div className="relative">
             <img src={bannerThumb} draggable="false" className="w-[inherit]" />
-            <img
-              src={bannerShape}
-              draggable={false}
-              className="absolute top-40 left-0 md:left-20 lg:left-0 xl:left-10 2xl:left-[7rem] animate-rotational hidden sm:block"
-            />
+            <div className="absolute top-[54%] -left-[58px] -translate-y-1/2">
+              <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
+                <IoPlayOutline
+                  size={"30"}
+                  className="text-white"
+                  onClick={() => setToggler(!toggler)}
+                />
+              </button>
+              <FsLightbox
+                toggler={toggler}
+                sources={[
+                  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                ]}
+              />
+            </div>
           </div>
         </div>
       </div>
+      <img
+        src={bannerShape}
+        draggable={false}
+        className="absolute top-[174px] left-1/2 animate-rotational hidden sm:block"
+      />
     </section>
   );
 };

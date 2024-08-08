@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@nextui-org/react": "^2.4.6",
+    "fslightbox-react": "^1.7.6",
     "gsap-trial": "^3.12.5",
     "node": "^22.6.0",
     "react": "^18.3.1",

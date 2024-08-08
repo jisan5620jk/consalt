@@ -1,49 +1,29 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({
+const serviceCard = ({
+  serviceUrl,
   serviceIcon,
-  serviceNumber,
   serviceTitle,
   serviceDesc,
-  serviceUrl,
-  serviceButton,
-  serviceBtnIcon,
+  serviceNumber,
 }) => {
   return (
-    <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-HeadingColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
-        <img
-          src={serviceIcon}
-          draggable="false"
-          className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
-        />
-      </div>
-      <div className="absolute top-8 right-0">
-        <h5 className="font-FiraSans font-semibold text-[26px] w-[70px] h-[50px] pr-5 flex items-center rounded-l-full justify-end text-PrimaryColor-0 bg-[#e6eefb] transition-all duration-500 group-hover:text-white group-hover:bg-HeadingColor-0">
-          {serviceNumber}
-        </h5>
+    <div className="group rounded-md relative z-10 overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:transition-all after:duration-500 after:bg-gradient-to-t after:from-PrimaryColor-0 after:to-transparent hover:after:h-4/6">
+      <div className="relative pt-[6px] z-10">
+        <img src={serviceIcon} draggable="false" />
       </div>
       <Link to={serviceUrl}>
-        <button className="font-FiraSans font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
+        <button className="font-FiraSans font-semibold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
           {serviceTitle}
         </button>
       </Link>
-      <p className="font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
+      <p className="font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-2">
         {serviceDesc}
       </p>
-      <Link to={serviceUrl}>
-        <button className="font-FiraSans font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
-          <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
-            {serviceButton}
-          </span>
-          <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
-            {serviceBtnIcon}
-          </span>
-        </button>
-      </Link>
+      <h6>{serviceNumber}</h6>
     </div>
   );
 };
 
-export default ServiceCard;
+export default serviceCard;

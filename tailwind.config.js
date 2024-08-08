@@ -9,7 +9,7 @@ export default {
       colors: {
         PrimaryColor: ["#0c6e6d"],
         HeadingColor: ["#063232"],
-        TextColor: ["#6b7a7a"],
+        TextColor: ["#a3b7b7"],
         BodyBg: ["#f0f7ef"],
         BodyBg2: ["#063232"],
         BodyBg3: ["#0c6d6d"],
