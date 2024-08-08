@@ -1,73 +1,55 @@
-/* eslint-disable no-unused-vars */
-import featureIcon from "/images/feature-icon1.png";
-import featureIcon2 from "/images/feature-icon2.png";
-import featureIcon3 from "/images/feature-icon3.png";
-import featureshape from "/images/feature-shape-1.png";
-import featureshape2 from "/images/feature-shape-2.png";
+import featureIcon from "/images/feature_icon01.png";
 import FeatureCard from "./FeatureCard";
 
-const processData = [
+const featureData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureshape: featureshape,
-    featureshape2: featureshape2,
-    featureTitle: "22+ Year Experience",
+    featureTitle: "Business Planning and Technologist",
     featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
+      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
     featureUrl: "/",
-    featureBtn: "Read More",
-  },
-  {
-    id: 2,
-    featureIcon: featureIcon2,
-    featureshape: featureshape,
-    featureshape2: featureshape2,
-    featureTitle: "Dedicated Members",
-    featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
-    featureUrl: "/",
-    featureBtn: "Read More",
-  },
-  {
-    id: 3,
-    featureIcon: featureIcon3,
-    featureshape: featureshape,
-    featureshape2: featureshape2,
-    featureTitle: "Valuable Supports",
-    featureDesc:
-      "Monotonically synergize grants to business visualize strategic infomediaries",
-    featureUrl: "/",
-    featureBtn: "Read More",
+    featureNumber: "01",
   },
 ];
 
 const Feature = () => {
   return (
-    <section className="bg-BodyBg-0">
+    <section className="py-28 bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-bottom rounded-[40px]">
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10 mt-10 sm:-mt-[50px]">
-          {processData.map(
+        <div className="text-center">
+          <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+            Featured Service
+          </h5>
+          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+            Unlocking Your {`Business's`} Potential with
+            <br />
+            the Best Innovate Consulting active and
+            <br />
+            Dedicated Customers
+            <span className="relative before:absolute before:bottom-3 before:left-0 before:w-full before:h-[10px] before:bg-PrimaryColor-0 before:-z-10">
+              Business
+            </span>
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-14">
+          {featureData.map(
             ({
               id,
               featureIcon,
-              featureshape,
-              featureshape2,
               featureTitle,
               featureDesc,
               featureUrl,
-              featureBtn,
+              featureNumber,
             }) => {
               return (
-                <div key={id}>
+                <div key={id} className="feature-member-box">
                   <FeatureCard
                     featureIcon={featureIcon}
-                    featureshape={featureshape}
-                    featureshape2={featureshape2}
                     featureTitle={featureTitle}
                     featureDesc={featureDesc}
                     featureUrl={featureUrl}
-                    featureBtn={featureBtn}
+                    featureNumber={featureNumber}
                   />
                 </div>
               );
