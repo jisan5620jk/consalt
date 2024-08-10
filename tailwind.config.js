@@ -12,7 +12,7 @@ export default {
         HeadingColor: ["#063232"],
         TextColor: ["#a3b7b7"],
         TextColor2: ["#6b7a7a"],
-        BodyBg: ["#f0f7ef"],
+        BodyBg: ["#e0f1df"],
         BodyBg2: ["#063232"],
         BodyBg3: ["#0c6d6d"],
         BorderColor: ["#e6eaea"],

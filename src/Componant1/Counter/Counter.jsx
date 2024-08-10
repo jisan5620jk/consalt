@@ -1,41 +1,49 @@
+import { Link } from "react-router-dom";
 import CounterCard from "./CounterCard";
+import counterShape from "/images/star_icon.png";
 
 const counterData = [
   {
     id: 1,
-    counterNumber: 10,
-    counterDesc: "HAPPY CUSTOMERS",
-    counterSuffex: "+",
+    counterShape: counterShape,
+    counterNumber: 12,
+    counterDesc: "Total Projects Complated",
+    counterSuffex: "K+",
   },
   {
     id: 2,
-    counterNumber: 20,
-    counterDesc: "WORKS COMPLETED",
+    counterShape: counterShape,
+    counterNumber: 950,
+    counterDesc: "SATIFIED ACTIVE CUSTOMERS",
     counterSuffex: "+",
   },
   {
     id: 3,
-    counterNumber: 99,
-    counterDesc: "EXPERT MEMBERS",
-    counterSuffex: "",
-  },
-  {
-    id: 4,
-    counterNumber: 100,
-    counterDesc: "SATISFACTION RATES",
-    counterSuffex: "%",
+    counterNumber: 4,
+    counterDesc: "AVERAGE CLIENTS RATINGS",
+    counterSuffex: ".7*",
   },
 ];
 
 const Counter = () => {
   return (
-    <section className="pt-[86px] pb-28 bg-[url('/images/counter-bg.jpg')] bg-no-repeat bg-cover bg-center">
+    <section className="m-5 rounded-[40px] pt-[74px] pb-[54px] bg-BodyBg2-0 bg-no-repeat bg-cover bg-center">
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-4 items-center justify-center">
+        <div className="grid grid-cols-2 items-center pb-7">
+          <div>
+            <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+              Get The Latest Achivement <br /> for Business Consult
+            </h1>
+          </div>
+          <Link to={"/about"} className="flex justify-end">
+            <button className="primary-btn !bg-BodyBg-0 !text-PrimaryColor-0">{`Get Started Now`}</button>
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:gap-10 lg:grid-cols-3 items-center justify-center border-t-[2px] border-BorderColor2-0 pt-4">
           {counterData.map(
             ({
               id,
-              counterIcon,
+              counterShape,
               counterNumber,
               counterDesc,
               counterSuffex,
@@ -43,7 +51,7 @@ const Counter = () => {
               return (
                 <div key={id}>
                   <CounterCard
-                    counterIcon={counterIcon}
+                    counterShape={counterShape}
                     counterNumber={counterNumber}
                     counterDesc={counterDesc}
                     counterSuffex={counterSuffex}

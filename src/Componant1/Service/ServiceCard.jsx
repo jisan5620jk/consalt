@@ -9,7 +9,7 @@ const ServiceCard = ({
   btnIcon,
 }) => {
   return (
-    <div className="relative z-10 flex justify-end group before:absolute before:top-0 before:left-0 before:w-full before:h-[290px] before:bg-Secondarycolor-0 before:rounded-2xl before:-z-20 after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:bg-PrimaryColor-0 after:rounded-2xl after:-z-10 after:transition-all after:duration-500 hover:after:h-[290px]">
+    <div className="relative z-10 flex justify-end group overflow-hidden rounded-t-3xl before:absolute before:top-0 before:left-0 before:w-full before:h-[290px] before:bg-Secondarycolor-0 before:rounded-2xl before:-z-20 after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:bg-PrimaryColor-0 after:rounded-2xl after:-z-10 after:transition-all after:duration-500 hover:after:h-[290px]">
       <div className="mt-10 ml-10 overflow-hidden rounded-2xl">
         <div className="relative z-10 rounded-t-2xl overflow-hidden">
           <img src={serviceThumb} draggable="false" className="w-full transition-all duration-500 group-hover:scale-110" />

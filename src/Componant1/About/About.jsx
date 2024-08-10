@@ -1,17 +1,17 @@
 import aboutThumb from "/images/about_thumb.png";
 import aboutShape from "/images/about_shape.png";
 import { Link } from "react-router-dom";
-import { GoArrowRight } from "react-icons/go";
-import { ImCheckmark } from "react-icons/im";
+import { FaCheck } from "react-icons/fa6";
+import { FaEnvelopeOpen } from "react-icons/fa";
 
 const About = () => {
   return (
     <section className="mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 bg-no-repeat bg-center bg-cover relative">
       <div className="Container">
-        <h1 className="font-FiraSans text-center font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+        <h1 className="font-FiraSans text-center font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
           Perform Market Research to gain <br /> Insights into Industry Trends
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
             <div className="absolute top-0 right-0 size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
@@ -23,7 +23,8 @@ const About = () => {
                 >
                   <path
                     d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125"
-                    id="e-path-35ee1b2" className="fill-transparent"
+                    id="e-path-35ee1b2"
+                    className="fill-transparent"
                   ></path>
                   <text className="font-FiraSans text-[38px]">
                     <textPath
@@ -40,38 +41,53 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+            <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase mb-3">
               ABOUT COMPANY
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[28x] lg:text-[38px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
+            <h1 className="font-FiraSans font-medium text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[28x] lg:text-[38px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
               Since 2007, We’re working Consulting agency
               <br />
               group of more than 120+ talented peoples
               <br />
               helps companies
             </h1>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-FiraSans text-TextColor2-0 mt-6">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
-            <ul>
-              <li className="flex items-center gap-4 font-FiraSans text-HeadingColor-0">
-                <ImCheckmark className="text-PrimaryColor-0" />
+            <ul className="mt-5">
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0">
+                <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Professional Team Member
               </li>
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+                <FaCheck size={"22"} className="text-PrimaryColor-0" />
+                Any Problem Solving
+              </li>
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+                <FaCheck size={"22"} className="text-PrimaryColor-0" />
+                Implement Business
+              </li>
             </ul>
-            <Link to={"/about"}>
-              <button className="primary-btn">
-                {`Discover More`}
-                <GoArrowRight size={"22"} />
-              </button>
-            </Link>
+            <div className="flex items-center gap-7 mt-9">
+              <Link to={"/about"}>
+                <button className="primary-btn">
+                  {`Discover More`}
+                </button>
+              </Link>
+              <Link to={"/"}>
+                <button className="flex items-center gap-2 font-FiraSans font-medium text-HeadingColor-0">
+                  <FaEnvelopeOpen />
+                  example@gmail.com
+                </button>
+              </Link>
+            </div>
             <img
               src={aboutShape}
               draggable="false"
-              className="absolute bottom-0 right-0 animate-movebtn hidden sm:block"
+              className="absolute bottom-0 -right-20 animate-movebtn hidden sm:block"
             />
           </div>
         </div>
