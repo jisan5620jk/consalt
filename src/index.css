@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -297,43 +297,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Pricing */
 
-.pricing-box.active::before,
-.pricing-box:hover::before {
-  left: 0;
-  width: 100%;
+.pricing-box.active::before {
+  height: 100%;
 }
 
-.pricing-box.active .pricing-quality,
-.pricing-box:hover .pricing-quality {
-  background: #fff;
-  color: #0c59db;
-}
-
-.pricing-box.active .pricing-icon,
-.pricing-box:hover .pricing-icon {
-  color: #0c59db !important;
-}
-
-.pricing-box.active .pricing-icon::before,
-.pricing-box:hover .pricing-icon::before {
+.pricing-box.active .pricing-icon::before {
   transform: scale(1);
 }
 
-.pricing-box.active .pricing-limit,
-.pricing-box.active .pricing-price,
-.pricing-box.active .pricing-title,
-.pricing-box.active .pricing-desc,
-.pricing-box:hover .pricing-limit,
-.pricing-box:hover .pricing-price,
-.pricing-box:hover .pricing-title,
-.pricing-box:hover .pricing-desc {
+.pricing-box.active .pricing-btn {
   color: #fff;
 }
 
-.pricing-box.active .pricing-btn,
-.pricing-box:hover .pricing-btn {
-  color: white;
-  border-color: white;
+.pricing-box.active .pricing-btn::before {
+  transform: scale(1);
 }
 
 /* Pricing */
