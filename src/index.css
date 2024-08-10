@@ -423,6 +423,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Team Member */
 
-.team-member-box:nth-child(2n + 2) {
-  margin-top: 50px;
+.feature-box:nth-child(2n + 2) {
+  margin-top: 30px;
 }

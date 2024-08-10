@@ -8,8 +8,10 @@ export default {
       },
       colors: {
         PrimaryColor: ["#0c6e6d"],
+        Secondarycolor: ["#0b4b4b"],
         HeadingColor: ["#063232"],
         TextColor: ["#a3b7b7"],
+        TextColor2: ["#6b7a7a"],
         BodyBg: ["#f0f7ef"],
         BodyBg2: ["#063232"],
         BodyBg3: ["#0c6d6d"],
