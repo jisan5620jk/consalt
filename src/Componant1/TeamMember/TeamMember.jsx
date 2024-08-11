@@ -44,7 +44,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="py-28 relative">
+    <section className="pb-28 relative">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">

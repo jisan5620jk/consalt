@@ -1,42 +1,34 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testThumb,
-  testiRating,
+  testiQuote,
   testiRatingIcon,
-  testProfile,
+  testiProfile,
   testiName,
   testiDesignation,
   testiDesc,
 }) => {
   return (
-    <div className="relative text-center">
-      <div className="Container">
+    <div className="relative">
+      <h2 className="text-5xl text-[#e0f3e0]">{testiQuote}</h2>
+      <ul className="flex gap-1 items-center mb-5 mt-5">
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+      </ul>
+      <p className="font-FiraSans font-normal sm:text-2xl text-white opacity-95 italic">
+        {testiDesc}
+      </p>
+      <div className="flex items-center gap-5 mt-12">
         <div>
-          <div>
-            <img src={testThumb} />
-            <h6>{testiRating}</h6>
-          </div>
-          <div>
-            <ul className="flex gap-[6px] items-center justify-center mb-7 mt-6">
-              <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-              <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-              <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-              <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-              <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-            </ul>
-            <p className="font-FiraSans sm:text-xl sm:leading-9 text-HeadingColor-0 lg:w-[75%] m-auto">
-              {testiDesc}
-            </p>
-            <div>
-              <div><img src={testProfile} /></div>
-              <div><h5 className="font-FiraSans font-semibold inline-block text-HeadingColor-0 text-2xl pt-7 mb-1 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-top-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
-                {testiName}
-              </h5>
-              <p className="font-FiraSans text-TextColor2-0">
-                {testiDesignation}
-              </p></div>
-            </div>
-          </div>
+          <img src={testiProfile} />
+        </div>
+        <div>
+          <h5 className="font-FiraSans inline-block text-white text-xl mb-1">
+            {testiName}
+          </h5>
+          <p className="font-FiraSans text-[15px] font-light text-white opacity-95">{testiDesignation}</p>
         </div>
       </div>
     </div>

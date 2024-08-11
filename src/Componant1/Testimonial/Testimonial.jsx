@@ -1,52 +1,37 @@
 /* eslint-disable no-unused-vars */
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
-import TestimonialNavigation from "./TestimonialNavigation";
+import testThumb from "/images/testi_thumb.png";
+import testiProfile from "/images/testi_author.png";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 const testiData = [
   {
     id: 1,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiQuote: <RiDoubleQuotesR />,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
+    testiDesc: `“Conveniently transform error-free architectures whereas
+									maximizing collaboration and idea-sharing. Intrinsicly
+									team driven web-readiness vis-a-vis equity invested
+									Appropriately underwhelm  proactive leadership skills 
+									without future-proof applications”`,
+    testiName: "Jhon D. Alexon",
     testiDesignation: "Web Developer",
-  },
-  {
+    testiProfile: testiProfile,
+  },  {
     id: 2,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiQuote: <RiDoubleQuotesR />,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
+    testiDesc: `“Conveniently transform error-free architectures whereas
+									maximizing collaboration and idea-sharing. Intrinsicly
+									team driven web-readiness vis-a-vis equity invested
+									Appropriately underwhelm  proactive leadership skills 
+									without future-proof applications”`,
+    testiName: "Jhon D. Alexon",
     testiDesignation: "Web Developer",
-  },
-  {
-    id: 3,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 4,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 5,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiProfile: testiProfile,
   },
 ];
 
@@ -71,52 +56,49 @@ const Testimonial = () => {
       },
     },
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
   return (
-    <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
+    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-5 relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-            Testimonial
-          </h5>
-          <h1 className="font-FiraSans font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
-            Customer’s Awesome Feedback <br />
-            About Our Services
-          </h1>
-        </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-[80px] md:pt-[150px]">
-                        <TestimonialCard
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
+        <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
+          <div className="relative">
+            <img src={testThumb} draggable="false" className="-ml-16" />
+            <div className="flex items-center gap-2 absolute right-16 bottom-2">
+              <h6 className="size-[42px] rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
+                <MdOutlineStarPurple500 />
+              </h6>
+              <p className="font-FiraSans font-medium text-[22px] text-white">Avg Ratings 4.9</p>
             </div>
-            <TestimonialNavigation />
-          </Swiper>
+          </div>
+          <div>
+            <Swiper {...settings}>
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiQuote,
+                    testiRatingIcon,
+                    testiName,
+                    testiProfile,
+                    testiDesignation,
+                    testiDesc,
+                  }) => {
+                    return (
+                      <SwiperSlide key={id}>
+                          <TestimonialCard
+                            testiQuote={testiQuote}
+                            testiRatingIcon={testiRatingIcon}
+                            testiName={testiName}
+                            testiDesignation={testiDesignation}
+                            testiProfile={testiProfile}
+                            testiDesc={testiDesc}
+                          />
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

@@ -7,6 +7,7 @@ import LatestWork from "../../Componant1/LatestWork/LatestWork";
 import Pricing from "../../Componant1/Pricing/Pricing";
 import Service from "../../Componant1/Service/Service";
 import TeamMember from "../../Componant1/TeamMember/TeamMember";
+import Testimonial from "../../Componant1/Testimonial/Testimonial";
 import Work from "../../Componant1/Work/Work";
 
 const Home1 = () => {
@@ -21,7 +22,8 @@ const Home1 = () => {
       <Work />
       <Pricing />
       <LatestWork />
-      <TeamMember/>
+      <TeamMember />
+      <Testimonial />
     </>
   );
 };
