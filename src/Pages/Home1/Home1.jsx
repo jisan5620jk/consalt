@@ -1,5 +1,6 @@
 import About from "../../Componant1/About/About";
 import Banner from "../../Componant1/Banner/Banner";
+import Blog from "../../Componant1/Blog/Blog";
 import Brand from "../../Componant1/Brand/Brand";
 import Counter from "../../Componant1/Counter/Counter";
 import Feature from "../../Componant1/Feature/Feature";
@@ -24,6 +25,7 @@ const Home1 = () => {
       <LatestWork />
       <TeamMember />
       <Testimonial />
+      <Blog />
     </>
   );
 };
