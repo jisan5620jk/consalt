@@ -1,7 +1,6 @@
-import teamThumb from "/images/team-1.png";
-import teamThumb2 from "/images/team-2.png";
-import teamThumb3 from "/images/team-4.png";
-import teamThumb4 from "/images/team-3.png";
+import teamThumb from "/images/team.jpg";
+import teamThumb2 from "/images/team1.jpg";
+import teamThumb3 from "/images/team2.jpg";
 import TeamCard from "./TeamCard";
 import {
   FaFacebookF,
@@ -9,81 +8,61 @@ import {
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
-import { IoShareSocialOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import { GoArrowRight } from "react-icons/go";
 
 const teamData = [
   {
     id: 1,
-    teamThumb: teamThumb,
+    teamThumb: teamThumb3,
     teamTitle: "Connie Diaz",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "CEO & Founder",
-    teamShareIcon: <IoShareSocialOutline />,
+    teamDesc: "Lead Developer",
   },
   {
     id: 2,
+    teamThumb: teamThumb,
+    teamTitle: "Jone D. Alexon",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "CEO & Founder",
+  },
+  {
+    id: 3,
     teamThumb: teamThumb2,
     teamTitle: "James E. Huey",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "Co Founder",
-    teamShareIcon: <IoShareSocialOutline />,
-  },
-  {
-    id: 3,
-    teamThumb: teamThumb4,
-    teamTitle: "Jone D. Alexon",
-    socialIcon: <FaFacebookF />,
-    socialIcon2: <FaXTwitter />,
-    socialIcon3: <FaLinkedinIn />,
-    socialIcon4: <FaPinterestP />,
     teamDesc: "IT Expert",
-    teamShareIcon: <IoShareSocialOutline />,
-  },
-  {
-    id: 4,
-    teamThumb: teamThumb3,
-    teamTitle: "June D. Vargas",
-    socialIcon: <FaFacebookF />,
-    socialIcon2: <FaXTwitter />,
-    socialIcon3: <FaLinkedinIn />,
-    socialIcon4: <FaPinterestP />,
-    teamDesc: "Hr. Maneger",
-    teamShareIcon: <IoShareSocialOutline />,
   },
 ];
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
+    <section className="py-28 relative">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-              Dedicated Team
-            </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
-              Meet Our Dedicated Member <br />
-              For Any Enquery
-            </h1>
-          </div>
-          <div className="flex lg:justify-end">
-            <Link to={"/about"}>
-              <button className="primary-btn">
-                {`All Member`}
-                <GoArrowRight size={"22"} />
-              </button>
-            </Link>
-          </div>
+        <div className="text-center">
+          <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+            MEET OUR TEAM
+          </h5>
+          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+            {`We’ve`} 36+ Active & Dedicated Members
+            <br />
+            for Helping the Customers
+          </h1>
+          <p className="font-FiraSans text-TextColor2-0 pt-4">
+            Globally engage cross-media leadership skills before cross-media
+            innovation forward
+            <br className="hidden md:block" /> develope standardized platforms
+            without robust
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-[50px] mt-[58px]">
           {teamData.map(
             ({
               id,
@@ -94,10 +73,9 @@ const TeamMember = () => {
               socialIcon3,
               socialIcon4,
               teamDesc,
-              teamShareIcon,
             }) => {
               return (
-                <div key={id}>
+                <div key={id} className="team-member">
                   <TeamCard
                     teamThumb={teamThumb}
                     teamTitle={teamTitle}
@@ -106,7 +84,6 @@ const TeamMember = () => {
                     socialIcon3={socialIcon3}
                     socialIcon4={socialIcon4}
                     teamDesc={teamDesc}
-                    teamShareIcon={teamShareIcon}
                   />
                 </div>
               );

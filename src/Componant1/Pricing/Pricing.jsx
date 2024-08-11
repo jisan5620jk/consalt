@@ -36,10 +36,10 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-28 bg-BodyBg2-0 mx-5">
+    <section className="relative overflow-hidden py-28 bg-BodyBg2-0 mx-5 rounded-b-[40px]">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-10 lg:gap-16 xl:gap-24 2xl:gap-[140px] lg:grid-cols-2 items-center">
-          <div className="w-full mx-auto">
+        <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12 items-center">
+          <div className="col-span-6 lg:col-span-5 w-full mx-auto mr-10">
             <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase mb-3">
               PRICING PLANS
             </h5>
@@ -50,7 +50,7 @@ const Pricing = () => {
               <br />
               Consultant Service
             </h1>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-FiraSans text-TextColor2-0 mt-6 mb-9">
               Continually plagiarize virtual web services home one maximizing
               action items. Globally build front-end consult.
             </p>
@@ -60,7 +60,7 @@ const Pricing = () => {
               </button>
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-7">
+          <div className="col-span-6 lg:col-span-7 grid grid-cols-2 gap-7">
             <div className="pricing-box group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
@@ -76,19 +76,19 @@ const Pricing = () => {
                 </div>
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   Unlimited Websites
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   10+ Paid Plugin
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   Woocommerce Support
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   50+ WP theme
                 </li>
@@ -131,19 +131,19 @@ const Pricing = () => {
                 </div>
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   Unlimited Websites
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   10+ Paid Plugin
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   Woocommerce Support
                 </li>
-                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed pb-3">
+                <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
                   <img src={icon} />
                   50+ WP theme
                 </li>

@@ -350,37 +350,23 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Portfolio */
 
-.portfolio .swiper-slide.swiper-slide-active .portfolio-content {
-  border-start-end-radius: 0;
+.latest-work .swiper-slide.swiper-slide-active .latest-work-box {
+  padding: 20px;
 }
 
-.portfolio .swiper-slide.swiper-slide-active .portfolio-img::before {
-  height: 100%;
-  opacity: 0.2;
+.latest-work .swiper-slide.swiper-slide-active .latest-work-img {
+filter: saturate(0);
 }
 
-.portfolio .portfolio-box:hover .portfolio-icon,
-.portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
-  -webkit-text-stroke: 1px #0c59db;
-}
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-title {
-  color: #0c59db;
-}
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-btn {
-  top: -50px;
-  opacity: 1;
-}
-
-.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-content {
+.latest-work .swiper-slide.swiper-slide-active .latest-work-content {
+  left: 20px;
   bottom: 20px;
 }
 
-.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-thumb::before {
-  left: 0;
-  width: 100%;
-  opacity: 0.6;
+
+.latest-work .swiper-slide.swiper-slide-active .latest-work-btn {
+  left: 50%;
+  opacity: 1;
 }
 
 /* Project */
@@ -390,8 +376,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   opacity: 1;
 }
 
-/* Team Member */
+/* Feature */
 
 .feature-box:nth-child(2n + 2) {
+  margin-top: 30px;
+}
+
+/* Team Member */
+
+.team-member:nth-child(2n + 2) {
   margin-top: 30px;
 }
