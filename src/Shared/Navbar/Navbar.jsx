@@ -1,75 +1,112 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Logo from "/images/logo.png";
-import $ from "jquery";
 import "./navbar.css";
-import { FaChevronRight } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
-  ("use strict");
-  $(".menu-bar").on("click", function () {
-    $(".offcanvas").addclassName("opened");
-    $(".body-overlay").addclassName("apply");
-  });
-  $(".close-btn").on("click", function () {
-    $(".offcanvas").removeclassName("opened");
-    $(".body-overlay").removeclassName("apply");
-  });
-  $(".body-overlay").on("click", function () {
-    $(".offcanvas").removeclassName("opened");
-    $(".body-overlay").removeclassName("apply");
-  });
 
-  ///////////////////////////////////////////////////
-  //  SubMenu Dropdown Toggle
-  let header_icon = `<span className="header-icon">
-		<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="ht://www.w3.org/2000/svg">
-		<path d="M6.04088 0L0.535156 4.125V11H4.26484V8.59381C4.26484 7.64165 5.05698 6.87506 6.04088 6.87506C7.02477 6.87506 7.81692 7.64165 7.81692 8.59381V11H11.5466V4.125L6.04088 0Z" fill="#FFB302"/></svg>                                
-	</span>`;
-  $(header_icon).insertBefore(".menu-icon nav ul .menu-icon-2");
+const menuBarRef = useRef(null);
+const offcanvasRef = useRef(null);
+const bodyOverlayRef = useRef(null);
+const closeBtnRef = useRef(null);
 
-  ////////////////////////////////////////////////////
+useEffect(() => {
+  const menuBar = menuBarRef.current;
+  const offcanvas = offcanvasRef.current;
+  const bodyOverlay = bodyOverlayRef.current;
+  const closeBtn = closeBtnRef.current;
 
-  ////////////////////////////////////////////////////
-  // menu content - start
-  if ($(".main-menu-content").length && $(".main-menu-mobile").length) {
-    let navContent = document.querySelector(".main-menu-content").outerHTML;
-    let mobileNavContainer = document.querySelector(".main-menu-mobile");
-    mobileNavContainer.innerHTML = navContent;
+  const addClasses = () => {
+    offcanvas.classList.add("opened");
+    bodyOverlay.classList.add("apply");
+  };
 
-    let arrow = $(".main-menu-mobile .has-dropdown > a");
+  const removeClasses = () => {
+    offcanvas.classList.remove("opened");
+    bodyOverlay.classList.remove("apply");
+  };
 
-    arrow.each(function () {
-      let self = $(this);
-      let arrowBtn = document.createElement("BUTTON");
-      arrowBtn.classList.toggle("dropdown-toggle-btn", true);
-      arrowBtn.innerHTML = <FaChevronRight />;
+  if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+    menuBar.addEventListener("click", addClasses);
+    closeBtn.addEventListener("click", removeClasses);
+    bodyOverlay.addEventListener("click", removeClasses);
+  }
 
-      self.append(function () {
-        return arrowBtn;
-      });
+  return () => {
+    if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+      menuBar.removeEventListener("click", addClasses);
+      closeBtn.removeEventListener("click", removeClasses);
+      bodyOverlay.removeEventListener("click", removeClasses);
+    }
+  };
+}, []);
+  
+  // Create the header icon element
+  const headerIcon = document.createElement("span");
+  headerIcon.className = "header-icon";
+  headerIcon.innerHTML = `  
+    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">  
+        <path d="M6.04088 0L0.535156 4.125V11H4.26484V8.59381C4.26484 7.64165 5.05698 6.87506 6.04088 6.87506C7.02477 6.87506 7.81692 7.64165 7.81692 8.59381V11H11.5466V4.125L6.04088 0Z" fill="#FFB302"/>  
+    </svg>`;
 
-      self.find("button").on("click", function (e) {
+  // Insert the header icon before the specified element
+  const menuIcon = document.querySelector(".menu-icon nav ul .menu-icon-2");
+  if (menuIcon) {
+    menuIcon.parentNode.insertBefore(headerIcon, menuIcon);
+  }
+
+  // Check if both the main menu content and mobile menu exist
+  const mainMenuContent = document.querySelector(".main-menu-content");
+  const mainMenuMobile = document.querySelector(".main-menu-mobile");
+
+  if (mainMenuContent && mainMenuMobile) {
+    const navContent = mainMenuContent.outerHTML;
+    mainMenuMobile.innerHTML = navContent;
+
+    const arrowElements = mainMenuMobile.querySelectorAll(".has-dropdown > a");
+
+    arrowElements.forEach((self) => {
+      const arrowBtn = document.createElement("button");
+      arrowBtn.classList.add("dropdown-toggle-btn");
+
+      // Using an icon like Font Awesome
+      arrowBtn.innerHTML =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"><path d="M0 0h12l-6 11z" fill="#000" /></svg>'; // Placeholder for `<FaChevronRight />`
+
+      self.appendChild(arrowBtn);
+
+      // Event listener for the button click
+      arrowBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        let self = $(this);
-        self.toggleclassName("dropdown-opened");
-        self.parent().toggleclassName("expanded");
-        self
-          .parent()
-          .parent()
-          .addclassName("dropdown-opened")
-          .siblings()
-          .removeclassName("dropdown-opened");
-        self.parent().parent().children(".submenu").slideToggle();
+        arrowBtn.classList.toggle("dropdown-opened");
+        const parentLi = self.parentNode;
+        parentLi.classList.toggle("expanded");
+
+        // Close other dropdowns
+        const siblings = Array.from(parentLi.parentNode.children).filter(
+          (child) => child !== parentLi
+        );
+        siblings.forEach((sibling) => {
+          sibling.classList.remove("dropdown-opened");
+        });
+
+        // Toggle the submenu
+        const submenu = parentLi.querySelector(".submenu");
+        if (submenu) {
+          submenu.style.display =
+            submenu.style.display === "block" ? "none" : "block";
+        }
       });
     });
   }
-
   return (
     <>
+      
       <div className="offcanvas-area">
-        <div className="offcanvas">
+        <div ref={offcanvasRef} className="offcanvas">
           <div className="offcanvas_close-btn">
-            <button className="close-btn">
+            <button ref={closeBtnRef} className="close-btn">
               <i className="fal fa-times"></i>
             </button>
           </div>
@@ -86,7 +123,7 @@ const Navbar = () => {
               incidunt eaque ab cumque, porro maxime autem sed.
             </p>
           </div>
-          <div className="main-menu-mobile d-xl-none"></div>
+          <div className="main-menu-mobile lg:none"></div>
           <div className="offcanvas_contact-info">
             <div className="offcanvas_contact-title">
               <h5>Contact us</h5>
@@ -161,7 +198,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="body-overlay"></div>
+      <div ref={bodyOverlayRef} className="body-overlay"></div>
       <div id="header-sticky" className="header-area">
         <div className="grid grid-cols-12 items-center">
           <div className="col-span-2">
@@ -397,7 +434,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className="header-bar lg:none">
-                  <button className="menu-bar">
+                  <button ref={menuBarRef} className="menu-bar">
                     <span></span>
                     <span></span>
                     <span></span>
