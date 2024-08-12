@@ -4,8 +4,8 @@ import { FiCheck } from "react-icons/fi";
 import missionImg from "/images/mission-1.png";
 import missionImg2 from "/images/mission-2.png";
 import { Link } from "react-router-dom";
-import Feature from "../../../Componant2/Feature/Feature";
-import Brand from "../../../Componant1/Brand/Brand";
+import Feature from "../../../Component2/Feature/Feature";
+import Brand from "../../../Component1/Brand/Brand";
 
 const MissionInner = () => {
   return (

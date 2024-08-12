@@ -1,13 +1,13 @@
-import About from "../../Componant3/About/About";
-import Banner from "../../Componant3/Banner/Banner";
-import Blog from "../../Componant3/Blog/Blog";
-import Faq from "../../Componant3/Faq/Accordion/Faq";
-import Feature from "../../Componant3/Feature/Feature";
-import Portfolio from "../../Componant3/Portfolio/Portfolio";
-import Process from "../../Componant3/Process/Process";
-import Service from "../../Componant3/Service/Service";
-import TeamMember from "../../Componant3/TeamMember/TeamMember";
-import Testimonial from "../../Componant3/Testimonial/Testimonial";
+import About from "../../Component3/About/About";
+import Banner from "../../Component3/Banner/Banner";
+import Blog from "../../Component3/Blog/Blog";
+import Faq from "../../Component3/Faq/Accordion/Faq";
+import Feature from "../../Component3/Feature/Feature";
+import Portfolio from "../../Component3/Portfolio/Portfolio";
+import Process from "../../Component3/Process/Process";
+import Service from "../../Component3/Service/Service";
+import TeamMember from "../../Component3/TeamMember/TeamMember";
+import Testimonial from "../../Component3/Testimonial/Testimonial";
 
 const Home3 = () => {
   return (

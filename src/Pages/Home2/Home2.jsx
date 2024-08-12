@@ -1,15 +1,15 @@
-import About from "../../Componant2/About/About";
-import Appionment from "../../Componant2/Appionment/Appionment";
-import Banner from "../../Componant2/Banner/Banner";
-import Blog from "../../Componant2/Blog/Blog";
-import Contact from "../../Componant2/Contact/Contact";
-import Counter from "../../Componant2/Counter/Counter";
-import Feature from "../../Componant2/Feature/Feature";
-import Newsletter from "../../Componant2/Newsletter/Newsletter";
-import Project from "../../Componant2/Project/Project";
-import Service from "../../Componant2/Service/Service";
-import Testimonial from "../../Componant2/Testimonial/Testimonial";
-import WhyChoose from "../../Componant2/WhyChoose/WhyChoose";
+import About from "../../Component2/About/About";
+import Appionment from "../../Component2/Appionment/Appionment";
+import Banner from "../../Component2/Banner/Banner";
+import Blog from "../../Component2/Blog/Blog";
+import Contact from "../../Component2/Contact/Contact";
+import Counter from "../../Component2/Counter/Counter";
+import Feature from "../../Component2/Feature/Feature";
+import Newsletter from "../../Component2/Newsletter/Newsletter";
+import Project from "../../Component2/Project/Project";
+import Service from "../../Component2/Service/Service";
+import Testimonial from "../../Component2/Testimonial/Testimonial";
+import WhyChoose from "../../Component2/WhyChoose/WhyChoose";
 
 const Home2 = () => {
   return (

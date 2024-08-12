@@ -1,15 +1,15 @@
-import About from "../../Componant1/About/About";
-import Banner from "../../Componant1/Banner/Banner";
-import Blog from "../../Componant1/Blog/Blog";
-import Brand from "../../Componant1/Brand/Brand";
-import Counter from "../../Componant1/Counter/Counter";
-import Feature from "../../Componant1/Feature/Feature";
-import LatestWork from "../../Componant1/LatestWork/LatestWork";
-import Pricing from "../../Componant1/Pricing/Pricing";
-import Service from "../../Componant1/Service/Service";
-import TeamMember from "../../Componant1/TeamMember/TeamMember";
-import Testimonial from "../../Componant1/Testimonial/Testimonial";
-import Work from "../../Componant1/Work/Work";
+import About from "../../Component1/About/About";
+import Banner from "../../Component1/Banner/Banner";
+import Blog from "../../Component1/Blog/Blog";
+import Brand from "../../Component1/Brand/Brand";
+import Counter from "../../Component1/Counter/Counter";
+import Feature from "../../Component1/Feature/Feature";
+import LatestWork from "../../Component1/LatestWork/LatestWork";
+import Pricing from "../../Component1/Pricing/Pricing";
+import Service from "../../Component1/Service/Service";
+import TeamMember from "../../Component1/TeamMember/TeamMember";
+import Testimonial from "../../Component1/Testimonial/Testimonial";
+import Work from "../../Component1/Work/Work";
 
 const Home1 = () => {
   return (

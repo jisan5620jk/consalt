@@ -1,9 +1,9 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Contact from "../../../Componant2/Contact/Contact";
-import WhyChoose from "../../../Componant2/WhyChoose/WhyChoose";
+import Contact from "../../../Component2/Contact/Contact";
+import WhyChoose from "../../../Component2/WhyChoose/WhyChoose";
 import About from "./About";
-import Counter from "../../../Componant2/Counter/Counter";
+import Counter from "../../../Component2/Counter/Counter";
 
 const AboutInner2 = () => {
   return (

@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import Process from "../../../Componant1/Process/Process";
+import Process from "../../../Component1/Process/Process";
 import Appointment from "./Appointment";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 
