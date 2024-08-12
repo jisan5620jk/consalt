@@ -21,7 +21,7 @@ const BlogCard = ({
       </div>
       <div className="rounded-b-lg relative z-20 flex justify-center transition-all duration-500 sm:px-[30px] lg:px-5 2xl:px-[30px] pt-9 pb-6">
         <div>
-          <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-3">
+          <div className="flex gap-6 mb-3">
             <p className="font-FiraSans text-white py-1 px-4 bg-PrimaryColor-0 inline-block rounded-r-full text-sm uppercase">
               {blogPostBy}
             </p>
