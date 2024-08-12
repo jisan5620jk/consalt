@@ -396,6 +396,8 @@ nav.main-menu-content > ul > li > a {
   align-items: center;
 }
 
+
+
 @media only screen and (max-width: 991px) {
   nav.main-menu-content ul li a {
     padding: 8px 0;
@@ -815,4 +817,17 @@ transition: all .5s;
 .main-menu-mobile * ul,
 .main-menu-mobile * li {
   transition: none !important;
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+ nav.main-menu-content > ul > li > a {
+    padding: 18px 12px 28px;
+}
+
+nav.main-menu-content > ul > li > a > span {
+    top: 24px;
+    right: -1px;
+}
+
 }

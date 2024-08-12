@@ -71,7 +71,7 @@ const About = () => {
                 Implement Business
               </li>
             </ul>
-            <div className="flex items-center gap-7 mt-9">
+            <div className="flex flex-col md:flex-row lg:flex-col 2xl:flex-row md:items-center lg:items-start 2xl:items-center gap-7 mt-9">
               <Link to={"/about"}>
                 <button className="primary-btn">{`Discover More`}</button>
               </Link>
@@ -85,7 +85,7 @@ const About = () => {
             <img
               src={aboutShape}
               draggable="false"
-              className="absolute bottom-0 -right-20 animate-movebtn hidden sm:block"
+              className="absolute bottom-0 right-0 2xl:-right-20 animate-movebtn hidden sm:block"
             />
           </div>
         </div>

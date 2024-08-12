@@ -41,7 +41,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={bannerThumb} draggable="false" className="max-w-[inherit]" />
+            <img src={bannerThumb} draggable="false" className="2xl:max-w-[inherit]" />
             <div className="absolute top-[54%] -left-[58px] 2xl:-left-[42px] -translate-y-1/2">
               <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                 <IoPlayOutline
@@ -63,7 +63,7 @@ const Banner = () => {
       <img
         src={bannerShape}
         draggable={false}
-        className="absolute top-[154px] left-[45%] -translate-x-1/2 animate-rotational hidden sm:block"
+        className="absolute top-24 2xl:top-[154px] left-[45%] -translate-x-1/2 animate-rotational hidden sm:block"
       />
     </section>
   );
