@@ -1,47 +1,49 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Logo from "/images/logo.png";
+import homeOne from "/images/team.jpg";
+import homeTwo from "/images/team1.jpg";
+import homeThree from "/images/team2.jpg";
 import "./navbar.css";
 import { useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const menuBarRef = useRef(null);
+  const offcanvasRef = useRef(null);
+  const bodyOverlayRef = useRef(null);
+  const closeBtnRef = useRef(null);
 
-const menuBarRef = useRef(null);
-const offcanvasRef = useRef(null);
-const bodyOverlayRef = useRef(null);
-const closeBtnRef = useRef(null);
+  useEffect(() => {
+    const menuBar = menuBarRef.current;
+    const offcanvas = offcanvasRef.current;
+    const bodyOverlay = bodyOverlayRef.current;
+    const closeBtn = closeBtnRef.current;
 
-useEffect(() => {
-  const menuBar = menuBarRef.current;
-  const offcanvas = offcanvasRef.current;
-  const bodyOverlay = bodyOverlayRef.current;
-  const closeBtn = closeBtnRef.current;
+    const addClasses = () => {
+      offcanvas.classList.add("opened");
+      bodyOverlay.classList.add("apply");
+    };
 
-  const addClasses = () => {
-    offcanvas.classList.add("opened");
-    bodyOverlay.classList.add("apply");
-  };
+    const removeClasses = () => {
+      offcanvas.classList.remove("opened");
+      bodyOverlay.classList.remove("apply");
+    };
 
-  const removeClasses = () => {
-    offcanvas.classList.remove("opened");
-    bodyOverlay.classList.remove("apply");
-  };
-
-  if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-    menuBar.addEventListener("click", addClasses);
-    closeBtn.addEventListener("click", removeClasses);
-    bodyOverlay.addEventListener("click", removeClasses);
-  }
-
-  return () => {
     if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-      menuBar.removeEventListener("click", addClasses);
-      closeBtn.removeEventListener("click", removeClasses);
-      bodyOverlay.removeEventListener("click", removeClasses);
+      menuBar.addEventListener("click", addClasses);
+      closeBtn.addEventListener("click", removeClasses);
+      bodyOverlay.addEventListener("click", removeClasses);
     }
-  };
-}, []);
-  
+
+    return () => {
+      if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+        menuBar.removeEventListener("click", addClasses);
+        closeBtn.removeEventListener("click", removeClasses);
+        bodyOverlay.removeEventListener("click", removeClasses);
+      }
+    };
+  }, []);
+
   // Create the header icon element
   const headerIcon = document.createElement("span");
   headerIcon.className = "header-icon";
@@ -102,7 +104,6 @@ useEffect(() => {
   }
   return (
     <>
-      
       <div className="offcanvas-area">
         <div ref={offcanvasRef} className="offcanvas">
           <div className="offcanvas_close-btn">
@@ -112,9 +113,7 @@ useEffect(() => {
           </div>
           <div className="offcanvas_logo">
             <Link to={"/"}>
-              <button>
-                <img src={Logo} draggable="false" />
-              </button>
+              <img src={Logo} draggable="false" />
             </Link>
           </div>
           <div className="offcanvas_title">
@@ -131,21 +130,15 @@ useEffect(() => {
             <ul>
               <li>
                 <i className="fa-light fa-location-dot"></i>
-                <Link to={"/"}>
-                  <button>Melbone st, Australia, Ny 12099</button>
-                </Link>
+                <Link to={"/"}>Melbone st, Australia, Ny 12099</Link>
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <Link to={"/"}>
-                  <button> needhelp@company.com </button>
-                </Link>
+                <Link to={"/"}>needhelp@company.com</Link>
               </li>
               <li>
                 <i className="fal fa-phone-alt"></i>
-                <Link to={"/"}>
-                  <button>+48 555 223 224</button>
-                </Link>
+                <Link to={"/"}>+48 555 223 224</Link>
               </li>
             </ul>
           </div>
@@ -175,24 +168,16 @@ useEffect(() => {
           <div className="offcanvas_social">
             <div className="social-icon">
               <Link to={"/"}>
-                <button>
-                  <i className="fab fa-twitter"></i>
-                </button>
+                <i className="fab fa-twitter"></i>
               </Link>
               <Link to={"/"}>
-                <button>
-                  <i className="fab fa-instagram"></i>
-                </button>
+                <i className="fab fa-instagram"></i>
               </Link>
               <Link to={"/"}>
-                <button>
-                  <i className="fab fa-facebook-f"></i>
-                </button>
+                <i className="fab fa-facebook-f"></i>
               </Link>
               <Link to={"/"}>
-                <button>
-                  <i className="fab fa-pinterest-p"></i>
-                </button>
+                <i className="fab fa-pinterest-p"></i>
               </Link>
             </div>
           </div>
@@ -204,9 +189,7 @@ useEffect(() => {
           <div className="col-span-2">
             <div className="header-logo">
               <Link to={"/"}>
-                <button>
-                  <img src={Logo} draggable="false" />
-                </button>
+                <img src={Logo} draggable="false" />
               </Link>
             </div>
           </div>
@@ -216,38 +199,34 @@ useEffect(() => {
                 <ul>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Home
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Home
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <div className="submenu has-homemenu mega-menu">
-                      <div className="row row-cols-1 row-cols-md-1 row-cols-xl-2 row-cols-xxl-2">
-                        <div className="col homemenu">
+                      <div className="grid grid-cols-3 gap-3">
+                        <div className="homemenu">
                           <div className="homemenu-thumb">
                             <Link to={"/"}>
-                              <button>
-                                <img
-                                  src="assets/images/main-thumb/menu/homepage1.jpg"
-                                  alt="thumb"
-                                />
-                                <h6>Live Demo</h6>
-                              </button>
+                              <img src={homeOne} />
+                              <h6>Live Demo</h6>
                             </Link>
                           </div>
-                        </div>
-                        <div className="col homemenu">
+                        </div>{" "}
+                        <div className="homemenu">
                           <div className="homemenu-thumb">
                             <Link to={"/"}>
-                              <button>
-                                <img
-                                  src="assets/images/main-thumb/menu/homepage2.jpg"
-                                  alt="thumb"
-                                />
-                                <h6>Live Demo</h6>
-                              </button>
+                              <img src={homeTwo} />
+                              <h6>Live Demo</h6>
+                            </Link>
+                          </div>
+                        </div>{" "}
+                        <div className="homemenu">
+                          <div className="homemenu-thumb">
+                            <Link to={"/"}>
+                              <img src={homeThree} />
+                              <h6>Live Demo</h6>
                             </Link>
                           </div>
                         </div>
@@ -256,190 +235,129 @@ useEffect(() => {
                   </li>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Pages
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Pages
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link to={"/"}>
-                          <button>about us</button>
-                        </Link>
+                        <Link to={"/"}>about us</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>team</button>
-                        </Link>
+                        <Link to={"/"}>team</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>testimonial</button>
-                        </Link>
+                        <Link to={"/"}>testimonial</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>cart</button>
-                        </Link>
+                        <Link to={"/"}>cart</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>checkout</button>
-                        </Link>
+                        <Link to={"/"}>checkout</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>faq</button>
-                        </Link>
+                        <Link to={"/"}>faq</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Service
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Service
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link to={"/"}>
-                          <button>service</button>
-                        </Link>
+                        <Link to={"/"}>service</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>service details</button>
-                        </Link>
+                        <Link to={"/"}>service details</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Project
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Project
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link to={"/"}>
-                          <button>project</button>
-                        </Link>
+                        <Link to={"/"}>project</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>project details</button>
-                        </Link>
+                        <Link to={"/"}>project details</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Shop
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Shop
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link to={"/"}>
-                          <button>shop</button>
-                        </Link>
+                        <Link to={"/"}>shop</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>shop details</button>
-                        </Link>
+                        <Link to={"/"}>shop details</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>cart</button>
-                        </Link>
+                        <Link to={"/"}>cart</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>checkout</button>
-                        </Link>
+                        <Link to={"/"}>checkout</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="has-dropdown">
                     <Link to={"/"}>
-                      <button>
-                        Blog
-                        <span>
-                          <i className="fa-light fa-sort-down"></i>
-                        </span>
-                      </button>
+                      Blog
+                      <span>
+                        <i className="fa-light fa-sort-down"></i>
+                      </span>
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link to={"/"}>
-                          <button>blog grid</button>
-                        </Link>
+                        <Link to={"/"}>blog grid</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>blog right sidebar</button>
-                        </Link>
+                        <Link to={"/"}>blog right sidebar</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>blog left sidebar</button>
-                        </Link>
+                        <Link to={"/"}>blog left sidebar</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>
-                          <button>blog details</button>
-                        </Link>
+                        <Link to={"/"}>blog details</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link to={"/"}>
-                      <button>Contact</button>
-                    </Link>
+                    <Link to={"/"}>Contact</Link>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
           <div className="col-span-3">
-            <div className="header-right-box">
-              <div className="header-right-action flex items-center justify-end">
-                <div className="header-right-icon-action hidden lg:block">
-                  <div className="header-right-icon">
-                    <div className="header-src-btn">
-                      <button className="search-box-btn search-box-outer">
-                        <i className="fa-regular fa-magnifying-glass"></i>
-                      </button>
-                    </div>
-                    <div className="menu-btn build-home-btn">
-                      <Link to={"/"}>
-                        <button>
-                          get a quote<span></span>
-                          <i className="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="header-bar lg:none">
-                  <button ref={menuBarRef} className="menu-bar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </div>
+            <div className="header-right-box flex items-center justify-end">
+              <div className="header-btn">
+                <Link to={"/"}>
+                  get a quote<span></span>
+                  <i className="fa-regular fa-arrow-right-long"></i>
+                </Link>
+              </div>
+              <div className="header-bar lg:none">
+                <button ref={menuBarRef} className="menu-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>

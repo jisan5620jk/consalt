@@ -9,7 +9,7 @@ import { IoPlayOutline } from "react-icons/io5";
 const Banner = () => {
     const [toggler, setToggler] = useState(false);
   return (
-    <section className="mx-5 mt bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[852px] flex items-center relative z-10 overflow-hidden rounded-[40px] 2xl:rounded-none">
+    <section className="mx-5 mt-5 bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[852px] flex items-center relative z-10 overflow-hidden rounded-[40px] 2xl:rounded-none">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
           <div className="relative">

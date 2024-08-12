@@ -1,4 +1,3 @@
-
 /*----------------------------------------*/
 /*  Offcanvas
 /*----------------------------------------*/
@@ -21,7 +20,7 @@
 }
 
 .body-overlay:hover {
-  cursor: url(../images/icon/cross.png), pointer;
+  cursor: url(/public/images/cross.png), pointer;
 }
 
 .menu-bar {
@@ -33,7 +32,7 @@
 .menu-bar span {
   display: block;
   height: 2px;
-  background: #fff;
+  background: #ffffff;
   margin: 5px;
   transition: all 0.5s ease;
   border-radius: 30px;
@@ -67,7 +66,7 @@
   width: 380px;
   bottom: 0;
   box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: #ff0;
+  background-color: #053131;
   z-index: 999999;
   padding: 36px;
   scrollbar-width: none;
@@ -126,7 +125,7 @@
 
 .offcanvas_contact-title h5 {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -135,16 +134,16 @@
 }
 
 .offcanvas_contact-info ul li a {
-  color: #fff;
+  color: #ffffff;
 }
 
-.offcanvas_contact-info ul li svg {
+.offcanvas_contact-info ul li i {
   color: #0c6e6d;
 }
 
 .offcanvas_input-title h4 {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -158,20 +157,20 @@
 }
 
 .offcanvas_input input {
-  background: rgba(118, 118, 130, 0.3);
+  background: rgba(255, 255, 255, 0.1);
   border: transparent;
   height: 60px;
   width: 100%;
   padding-left: 20px;
   padding-right: 80px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .offcanvas_input button {
   height: 60px;
   width: 60px;
   background-color: #0c6e6d;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 0;
@@ -179,7 +178,7 @@
 }
 
 .offcanvas_input input::placeholder {
-  color: var(--border-2);
+  color: #ffffff33;
 }
 
 .offcanvas_contact-info {
@@ -188,7 +187,7 @@
 
 .offcanvas_contact-info ul li {
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 15px;
   list-style-type: none;
 }
@@ -242,14 +241,14 @@
   width: 40px;
   line-height: 43px;
   background-color: #0c6e6d;
-  color: #fff;
+  color: #ffffff;
 }
 
-.offcanvas_close-btn button:hover svg {
+.offcanvas_close-btn button:hover i {
   transform: rotate(360deg);
 }
 
-.offcanvas_close-btn button svg {
+.offcanvas_close-btn button i {
   font-weight: 300;
   font-size: 20px;
   transition: 0.9s;
@@ -266,7 +265,7 @@
   text-align: center;
   font-size: 16px;
   background-color: rgba(251, 251, 253, 0.08);
-  color: #fff;
+  color: #ffffff;
   margin-right: 15px;
   transition: 0.3s;
   display: inline-block;
@@ -304,11 +303,13 @@
 }
 
 .offcanvas_social .social-icon a:hover {
-  color: #fff;
+  color: #ffffff;
 }
+
 /*----------------------------------------*/
 /*  Header Sticky
 /*----------------------------------------*/
+
 .header-area.sticky {
   position: fixed;
   top: 0;
@@ -330,52 +331,11 @@
 }
 
 /* ---------------------------- */
-/* Header Top Menu Start Here */
-/* --------------------------- */
-
-.header-top-space {
-  padding: 7px 6%;
-  background: #ff0;
-  position: relative;
-  z-index: 99995;
-}
-
-.header-top-left-box ul {
-  display: flex;
-  gap: 40px;
-}
-
-.header-top-left-box ul li svg {
-  color: #0c6e6d;
-  padding-right: 4px;
-}
-
-.header-top-left-box ul li a {
-  color: #0c0000;
-  font-size: 14px;
-  transition: 0.5s;
-}
-
-.header-top-left-box ul li a:hover {
-  color: #0c6e6d;
-}
-
-.header-top-right-box ul {
-  display: flex;
-  justify-content: right;
-  gap: 20px;
-}
-
-.header-top-right-box ul li a {
-  color: #fff;
-}
-
-/* ---------------------------- */
 /* Header Main Menu Start Here */
 /* --------------------------- */
+
 .header-area {
-  background: #0c6e6d;
-  border-bottom: 1px solid var(--border-1);
+  background: transparent;
   padding: 0 6%;
   position: absolute;
   z-index: 9999;
@@ -395,13 +355,20 @@ nav.main-menu-content > ul > li {
 }
 
 nav.main-menu-content > ul > li > a {
-  font-weight: 500;
   font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
-  padding: 0 22px;
-  color: #000000;
+  padding: 9px 20px 22px;
+  color: #063232;
   position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  nav.main-menu-content ul li a {
+    padding: 8px 0;
+    color: #ffffff;
+  }
 }
 
 nav.main-menu-content > ul > li > a:hover {
@@ -420,29 +387,37 @@ nav.main-menu-content > ul > li > a:hover > span {
   top: 39px;
 }
 
-.header-right-icon {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.header-right-shop button {
-  position: relative;
-  font-size: 24px;
-  transition: 0.5s;
-  color: #fff;
-}
-
-.headers-button small {
+.header-btn a {
+  display: inline-block;
+  border-radius: 8px;
   font-size: 16px;
-  position: absolute;
-  top: -11px;
-  right: 0;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Fira Sans", sans-serif;
 }
 
 /* ---------------- */
 /* Submenu Start Here */
 /* ---------------- */
+
+.header-main-menu nav ul li .submenu {
+  position: absolute;
+  top: 66px;
+  left: -5px;
+  width: 240px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  text-align: start;
+  background-color: #ffffff;
+  border-top: 3px solid #0c6e6d;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  border-radius: 4px;
+}
 
 .header-main-menu nav ul li:hover .submenu {
   opacity: 1;
@@ -454,24 +429,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   transform: scaleY(1);
 }
 
-.header-main-menu nav ul li .submenu {
-  position: absolute;
-  top: 100%;
-  left: -5px;
-  width: 240px;
-  z-index: 999;
-  padding: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.4s;
-  transform: scaleY(0);
-  transform-origin: top center;
-  text-align: start;
-  background-color: #fff;
-  border-top: 3px solid #0c6e6d;
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
-}
-
 .header-main-menu nav ul li .submenu.has-homemenu-2 {
   left: -200px;
 }
@@ -481,34 +438,39 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .header-main-menu nav ul li .submenu > li a {
-  padding: 0;
-  font-size: 14px;
+  padding: 6px 24px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #000;
+  color: #053131;
   position: relative;
+  width: 100%;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
 }
 
 .header-main-menu nav ul li .submenu > li a::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 0;
-  left: auto;
-  height: 1px;
-  width: 0;
+  top: auto;
+  height: 0;
+  width: 100%;
   background-color: #0c6e6d;
   transition: 0.7s;
-  display: inline-block;
+  z-index: -1;
 }
 
 .header-main-menu nav ul li .submenu > li:hover > a {
-  color: #0c6e6d;
+  color: #ffffff;
 }
 
 .header-main-menu nav ul li .submenu > li:hover > a::after {
-  width: 100%;
-  right: auto;
-  left: 0;
+  height: 100%;
+  bottom: auto;
+  top: 0;
 }
 
 .menu-btn {
@@ -533,7 +495,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 .homemenu-title {
   font-size: 16px;
   margin-bottom: 0;
-  color: #000;
+  color: #000000;
   display: inline-block;
   font-weight: 700;
 }
@@ -568,7 +530,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .main-menu-mobile ul li:not(:last-child) a {
-  border-bottom: 1px solid var(--border-2);
+  border-bottom: 1px solid #ffffff33;
 }
 
 .main-menu-mobile ul > li > ul > li > a {
@@ -603,7 +565,7 @@ nav.main-menu-content > ul > li > a:hover > span {
     color 0.3s ease-in-out;
 }
 
-.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn svg {
+.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn i {
   transition: all 0.3s ease-in-out;
 }
 
@@ -612,7 +574,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   li.has-dropdown
   > a
   .dropdown-toggle-btn.dropdown-opened
-  svg {
+  i {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -623,11 +585,11 @@ nav.main-menu-content > ul > li > a:hover > span {
 .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover {
   background-color: #0c6e6d;
   border-color: #0c6e6d;
-  color: #fff;
+  color: #ffffff;
 }
 
-.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover svg {
-  color: #fff;
+.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover i {
+  color: #ffffff;
 }
 
 .main-menu-mobile ul li.has-dropdown > a.expanded {
@@ -641,7 +603,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   .dropdown-toggle-btn.dropdown-opened {
   background-color: #0c6e6d;
   border-color: #0c6e6d;
-  color: #fff;
+  color: #ffffff;
 }
 
 .main-menu-mobile
@@ -649,8 +611,8 @@ nav.main-menu-content > ul > li > a:hover > span {
   li.has-dropdown
   > a.expanded
   .dropdown-toggle-btn.dropdown-opened
-  svg {
-  color: #fff;
+  i {
+  color: #ffffff;
 }
 
 .main-menu-mobile ul li.has-dropdown:hover > a::after {
@@ -664,7 +626,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 .main-menu-mobile ul li > a {
   display: block;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
@@ -678,7 +640,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   transform: translateY(-2px);
 }
 
-.main-menu-mobile ul li > a > svg {
+.main-menu-mobile ul li > a > i {
   display: inline-block;
   width: 11%;
   margin-right: 13px;
@@ -745,13 +707,11 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .submenu.has-homemenu.mega-menu {
   width: 600px;
+  padding: 20px;
 }
 
 .homemenu-thumb {
   text-align: center;
-}
-
-.homemenu-thumb a {
   position: relative;
   overflow: hidden;
   filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
@@ -763,19 +723,26 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .homemenu-thumb a > h6 {
   background: #0c6e6d;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 10px 0px;
-  width: 130px;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 0px;
+  font-size: 16px;
+  text-transform: uppercase;
   position: absolute;
+  width: 142px;
   opacity: 0;
   top: -30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) translateY(-50%);
   transition: all 0.5s;
   text-align: center;
   filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
+}
+
+@media only screen and (max-width: 991px) {
+  .homemenu-thumb a > h6 {
+    width: 120px;
+  }
 }
 
 .homemenu-thumb a:hover h6 {
@@ -783,16 +750,8 @@ nav.main-menu-content > ul > li > a:hover > span {
   opacity: 1;
 }
 
-.homemenu-thumb > h6 {
-  font-size: 18px;
-  color: #ff0;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-
 .homemenu-content a {
-  color: #000;
+  color: #000000;
   font-weight: 600;
 }
 
