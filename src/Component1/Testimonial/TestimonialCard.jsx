@@ -17,10 +17,10 @@ const TestimonialCard = ({
         <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
         <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
       </ul>
-      <p className="font-FiraSans font-normal sm:text-2xl text-white opacity-95 italic">
+      <p className="font-FiraSans font-normal sm:text-2xl lg:text-lg xl:text-2xl text-white opacity-95 italic">
         {testiDesc}
       </p>
-      <div className="flex items-center gap-5 mt-12">
+      <div className="flex items-center gap-5 mt-12 lg:mt-8 xl:mt-12">
         <div>
           <img src={testiProfile} />
         </div>

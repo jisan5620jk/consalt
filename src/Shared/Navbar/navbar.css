@@ -817,7 +817,19 @@ nav.main-menu-content > ul > li > a:hover > span {
   transition: none !important;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  nav.main-menu-content > ul > li > a {
+    padding: 18px 12px 28px;
+  }
+
+  nav.main-menu-content > ul > li > a > span {
+    top: 24px;
+    right: -1px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   nav.main-menu-content > ul > li > a {
     padding: 18px 12px 28px;
   }

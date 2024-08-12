@@ -57,7 +57,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-5 relative z-10 overflow-hidden">
+    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-5 lg:mx-2 xl:mx-5 relative z-10 overflow-hidden">
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div className="relative">
@@ -66,7 +66,9 @@ const Testimonial = () => {
               <h6 className="size-[42px] rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
                 <MdOutlineStarPurple500 />
               </h6>
-              <p className="font-FiraSans font-medium text-[22px] text-white">Avg Ratings 4.9</p>
+              <p className="font-FiraSans font-medium text-[22px] text-white">
+                Avg Ratings 4.9
+              </p>
             </div>
           </div>
           <div>
@@ -84,14 +86,14 @@ const Testimonial = () => {
                   }) => {
                     return (
                       <SwiperSlide key={id}>
-                          <TestimonialCard
-                            testiQuote={testiQuote}
-                            testiRatingIcon={testiRatingIcon}
-                            testiName={testiName}
-                            testiDesignation={testiDesignation}
-                            testiProfile={testiProfile}
-                            testiDesc={testiDesc}
-                          />
+                        <TestimonialCard
+                          testiQuote={testiQuote}
+                          testiRatingIcon={testiRatingIcon}
+                          testiName={testiName}
+                          testiDesignation={testiDesignation}
+                          testiProfile={testiProfile}
+                          testiDesc={testiDesc}
+                        />
                       </SwiperSlide>
                     );
                   }

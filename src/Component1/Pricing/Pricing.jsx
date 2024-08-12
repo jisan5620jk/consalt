@@ -36,21 +36,21 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-28 bg-BodyBg2-0 mx-5 rounded-b-[40px]">
+    <section className="mx-5 lg:mx-2 xl:mx-5 relative overflow-hidden py-28 bg-BodyBg2-0 rounded-b-[40px]">
       <div className="Container">
         <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12 items-center">
           <div className="col-span-6 lg:col-span-5 w-full mx-auto mr-10">
-            <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               PRICING PLANS
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] xl:text-[42px] xl:leading-[52px]">
               Pricing the Comfotable
               <br />
               Pricing Plans for your
               <br />
               Consultant Service
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 mt-6 mb-9">
+            <p className="font-FiraSans text-TextColor-0 mt-6 mb-9">
               Continually plagiarize virtual web services home one maximizing
               action items. Globally build front-end consult.
             </p>

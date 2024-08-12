@@ -9,12 +9,12 @@ const FeatureCard = ({
   featureNumber,
 }) => {
   return (
-    <div className="group rounded-2xl  pt-8 px-6 bg-[url(/images/feature_shape.png)] transition-all duration-500 bg-cover bg-repeat-round relative z-10 hover:bg-[url(/images/feature_itm.png)] hover:bg-[inherit] pb-16">
+    <div className="group rounded-2xl  pt-8 px-6 lg:px-3 xl:px-6 bg-[url(/images/feature_shape.png)] transition-all duration-500 bg-cover bg-repeat-round relative z-10 hover:bg-[url(/images/feature_itm.png)] hover:bg-[inherit] pb-16">
       <div className="relative pt-[6px] z-10">
         <img src={featureIcon} draggable="false" />
       </div>
       <Link to={featureUrl}>
-        <button className="font-FiraSans text-left font-medium text-xl pb-[10px] text-HeadingColor-0 mt-6">
+        <button className="font-FiraSans text-left font-medium text-xl lg:text-lg xl:text-xl pb-[10px] text-HeadingColor-0 mt-6">
           {featureTitle}
         </button>
       </Link>

@@ -350,7 +350,7 @@ const Navbar = () => {
             </div>
             <div className="col-span-2">
               <div className="header-right-box flex items-center gap-10 lg:gap-0 justify-end">
-                <div className="header-btn">
+                <div className="header-btn hidden">
                   <Link to={"/"}>
                     get a quote<span></span>
                     <LuMoveRight />

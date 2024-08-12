@@ -34,7 +34,7 @@ const Brand = () => {
   return (
     <div className="py-[94px]">
       <div className="Container relative z-10">
-        <h5 className="font-FiraSans text-HeadingColor-0 text-lg flex justify-center items-center relative before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-[50px] before:h-[2px] before:bg-PrimaryColor-0 mb-[72px]">
+        <h5 className="font-FiraSans text-HeadingColor-0 text-sm sm:text-lg flex justify-center relative before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-[50px] before:h-[2px] before:bg-PrimaryColor-0 mb-[72px]">
           Worldwide{" "}
           <CountUp
             start={-11}

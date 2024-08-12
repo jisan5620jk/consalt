@@ -17,7 +17,8 @@ const Footer = () => {
               <img src={footerLogo} draggable={false} />
             </Link>
             <p className="font-FiraSans text-[15px] text-TextColor-0 opacity-80 mt-7 mb-6">
-              Continually plagiarize virtual web service pro{" "}
+              Continually plagiarize virtual web service{" "}
+              <br className="hidden lg:block xl:hidden" /> pro{" "}
               <br className="hidden xl:block" /> with planning maximizing action
             </p>
             <form action="#" method="post" className="relative w-10/12">
@@ -185,7 +186,7 @@ const Footer = () => {
             <ul className="flex gap-6">
               <li>
                 <button className="font-FiraSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
-                 Facebook
+                  Facebook
                 </button>
               </li>
               <li>

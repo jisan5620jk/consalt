@@ -27,7 +27,7 @@ const featureData = [
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: "Opportunities Global Business Service",
+    featureTitle: "Opportunity Global Business Service",
     featureDesc:
       "Completely implement globals without impactful markets in conveniently done innovate customer directed",
     featureUrl: "/",
@@ -46,18 +46,21 @@ const featureData = [
 
 const Feature = () => {
   return (
-    <section className="pt-28 pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-bottom rounded-[40px] relative z-10 m-5">
+    <section className="mx-5 lg:mx-2 xl:mx-5 my-5 pt-28 pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-bottom rounded-[40px] relative z-10">
       <div className="Container relative">
-        <img src={featureShape} className="absolute top-0 right-16 animate-swing"/>
+        <img
+          src={featureShape}
+          className="absolute top-0 right-16 animate-swing hidden xl:block"
+        />
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
             Featured Service
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             Unlocking Your {`Business's`} Potential with
-            <br />
+            <br className="hidden sm:block"/>
             the Best Innovate Consulting active and
-            <br />
+            <br className="hidden sm:block"/>
             Dedicated Customers
           </h1>
         </div>
