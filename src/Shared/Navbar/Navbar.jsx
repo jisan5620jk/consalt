@@ -8,7 +8,6 @@ import "./navbar.css";
 import { useEffect, useState, useRef } from "react";
 import {
   FaChevronDown,
-  FaChevronRight,
   FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
@@ -190,7 +189,7 @@ const Navbar = () => {
       <div ref={bodyOverlayRef} className="body-overlay"></div>
       <div id="header-sticky" className="header-area">
         <div className="Container">
-          <div className="grid grid-cols-12">
+          <div className="flex items-center justify-between lg:grid lg:grid-cols-12">
             <div className="col-span-2">
               <div className="header-logo">
                 <Link to={"/"}>
@@ -210,7 +209,7 @@ const Navbar = () => {
                         </span>
                       </Link>
                       <div className="submenu has-homemenu mega-menu">
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3">
                           <div className="homemenu">
                             <div className="homemenu-thumb">
                               <Link to={"/"}>
@@ -350,7 +349,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="col-span-2">
-              <div className="header-right-box flex items-center justify-end">
+              <div className="header-right-box flex items-center gap-10 lg:gap-0 justify-end">
                 <div className="header-btn">
                   <Link to={"/"}>
                     get a quote<span></span>

@@ -1,6 +1,4 @@
-/*----------------------------------------*/
-/*  Offcanvas
-/*----------------------------------------*/
+/* Offcanvas */
 .body-overlay {
   position: fixed;
   top: 0;
@@ -326,9 +324,7 @@
   color: #ffffff;
 }
 
-/*----------------------------------------*/
-/*  Header Sticky
-/*----------------------------------------*/
+/* Header Sticky */
 
 .header-area.sticky {
   position: fixed;
@@ -350,9 +346,7 @@
   animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
 }
 
-/* ---------------------------- */
-/* Header Main Menu Start Here */
-/* --------------------------- */
+/* Header Main Menu */
 
 .header-area {
   background: transparent;
@@ -368,14 +362,7 @@
 }
 
 .header-logo {
-	margin: 30px 0 0;
-}
-
-@media only screen and (max-width: 1199px) {
-  .header-logo img {
-    padding: 8px 0;
-    width: 80%;
-  }
+  margin: 30px 0 0;
 }
 
 nav.main-menu-content > ul > li {
@@ -396,8 +383,6 @@ nav.main-menu-content > ul > li > a {
   align-items: center;
 }
 
-
-
 @media only screen and (max-width: 991px) {
   nav.main-menu-content ul li a {
     padding: 8px 0;
@@ -410,11 +395,11 @@ nav.main-menu-content > ul > li > a:hover {
 }
 
 nav.main-menu-content > ul > li > a > span {
-	position: absolute;
-	top: 25px;
-	right: 10px;
-	transition: 0.5s;
-	font-size: 12px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  transition: 0.5s;
+  font-size: 12px;
 }
 
 nav.main-menu-content > ul > li > a:hover > span {
@@ -423,7 +408,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .header-btn {
-	margin: 28px 0 0;
+  margin: 28px 0 0;
 }
 
 .header-btn a {
@@ -438,18 +423,18 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
 }
 
-.header-btn a::before{
-position: absolute;
-content: '';
-bottom: -2px;
-left: 0;
-width: 26px;
-height: 2px;
-background: #557570;
-transition: all .5s;
+.header-btn a::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background: #557570;
+  transition: all 0.5s;
 }
 
-.header-btn a:hover::before{
+.header-btn a:hover::before {
   width: 100%;
 }
 
@@ -457,9 +442,7 @@ transition: all .5s;
   font-size: 18px;
 }
 
-/* ---------------- */
 /* Submenu Start Here */
-/* ---------------- */
 
 .header-main-menu nav ul li .submenu {
   position: absolute;
@@ -538,9 +521,7 @@ transition: all .5s;
   margin-left: 20px;
 }
 
-/*----------------------------------------*/
-/*  HEADER CSS
-/*----------------------------------------*/
+/* HEADER CSS */
 
 .homemenu-btn {
   position: absolute;
@@ -684,7 +665,7 @@ transition: all .5s;
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
-    font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .main-menu-mobile ul li > a svg {
@@ -795,8 +776,25 @@ transition: all .5s;
 }
 
 @media only screen and (max-width: 991px) {
+  .header-logo {
+    margin: 15px 0;
+  }
+
+  .header-btn {
+    margin: 0;
+  }
+
+  .submenu.has-homemenu.mega-menu {
+    width: 100%;
+    padding: 20px;
+  }
+
   .homemenu-thumb a > h6 {
     width: 120px;
+  }
+
+  nav.main-menu-content > ul > li > a > span {
+    display: none;
   }
 }
 
@@ -819,15 +817,13 @@ transition: all .5s;
   transition: none !important;
 }
 
-
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
- nav.main-menu-content > ul > li > a {
+  nav.main-menu-content > ul > li > a {
     padding: 18px 12px 28px;
-}
+  }
 
-nav.main-menu-content > ul > li > a > span {
+  nav.main-menu-content > ul > li > a > span {
     top: 24px;
     right: -1px;
-}
-
+  }
 }

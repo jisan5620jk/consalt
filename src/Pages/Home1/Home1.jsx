@@ -2,6 +2,7 @@ import About from "../../Component1/About/About";
 import Banner from "../../Component1/Banner/Banner";
 import Blog from "../../Component1/Blog/Blog";
 import Brand from "../../Component1/Brand/Brand";
+import ContentSlider from "../../Component1/ContentSlider/ContentSlider";
 import Counter from "../../Component1/Counter/Counter";
 import Feature from "../../Component1/Feature/Feature";
 import LatestWork from "../../Component1/LatestWork/LatestWork";
@@ -18,6 +19,7 @@ const Home1 = () => {
       <Brand />
       <Feature />
       <Service />
+      <ContentSlider />
       <About />
       <Counter />
       <Work />
