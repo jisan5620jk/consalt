@@ -113,7 +113,7 @@
 
 .offcanvas_title p {
   font-size: 16px;
-  color: #9b9c9e;
+  color: #a3b7b7;
   margin-bottom: 20px;
 }
 
@@ -124,17 +124,22 @@
 }
 
 .offcanvas_contact-title h5 {
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
 
+.offcanvas_contact-info ul li {
+  display: flex;
+  align-items: center;
+}
+
 .offcanvas_contact-info ul li a {
   color: #ffffff;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .offcanvas_contact-info ul li i {
@@ -142,11 +147,10 @@
 }
 
 .offcanvas_input-title h4 {
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -157,8 +161,8 @@
 }
 
 .offcanvas_input input {
-  background: rgba(255, 255, 255, 0.1);
-  border: transparent;
+  background: transparent;
+  border: 1px solid #ffffff1a;
   height: 60px;
   width: 100%;
   padding-left: 20px;
@@ -175,10 +179,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 
 .offcanvas_input input::placeholder {
-  color: #ffffff33;
+  color: #ffffff57;
 }
 
 .offcanvas_contact-info {
@@ -242,9 +250,13 @@
   line-height: 43px;
   background-color: #0c6e6d;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
 }
 
-.offcanvas_close-btn button:hover i {
+.offcanvas_close-btn button:hover svg {
   transform: rotate(360deg);
 }
 
@@ -258,6 +270,12 @@
   margin-top: 30px;
 }
 
+.offcanvas_social .social-icon {
+  display: flex;
+  align-items: center;
+  gap: 3;
+}
+
 .offcanvas_social .social-icon a {
   height: 45px;
   width: 45px;
@@ -268,10 +286,12 @@
   color: #ffffff;
   margin-right: 15px;
   transition: 0.3s;
-  display: inline-block;
   border-radius: 50%;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .offcanvas_social .social-icon a::before {
@@ -336,10 +356,19 @@
 
 .header-area {
   background: transparent;
-  padding: 0 6%;
   position: absolute;
   z-index: 9999;
   width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .header-area {
+    background: #0c6e6d;
+  }
+}
+
+.header-logo {
+	margin: 30px 0 0;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -359,9 +388,12 @@ nav.main-menu-content > ul > li > a {
   font-family: "Fira Sans", sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
-  padding: 9px 20px 22px;
+  padding: 18px 30px 28px;
   color: #063232;
   position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -376,25 +408,51 @@ nav.main-menu-content > ul > li > a:hover {
 }
 
 nav.main-menu-content > ul > li > a > span {
-  position: absolute;
-  top: 33px;
-  right: 2px;
-  transition: 0.5s;
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	transition: 0.5s;
+	font-size: 12px;
 }
 
 nav.main-menu-content > ul > li > a:hover > span {
   transform: rotate(-180deg);
-  top: 39px;
+  top: 26px;
+}
+
+.header-btn {
+	margin: 28px 0 0;
 }
 
 .header-btn a {
-  display: inline-block;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 16px;
   color: #ffffff;
   font-weight: 500;
   text-transform: capitalize;
   font-family: "Fira Sans", sans-serif;
+  position: relative;
+}
+
+.header-btn a::before{
+position: absolute;
+content: '';
+bottom: -2px;
+left: 0;
+width: 26px;
+height: 2px;
+background: #557570;
+transition: all .5s;
+}
+
+.header-btn a:hover::before{
+  width: 100%;
+}
+
+.header-btn a svg {
+  font-size: 18px;
 }
 
 /* ---------------- */
@@ -409,7 +467,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s;
   transform: scaleY(0);
   transform-origin: top center;
   text-align: start;
@@ -417,6 +474,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   border-top: 3px solid #0c6e6d;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   border-radius: 4px;
+  transition: all 0.5s ease-in-out; /* Smooth transition */
 }
 
 .header-main-menu nav ul li:hover .submenu {
@@ -438,7 +496,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .header-main-menu nav ul li .submenu > li a {
-  padding: 6px 24px;
+  padding: 10px 24px;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -448,6 +506,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   display: inline-block;
   z-index: 1;
   transition: 0.5s;
+  font-weight: 300;
 }
 
 .header-main-menu nav ul li .submenu > li a::after {
@@ -497,7 +556,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   margin-bottom: 0;
   color: #000000;
   display: inline-block;
-  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .homemenu-title:hover {
@@ -505,10 +564,6 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .main-menu-mobile .submenu {
-  display: none;
-}
-
-.main-menu-mobile .header-icon {
   display: none;
 }
 
@@ -551,21 +606,22 @@ nav.main-menu-content > ul > li > a:hover > span {
   -ms-transform: translateY(-2px);
   -o-transform: translateY(-2px);
   transform: translateY(-2px);
-  font-size: 18px;
-  color: #7f8387;
-  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  color: #fff;
+  background: #0c6e6d;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   width: 30px;
   height: 30px;
-  line-height: 22px;
-  text-align: center;
-  border: 1px solid var(--border-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff1a;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
 }
 
-.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn i {
+.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn svg {
   transition: all 0.3s ease-in-out;
 }
 
@@ -574,7 +630,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   li.has-dropdown
   > a
   .dropdown-toggle-btn.dropdown-opened
-  i {
+  svg {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -588,12 +644,8 @@ nav.main-menu-content > ul > li > a:hover > span {
   color: #ffffff;
 }
 
-.main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover i {
-  color: #ffffff;
-}
-
 .main-menu-mobile ul li.has-dropdown > a.expanded {
-  color: #0c6e6d;
+  color: #fff;
 }
 
 .main-menu-mobile
@@ -630,6 +682,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .main-menu-mobile ul li > a svg {
@@ -640,7 +693,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   transform: translateY(-2px);
 }
 
-.main-menu-mobile ul li > a > i {
+.main-menu-mobile ul li > a > svg {
   display: inline-block;
   width: 11%;
   margin-right: 13px;
@@ -706,7 +759,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .submenu.has-homemenu.mega-menu {
-  width: 600px;
+  width: 750px;
   padding: 20px;
 }
 

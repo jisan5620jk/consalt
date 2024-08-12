@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
-            <div className="absolute top-0 right-0 size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
+            <div className="absolute top-0 right-0 2xl:right-[36px] size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
               <div className="text-inner size-24 animate-rotational relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:size-[15px] before:rounded-full before:bg-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,9 +73,7 @@ const About = () => {
             </ul>
             <div className="flex items-center gap-7 mt-9">
               <Link to={"/about"}>
-                <button className="primary-btn">
-                  {`Discover More`}
-                </button>
+                <button className="primary-btn">{`Discover More`}</button>
               </Link>
               <Link to={"/"}>
                 <button className="flex items-center gap-2 font-FiraSans font-medium text-HeadingColor-0">

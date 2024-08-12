@@ -9,9 +9,9 @@ import { IoPlayOutline } from "react-icons/io5";
 const Banner = () => {
     const [toggler, setToggler] = useState(false);
   return (
-    <section className="mx-5 mt-5 bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[852px] flex items-center relative z-10 overflow-hidden rounded-[40px] 2xl:rounded-none">
+    <section className="mx-5 mt-5 bg-[url('/images/banner.png')] bg-contain 2xl:bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[548px] 2xl:h-[830px] flex items-center relative z-10 overflow-hidden rounded-[40px] 2xl:rounded-none">
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
+        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
           <div className="relative">
             <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
               Crafting the Digital
@@ -41,8 +41,8 @@ const Banner = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={bannerThumb} draggable="false" className="w-[inherit]" />
-            <div className="absolute top-[54%] -left-[58px] -translate-y-1/2">
+            <img src={bannerThumb} draggable="false" className="max-w-[inherit]" />
+            <div className="absolute top-[54%] -left-[58px] 2xl:-left-[42px] -translate-y-1/2">
               <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                 <IoPlayOutline
                   size={"30"}
@@ -63,7 +63,7 @@ const Banner = () => {
       <img
         src={bannerShape}
         draggable={false}
-        className="absolute top-[174px] left-1/2 animate-rotational hidden sm:block"
+        className="absolute top-[154px] left-[45%] -translate-x-1/2 animate-rotational hidden sm:block"
       />
     </section>
   );
