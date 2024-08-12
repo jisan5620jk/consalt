@@ -1,7 +1,7 @@
 import serviceThumb from "/images/service_thumb01.png";
 import ServiceCard from "./ServiceCard";
 import { LuMoveRight } from "react-icons/lu";
-import serviceShape from "/images/service_rotate.png"
+import serviceShape from "/images/service_rotate.png";
 
 const ServiceData = [
   {
@@ -32,7 +32,7 @@ const ServiceData = [
 
 const Service = () => {
   return (
-    <section className="mx-5 lg:mx-2 xl:mx-5 bg-[url(/images/service-bg.png)] bg-cover bg-bottom bg-no-repeat pt-[206px] pb-[150px] relative -mt-28 rounded-b-[40px]">
+    <section className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 bg-[url(/images/service-bg.png)] bg-cover bg-bottom bg-no-repeat pt-[206px] pb-[150px] relative -mt-28 rounded-b-[40px]">
       <div className="size-[97px] rounded-full bg-PrimaryColor-0 flex items-center justify-center absolute left-1/2 -translate-x-1/2 top-[36px]">
         <img src={serviceShape} className="animate-rotational" />
       </div>

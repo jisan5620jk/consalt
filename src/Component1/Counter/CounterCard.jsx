@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 const CounterCard = ({ counterShape,counterNumber, counterDesc, counterSuffex }) => {
   return (
-    <div className="flex items-center gap-10 relative">
+    <div className="flex items-center gap-5 sm:gap-10 relative">
       <img
         src={counterShape}
         className="absolute top-1/2 -translate-y-1/2 right-0 hidden xl:block"

@@ -20,7 +20,8 @@ const testiData = [
     testiName: "Jhon D. Alexon",
     testiDesignation: "Web Developer",
     testiProfile: testiProfile,
-  },  {
+  },
+  {
     id: 2,
     testiQuote: <RiDoubleQuotesR />,
     testiRatingIcon: <MdOutlineStarPurple500 />,
@@ -57,12 +58,12 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-5 lg:mx-2 xl:mx-5 relative z-10 overflow-hidden">
+    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-2 sm:mx-5 lg:mx-2 xl:mx-5 relative z-10 overflow-hidden">
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div className="relative">
-            <img src={testThumb} draggable="false" className="-ml-16" />
-            <div className="flex items-center gap-2 absolute right-16 bottom-2">
+            <img src={testThumb} draggable="false" className="xl:-ml-16" />
+            <div className="sm:flex items-center gap-2 absolute right-16 bottom-2 hidden">
               <h6 className="size-[42px] rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
                 <MdOutlineStarPurple500 />
               </h6>

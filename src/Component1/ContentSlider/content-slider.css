@@ -91,6 +91,9 @@
 }
 
 @media (max-width: 767px) {
+  .content-slider-section {
+    gap: 20px;
+  }
 
   .content-slider {
 	gap: 20px;

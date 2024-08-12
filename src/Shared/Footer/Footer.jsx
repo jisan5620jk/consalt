@@ -183,7 +183,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <ul className="flex gap-6">
+            <ul className="flex gap-3 sm:gap-6">
               <li>
                 <button className="font-FiraSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
                   Facebook

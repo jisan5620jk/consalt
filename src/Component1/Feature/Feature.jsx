@@ -3,7 +3,7 @@ import featureIcon2 from "/images/feature_icon02.png";
 import featureIcon3 from "/images/feature_icon03.png";
 import featureIcon4 from "/images/feature_icon04.png";
 import FeatureCard from "./FeatureCard";
-import featureShape from "/images/arrow.png"
+import featureShape from "/images/arrow.png";
 
 const featureData = [
   {
@@ -46,7 +46,7 @@ const featureData = [
 
 const Feature = () => {
   return (
-    <section className="mx-5 lg:mx-2 xl:mx-5 my-5 pt-28 pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-bottom rounded-[40px] relative z-10">
+    <section className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 my-5 pt-28 pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-bottom rounded-[40px] relative z-10">
       <div className="Container relative">
         <img
           src={featureShape}
@@ -58,9 +58,9 @@ const Feature = () => {
           </h5>
           <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             Unlocking Your {`Business's`} Potential with
-            <br className="hidden sm:block"/>
+            <br className="hidden sm:block" />
             the Best Innovate Consulting active and
-            <br className="hidden sm:block"/>
+            <br className="hidden sm:block" />
             Dedicated Customers
           </h1>
         </div>
