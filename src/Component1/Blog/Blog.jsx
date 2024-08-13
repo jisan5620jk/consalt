@@ -43,7 +43,8 @@ const BlogData = [
     blogTitle: "Consulting Industry changing Business Landscape",
     blogBtn: "Read More",
     blogBtnIcon: <BsArrowRight />,
-  },  {
+  },
+  {
     id: 4,
     blogThumb: blogThumb2,
     blogDate: "24 Mar, 2024",
