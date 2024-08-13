@@ -17,28 +17,32 @@ const LatestWorkData = [
     latestWorkDesc: "Technology",
     latestWorkUrl: "/project_details",
     latestWorkBtn: <HiMiniArrowUpRight />,
-  },  {
+  },
+  {
     id: 2,
     latestWorkThumb: latestWorkThumb2,
     latestWorkTitle: "Business Implement",
     latestWorkDesc: "Technology",
     latestWorkUrl: "/project_details",
     latestWorkBtn: <HiMiniArrowUpRight />,
-  },  {
+  },
+  {
     id: 3,
     latestWorkThumb: latestWorkThumb3,
     latestWorkTitle: "Business Implement",
     latestWorkDesc: "Technology",
     latestWorkUrl: "/project_details",
     latestWorkBtn: <HiMiniArrowUpRight />,
-  },  {
+  },
+  {
     id: 4,
     latestWorkThumb: latestWorkThumb4,
     latestWorkTitle: "Business Implement",
     latestWorkDesc: "Technology",
     latestWorkUrl: "/project_details",
     latestWorkBtn: <HiMiniArrowUpRight />,
-  },  {
+  },
+  {
     id: 5,
     latestWorkThumb: latestWorkThumb2,
     latestWorkTitle: "Business Implement",
