@@ -1,7 +1,12 @@
 /* eslint-disable react/prop-types */
 import CountUp from "react-countup";
 
-const CounterCard = ({ counterShape,counterNumber, counterDesc, counterSuffex }) => {
+const CounterCard = ({
+  counterShape,
+  counterNumber,
+  counterDesc,
+  counterSuffex,
+}) => {
   return (
     <div className="flex items-center gap-5 sm:gap-10 relative">
       <img
