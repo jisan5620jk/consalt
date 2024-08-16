@@ -79,6 +79,7 @@
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
+
 @keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
