@@ -26,7 +26,9 @@ const BlogCard = ({
               {blogPostBy}
             </p>
             <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
-              <span className="text-PrimaryColor-0 text-[10px]">{blogDateIcon}</span>
+              <span className="text-PrimaryColor-0 text-[10px]">
+                {blogDateIcon}
+              </span>
               {blogDate}
             </p>
           </div>
