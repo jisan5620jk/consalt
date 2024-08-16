@@ -28,7 +28,9 @@ const TestimonialCard = ({
           <h5 className="font-FiraSans inline-block text-white text-xl mb-1">
             {testiName}
           </h5>
-          <p className="font-FiraSans text-[15px] font-light text-white opacity-95">{testiDesignation}</p>
+          <p className="font-FiraSans text-[15px] font-light text-white opacity-95">
+            {testiDesignation}
+          </p>
         </div>
       </div>
     </div>
