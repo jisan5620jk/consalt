@@ -63,7 +63,7 @@ const Testimonial = () => {
         <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div className="relative">
             <img src={testThumb} draggable="false" className="xl:-ml-16" />
-            <div className="sm:flex items-center gap-2 absolute right-16 bottom-2 hidden">
+            <div className="sm:flex items-center gap-2 absolute right-0 lg:right-16 bottom-2 hidden">
               <h6 className="size-[42px] rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
                 <MdOutlineStarPurple500 />
               </h6>

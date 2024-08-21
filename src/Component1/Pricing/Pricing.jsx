@@ -60,7 +60,7 @@ const Pricing = () => {
               </button>
             </Link>
           </div>
-          <div className="col-span-6 lg:col-span-7 grid sm:grid-cols-2 gap-7">
+          <div className="col-span-6 lg:col-span-7 grid md:grid-cols-2 gap-7">
             <div className="pricing-box group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
@@ -123,7 +123,7 @@ const Pricing = () => {
                 </div>
                 <div className="text-left">
                   <h6 className="pricing-title text-2xl rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
-                    Starter Plan
+                    Premium Plan
                   </h6>
                   <p className="pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4">
                     Indivisual
@@ -155,7 +155,7 @@ const Pricing = () => {
                   </h6>
                   <CountUp
                     start={-9}
-                    end={49}
+                    end={149}
                     prefix=""
                     suffix=""
                     className="pricing-price text-[46px] leading-[45px] font-FiraSans font-semibold text-PrimaryColor-0 transition-all duration-500"
