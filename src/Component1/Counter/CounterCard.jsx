@@ -18,7 +18,7 @@ const CounterCard = ({
           start={-11}
           end={counterNumber}
           suffix={counterSuffex}
-          className="font-FiraSans text-[60px] text-white font-semibold"
+          className="font-FiraSans text-3xl sm:text-4xl md:text-[60px] text-white font-semibold"
         />
       </div>
       <p className="flex-1 font-FiraSans text-[15px] text-TextColor-0 uppercase xl:mr-10">
