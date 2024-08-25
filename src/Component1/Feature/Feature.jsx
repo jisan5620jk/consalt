@@ -46,7 +46,7 @@ const featureData = [
 
 const Feature = () => {
   return (
-    <section className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 my-5 pt-28 pb-[120px] lg:pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-left lg:bg-bottom rounded-[40px] relative z-10">
+    <section className="mx-2 md:mx-5 lg:mx-2 xl:mx-5 my-5 pt-28 pb-[120px] lg:pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-left lg:bg-bottom rounded-[40px] relative z-10">
       <div className="Container relative">
         <img
           src={featureShape}
