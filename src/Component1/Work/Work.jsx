@@ -61,34 +61,32 @@ const Work = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[54px]">
-          <div>
-            {WorkData.map(
-              ({
-                id,
-                workNumber,
-                workIcon,
-                workTitle,
-                workDesc,
-                workUrl,
-                workBtn,
-              }) => {
-                return (
-                  <>
-                    <div key={id}>
-                      <WorkCard
-                        workNumber={workNumber}
-                        workIcon={workIcon}
-                        workTitle={workTitle}
-                        workDesc={workDesc}
-                        workUrl={workUrl}
-                        workBtn={workBtn}
-                      />
-                    </div>
-                  </>
-                );
-              }
-            )}
-          </div>
+          {WorkData.map(
+            ({
+              id,
+              workNumber,
+              workIcon,
+              workTitle,
+              workDesc,
+              workUrl,
+              workBtn,
+            }) => {
+              return (
+                <>
+                  <div key={id}>
+                    <WorkCard
+                      workNumber={workNumber}
+                      workIcon={workIcon}
+                      workTitle={workTitle}
+                      workDesc={workDesc}
+                      workUrl={workUrl}
+                      workBtn={workBtn}
+                    />
+                  </div>
+                </>
+              );
+            }
+          )}
         </div>
         <div className="text-center mt-9">
           <p className="font-FiraSans text-HeadingColor-0 font-medium text-sm">
