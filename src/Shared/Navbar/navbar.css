@@ -550,10 +550,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   display: none;
 }
 
-.main-menu-mobile .submenu.has-homemenu.mega-menu {
-  width: 100%;
-}
-
 .main-menu-mobile ul {
   position: static;
   display: block;
@@ -776,18 +772,19 @@ nav.main-menu-content > ul > li > a:hover > span {
   filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1399px) {
   .header-logo {
     margin: 15px 0;
   }
+}
 
+@media only screen and (max-width: 991px) {
   .header-btn {
     margin: 0;
   }
 
   .submenu.has-homemenu.mega-menu {
     width: 100%;
-    padding: 20px;
   }
 
   .homemenu-thumb a > h6 {
@@ -828,7 +825,6 @@ nav.main-menu-content > ul > li > a:hover > span {
     right: -1px;
   }
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   nav.main-menu-content > ul > li > a {
