@@ -6,14 +6,14 @@ import { FaEnvelopeOpen } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="mx-2 md:mx-5 lg:mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 bg-no-repeat bg-center bg-cover relative">
+    <section className="mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 bg-no-repeat bg-center bg-cover relative">
       <div className="Container">
         <h1 className="font-FiraSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
           Perform Market Research to gain <br /> Insights into Industry Trends
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
           <div className="relative z-10">
-            <img src={aboutThumb} draggable="false" />
+            <img src={aboutThumb} draggable="false" className="w-full 2xl:w-[inherit]"/>
             <div className="absolute top-0 right-0 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
               <div className="text-inner size-14 sm:size-24 lg:size-20 xl:size-24 animate-rotational relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:size-[15px] before:rounded-full before:bg-white">
                 <svg

@@ -36,14 +36,14 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className="mx-2 md:mx-5 lg:mx-2 xl:mx-5 relative overflow-hidden py-28 bg-BodyBg2-0 rounded-b-[40px]">
+    <section className="mx-2 xl:mx-5 relative overflow-hidden pt-[160px] pb-[120px] bg-BodyBg2-0 rounded-b-[40px]">
       <div className="Container">
-        <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12 items-center">
+        <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12">
           <div className="col-span-6 lg:col-span-5 w-full mx-auto mr-10">
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               PRICING PLANS
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] xl:text-[42px] xl:leading-[52px]">
+            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-4xl sm:leading-[46px] md:text-[42px] md:leading-[52px] lg:text-[32px] lg:leading-[42px] xl:text-[42px] xl:leading-[52px]">
               Pricing the Comfotable
               <br />
               Pricing Plans for your
@@ -60,14 +60,14 @@ const Pricing = () => {
               </button>
             </Link>
           </div>
-          <div className="col-span-6 lg:col-span-7 grid md:grid-cols-2 gap-7">
+          <div className="col-span-6 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:items-start gap-7">
             <div className="pricing-box group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
                   <img src={pricingIcon} />
                 </div>
                 <div className="text-left">
-                  <h6 className="pricing-title text-2xl rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
+                  <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
                     Starter Plan
                   </h6>
                   <p className="pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4">
@@ -116,13 +116,13 @@ const Pricing = () => {
                 </button>
               </Link>
             </div>
-            <div className="pricing-box active group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
+            <div className="lg:-mt-10 pricing-box active group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
                   <img src={pricingIcon} />
                 </div>
                 <div className="text-left">
-                  <h6 className="pricing-title text-2xl rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
+                  <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
                     Premium Plan
                   </h6>
                   <p className="pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4">

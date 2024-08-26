@@ -3,7 +3,6 @@ import workIcon from "/images/steps_1.png";
 import workIcon2 from "/images/steps_2.png";
 import workIcon3 from "/images/steps_3.png";
 import WorkCard from "./WorkCard";
-import { PiStarFourFill } from "react-icons/pi";
 import { LuMoveRight } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
@@ -42,7 +41,7 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className="mx-2 md:mx-5 lg:mx-2 xl:mx-5 rounded-t-[40px] pt-28 pb-[120px] bg-BodyBg-0 relative z-10">
+    <section className="mx-2 xl:mx-5 rounded-t-[40px] pt-28 pb-[120px] bg-BodyBg-0 relative z-10">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">

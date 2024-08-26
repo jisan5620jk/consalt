@@ -62,7 +62,7 @@ const TeamMember = () => {
             without robust
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-[50px] mt-[58px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-8 mt-[58px]">
           {teamData.map(
             ({
               id,

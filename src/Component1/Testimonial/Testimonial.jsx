@@ -58,16 +58,16 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-2 sm:mx-5 lg:mx-2 xl:mx-5 relative z-10 overflow-hidden">
+    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-2 xl:mx-5 relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 gap-10 2xl:gap-0 lg:grid-cols-2 lg:items-center">
           <div className="relative">
-            <img src={testThumb} draggable="false" className="xl:-ml-16" />
-            <div className="sm:flex items-center gap-2 absolute right-0 lg:right-16 bottom-2 hidden">
-              <h6 className="size-[42px] rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
+            <img src={testThumb} draggable="false" className="2xl:-ml-[16rem] 2xl:max-w-[inherit]" />
+            <div className="sm:flex items-center gap-2 absolute right-0 2xl:right-20 bottom-2 hidden">
+              <h6 className="size-[42px] lg:size-7 xl:size-8 2xl:size-[42px] lg:text-base xl:text-lg 2xl:text-xl rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
                 <MdOutlineStarPurple500 />
               </h6>
-              <p className="font-FiraSans font-medium text-[22px] text-white">
+              <p className="font-FiraSans font-medium text-[22px] lg:text-base xl:text-lg 2xl:text-[22px] text-white">
                 Avg Ratings 4.9
               </p>
             </div>

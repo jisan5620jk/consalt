@@ -10,7 +10,7 @@ const WorkCard = ({
   workBtn,
 }) => {
   return (
-    <div className="group px-[38px] pt-10 pb-7 rounded-l-lg relative z-10 overflow-hidden bg-[url(/images/steps_bg.png)] bg-cover bg-right bg-no-repeat">
+    <div className="group px-[38px] lg:px-6 xl:px-[38px] pt-10 pb-7 rounded-l-lg relative z-10 overflow-hidden bg-[url(/images/steps_bg.png)] bg-cover bg-right sm:bg-top md:bg-right bg-no-repeat">
       <div className="absolute top-1 right-7">
         <h6 className="font-FiraSans text-PrimaryColor-0 text-lg relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-9 before:bg-PrimaryColor-0 before:w-8 before:h-[1px]">
           {workNumber}

@@ -50,6 +50,14 @@ const LatestWorkData = [
     latestWorkUrl: "/project_details",
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
+  {
+    id: 6,
+    latestWorkThumb: latestWorkThumb,
+    latestWorkTitle: "Business Implement",
+    latestWorkDesc: "Technology",
+    latestWorkUrl: "/project_details",
+    latestWorkBtn: <HiMiniArrowUpRight />,
+  },
 ];
 
 const LatestWork = () => {
@@ -76,7 +84,7 @@ const LatestWork = () => {
     },
   };
   return (
-    <section className="latest-work px-2 md:px-5 lg:px-0 relative z-10 pt-28 pb-[120px]">
+    <section className="latest-work px-2 lg:px-0 relative z-10 pt-28 pb-[120px]">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
