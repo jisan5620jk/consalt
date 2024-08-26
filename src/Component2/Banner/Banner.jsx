@@ -1,49 +1,70 @@
 import { Link } from "react-router-dom";
-import bannerImg from "/images/hero-thumb.png";
-import bannerShape from "/images/hero-shape2.png";
-import { BiRightTopArrowCircle } from "react-icons/bi";
+import bannerThumb from "/images/hero_thumb_2.png";
+import bannerShape from "/images/hero_dot_shape.png";
+import bannerShape2 from "/images/hero_shape1.png";
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { LuPlaySquare } from "react-icons/lu";
+import { FaRegThumbsUp } from "react-icons/fa";
 
 const Banner = () => {
+  const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] lg:h-[660px] xl:h-[800px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/banner_2.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[600px] xl:h-[780px] 2xl:h-[900px] flex items-center relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-[100px]">
+        <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
           <div className="relative">
-            <h5 className="font-FiraSans text-white text-[19px] font-medium flex items-center gap-2 mb-4">
-              IT SOLUTION AGENCY IN USA
-            </h5>
-            <h1 className="font-FiraSans font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[69px] 2xl:leading-[79px]">
-              Unlocking Innovation
+            <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
+              Digital Finance Const.
               <br />
-              With IT Expertise
+              Growing Business
             </h1>
-            <p className="font-FiraSans sm:text-lg text-TextColor-0 mb-[46px] mt-1">
-              Professionally optimize interdependent intellectual interoperable{" "}
-              <br className="hidden 2xl:block" /> connect best practices.
-              Progressively fabricate done
+            <p className="font-FiraSans text-TextColor-0 mb-[38px] mt-[22px]">
+              Continually plagiarize virtual web services with home{" "}
+              <br className="hidden lg:block xl:hidden" /> two{" "}
+              <br className="hidden xl:block 2xl:hidden" />
+              maximizing <br className="hidden 2xl:block" /> action items.
+              Globally build front-end
             </p>
-            <div className="flex flex-col sm:flex-row gap-5">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-8">
               <Link to={"/contact"}>
                 <button className="primary-btn2">
-                  {`Let's Talk`}
-                  <BiRightTopArrowCircle size={"20"} />
+                  <FaRegThumbsUp />
+                  {`Get Started now`}
                 </button>
               </Link>
-              <Link to={"/about"}>
-                <button className="primary-btn2 !border-[#262664] hover:!border-PrimaryColor-0 !bg-[#262664] before:!bg-PrimaryColor-0">{`Read More`}</button>
-              </Link>
+              <div>
+                <button
+                  className="flex items-center gap-3 text-white font-FiraSans font-medium"
+                  onClick={() => setToggler(!toggler)}
+                >
+                  <LuPlaySquare size={"24"} className="text-white" />
+                  How It Works
+                </button>
+                <FsLightbox
+                  toggler={toggler}
+                  sources={[
+                    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                  ]}
+                />
+              </div>
             </div>
+            <img src={bannerShape2} draggable="false" className="absolute bottom-0 right-14 animate-zoomInOut" />
           </div>
-          <div className="flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative z-10">
-            <img src={bannerImg} draggable="false" className="w-[inherit]" />
+          <div className="md:flex justify-end hidden">
             <img
-              src={bannerShape}
-              draggable={false}
-              className="absolute -z-10 top-40 right-0 md:right-10 lg:-right-10 2xl:-right-[4rem] animate-dance3 hidden block"
+              src={bannerThumb}
+              draggable="false"
+              className="relative top-[72px] 2xl:max-w-[inherit] "
             />
           </div>
         </div>
       </div>
+      <img
+        src={bannerShape}
+        draggable={false}
+        className="absolute top-52 2xl:top-[200px] left-[40%] md:left-3/4 lg:left-[40%] -translate-x-1/2 animate-wiggle hidden sm:block"
+      />
     </section>
   );
 };

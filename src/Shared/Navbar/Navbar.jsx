@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 import Logo from "/images/logo.png";
 import homeOne from "/images/home-one.jpg";
-import homeTwo from "/images/home-two.jpg";
-import homeThree from "/images/home-three.jpg";
+import homeTwo from "/images/home-three.jpg";
+import homeThree from "/images/home-two.jpg";
 import "./navbar.css";
 import { useEffect, useState, useRef } from "react";
 import {
@@ -220,7 +220,7 @@ const Navbar = () => {
                           </div>{" "}
                           <div className="homemenu">
                             <div className="homemenu-thumb">
-                              <Link to={"/"}>
+                              <Link to={"/home2"}>
                                 <img src={homeTwo} />
                                 <h6>Live Demo</h6>
                               </Link>
