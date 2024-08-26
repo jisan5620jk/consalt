@@ -39,11 +39,11 @@
 .menu-bar:hover span:nth-child(1),
 .menu-bar:hover span:nth-child(2),
 .menu-bar:hover span:nth-child(3) {
-  width: 24px;
+  width: 22px;
 }
 
 .menu-bar span:nth-child(3) {
-  width: 10px;
+  width: 20px;
 }
 
 .menu-bar span:nth-child(2) {
@@ -51,7 +51,7 @@
 }
 
 .menu-bar span:nth-child(1) {
-  width: 24px;
+  width: 22px;
 }
 
 .offcanvas {
@@ -857,4 +857,325 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-area.style-two .main-menu-mobile ul li > a {
   color: #ffffff !important;
+}
+
+
+/* Header Sidebar */
+
+/* Offcanvas */
+.body-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.45s ease-in-out;
+}
+
+.body-overlay2.apply {
+  opacity: 1;
+  visibility: visible;
+}
+
+.body-overlay2:hover {
+  cursor: url(/public/images/cross.png), pointer;
+}
+
+.menu-sidebar {
+  transform: rotate(-180deg);
+  position: relative;
+  top: 5px;
+}
+
+.menu-sidebar span {
+  display: block;
+  height: 2px;
+  background: #ffffff;
+  margin: 5px;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+}
+
+.menu-sidebar:hover span:nth-child(1),
+.menu-sidebar:hover span:nth-child(2),
+.menu-sidebar:hover span:nth-child(3) {
+  width: 22px;
+}
+
+.menu-sidebar span:nth-child(3) {
+  width: 20px;
+}
+
+.menu-sidebar span:nth-child(2) {
+  width: 16px;
+}
+
+.menu-sidebar span:nth-child(1) {
+  width: 22px;
+}
+
+.sidebar {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 380px;
+  bottom: 0;
+  box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
+  background-color: #053131;
+  z-index: 99;
+  padding: 36px;
+  scrollbar-width: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.45s ease-in-out;
+  overflow-y: scroll;
+}
+
+.sidebar.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 300px;
+    padding: 30px 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .sidebar {
+    width: 400px;
+    padding: 25px;
+  }
+}
+
+.sidebar.opened {
+  right: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-duration: 0.6s;
+}
+
+.sidebar_title p {
+  font-size: 16px;
+  color: #a3b7b7;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .sidebar_title p {
+    font-size: 15px;
+  }
+}
+
+.sidebar_contact-title h5 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.sidebar_contact-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_contact-info ul li a {
+  color: #ffffff;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.sidebar_contact-info ul li i {
+  color: #0c6e6d;
+}
+
+.sidebar_input-title h4 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.sidebar_input {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sidebar_input input {
+  background: transparent;
+  border: 1px solid #ffffff1a;
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 80px;
+  color: #ffffff;
+}
+
+.sidebar_input button {
+  height: 60px;
+  width: 60px;
+  background-color: #0c6e6d;
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.sidebar_input input::placeholder {
+  color: #ffffff57;
+}
+
+.sidebar_contact-info {
+  margin-bottom: 50px;
+}
+
+.sidebar_contact-info ul li {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar_contact-info ul li {
+    font-size: 14px;
+  }
+}
+
+.sidebar_contact-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar_contact-info ul li a {
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.sidebar_contact-info ul li a:hover {
+  color: #0c6e6d;
+}
+
+.sidebar_logo {
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar_logo {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px),
+  only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar_logo {
+    padding-top: 0;
+  }
+}
+
+.sidebar_close-btn button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transition: 1s;
+  -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-duration: 0.3s;
+  height: 40px;
+  width: 40px;
+  line-height: 43px;
+  background-color: #0c6e6d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.sidebar_close-btn button:hover svg {
+  transform: rotate(360deg);
+}
+
+.sidebar_close-btn button i {
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.9s;
+}
+
+.sidebar_social {
+  margin-top: 30px;
+}
+
+.sidebar_social .social-icon {
+  display: flex;
+  align-items: center;
+  gap: 3;
+}
+
+.sidebar_social .social-icon a {
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(251, 251, 253, 0.08);
+  color: #ffffff;
+  margin-right: 15px;
+  transition: 0.3s;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar_social .social-icon a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #0c6e6d;
+  transition: 0.5s;
+  transform: scale(0);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .sidebar_social .social-icon a {
+    margin-right: 3px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+  }
+}
+
+.sidebar_social .social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.sidebar_social .social-icon a:hover {
+  color: #ffffff;
 }

@@ -469,8 +469,8 @@ const Navbar2 = () => {
                     <LuMoveRight size={"19"} />
                   </Link>
                 </div>
-                <div className="header-sidebar lg:hidden">
-                  <button ref={menuSideBarRef} className="menu-bar">
+                <div className="header-sidebar hidden lg:block">
+                  <button ref={menuSideBarRef} className="menu-sidebar">
                     <span></span>
                     <span></span>
                     <span></span>
