@@ -1,18 +1,80 @@
 import { Link } from "react-router-dom";
 import footerLogo from "/images/logo.png";
-import { FaAnglesRight, FaPhone } from "react-icons/fa6";
-import { MdLocationPin } from "react-icons/md";
-import { HiOutlineMailOpen } from "react-icons/hi";
+import footerImg from "/images/footer_1.png";
+import footerImg2 from "/images/footer_2.png";
+import { FaAnglesRight, FaCircle, FaInstagram, FaLinkedinIn, FaRegEnvelope, FaXTwitter } from "react-icons/fa6";
+import { ImFacebook2 } from "react-icons/im";
+import { IoIosSend } from "react-icons/io";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-BodyBg2-0 relative z-10 pt-28 overflow-hidden">
+    <footer className="bg-BodyBg2-0 relative z-10 overflow-hidden">
+      <div className="bg-PrimaryColor-0 py-9 mb-[88px]">
+        <div className="Container">
+          <div className="grid items-center grid-cols-3">
+            <div className="flex items-center gap-5">
+              <div className="size-[60px] bg-BorderColor2-0 rounded-full flex items-center justify-center text-white">
+                <FaRegEnvelope size={"22"} />
+              </div>
+              <div>
+                <h6 className="font-FiraSans text-[15px] text-white">
+                  Say Hello
+                </h6>
+                <Link to={"/"}>
+                  <button className="font-FiraSans text-xl text-white font-medium">
+                    example@gmail.com
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-center border-x-2 border-BorderColor2-0 py-2">
+              <img src={footerLogo} draggable="false" />
+            </div>
+            <div className="flex justify-end">
+              <ul className="flex gap-3 items-center">
+                <li>
+                  <Link
+                    to={"/"}
+                    className="size-[48px] flex justify-center items-center rounded-full bg-BorderColor2-0 transition-all duration-500 text-white hover:text-PrimaryColor-0 relative z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-white after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
+                  >
+                    <ImFacebook2 size={"15"} />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/"}
+                    className="size-[48px] flex justify-center items-center rounded-full bg-BorderColor2-0 transition-all duration-500 text-white hover:text-PrimaryColor-0 relative z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-white after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
+                  >
+                    <FaXTwitter />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/"}
+                    className="size-[48px] flex justify-center items-center rounded-full bg-BorderColor2-0 transition-all duration-500 text-white hover:text-PrimaryColor-0 relative z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-white after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
+                  >
+                    <FaLinkedinIn />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/"}
+                    className="size-[48px] flex justify-center items-center rounded-full bg-BorderColor2-0 transition-all duration-500 text-white hover:text-PrimaryColor-0 relative z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-white after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
+                  >
+                    <FaInstagram />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            <Link to={"/"}>
-              <img src={footerLogo} draggable={false} />
-            </Link>
+            <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
+              About Us
+            </h4>
             <p className="font-FiraSans text-[15px] text-TextColor-0 opacity-80 mt-7 mb-6">
               Continually plagiarize virtual web service{" "}
               <br className="hidden lg:block xl:hidden" /> pro{" "}
@@ -32,9 +94,9 @@ const Footer2 = () => {
               <div className="absolute top-3 right-0">
                 <button
                   type="submit"
-                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-6 py-[6px] text-sm text-white font-FiraSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 size-9 text-white font-FiraSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
                 >
-                  Subscribe
+                  <IoIosSend size={"20"} />
                 </button>
               </div>
             </form>
@@ -135,45 +197,43 @@ const Footer2 = () => {
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
             <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
-              Contact
+              Latest Blog
             </h4>
-            <div className="flex gap-3 pt-1 border-b border-dashed border-BorderColor2-0 pb-3">
-              <div className="size-[26px] rounded-full bg-PrimaryColor-0 text-white flex items-center justify-center">
-                <MdLocationPin />
-              </div>
+            <div className="flex gap-5 pt-1 mb-6">
+              <Link to={"/"} className="">
+                <img src={footerImg} draggable="false" />
+              </Link>
               <div className="flex-1 -mt-1">
-                <h6 className="font-FiraSans text-[15px] text-white">
-                  Our address:
-                </h6>
-                <p className="font-FiraSans text-[15px] text-TextColor-0">
-                  Old Westbury 256, New York 11201,{" "}
-                  <br className="hidden 2xl:block" /> United States
+                <Link to={"/"}>
+                  <button className="font-FiraSans text-left text-white">
+                    Sustainability Consulting for Business Planning
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
+                  <FaCircle size={"8"} className="text-PrimaryColor-0"/>
+                  Nov 12, 2024
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3 pb-3 pt-5">
-              <div className="size-[26px] rounded-full bg-PrimaryColor-0 text-white flex items-center justify-center">
-                <FaPhone size={"12"} />
-              </div>
-              <Link to={"/"} className="flex-1">
-                <button className="font-FiraSans text-[15px] text-white">
-                  +880 123 (4567) 890
-                </button>
+            <div className="flex gap-5 pt-1">
+              <Link to={"/"} className="">
+                <img src={footerImg2} draggable="false" />
               </Link>
-            </div>
-            <div className="flex items-center gap-3 pt-1">
-              <div className="size-[26px] rounded-full bg-PrimaryColor-0 text-white flex items-center justify-center">
-                <HiOutlineMailOpen size={"15"} />
+              <div className="flex-1 -mt-1">
+                <Link to={"/"}>
+                  <button className="font-FiraSans text-left text-white">
+                    Globally Services for IT Solution Planning
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
+                  <FaCircle size={"8"} className="text-PrimaryColor-0"/>
+                  Nov 24, 2024
+                </p>
               </div>
-              <Link to={"/"} className="flex-1">
-                <button className="font-FiraSans text-[15px] text-white">
-                  example@gmail.com
-                </button>
-              </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-8 mt-[108px] border-t border-BorderColor2-0">
+        <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-8 mt-[94px] border-t border-BorderColor2-0">
           <div>
             <p className="font-FiraSans text-[15px] flex items-center text-white">
               Copyright &copy; 2024 Consalt. Designed & Developed by Dream-IT

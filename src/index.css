@@ -305,7 +305,50 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(1);
 }
 
-/* Pricing */
+.pricing-box2.active::before {
+  height: 100%;
+}
+
+.pricing-box2.active .pricing-icon::before {
+  transform: scale(1);
+}
+
+.pricing-box2.active .pricing-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.pricing-box2.active .pricing-btn ,
+.pricing-box2.active .pricing-title {
+  color: #fff;
+  border-color: #119695;
+}
+
+.pricing-box2.active .pricing-desc ,
+.pricing-box2.active .pricing-list {
+  color: #a3b7b7;
+  border-color: #ffffff33;
+}
+
+.pricing-box2.active .pricing-list img {
+  filter: brightness(0) invert(1);
+}
+
+.pricing-box2.active .pricing-price{
+  color: #fff;
+}
+
+
+.pricing-box2.active .pricing-price-date{
+  color: #a3b7b7;
+}
+
+
+
+.pricing-box2.active .pricing-btn::before {
+  transform: scale(1);
+}
+
+/* Why Choose */
 
 .choose-box.active::before,
 .choose-box:hover::before {

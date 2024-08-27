@@ -57,37 +57,36 @@ const BlogData = [
   },
 ];
 
-const settings = {
-  loop: true,
-  spaceBetween: 30,
-  speed: 1000,
-  centeredSlides: true,
-  initialSlide: 1,
-  autoplay: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-    1400: {
-      slidesPerView: 3,
-    },
-  },
-};
-
-const pagination = {
-  clickable: true,
-  renderBullet: function (index, className) {
-    return '<span class="' + className + ' pagination-bullet"></span>';
-  },
-};
-
 const Blog = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    centeredSlides: true,
+    initialSlide: 1,
+    autoplay: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  };
+
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
     <section className="py-28 blog">
       <div className="Container">

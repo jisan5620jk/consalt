@@ -3,8 +3,13 @@ import serviceThumb from "/images/service_3.png";
 import serviceThumb2 from "/images/service_4.png";
 import serviceIcon from "/images/service_icon1.png";
 import serviceIcon2 from "/images/service_icon2.png";
+import serviceShape from "/images/service_shpe1.png";
+import serviceShape2 from "/images/service_shape2.png";
 import ServiceCard from "./ServiceCard";
 import { GoArrowUpRight } from "react-icons/go";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import ServiceNavigation from "./ServiceNavigation";
 
 const ServiceData = [
   {
@@ -17,7 +22,8 @@ const ServiceData = [
     btnContent: "View Details",
     btnIcon: <GoArrowUpRight />,
     serviceThumb: serviceThumb,
-  },  {
+  },
+  {
     id: 2,
     serviceIcon: serviceIcon2,
     serviceSubTitle: "Finance",
@@ -27,7 +33,8 @@ const ServiceData = [
     btnContent: "View Details",
     btnIcon: <GoArrowUpRight />,
     serviceThumb: serviceThumb2,
-  },{
+  },
+  {
     id: 3,
     serviceIcon: serviceIcon,
     serviceSubTitle: "Finance",
@@ -37,7 +44,8 @@ const ServiceData = [
     btnContent: "View Details",
     btnIcon: <GoArrowUpRight />,
     serviceThumb: serviceThumb,
-  },{
+  },
+  {
     id: 4,
     serviceIcon: serviceIcon2,
     serviceSubTitle: "Finance",
@@ -51,10 +59,42 @@ const ServiceData = [
 ];
 
 const Service = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    initialSlide: 1,
+    autoplay: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 2.5,
+      },
+    },
+  };
+
   return (
-    <section className="relative pt-28 pb-[120px] bg-BodyBg4-0">
+    <section className="relative z-10 pt-28 pb-[120px] bg-BodyBg4-0">
+      <div className="absolute -z-10 top-40 left-0 hidden 2xl:block">
+        <div className="relative animate-wiggle">
+          <img src={serviceShape2} draggable="false" />
+          <img
+            src={serviceShape}
+            draggable="false"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-rotational"
+          />
+        </div>
+      </div>
       <div className="Container">
-        <div>
+        <div className="-mb-[120px]">
           <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
             SERVICES WE PROVIDE
           </h5>
@@ -63,37 +103,40 @@ const Service = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] mt-[54px] ml-0 lg:ml-7 xl:ml-[46px] 2xl:ml-[314px]">
-        {ServiceData.map(
-          ({
-            id,
-            serviceIcon,
-            serviceSubTitle,
-            serviceTitle,
-            serviceDesc,
-            btnContent,
-            serviceUrl,
-            btnIcon,
-            serviceThumb,
-          }) => {
-            return (
-              <>
-                <div key={id}>
-                  <ServiceCard
-                    serviceIcon={serviceIcon}
-                    serviceSubTilte={serviceSubTitle}
-                    serviceTitle={serviceTitle}
-                    serviceDesc={serviceDesc}
-                    btnContent={btnContent}
-                    serviceUrl={serviceUrl}
-                    btnIcon={btnIcon}
-                    serviceThumb={serviceThumb}
-                  />
-                </div>
-              </>
-            );
-          }
-        )}
+      <div className="ml-0 lg:ml-7 xl:ml-[46px] 2xl:ml-[314px]">
+        <Swiper {...settings}>
+          {ServiceData.map(
+            ({
+              id,
+              serviceIcon,
+              serviceSubTitle,
+              serviceTitle,
+              serviceDesc,
+              btnContent,
+              serviceUrl,
+              btnIcon,
+              serviceThumb,
+            }) => {
+              return (
+                <>
+                  <SwiperSlide key={id} className="pt-[150px]">
+                    <ServiceCard
+                      serviceIcon={serviceIcon}
+                      serviceSubTilte={serviceSubTitle}
+                      serviceTitle={serviceTitle}
+                      serviceDesc={serviceDesc}
+                      btnContent={btnContent}
+                      serviceUrl={serviceUrl}
+                      btnIcon={btnIcon}
+                      serviceThumb={serviceThumb}
+                    />
+                  </SwiperSlide>
+                </>
+              );
+            }
+          )}
+          <ServiceNavigation />
+        </Swiper>
       </div>
     </section>
   );

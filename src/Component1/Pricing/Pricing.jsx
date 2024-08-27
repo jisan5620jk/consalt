@@ -3,6 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import CountUp from "react-countup";
 import { useEffect } from "react";
 import pricingIcon from "/images/price_icon_01.png";
+import pricingIcon2 from "/images/price_icon_02.png";
 import icon from "/images/icon.png";
 
 const Pricing = () => {
@@ -64,7 +65,7 @@ const Pricing = () => {
             <div className="pricing-box group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
-                  <img src={pricingIcon} />
+                  <img src={pricingIcon} draggable="false" />
                 </div>
                 <div className="text-left">
                   <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
@@ -77,23 +78,23 @@ const Pricing = () => {
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   Unlimited Websites
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   10+ Paid Plugin
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   Woocommerce Support
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   50+ WP theme
                 </li>
               </ul>
-              <div className="flex items-end gap-1 border-b border-BorderColor2-0 pb-5">
+              <div className="flex items-end gap-1 pb-5">
                 <div className="flex gap-1">
                   <h6 className="pricing-price transition-all duration-500 font-FiraSans font-semibold text-2xl text-PrimaryColor-0">
                     $
@@ -119,7 +120,7 @@ const Pricing = () => {
             <div className="lg:-mt-10 pricing-box active group text-center bg-[url(/images/price-bg1.png)] bg-no-repeat bg-cover bg-top rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-[url(/images/pricing-hover.png)] before:bg-cover before:bg-no-repeat before:bg-top before:rounded-md before:transition-all before:duration-500 hover:before:h-full">
               <div className="flex items-center gap-4">
                 <div className="pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center">
-                  <img src={pricingIcon} />
+                  <img src={pricingIcon2} draggable="false" />
                 </div>
                 <div className="text-left">
                   <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
@@ -132,23 +133,23 @@ const Pricing = () => {
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   Unlimited Websites
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   10+ Paid Plugin
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   Woocommerce Support
                 </li>
                 <li className="pricing-list flex items-center gap-2 font-FiraSans text-TextColor2-0 transition-all duration-500 border-b border-dashed border-[#1717173d] pb-3">
-                  <img src={icon} />
+                  <img src={icon} draggable="false" />
                   50+ WP theme
                 </li>
               </ul>
-              <div className="flex items-end gap-1 border-b border-BorderColor2-0 pb-5">
+              <div className="flex items-end gap-1 pb-5">
                 <div className="flex gap-1">
                   <h6 className="pricing-price transition-all duration-500 font-FiraSans font-semibold text-2xl text-PrimaryColor-0">
                     $

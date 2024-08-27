@@ -21,8 +21,7 @@ const Banner = () => {
               Growing Business
             </h1>
             <p className="font-FiraSans text-TextColor-0 mb-[38px] mt-[22px]">
-              Continually plagiarize virtual web services with home{" "}
-              <br className="hidden lg:block xl:hidden" /> two{" "}
+              Continually plagiarize virtual web services with resource{" "}
               <br className="hidden xl:block 2xl:hidden" />
               maximizing <br className="hidden 2xl:block" /> action items.
               Globally build front-end
