@@ -2,7 +2,14 @@ import { Link } from "react-router-dom";
 import footerLogo from "/images/logo.png";
 import footerImg from "/images/footer_1.png";
 import footerImg2 from "/images/footer_2.png";
-import { FaAnglesRight, FaCircle, FaInstagram, FaLinkedinIn, FaRegEnvelope, FaXTwitter } from "react-icons/fa6";
+import {
+  FaAnglesRight,
+  FaCircle,
+  FaInstagram,
+  FaLinkedinIn,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { IoIosSend } from "react-icons/io";
 
@@ -210,7 +217,7 @@ const Footer2 = () => {
                   </button>
                 </Link>
                 <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
-                  <FaCircle size={"8"} className="text-PrimaryColor-0"/>
+                  <FaCircle size={"8"} className="text-PrimaryColor-0" />
                   Nov 12, 2024
                 </p>
               </div>
@@ -226,7 +233,7 @@ const Footer2 = () => {
                   </button>
                 </Link>
                 <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
-                  <FaCircle size={"8"} className="text-PrimaryColor-0"/>
+                  <FaCircle size={"8"} className="text-PrimaryColor-0" />
                   Nov 24, 2024
                 </p>
               </div>
