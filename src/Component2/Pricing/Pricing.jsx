@@ -58,11 +58,11 @@ const Pricing = () => {
             </p>
             <ul className="flex items-center gap-10 2xl:gap-14 mb-9">
               <li className="flex items-center gap-2 text-HeadingColor-0 font-FiraSans font-medium">
-                <GiCheckMark className="text-PrimaryColor-0"/>
+                <GiCheckMark className="text-PrimaryColor-0" />
                 Moneyback Gaurantee
               </li>
               <li className="flex items-center gap-2 text-HeadingColor-0 font-FiraSans font-medium">
-                <GiCheckMark className="text-PrimaryColor-0"/>
+                <GiCheckMark className="text-PrimaryColor-0" />
                 Moneyback Gaurantee
               </li>
             </ul>

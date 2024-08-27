@@ -49,7 +49,11 @@ const Banner = () => {
                 />
               </div>
             </div>
-            <img src={bannerShape2} draggable="false" className="absolute bottom-0 right-14 animate-zoomInOut" />
+            <img
+              src={bannerShape2}
+              draggable="false"
+              className="absolute bottom-0 right-14 animate-zoomInOut"
+            />
           </div>
           <div className="md:flex justify-end hidden">
             <img
@@ -64,11 +68,13 @@ const Banner = () => {
         src={bannerShape}
         draggable={false}
         className="absolute -z-10 top-52 2xl:top-[200px] left-[40%] md:left-3/4 lg:left-[40%] -translate-x-1/2 animate-wiggle hidden sm:block"
-      /><img
+      />
+      <img
         src={bannerShape2}
         draggable={false}
         className="absolute -z-10 top-52 2xl:top-[200px] left-[90%] md:left-3/4 lg:left-[90%] -translate-x-1/2 animate-wiggle hidden sm:block"
-      /><img
+      />
+      <img
         src={bannerShape3}
         draggable={false}
         className="absolute -z-10 top-1/2 left-0  -translate-x-1/2 animate-dance2 hidden sm:block"
