@@ -6,7 +6,7 @@ import { FaEnvelopeOpen } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 bg-no-repeat bg-center bg-cover relative">
+    <section className="mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 relative">
       <div className="Container">
         <h1 className="font-FiraSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
           Perform Market Research to gain <br /> Insights into Industry Trends

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import bannerThumb from "/images/hero_thumb_2.png";
 import bannerShape from "/images/hero_dot_shape.png";
 import bannerShape2 from "/images/hero_shape1.png";
+import bannerShape3 from "/images/hero_shape2.png";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { LuPlaySquare } from "react-icons/lu";
@@ -63,7 +64,15 @@ const Banner = () => {
       <img
         src={bannerShape}
         draggable={false}
-        className="absolute top-52 2xl:top-[200px] left-[40%] md:left-3/4 lg:left-[40%] -translate-x-1/2 animate-wiggle hidden sm:block"
+        className="absolute -z-10 top-52 2xl:top-[200px] left-[40%] md:left-3/4 lg:left-[40%] -translate-x-1/2 animate-wiggle hidden sm:block"
+      /><img
+        src={bannerShape2}
+        draggable={false}
+        className="absolute -z-10 top-52 2xl:top-[200px] left-[90%] md:left-3/4 lg:left-[90%] -translate-x-1/2 animate-wiggle hidden sm:block"
+      /><img
+        src={bannerShape3}
+        draggable={false}
+        className="absolute -z-10 top-1/2 left-0  -translate-x-1/2 animate-dance2 hidden sm:block"
       />
     </section>
   );

@@ -1,86 +1,99 @@
 /* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service-icon-1.png";
-import serviceIcon2 from "/images/service-icon-2.png";
-import serviceIcon3 from "/images/service-icon-3.png";
-import serviceIcon4 from "/images/service-icon-4.png";
-import serviceIcon5 from "/images/service-icon-5.png";
-import serviceIcon6 from "/images/service-icon-6.png";
+import serviceThumb from "/images/service_3.png";
+import serviceThumb2 from "/images/service_4.png";
+import serviceIcon from "/images/service_icon1.png";
+import serviceIcon2 from "/images/service_icon2.png";
 import ServiceCard from "./ServiceCard";
-import { HiMiniArrowLongRight } from "react-icons/hi2";
+import { GoArrowUpRight } from "react-icons/go";
 
 const ServiceData = [
   {
     id: 1,
     serviceIcon: serviceIcon,
-    serviceTitle: "3D Animation Design",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
-  },
-  {
+    serviceSubTitle: "Finance",
+    serviceTitle: "Investment Idea",
+    serviceDesc: "Business visualize strategic informatic beanchmark",
+    serviceUrl: "/service_details",
+    btnContent: "View Details",
+    btnIcon: <GoArrowUpRight />,
+    serviceThumb: serviceThumb,
+  },  {
     id: 2,
     serviceIcon: serviceIcon2,
-    serviceTitle: "Web Development",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
-  },
-  {
+    serviceSubTitle: "Finance",
+    serviceTitle: "Investment Idea",
+    serviceDesc: "Business visualize strategic informatic beanchmark",
+    serviceUrl: "/service_details",
+    btnContent: "View Details",
+    btnIcon: <GoArrowUpRight />,
+    serviceThumb: serviceThumb2,
+  },{
     id: 3,
-    serviceIcon: serviceIcon3,
-    serviceTitle: "Digital Marketing",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
-  },
-  {
+    serviceIcon: serviceIcon,
+    serviceSubTitle: "Finance",
+    serviceTitle: "Investment Idea",
+    serviceDesc: "Business visualize strategic informatic beanchmark",
+    serviceUrl: "/service_details",
+    btnContent: "View Details",
+    btnIcon: <GoArrowUpRight />,
+    serviceThumb: serviceThumb,
+  },{
     id: 4,
-    serviceIcon: serviceIcon4,
-    serviceTitle: "VFX And Video Editing",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
-  },
-  {
-    id: 5,
-    serviceIcon: serviceIcon5,
-    serviceTitle: "Video Editing",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
-  },
-  {
-    id: 6,
-    serviceIcon: serviceIcon6,
-    serviceTitle: "Google Top Ranking",
-    serviceDesc:
-      "Monotonectally synergize grants to business visualize strategic infomediaries main issue state infrastructure done",
+    serviceIcon: serviceIcon2,
+    serviceSubTitle: "Finance",
+    serviceTitle: "Investment Idea",
+    serviceDesc: "Business visualize strategic informatic beanchmark",
+    serviceUrl: "/service_details",
+    btnContent: "View Details",
+    btnIcon: <GoArrowUpRight />,
+    serviceThumb: serviceThumb2,
   },
 ];
 
 const Service = () => {
   return (
-    <section className="relative pt-28 pb-[120px] bg-BodyBg-0">
+    <section className="relative pt-28 pb-[120px] bg-BodyBg4-0">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-            What we Provides?
+        <div>
+          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            SERVICES WE PROVIDE
           </h5>
-          <h1 className="font-FiraSans font-bold text-[20px] leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
-            Provide Interective IT Solution <br />
-            Business Services
+          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            Individuals offer Professional <br /> Services we Provide
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[54px]">
-          {ServiceData.map(({ id, serviceIcon, serviceTitle, serviceDesc }) => {
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] mt-[54px] ml-0 lg:ml-7 xl:ml-[46px] 2xl:ml-[314px]">
+        {ServiceData.map(
+          ({
+            id,
+            serviceIcon,
+            serviceSubTitle,
+            serviceTitle,
+            serviceDesc,
+            btnContent,
+            serviceUrl,
+            btnIcon,
+            serviceThumb,
+          }) => {
             return (
               <>
                 <div key={id}>
                   <ServiceCard
                     serviceIcon={serviceIcon}
+                    serviceSubTilte={serviceSubTitle}
                     serviceTitle={serviceTitle}
                     serviceDesc={serviceDesc}
+                    btnContent={btnContent}
+                    serviceUrl={serviceUrl}
+                    btnIcon={btnIcon}
+                    serviceThumb={serviceThumb}
                   />
                 </div>
               </>
             );
-          })}
-        </div>
+          }
+        )}
       </div>
     </section>
   );
