@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/images/testi-author-1.png";
-import testiImg2 from "/images/testi-author-2.png";
-import testiImg3 from "/images/testi-author-3.png";
-import testiQuote from "/images/testi-quote.png";
+import testiImg from "/images/testi_author2.png";
+import testiQuote from "/images/testi_icon2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
+import CountUp from "react-countup";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import TestimonialNavigation from "./TestimonialNavigation";
 
 const testiData = [
   {
@@ -16,34 +17,22 @@ const testiData = [
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Hemilton Masakajja",
     testiDesignation: "Web Developer",
-    testiDesc: `Monotonectally synergize granular that visualize strategic infomediaries business task state of the art into infrastructures markets digital products`,
+    testiDesc: `Conveniently transform error-free architectures
+                diness vis-a-vis equity invested Appropriately in
+                underwhelm  proactive leadership skills without 
+                future applications Consultant`,
   },
   {
     id: 2,
     testiQuote: testiQuote,
-    testiImg: testiImg2,
+    testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Jhon D. Alexon",
     testiDesignation: "UI/UX Designer",
-    testiDesc: `Monotonectally synergize granular that visualize strategic infomediaries business task state of the art into infrastructures markets digital products`,
-  },
-  {
-    id: 3,
-    testiQuote: testiQuote,
-    testiImg: testiImg3,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-    testiDesc: `Monotonectally synergize granular that visualize strategic infomediaries business task state of the art into infrastructures markets digital products`,
-  },
-  {
-    id: 4,
-    testiQuote: testiQuote,
-    testiImg: testiImg,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-    testiDesc: `Monotonectally synergize granular that visualize strategic infomediaries business task state of the art into infrastructures markets digital products`,
+    testiDesc: `Conveniently transform error-free architectures
+                diness vis-a-vis equity invested Appropriately in
+                underwhelm  proactive leadership skills without 
+                future applications Consultant`,
   },
 ];
 
@@ -53,65 +42,93 @@ const Testimonial = () => {
     spaceBetween: 30,
     speed: 1000,
     autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1400: {
-        slidesPerView: 3,
-      },
-    },
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
   return (
-    <section className="py-28 bg-BodyBg-0 relative z-10 overflow-hidden">
+    <section className="py-28 bg-BodyBg2-0 relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-            Testimonial
-          </h5>
-          <h1 className="font-FiraSans font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]">
-            What say our Valuable Clients
-          </h1>
-        </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiQuote,
-                  testiImg,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                  testiShape,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-3">
-                        <TestimonialCard
-                          testiQuote={testiQuote}
-                          testiImg={testiImg}
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                          testiShape={testiShape}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
+        <div className="grid grid-cols-6 lg:grid-cols-12">
+          <div className="col-span-5">
+            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
+              Testimonial
+            </h5>
+            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[32px] xl:leading-[42px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+              The Best Finance Consulting <br /> In Town Since 2007
+            </h1>
+            <p className="font-FiraSans text-TextColor-0 mb-7">
+              Media leadership skills before cross-media innovation <br />{" "}
+              develop standardized platforms without
+            </p>
+            <div className="relative flex items-center gap-7 pt-5 border-t border-BorderColor2-0 mr-10">
+              <div>
+                <CountUp
+                  start={-11}
+                  prefix="4."
+                  end={98}
+                  suffix={""}
+                  className="font-FiraSans text-[60px] leading-[52px] text-white font-medium"
+                />
+              </div>
+              <div>
+                <ul className="flex items-center gap-1">
+                  <li className="text-orange-400">
+                    <FaStar size={"18"} />
+                  </li>
+                  <li className="text-orange-400">
+                    <FaStar size={"18"} />
+                  </li>
+                  <li className="text-orange-400">
+                    <FaStar size={"18"} />
+                  </li>
+                  <li className="text-orange-400">
+                    <FaStar size={"18"} />
+                  </li>
+                  <li className="text-orange-400">
+                    <FaStarHalfAlt size={"18"} />
+                  </li>
+                </ul>
+                <p className="font-FiraSans text-lg text-TextColor-0 capitalize mt-2">
+                  Avg. Clients Ratings
+                </p>
+              </div>
             </div>
-          </Swiper>
+          </div>
+          <div className="col-span-7 relative">
+            <Swiper {...settings}>
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiQuote,
+                    testiImg,
+                    testiRatingIcon,
+                    testiName,
+                    testiDesignation,
+                    testiDesc,
+                    testiShape,
+                  }) => {
+                    return (
+                      <SwiperSlide key={id}>
+                        <div className="pr-6">
+                          <TestimonialCard
+                            testiQuote={testiQuote}
+                            testiImg={testiImg}
+                            testiRatingIcon={testiRatingIcon}
+                            testiName={testiName}
+                            testiDesignation={testiDesignation}
+                            testiDesc={testiDesc}
+                            testiShape={testiShape}
+                          />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+              <TestimonialNavigation />
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
