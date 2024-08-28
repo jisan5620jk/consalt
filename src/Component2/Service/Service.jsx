@@ -3,7 +3,7 @@ import serviceThumb from "/images/service_3.png";
 import serviceThumb2 from "/images/service_4.png";
 import serviceIcon from "/images/service_icon1.png";
 import serviceIcon2 from "/images/service_icon2.png";
-import serviceShape from "/images/service_shpe1.png";
+import serviceShape from "/images/service_shape1.png";
 import serviceShape2 from "/images/service_shape2.png";
 import ServiceCard from "./ServiceCard";
 import { GoArrowUpRight } from "react-icons/go";

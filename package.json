@@ -13,6 +13,7 @@
     "fslightbox-react": "^1.7.6",
     "node": "^22.6.0",
     "react": "^18.3.1",
+    "react-animated-progress-bar": "^1.1.2",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",

@@ -51,12 +51,16 @@ body {
 .progress-bar-rect-wrap-container {
   position: relative;
   z-index: 999;
-  display: flex;
-  gap: 50px;
 }
 
 .rect-progress-bar-percent {
   @apply !m-0 leading-[10px] !text-HeadingColor-0 font-FiraSans;
+}
+
+.skill-section h2.rect-progress-bar-percent {
+    position: absolute;
+    top: -28px;
+    right: 0;
 }
 
 /* React Tab */
@@ -396,18 +400,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: hsla(179, 80%, 24%, 0.9);
 }
 
-/* Benefits */
-
-.benefits .rect-progress-bar-percent {
-  color: #fff !important;
-  font-weight: 400;
-}
-
-/* Stroke */
-
-.portfolio-icon {
-  -webkit-text-stroke: 1px #dadddf;
-}
 
 /* Portfolio */
 

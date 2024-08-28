@@ -6,6 +6,7 @@ import Counter from "../../Component2/Counter/Counter";
 import Pricing from "../../Component2/Pricing/Pricing";
 import Project from "../../Component2/Project/Project";
 import Service from "../../Component2/Service/Service";
+import Skill from "../../Component2/Skill/Skill";
 import Testimonial from "../../Component2/Testimonial/Testimonial";
 
 const Home2 = () => {
@@ -18,7 +19,8 @@ const Home2 = () => {
       <Blog />
       <Pricing />
       <CallBack />
-      <Testimonial/>
+      <Skill />
+      <Testimonial />
       <Project />
     </>
   );
