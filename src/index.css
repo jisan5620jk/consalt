@@ -380,28 +380,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .project-box2.active .project-content {
   top: 34px;
   opacity: 1;
-} 
+}
 
 .project-box2.active .project-btn {
   bottom: 40px;
   opacity: 1;
-} 
-
+}
 
 .project-box2.active .project-shape {
   left: 66.66%;
   opacity: 1;
-} 
-
-
+}
 
 .project-box2.active .project-bg {
-  background: hsla(179, 80%, 24%, 0.90);
-} 
-
-
-
-
+  background: hsla(179, 80%, 24%, 0.9);
+}
 
 /* Benefits */
 
