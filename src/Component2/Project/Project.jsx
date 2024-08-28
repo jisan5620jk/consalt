@@ -8,35 +8,34 @@ import projectThumb5 from "/images/case_5.png";
 import { useEffect } from "react";
 
 const Project = () => {
+  useEffect(() => {
+    const handleMouseEnter = (event) => {
+      event.target.classList.add("active");
 
-   useEffect(() => {
-     const handleMouseEnter = (event) => {
-       event.target.classList.add("active");
+      // Remove 'active' class from siblings
+      const parent = event.target.parentElement;
+      if (parent) {
+        const siblings = parent.querySelectorAll(".project-box2");
+        siblings.forEach((sibling) => {
+          if (sibling !== event.target) {
+            sibling.classList.remove("active");
+          }
+        });
+      }
+    };
 
-       // Remove 'active' class from siblings
-       const parent = event.target.parentElement;
-       if (parent) {
-         const siblings = parent.querySelectorAll(".project-box2");
-         siblings.forEach((sibling) => {
-           if (sibling !== event.target) {
-             sibling.classList.remove("active");
-           }
-         });
-       }
-     };
+    const elements = document.querySelectorAll(".project-box2");
+    elements.forEach((element) => {
+      element.addEventListener("mouseenter", handleMouseEnter);
+    });
 
-     const elements = document.querySelectorAll(".project-box2");
-     elements.forEach((element) => {
-       element.addEventListener("mouseenter", handleMouseEnter);
-     });
-
-     // Clean up event listeners when component unmounts
-     return () => {
-       elements.forEach((element) => {
-         element.removeEventListener("mouseenter", handleMouseEnter);
-       });
-     };
-   }, []);
+    // Clean up event listeners when component unmounts
+    return () => {
+      elements.forEach((element) => {
+        element.removeEventListener("mouseenter", handleMouseEnter);
+      });
+    };
+  }, []);
   return (
     <section className="project relative z-10 pt-28 pb-[188px] bg-white">
       <div className="Container">
