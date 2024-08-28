@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import { useEffect } from "react";
 import pricingIcon from "/images/price_icon_01.png";
 import pricingIcon2 from "/images/price_icon_02.png";
+import pricingShape from "/images/pricing_shape1.png";
 import icon from "/images/icon.png";
 import { GiCheckMark } from "react-icons/gi";
 
@@ -227,6 +228,11 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+      <img
+        src={pricingShape}
+        draggable="false"
+        className="absolute -z-10 top-44 left-0 animate-wiggle hidden 2xl:block"
+      />
     </section>
   );
 };

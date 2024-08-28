@@ -1,120 +1,224 @@
-/* eslint-disable no-unused-vars */
-import { FaPlus } from "react-icons/fa6";
-import projectThumb from "/images/portfolio2-1.png";
-import projectThumb2 from "/images/portfolio2-2.png";
-import projectThumb3 from "/images/portfolio2-3.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import ProjectCard from "./ProjectCard";
-
-const ProjectData = [
-  {
-    id: 1,
-    projectThumb: projectThumb,
-    projectSubTilte: "Design",
-    projectTitle: "Mobile UI/UX Design",
-    projectUrl: "/project_details",
-    projectBtn: <FaPlus />,
-  },
-  {
-    id: 2,
-    projectThumb: projectThumb2,
-    projectSubTilte: "Technology",
-    projectTitle: "Cyber Security & Protect",
-    projectUrl: "/project_details",
-    projectBtn: <FaPlus />,
-  },
-  {
-    id: 3,
-    projectThumb: projectThumb3,
-    projectSubTilte: "IT Solution",
-    projectTitle: "Website Development",
-    projectUrl: "/project_details",
-    projectBtn: <FaPlus />,
-  },
-  {
-    id: 4,
-    projectThumb: projectThumb2,
-    projectSubTilte: "Technology",
-    projectTitle: "Cyber Security & Protect",
-    projectUrl: "/project_details",
-    projectBtn: <FaPlus />,
-  },
-];
+import { Link } from "react-router-dom";
+import caseShape from "/images/case_shape.png";
+import projectThumb from "/images/case_1.png";
+import projectThumb2 from "/images/case_2.png";
+import projectThumb3 from "/images/case_3.png";
+import projectThumb4 from "/images/case_4.png";
+import projectThumb5 from "/images/case_5.png";
+import { useEffect } from "react";
 
 const Project = () => {
-  const settings = {
-    loop: true,
-    spaceBetween: 30,
-    speed: 1000,
-    centeredSlides: true,
-    initialSlide: 1,
-    autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1400: {
-        slidesPerView: 3,
-      },
-    },
-  };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
+
+   useEffect(() => {
+     const handleMouseEnter = (event) => {
+       event.target.classList.add("active");
+
+       // Remove 'active' class from siblings
+       const parent = event.target.parentElement;
+       if (parent) {
+         const siblings = parent.querySelectorAll(".project-box2");
+         siblings.forEach((sibling) => {
+           if (sibling !== event.target) {
+             sibling.classList.remove("active");
+           }
+         });
+       }
+     };
+
+     const elements = document.querySelectorAll(".project-box2");
+     elements.forEach((element) => {
+       element.addEventListener("mouseenter", handleMouseEnter);
+     });
+
+     // Clean up event listeners when component unmounts
+     return () => {
+       elements.forEach((element) => {
+         element.removeEventListener("mouseenter", handleMouseEnter);
+       });
+     };
+   }, []);
   return (
-    <section className="project relative z-10 py-28 bg-white before:absolute before:top-0 before:left-0 before:h-[72%] before:w-full before:bg-HeadingColor-0 before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
+    <section className="project relative z-10 pt-28 pb-[188px] bg-white">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-            IT Support For Business
-          </h5>
-          <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-3">
-            Ensuring Your Success Trusted <br />
-            IT Services Source
-          </h1>
+        <div className="grid grid-cols-6 lg:grid-cols-12 items-center">
+          <div className="col-span-6 lg:col-span-7">
+            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+              LATEST WORKS
+            </h5>
+            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+              Visit the Real Results of <br /> Latest Case Studies
+            </h1>
+          </div>
+          <div className="col-span-6 lg:col-span-5">
+            <p className="font-FiraSans text-TextColor2-0">
+              Globally engage cross-media leadership skills before cross-media
+              develop standardized platforms without robust applications are go
+              forward collaboration
+            </p>
+          </div>
         </div>
       </div>
-      <div className="mt-[60px] 2xl:mx-[100px]">
-        <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-          <div>
-            {ProjectData.map(
-              ({
-                id,
-                projectThumb,
-                projectSubTilte,
-                projectTitle,
-                projectUrl,
-                projectBtn,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className="pb-[140px]">
-                      <ProjectCard
-                        projectThumb={projectThumb}
-                        projectSubTilte={projectSubTilte}
-                        projectUrl={projectUrl}
-                        projectTitle={projectTitle}
-                        projectBtn={projectBtn}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
+        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+          <img src={projectThumb} draggable="false" className="w-full" />
+          <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
+            <div className="relative h-full w-full">
+              <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                  Technology
+                </h6>
+                <Link to={"/project_details"}>
+                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                    Business Implement
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block lg:hidden 2xl:block">
+                  Media leadership skill before cross platforms without done
+                </p>
+              </div>
+              <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <Link to={"project_details"}>
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                    View Details
+                  </button>
+                </Link>
+              </div>
+              <img
+                src={caseShape}
+                draggable="false"
+                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+              />
+            </div>
           </div>
-        </Swiper>
+        </div>
+        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+          <img src={projectThumb2} draggable="false" />
+          <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
+            <div className="relative h-full w-full">
+              <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                  Technology
+                </h6>
+                <Link to={"/project_details"}>
+                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                    Business Implement
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                  Media leadership skill before cross platforms without done
+                </p>
+              </div>
+              <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <Link to={"project_details"}>
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                    View Details
+                  </button>
+                </Link>
+              </div>
+              <img
+                src={caseShape}
+                draggable="false"
+                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="relative top-[68px] project-box2 active rounded overflow-hidden z-10 group">
+          <img src={projectThumb3} draggable="false" />
+          <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
+            <div className="relative h-full w-full">
+              <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                  Technology
+                </h6>
+                <Link to={"/project_details"}>
+                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                    Business Implement
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                  Media leadership skill before cross platforms without done
+                </p>
+              </div>
+              <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <Link to={"project_details"}>
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                    View Details
+                  </button>
+                </Link>
+              </div>
+              <img
+                src={caseShape}
+                draggable="false"
+                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+          <img src={projectThumb4} draggable="false" />
+          <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
+            <div className="relative h-full w-full">
+              <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                  Technology
+                </h6>
+                <Link to={"/project_details"}>
+                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                    Business Implement
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                  Media leadership skill before cross platforms without done
+                </p>
+              </div>
+              <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <Link to={"project_details"}>
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                    View Details
+                  </button>
+                </Link>
+              </div>
+              <img
+                src={caseShape}
+                draggable="false"
+                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+          <img src={projectThumb5} draggable="false" />
+          <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
+            <div className="relative h-full w-full">
+              <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                  Technology
+                </h6>
+                <Link to={"/project_details"}>
+                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                    Business Implement
+                  </button>
+                </Link>
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                  Media leadership skill before cross platforms without done
+                </p>
+              </div>
+              <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
+                <Link to={"project_details"}>
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                    View Details
+                  </button>
+                </Link>
+              </div>
+              <img
+                src={caseShape}
+                draggable="false"
+                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

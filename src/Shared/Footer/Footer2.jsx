@@ -35,7 +35,9 @@ const Footer2 = () => {
               </div>
             </div>
             <div className="flex justify-center border-x-2 border-BorderColor2-0 py-2">
-              <img src={footerLogo} draggable="false" />
+              <Link to={"/"}>
+                <img src={footerLogo} draggable="false" />
+              </Link>
             </div>
             <div className="flex justify-end">
               <ul className="flex gap-3 items-center">
