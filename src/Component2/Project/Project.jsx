@@ -72,7 +72,7 @@ const Project = () => {
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block lg:hidden 2xl:block">
+                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
