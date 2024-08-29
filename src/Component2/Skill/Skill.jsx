@@ -41,7 +41,7 @@ const Skill = () => {
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
-            <div className="mb-5">
+            <div className="mb-6 mt-7">
               <h6 className="font-FiraSans text-HeadingColor-0 pb-3">
                 Finance Consulting
               </h6>
@@ -67,7 +67,7 @@ const Skill = () => {
                 trackPathBorderRadius="10px"
               />
             </div>
-            <div className="mb-5">
+            <div className="mb-10">
               <h6 className="font-FiraSans text-HeadingColor-0 pb-3">
                 Business Consulting
               </h6>
