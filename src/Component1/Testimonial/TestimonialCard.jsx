@@ -11,11 +11,11 @@ const TestimonialCard = ({
     <div className="relative">
       <h2 className="text-5xl text-[#e0f3e0]">{testiQuote}</h2>
       <ul className="flex gap-1 items-center mb-5 mt-5">
-        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-        <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
       </ul>
       <p className="font-FiraSans font-normal sm:text-2xl lg:text-lg xl:text-2xl text-white opacity-95 italic">
         {testiDesc}

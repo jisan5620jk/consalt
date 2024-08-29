@@ -37,7 +37,7 @@ const Project = () => {
     };
   }, []);
   return (
-    <section className="project relative z-10 pt-28 pb-[188px] bg-white">
+    <section className="project relative z-10 pt-28 pb-[188px] bg-BodyBg4-0">
       <div className="Container">
         <div className="grid grid-cols-6 lg:grid-cols-12 items-center">
           <div className="col-span-6 lg:col-span-7">

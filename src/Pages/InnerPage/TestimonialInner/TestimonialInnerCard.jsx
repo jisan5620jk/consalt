@@ -16,11 +16,11 @@ const TestimonialCard = ({
         </div>
         <div className="flex-1">
           <ul className="flex gap-[6px] items-center">
-            <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-            <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-            <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-            <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
-            <li className="text-orange-400 text-xl">{testiRatingIcon}</li>
+            <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+            <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+            <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+            <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
+            <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
           </ul>
           <h5 className="font-FiraSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-2 mb-[6px]">
             {testiName}

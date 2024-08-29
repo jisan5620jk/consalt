@@ -16,12 +16,12 @@ const Home2 = () => {
       <Counter />
       <About />
       <Service />
-      <Blog />
-      <Pricing />
-      <CallBack />
       <Skill />
       <Testimonial />
       <Project />
+      <Pricing />
+      <CallBack />
+      <Blog />
     </>
   );
 };

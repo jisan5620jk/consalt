@@ -32,19 +32,19 @@ const Counter = () => {
             </div>
             <div>
               <ul className="flex items-center gap-1">
-                <li className="text-orange-400">
+                <li className="text-[#ffb609]">
                   <FaStar size={"18"} />
                 </li>
-                <li className="text-orange-400">
+                <li className="text-[#ffb609]">
                   <FaStar size={"18"} />
                 </li>
-                <li className="text-orange-400">
+                <li className="text-[#ffb609]">
                   <FaStar size={"18"} />
                 </li>
-                <li className="text-orange-400">
+                <li className="text-[#ffb609]">
                   <FaStar size={"18"} />
                 </li>
-                <li className="text-orange-400">
+                <li className="text-[#ffb609]">
                   <FaStarHalfAlt size={"18"} />
                 </li>
               </ul>

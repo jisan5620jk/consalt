@@ -10,20 +10,24 @@ const TestimonialCard = ({
   return (
     <div className="flex items-center gap-8 bg-white rounded-xl overflow-hidden relative group z-10">
       <div className=" relative z-10">
-        <img src={testiImg} draggable={false} className="w-full 2xl:w-[inherit]" />
+        <img
+          src={testiImg}
+          draggable={false}
+          className="w-full 2xl:w-[inherit]"
+        />
       </div>
-      <div className="flex-1 rounded overflow-hidden relative z-10">
+      <div className="flex-1 rounded overflow-hidden relative z-10 mr-8">
         <div className="transition-all duration-500">
           <img src={testiQuote} draggable="false" />
         </div>
         <ul className="flex gap-[2px] items-center mt-4">
-          <li className="text-orange-400 text-[22px]">{testiRatingIcon}</li>
-          <li className="text-orange-400 text-[22px]">{testiRatingIcon}</li>
-          <li className="text-orange-400 text-[22px]">{testiRatingIcon}</li>
-          <li className="text-orange-400 text-[22px]">{testiRatingIcon}</li>
-          <li className="text-orange-400 text-[22px]">{testiRatingIcon}</li>
+          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
+          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
+          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
+          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
+          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
         </ul>
-        <p className="font-FiraSans text-lg text-TextColor2-0 mt-4">
+        <p className="font-FiraSans text-TextColor2-0 mt-4">
           {testiDesc}
         </p>
         <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl mt-5 mb-2">
