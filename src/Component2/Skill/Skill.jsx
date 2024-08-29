@@ -8,7 +8,7 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Skill = () => {
   return (
-    <section className="py-[120px] relative z-10 skill-section">
+    <section className="pt-[120px] relative z-10 overflow-hidden skill-section">
       <img
         src={skillShape2}
         draggable="false"
@@ -20,7 +20,7 @@ const Skill = () => {
         className="absolute -bottom-72 -right-10 animate-wiggle hidden xl:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-start">
           <div className="relative z-10">
             <img
               src={aboutThumb}
