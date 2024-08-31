@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 
 const Counter = () => {
   return (
-    <section>
+    <section className="border-b border-BorderColor-0">
       <div className="Container">
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 items-center justify-center">
           <div className="relative flex items-center justify-center gap-7 py-[56px]">

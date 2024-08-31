@@ -452,7 +452,7 @@ const Navbar2 = () => {
               </div>
             </div>
             <div className="col-span-3">
-              <div className="header-right-box flex items-center gap-10 lg:gap-6 xl:gap-6 2xl:gap-[60px] justify-end">
+              <div className="header-right-box flex items-center gap-10 lg:gap-6 xl:gap-6 2xl:gap-12 justify-end">
                 <div className="hidden lg:block">
                   <Link to={"/"}>
                     <button className="text-white relative top-1">

@@ -9,7 +9,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const About = () => {
   return (
-    <section className="py-[120px] relative z-10">
+    <section className="pb-[120px] pt-[170px] relative z-10">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center">
           <div className="relative z-10">
@@ -18,7 +18,7 @@ const About = () => {
               draggable="false"
               className="w-full 2xl:w-[inherit]"
             />
-            <div className="absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
+            <div className="absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 2xl:-top-[70px] 2xl:right-[56px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
               <div className="size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

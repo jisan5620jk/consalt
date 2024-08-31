@@ -375,7 +375,7 @@ nav.main-menu-content > ul > li > a {
   font-family: "Fira Sans", sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
-  padding: 18px 30px 28px;
+  padding: 18px 28px 28px;
   color: #063232;
   position: relative;
   display: flex;
