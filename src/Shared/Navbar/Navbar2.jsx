@@ -231,7 +231,7 @@ const Navbar2 = () => {
       <header className="bg-transparent relative z-10">
         <div className="Container flex items-center justify-between h-[52px]">
           <div className="flex items-center gap-8">
-            <div className=" md:flex items-center gap-2 hidden">
+            <div className=" sm:flex items-center gap-2 hidden">
               <h6 className="font-FiraSans text-[15px] text-white">Mial :</h6>
               <Link
                 to={"/"}

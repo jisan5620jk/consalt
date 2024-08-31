@@ -18,7 +18,7 @@ const About = () => {
               draggable="false"
               className="w-full 2xl:w-[inherit]"
             />
-            <div className="absolute -top-4 md:-top-16 right-9 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
+            <div className="absolute -top-4 md:-top-16 right-9 sm:right-12 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
               <div className="size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const About = () => {
                   <img src={aboutIcon} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-xl">
+                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl">
                     Business Planning & Technologist
                   </h5>
                 </div>
@@ -76,7 +76,7 @@ const About = () => {
                   <img src={aboutIcon2} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-xl">
+                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl">
                     Human Services and Consulting
                   </h5>
                 </div>

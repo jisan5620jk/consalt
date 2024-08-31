@@ -33,7 +33,7 @@ const BlogCard = ({
             </p>
           </div>
           <Link to={blogUrl}>
-            <button className="font-FiraSans text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 mt-2 mb-5">
+            <button className="font-FiraSans text-left font-semibold text-lg sm:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 mt-2 mb-5">
               {blogTitle}
             </button>
           </Link>

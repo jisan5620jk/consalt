@@ -214,7 +214,7 @@ const Footer2 = () => {
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left text-white">
+                  <button className="font-FiraSans text-left text-white transition-all duration-500 hover:text-PrimaryColor-0">
                     Sustainability Consulting for Business Planning
                   </button>
                 </Link>
@@ -230,7 +230,7 @@ const Footer2 = () => {
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left text-white">
+                  <button className="font-FiraSans text-left text-white transition-all duration-500 hover:text-PrimaryColor-0">
                     Globally Services for IT Solution Planning
                   </button>
                 </Link>

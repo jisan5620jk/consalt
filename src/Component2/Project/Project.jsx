@@ -57,7 +57,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
         <div className="project-box2 rounded overflow-hidden relative z-10 group">
           <img src={projectThumb} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
@@ -91,7 +91,7 @@ const Project = () => {
           </div>
         </div>
         <div className="project-box2 rounded overflow-hidden relative z-10 group">
-          <img src={projectThumb2} draggable="false" />
+          <img src={projectThumb2} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
@@ -123,7 +123,7 @@ const Project = () => {
           </div>
         </div>
         <div className="relative lg:top-[68px] project-box2 active rounded overflow-hidden z-10 group">
-          <img src={projectThumb3} draggable="false" />
+          <img src={projectThumb3} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
@@ -155,7 +155,7 @@ const Project = () => {
           </div>
         </div>
         <div className="project-box2 rounded overflow-hidden relative z-10 group">
-          <img src={projectThumb4} draggable="false" />
+          <img src={projectThumb4} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
@@ -187,7 +187,7 @@ const Project = () => {
           </div>
         </div>
         <div className="project-box2 rounded overflow-hidden relative z-10 group">
-          <img src={projectThumb5} draggable="false" />
+          <img src={projectThumb5} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">

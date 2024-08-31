@@ -61,7 +61,7 @@ const Testimonial = () => {
               Media leadership skills before cross-media innovation <br className="hidden sm:block"/>{" "}
               develop standardized platforms without
             </p>
-            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 lg:mr-10 pt-8">
+            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 sm:mr-10 pt-8">
               <div className="border-r border-BorderColor2-0 pr-5">
                 <CountUp
                   start={-11}

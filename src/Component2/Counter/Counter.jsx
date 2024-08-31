@@ -13,7 +13,7 @@ const Counter = () => {
                 start={-11}
                 end={5}
                 suffix={"K+"}
-                className="font-FiraSans text-3xl leading-[22px] md:text-[50px] md:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-FiraSans text-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
             <p className="font-FiraSans text-lg text-TextColor2-0 capitalize">
@@ -27,7 +27,7 @@ const Counter = () => {
                 prefix="4."
                 end={98}
                 suffix={""}
-                className="font-FiraSans text-3xl leading-[22px] md:text-[50px] md:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-FiraSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
             <div>
@@ -59,7 +59,7 @@ const Counter = () => {
                 start={-11}
                 end={99}
                 suffix={"%"}
-                className="font-FiraSans text-3xl leading-[22px] md:text-[50px] md:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-FiraSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
             <p className="font-FiraSans text-lg text-TextColor2-0 capitalize">
