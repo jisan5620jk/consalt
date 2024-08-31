@@ -18,7 +18,7 @@ const About = () => {
               draggable="false"
               className="w-full 2xl:w-[inherit]"
             />
-            <div className="absolute -top-4 md:-top-16 right-9 sm:right-12 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
+            <div className="absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
               <div className="size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const About = () => {
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               FINANCE CONSULTING
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               The Best Finance Consulting <br /> In Town Since 2007
             </h1>
             <p className="font-FiraSans text-sm text-TextColor2-0">
@@ -66,7 +66,7 @@ const About = () => {
                   <img src={aboutIcon} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl">
+                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl lg:text-sm xl:text-lg 2xl:text-xl">
                     Business Planning & Technologist
                   </h5>
                 </div>
@@ -76,7 +76,7 @@ const About = () => {
                   <img src={aboutIcon2} draggable="false" />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl">
+                  <h5 className="font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl lg:text-sm xl:text-lg 2xl:text-xl">
                     Human Services and Consulting
                   </h5>
                 </div>

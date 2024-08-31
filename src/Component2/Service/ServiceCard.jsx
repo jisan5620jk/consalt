@@ -12,8 +12,8 @@ const ServiceCard = ({
   serviceThumb,
 }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 items-center rounded-lg bg-white group relative z-10 overflow-hidden">
-      <div className="pl-10 py-7 sm:py-0">
+    <div className="grid grid-cols-1 sm:grid-cols-2 items-center rounded-lg bg-white group lg:pr-5 xl:pr-0 relative z-10 overflow-hidden">
+      <div className="pl-10 py-7 sm:py-0 lg:py-5 xl:py-0">
         <div className="relative pt-[6px] z-10">
           <img src={serviceIcon} draggable="false" />
         </div>

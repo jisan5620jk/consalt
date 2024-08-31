@@ -54,11 +54,11 @@ const Testimonial = () => {
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               Testimonial
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Trusted By The Genius <br /> People With Cosult
             </h1>
             <p className="font-FiraSans text-TextColor-0 mb-7">
-              Media leadership skills before cross-media innovation <br className="hidden sm:block"/>{" "}
+              Media leadership skills before cross-media innovation <br className="hidden sm:block lg:hidden xl:block"/>{" "}
               develop standardized platforms without
             </p>
             <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 sm:mr-10 pt-8">

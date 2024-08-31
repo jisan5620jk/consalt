@@ -45,7 +45,7 @@ const Footer = () => {
             </h4>
             <ul className="overflow-hidden">
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     About Us
@@ -53,7 +53,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Our Team
@@ -61,7 +61,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Pricing Plan
@@ -69,7 +69,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Latest Blog
@@ -77,7 +77,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     Careers
@@ -92,7 +92,7 @@ const Footer = () => {
             </h4>
             <ul className="overflow-hidden">
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     IT Solutions
@@ -100,7 +100,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Cyber Security
@@ -108,7 +108,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Digital Marketing
@@ -116,7 +116,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Brand Identity
@@ -124,7 +124,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"/"} className="inline-block">
                   <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     SEO Marketing

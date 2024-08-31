@@ -116,40 +116,40 @@ const Footer2 = () => {
             </h4>
             <ul className="overflow-hidden">
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Our Team
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Pricing Plan
                   </button>
                 </Link>
               </li>
-              <li>
+              <li className="block">
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Latest Blog
                   </button>
                 </Link>
               </li>
-              <li>
+              <li className="block">
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     Careers
                   </button>
@@ -163,40 +163,40 @@ const Footer2 = () => {
             </h4>
             <ul className="overflow-hidden">
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     IT Solutions
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Cyber Security
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Digital Marketing
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Brand Identity
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
+                <Link to={"/"} className="inline-block">
+                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     SEO Marketing
                   </button>
@@ -208,14 +208,14 @@ const Footer2 = () => {
             <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
               Latest Blog
             </h4>
-            <div className="flex gap-5 pt-1 mb-6">
+            <div className="flex gap-5 lg:gap-3 xl:gap-5 pt-1 mb-6">
               <Link to={"/"} className="">
                 <img src={footerImg} draggable="false" />
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left text-white transition-all duration-500 hover:text-PrimaryColor-0">
-                    Sustainability Consulting for Business Planning
+                  <button className="font-FiraSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                    Sustainable Consulting for Business Planning
                   </button>
                 </Link>
                 <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
@@ -224,13 +224,13 @@ const Footer2 = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 pt-1">
+            <div className="flex gap-5 lg:gap-3 xl:gap-5 pt-1">
               <Link to={"/"} className="">
                 <img src={footerImg2} draggable="false" />
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                  <button className="font-FiraSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
                     Globally Services for IT Solution Planning
                   </button>
                 </Link>

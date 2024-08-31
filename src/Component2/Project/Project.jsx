@@ -37,14 +37,14 @@ const Project = () => {
     };
   }, []);
   return (
-    <section className="project relative z-10 pt-28 pb-28 lg:pb-[188px] bg-BodyBg4-0">
+    <section className="project relative z-10 pt-28 pb-28 lg:pb-0 xl:pb-[176px] 2xl:pb-[188px] bg-BodyBg4-0">
       <div className="Container">
-        <div className="grid grid-cols-6 lg:grid-cols-12 items-center mb-10">
+        <div className="grid grid-cols-6 lg:grid-cols-12 items-center mb-10 lg:mb-0">
           <div className="col-span-6 lg:col-span-7">
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               LATEST WORKS
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Visit the Real Results of <br /> Latest Case Studies
             </h1>
           </div>
@@ -57,11 +57,11 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
-        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
+        <div className="relative md:-top-[88px] lg:-top-[109px] xl:top-0 project-box2 rounded overflow-hidden z-10 group">
           <img src={projectThumb} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
-            <div className="relative h-full w-full">
+            <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
@@ -85,15 +85,15 @@ const Project = () => {
               <img
                 src={caseShape}
                 draggable="false"
-                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+                className="project-shape absolute -z-10 left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
               />
             </div>
           </div>
         </div>
-        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+        <div className="lg:-top-[34px] xl:top-0 project-box2 rounded overflow-hidden relative z-10 group">
           <img src={projectThumb2} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
-            <div className="relative h-full w-full">
+            <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
@@ -117,15 +117,15 @@ const Project = () => {
               <img
                 src={caseShape}
                 draggable="false"
-                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+                className="project-shape absolute -z-10 left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
               />
             </div>
           </div>
         </div>
-        <div className="relative lg:top-[68px] project-box2 active rounded overflow-hidden z-10 group">
+        <div className="relative md:-top-[88px] lg:top-[48px] xl:top-[58px] 2xl:top-[90px] project-box2 active rounded overflow-hidden z-10 group">
           <img src={projectThumb3} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
-            <div className="relative h-full w-full">
+            <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
@@ -149,15 +149,15 @@ const Project = () => {
               <img
                 src={caseShape}
                 draggable="false"
-                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+                className="project-shape absolute -z-10 left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
               />
             </div>
           </div>
         </div>
-        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+        <div className="md:-top-[100px] lg:-top-[110px] xl:top-0 project-box2 rounded overflow-hidden relative z-10 group">
           <img src={projectThumb4} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
-            <div className="relative h-full w-full">
+            <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
@@ -181,15 +181,15 @@ const Project = () => {
               <img
                 src={caseShape}
                 draggable="false"
-                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+                className="project-shape absolute -z-10 left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
               />
             </div>
           </div>
         </div>
-        <div className="project-box2 rounded overflow-hidden relative z-10 group">
+        <div className="md:-top-[88px] lg:-top-[106px] xl:top-0 project-box2 rounded overflow-hidden relative z-10 group">
           <img src={projectThumb5} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
-            <div className="relative h-full w-full">
+            <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
@@ -213,7 +213,7 @@ const Project = () => {
               <img
                 src={caseShape}
                 draggable="false"
-                className="project-shape absolute left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
+                className="project-shape absolute -z-10 left-full bottom-16 animate-swing opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:left-2/3"
               />
             </div>
           </div>
