@@ -57,7 +57,7 @@ const Pricing = () => {
               Continually plagiarize virtual web services resource maximizing
               action items. Globally build front-end consult.
             </p>
-            <ul className="flex items-center gap-10 2xl:gap-14 mb-9">
+            <ul className="flex flex-col sm:flex-row items-center gap-10 2xl:gap-14 mb-9">
               <li className="flex items-center gap-2 text-HeadingColor-0 font-FiraSans font-medium">
                 <GiCheckMark className="text-PrimaryColor-0" />
                 Moneyback Gaurantee
@@ -85,7 +85,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className="text-left">
-                  <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 group-hover:text-white mt-4 mb-1">
+                  <h6 className="pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 group-hover:text-white mt-4 mb-1">
                     Starter Plan
                   </h6>
                   <p className="pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-TextColor-0 mb-4">
@@ -160,7 +160,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className="text-left">
-                  <h6 className="pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 group-hover:text-white mt-4 mb-1">
+                  <h6 className="pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 group-hover:text-white mt-4 mb-1">
                     Premium Plan
                   </h6>
                   <p className="pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-TextColor-0 mb-4">

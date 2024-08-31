@@ -49,8 +49,8 @@ const Testimonial = () => {
   return (
     <section className="pt-28 pb-[98px] bg-BodyBg2-0 relative z-10 overflow-hidden">
       <div className="Container">
-        <div className="grid grid-cols-6 lg:grid-cols-12">
-          <div className="col-span-5">
+        <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12">
+          <div className="col-span-6 lg:col-span-5">
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               Testimonial
             </h5>
@@ -58,17 +58,17 @@ const Testimonial = () => {
               Trusted By The Genius <br /> People With Cosult
             </h1>
             <p className="font-FiraSans text-TextColor-0 mb-7">
-              Media leadership skills before cross-media innovation <br />{" "}
+              Media leadership skills before cross-media innovation <br className="hidden sm:block"/>{" "}
               develop standardized platforms without
             </p>
-            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 mr-10 pt-8">
+            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 lg:mr-10 pt-8">
               <div className="border-r border-BorderColor2-0 pr-5">
                 <CountUp
                   start={-11}
                   prefix="4."
                   end={98}
                   suffix={""}
-                  className="font-FiraSans text-[56px] leading-[40px] text-white font-medium"
+                  className="font-FiraSans text-4xl leading-[26px] md:text-[56px] md:leading-[40px] text-white font-medium"
                 />
               </div>
               <div>
@@ -89,13 +89,13 @@ const Testimonial = () => {
                     <FaStarHalfAlt size={"18"} />
                   </li>
                 </ul>
-                <p className="font-FiraSans text-lg text-TextColor-0 capitalize mt-2">
+                <p className="font-FiraSans sm:text-lg text-TextColor-0 capitalize mt-2">
                   Avg. Clients Ratings
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-span-7 relative">
+          <div className="col-span-6 lg:col-span-7 relative">
             <Swiper {...settings}>
               <div>
                 {testiData.map(

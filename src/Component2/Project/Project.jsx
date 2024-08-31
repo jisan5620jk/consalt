@@ -37,9 +37,9 @@ const Project = () => {
     };
   }, []);
   return (
-    <section className="project relative z-10 pt-28 pb-[188px] bg-BodyBg4-0">
+    <section className="project relative z-10 pt-28 pb-28 lg:pb-[188px] bg-BodyBg4-0">
       <div className="Container">
-        <div className="grid grid-cols-6 lg:grid-cols-12 items-center">
+        <div className="grid grid-cols-6 lg:grid-cols-12 items-center mb-10">
           <div className="col-span-6 lg:col-span-7">
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               LATEST WORKS
@@ -122,7 +122,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="relative top-[68px] project-box2 active rounded overflow-hidden z-10 group">
+        <div className="relative lg:top-[68px] project-box2 active rounded overflow-hidden z-10 group">
           <img src={projectThumb3} draggable="false" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative h-full w-full">

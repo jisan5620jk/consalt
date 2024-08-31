@@ -18,7 +18,7 @@ const Footer2 = () => {
     <footer className="bg-BodyBg2-0 relative z-10 overflow-hidden">
       <div className="bg-PrimaryColor-0 py-9 mb-[88px]">
         <div className="Container">
-          <div className="grid items-center grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center">
             <div className="flex items-center gap-5">
               <div className="size-[60px] bg-BorderColor2-0 rounded-full flex items-center justify-center text-white">
                 <FaRegEnvelope size={"22"} />
@@ -34,12 +34,12 @@ const Footer2 = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center border-x-2 border-BorderColor2-0 py-2">
+            <div className="flex lg:justify-center md:border-l lg:border-l-0 lg:border-x-2 border-BorderColor2-0 py-2">
               <Link to={"/"}>
                 <img src={footerLogo} draggable="false" />
               </Link>
             </div>
-            <div className="flex justify-end">
+            <div className="flex lg:justify-end">
               <ul className="flex gap-3 items-center">
                 <li>
                   <Link

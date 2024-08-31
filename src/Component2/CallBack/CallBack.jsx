@@ -7,7 +7,7 @@ const CallBack = () => {
   return (
     <section className="bg-[url(/images/call_bg.png)] bg-no-repeat bg-cover bg-center py-28 relative z-10">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               Call Back
@@ -25,7 +25,7 @@ const CallBack = () => {
             <form
               action="#"
               method="post"
-              className="grid grid-cols-2 items-center gap-5"
+              className="grid grid-cols-1 sm:grid-cols-2 items-center gap-5"
             >
               <label htmlFor="name" className="relative">
                 <input
