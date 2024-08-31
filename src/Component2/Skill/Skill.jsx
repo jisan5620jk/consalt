@@ -8,7 +8,7 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Skill = () => {
   return (
-    <section className="pt-[120px] relative z-10 overflow-hidden skill-section">
+    <section className="pt-[120px] pb-28 lg:pb-0 relative z-10 overflow-hidden skill-section">
       <img
         src={skillShape2}
         draggable="false"
@@ -93,7 +93,7 @@ const Skill = () => {
                 trackPathBorderRadius="10px"
               />
             </div>
-            <div className="flex items-center gap-10">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-10">
               <div className="flex items-center gap-5">
                 <div>
                   <img src={skillProfile} draggable="false" />

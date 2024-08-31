@@ -11,11 +11,11 @@ import { FaRegThumbsUp } from "react-icons/fa";
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/banner_2.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[600px] xl:h-[780px] 2xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/banner_2.png')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[700px] md:h-[1100px] lg:h-[600px] xl:h-[780px] 2xl:h-[900px] flex items-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
           <div className="relative">
-            <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
+            <h1 className="font-FiraSans font-semibold text-white text-[26px] leading-[32px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
               Digital Finance Const.
               <br />
               Growing Business
@@ -55,11 +55,11 @@ const Banner = () => {
               className="absolute bottom-0 right-14 animate-zoomInOut"
             />
           </div>
-          <div className="md:flex justify-end hidden">
+          <div className="flex justify-center lg:justify-end">
             <img
               src={bannerThumb}
               draggable="false"
-              className="relative top-[72px] 2xl:max-w-[inherit] "
+              className="-mb-40 lg:relative lg:top-[72px] 2xl:max-w-[inherit] "
             />
           </div>
         </div>

@@ -94,7 +94,7 @@ const Service = () => {
         </div>
       </div>
       <div className="Container">
-        <div className="-mb-[120px]">
+        <div className="mb-4 lg:-mb-[120px]">
           <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
             SERVICES WE PROVIDE
           </h5>
@@ -119,7 +119,7 @@ const Service = () => {
             }) => {
               return (
                 <>
-                  <SwiperSlide key={id} className="pt-[150px]">
+                  <SwiperSlide key={id} className="pt-24 lg:pt-[150px]">
                     <ServiceCard
                       serviceIcon={serviceIcon}
                       serviceSubTilte={serviceSubTitle}

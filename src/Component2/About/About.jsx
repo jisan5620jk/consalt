@@ -18,7 +18,7 @@ const About = () => {
               draggable="false"
               className="w-full 2xl:w-[inherit]"
             />
-            <div className="absolute -top-16 right-9 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
+            <div className="absolute -top-4 md:-top-16 right-9 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg4-0 rounded-full flex items-center justify-center">
               <div className="size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,13 +54,13 @@ const About = () => {
             <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               The Best Finance Consulting <br /> In Town Since 2007
             </h1>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-FiraSans text-sm text-TextColor2-0">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
-            <div className="grid items-center grid-cols-2 border-b border-BorderColor-0 mt-9 pb-7 mb-9">
+            <div className="grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-b border-BorderColor-0 mt-9 pb-7 mb-9">
               <div className="flex items-center gap-5">
                 <div className="relative z-10 pl-4 pt-4 before:absolute before:top-0 before:left-0 before:size-[50px] before:rounded-md before:bg-BodyBg4-0 before:-z-10">
                   <img src={aboutIcon} draggable="false" />

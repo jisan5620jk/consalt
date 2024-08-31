@@ -453,7 +453,7 @@ const Navbar2 = () => {
             </div>
             <div className="col-span-3">
               <div className="header-right-box flex items-center gap-10 lg:gap-6 xl:gap-6 2xl:gap-[60px] justify-end">
-                <div>
+                <div className="hidden lg:block">
                   <Link to={"/"}>
                     <button className="text-white relative top-1">
                       <BiSearch size={"20"} />
