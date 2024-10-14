@@ -81,7 +81,7 @@ const About = () => {
                 </div>
                 <div className='flex-1'>
                   <h5 className='font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl lg:text-sm xl:text-lg 2xl:text-xl'>
-                    Business Planning & Technologist
+                    Websites Design and Development
                   </h5>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const About = () => {
                 </div>
                 <div className='flex-1'>
                   <h5 className='font-FiraSans font-medium text-HeadingColor-0 text-lg md:text-xl lg:text-sm xl:text-lg 2xl:text-xl'>
-                    Human Services and Consulting
+                    Database & Algorithom Managements
                   </h5>
                 </div>
               </div>
