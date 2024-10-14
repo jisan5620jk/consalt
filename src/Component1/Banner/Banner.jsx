@@ -44,7 +44,7 @@ const Banner = () => {
             <img
               src={bannerThumb}
               draggable="false"
-              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] "
+              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] relative left-[124px]"
             />
             <div className="absolute top-[54%] -left-[58px] md:left-0 lg:-left-[40px] xl:-left-[58px] 2xl:-left-[42px] -translate-y-1/2">
               <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">

@@ -107,7 +107,7 @@ const Navbar = () => {
         });
       });
     }
-  }, []);
+  }, [headerIcon]);
 
   return (
     <>
@@ -217,7 +217,7 @@ const Navbar = () => {
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
+                          </div>
                           <div className="homemenu">
                             <div className="homemenu-thumb">
                               <Link to={"/home2"}>
@@ -225,10 +225,10 @@ const Navbar = () => {
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
+                          </div>
                           <div className="homemenu">
                             <div className="homemenu-thumb">
-                              <Link to={"/"}>
+                              <Link to={"/home3"}>
                                 <img src={homeThree} />
                                 <h6>Live Demo</h6>
                               </Link>

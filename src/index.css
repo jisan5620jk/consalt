@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -26,6 +26,10 @@ body {
 
 .primary-btn2 {
   @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+}
+
+.primary-btn3 {
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-md text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
 .is-sticky {
@@ -58,9 +62,9 @@ body {
 }
 
 .skill-section h2.rect-progress-bar-percent {
-    position: absolute;
-    top: -28px;
-    right: 0;
+  position: absolute;
+  top: -28px;
+  right: 0;
 }
 
 /* React Tab */
@@ -115,7 +119,7 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -10px;
   left: -10px;
   width: 26px;
@@ -277,7 +281,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"],
+.faq-button[aria-expanded='true'],
 .faq-button:hover {
   border-radius: 5px;
   background: #0c59db;
@@ -285,7 +289,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
-.faq-button2[aria-expanded="true"],
+.faq-button2[aria-expanded='true'],
 .faq-button2:hover {
   border-radius: 5px 5px 0 0;
   border-color: #83a8ff;
@@ -399,7 +403,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .project-box2.active .project-bg {
   background: hsla(179, 80%, 24%, 0.9);
 }
-
 
 /* Portfolio */
 

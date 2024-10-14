@@ -125,7 +125,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -137,7 +137,7 @@
 
 .offcanvas_contact-info ul li a {
   color: #ffffff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .offcanvas_contact-info ul li i {
@@ -148,7 +148,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -294,7 +294,7 @@
 
 .offcanvas_social .social-icon a::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   border-radius: 50%;
@@ -372,7 +372,7 @@ nav.main-menu-content > ul > li {
 
 nav.main-menu-content > ul > li > a {
   font-size: 16px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
   padding: 18px 28px 28px;
@@ -425,13 +425,13 @@ nav.main-menu-content > ul > li > a:hover > span {
   color: #ffffff;
   font-weight: 500;
   text-transform: capitalize;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   position: relative;
 }
 
 .header-btn a::before {
   position: absolute;
-  content: "";
+  content: '';
   bottom: -2px;
   left: 0;
   width: 26px;
@@ -488,7 +488,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-main-menu nav ul li .submenu > li a {
   padding: 10px 24px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #053131;
@@ -501,7 +501,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .header-main-menu nav ul li .submenu > li a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -545,7 +545,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   margin-bottom: 0;
   color: #000000;
   display: inline-block;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .homemenu-title:hover {
@@ -667,7 +667,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .main-menu-mobile ul li > a svg {
@@ -844,19 +844,66 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 /* Header Style Two */
-.header-area.style-two .header-area {
+.header-area.style-two {
   background: transparent;
   position: relative;
   z-index: 50;
   width: 100%;
 }
 
+.header-area.style-two .header-logo {
+  margin: 0;
+}
+
 .header-area.style-two nav.main-menu-content > ul > li > a {
   color: #ffffff;
+  padding: 28px;
+}
+
+.header-area.style-two nav.main-menu-content > ul > li > a > span {
+  top: 34px;
 }
 
 .header-area.style-two .main-menu-mobile ul li > a {
   color: #ffffff !important;
+}
+
+/* Header Style Two */
+.header-area.style-three {
+  background: transparent;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
+
+.header-area.style-three .header-logo {
+  margin: 0;
+}
+
+.header-area.style-three nav.main-menu-content > ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 38px;
+}
+
+.header-area.style-three nav.main-menu-content > ul > li > a {
+  padding: 38px 28px;
+}
+
+.header-area.style-three nav.main-menu-content > ul > li > a > span {
+  top: 44px;
+}
+
+.header-area.style-three .main-menu-mobile ul li > a {
+  color: #ffffff !important;
+}
+
+.header-area.style-three .menu-sidebar {
+  top: 0;
+}
+
+.header-area.style-three .menu-sidebar span {
+  background: #0c6e6d;
 }
 
 /* Header Sidebar */
@@ -980,7 +1027,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -992,7 +1039,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar_contact-info ul li a {
   color: #ffffff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .sidebar_contact-info ul li i {
@@ -1003,7 +1050,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -1149,7 +1196,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar_social .social-icon a::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   border-radius: 50%;
