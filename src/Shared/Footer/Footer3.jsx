@@ -23,10 +23,10 @@ const Footer3 = () => {
       <div className='Container'>
         <div className='grid grid-cols-12'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[30px]'>
-              Company
+            <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium'>
+              About Us
             </h4>
-            <p className='font-FiraSans text-TextColor2-0 text-[15px] mt-10 mb-9 max-w-[290px] w-full'>
+            <p className='font-FiraSans text-TextColor2-0 text-[15px] mt-5 mb-8 max-w-[290px] w-full'>
               Continually plagiarize virtual web service with resource
               maximizing monotonectally reintermediate expanded
             </p>
@@ -65,12 +65,23 @@ const Footer3 = () => {
             <ul className='overflow-hidden'>
               <li>
                 <Link
-                  to={'/'}
+                  to={'/about'}
                   className='inline-block'
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    IT Solutions
+                    About Us
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={'/team'}
+                  className='inline-block'
+                >
+                  <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
+                    <FaAnglesRight className='text-xs text-PrimaryColor-0' />
+                    Meet Our Team
                   </button>
                 </Link>
               </li>
@@ -81,40 +92,29 @@ const Footer3 = () => {
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Cyber Security
+                   Ingrations
                   </button>
                 </Link>
               </li>
               <li>
                 <Link
-                  to={'/'}
+                  to={'/contact'}
                   className='inline-block'
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Digital Marketing
+                   Contact Us
                   </button>
                 </Link>
               </li>
               <li>
                 <Link
-                  to={'/'}
-                  className='inline-block'
-                >
-                  <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
-                    <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Brand Identity
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={'/'}
+                  to={'/blog'}
                   className='inline-block'
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    SEO Marketing
+                  Blog
                   </button>
                 </Link>
               </li>
@@ -122,7 +122,7 @@ const Footer3 = () => {
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-2'>
             <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[30px]'>
-              Company
+              Services
             </h4>
             <ul className='overflow-hidden'>
               <li>
@@ -132,7 +132,7 @@ const Footer3 = () => {
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    IT Solutions
+                   Consultant
                   </button>
                 </Link>
               </li>
@@ -143,7 +143,7 @@ const Footer3 = () => {
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Cyber Security
+                    Web Development
                   </button>
                 </Link>
               </li>
@@ -154,7 +154,7 @@ const Footer3 = () => {
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Digital Marketing
+                    UI Design
                   </button>
                 </Link>
               </li>
@@ -165,7 +165,7 @@ const Footer3 = () => {
                 >
                   <button className='flex items-center gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-3'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Brand Identity
+                   Networking
                   </button>
                 </Link>
               </li>
@@ -183,7 +183,7 @@ const Footer3 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[30px]'>
+            <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[36px]'>
               Latest Blog
             </h4>
             <Link
@@ -193,12 +193,12 @@ const Footer3 = () => {
               <div>
                 <img
                   src={footerImg}
-                  className='w-[80px] h-[80px] rounded'
+                  className='rounded'
                 />
               </div>
               <div className='flex-1'>
                 <h6 className='font-FiraSans font-medium text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                  Sustainability Consulting for Business Planning
+                  Sustainability Consulting <br className='hidden 2xl:block'/> for Business Planning
                 </h6>
                 <p className='font-FiraSans text-sm text-TextColor2-0 flex items-center gap-2 mt-1'>
                   <span className='text-PrimaryColor-0'>
@@ -210,17 +210,17 @@ const Footer3 = () => {
             </Link>
             <Link
               to={'/'}
-              className='flex items-center gap-[18px] group mt-5'
+              className='flex items-center gap-[18px] group mt-7'
             >
               <div>
                 <img
                   src={footerImg2}
-                  className='w-[80px] h-[80px] rounded'
+                  className='rounded'
                 />
               </div>
               <div className='flex-1'>
                 <h6 className='font-FiraSans font-medium text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                  Globally disintermediate exten services resource
+                  Globally disintermediate <br className='hidden 2xl:block'/> exten services resource
                 </h6>
                 <p className='font-FiraSans text-sm text-TextColor2-0 flex items-center gap-2 mt-1'>
                   <span className='text-PrimaryColor-0'>
@@ -233,36 +233,37 @@ const Footer3 = () => {
           </div>
         </div>
       </div>
-        <div className='Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between'>
-          <p className='font-FiraSans text-TextColor2-0 opacity-60'>
-            Echofy © 2024 All rights reserved.
-          </p>
-          <div>
-            <ul className='flex gap-7'>
-              <li>
-                <Link to={'/'}>
-                  <button className='font-FiraSans text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    Privacy & Terms
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='font-FiraSans text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    FAQ
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='font-FiraSans text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    Contact Us
-                  </button>
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className='Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between mt-[120px] py-6 border-t border-HeadingColor-0 border-opacity-20'>
+        <p className='font-FiraSans text-HeadingColor-0 text-[15px]'>
+          Copyright © 2024 <Link to={'/'} className='text-PrimaryColor-0'>Consalt</Link> . Designed & Developed
+          by Dream-IT
+        </p>
+        <div>
+          <ul className='flex gap-7'>
+            <li>
+              <Link to={'/'}>
+                <button className='font-FiraSans text-HeadingColor-0 text-[15px] transition-all duration-500 hover:text-PrimaryColor-0'>
+                  Privacy & Terms
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link to={'/'}>
+                <button className='font-FiraSans text-HeadingColor-0 text-[15px] transition-all duration-500 hover:text-PrimaryColor-0'>
+                  FAQ
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link to={'/'}>
+                <button className='font-FiraSans text-HeadingColor-0 text-[15px] transition-all duration-500 hover:text-PrimaryColor-0'>
+                  Contact Us
+                </button>
+              </Link>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
   );
 };
