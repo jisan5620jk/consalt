@@ -5,7 +5,7 @@ import aboutShape3 from '/images/about_shape5.png';
 import aboutIcon from '/images/about3_icon1.png';
 import aboutIcon2 from '/images/about3_icon2.png';
 import border from '/images/hero_border.png';
-import thumb from '/images/like.png';
+import thumb from '/images/like_2.png';
 import { Link } from 'react-router-dom';
 import { FaRegThumbsUp } from 'react-icons/fa';
 
@@ -73,7 +73,7 @@ const About = () => {
             </p>
             <div className='grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-b border-BorderColor-0 mt-9 pb-7 mb-9'>
               <div className='flex items-center gap-5'>
-                <div className='relative z-10 pl-4'>
+                <div className='relative z-10'>
                   <img
                     src={aboutIcon}
                     draggable='false'
@@ -86,7 +86,7 @@ const About = () => {
                 </div>
               </div>
               <div className='flex items-center gap-5'>
-                <div className='relative z-10 pl-4'>
+                <div className='relative z-10'>
                   <img
                     src={aboutIcon2}
                     draggable='false'

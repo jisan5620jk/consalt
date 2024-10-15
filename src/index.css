@@ -279,6 +279,70 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
 }
 
+/* Service */
+
+.Service .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 2px !important;
+  flex-direction: row !important;
+}
+
+.Service .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #cddff7 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.Service .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0b6d6e !important;
+}
+
+.Service span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(0);
+}
+
+.Service .swiper-slide.swiper-slide-active .service-box::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.Service .swiper-slide.swiper-slide-active .service-thumb-shape {
+  height: 100%;
+  opacity: 1;
+}
+
+.Service .swiper-slide.swiper-slide-active .service-thumb-btn {
+  transform: scale(1);
+}
+
+.Service .swiper-slide.swiper-slide-active .service-content-shape {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.Service .swiper-slide.swiper-slide-active .service-sub-title::before {
+  width: 100%;
+}
+
+.Service .swiper-slide.swiper-slide-active .service-btn {
+  color: #0c6e6d;
+}
+
 /* Faq */
 
 .faq-button[aria-expanded='true'],
