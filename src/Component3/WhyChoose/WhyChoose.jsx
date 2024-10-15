@@ -10,10 +10,9 @@ import { useState } from 'react';
 import { HiOutlinePlayCircle } from 'react-icons/hi2';
 
 const WhyChoose = () => {
-  
   const [toggler, setToggler] = useState(false);
   return (
-    <section className='pb-[120px] pt-[170px] bg-[url(/images/choose_bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10'>
+    <section className='pb-[120px] pt-[170px] bg-[url(/images/choose_bg.jpg)] bg-no-repeat bg-cover bg-center relative z-20'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
           <div className='relative z-10'>
@@ -78,7 +77,7 @@ const WhyChoose = () => {
                 Affordable Pricing Plans
               </li>
             </ul>
-            <div className='inline-block'>
+            <div className='inline-block relative z-50'>
               <div
                 className='flex items-center gap-7'
                 onClick={() => setToggler(!toggler)}

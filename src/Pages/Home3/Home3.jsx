@@ -1,8 +1,9 @@
-import About from "../../Component3/About/About";
-import Banner from "../../Component3/Banner/Banner";
-import ContentSlider from "../../Component3/ContentSlider/ContentSlider";
-import Service from "../../Component3/Service/Service";
-import WhyChoose from "../../Component3/WhyChoose/WhyChoose";
+import About from '../../Component3/About/About';
+import Banner from '../../Component3/Banner/Banner';
+import ContentSlider from '../../Component3/ContentSlider/ContentSlider';
+import Service from '../../Component3/Service/Service';
+import TeamMember from '../../Component3/TeamMember/TeamMember';
+import WhyChoose from '../../Component3/WhyChoose/WhyChoose';
 
 const Home3 = () => {
   return (
@@ -10,8 +11,9 @@ const Home3 = () => {
       <Banner />
       <About />
       <ContentSlider />
-      <Service/>
+      <Service />
       <WhyChoose />
+      <TeamMember />
     </>
   );
 };

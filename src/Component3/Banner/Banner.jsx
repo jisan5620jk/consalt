@@ -47,7 +47,7 @@ const Banner = () => {
                   {`Get Started now`}
                 </button>
               </Link>
-              <div>
+              <div className='relative z-50'>
                 <button
                   className='flex items-center gap-3 text-HeadingColor-0 font-FiraSans font-medium'
                   onClick={() => setToggler(!toggler)}
@@ -83,8 +83,10 @@ const Banner = () => {
                 <FaRegCircleCheck />
               </div>
               <div>
-                <h5 className="font-FiraSans font-medium text-lg text-HeadingColor-0">Powerful Team</h5>
-                <p className="font-FiraSans text-TextColor2-0">36+ Members</p>
+                <h5 className='font-FiraSans font-medium text-lg text-HeadingColor-0'>
+                  Powerful Team
+                </h5>
+                <p className='font-FiraSans text-TextColor2-0'>36+ Members</p>
               </div>
             </div>
           </div>
