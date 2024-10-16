@@ -179,46 +179,27 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 /* Testimonial */
 
 .testimonial .swiper-pagination {
-  top: 5px !important;
-  bottom: inherit !important;
+  top: inherit !important;
+  bottom: 0 !important;
   left: 50% !important;
   flex-direction: row !important;
   justify-content: center;
+  gap: 2px !important;
 }
 
 .testimonial span.swiper-pagination-bullet {
-  width: 92px !important;
-  height: 92px !important;
+  width: 10px !important;
+  height: 10px !important;
   border-radius: 50% !important;
-  opacity: 1 !important;
+  opacity: .5 !important;
   border: none !important;
-}
-
-.testimonial span.swiper-pagination-bullet:nth-of-type(1) {
-  background: url(../public/images/testi-5.png) no-repeat center/cover !important;
-}
-
-.testimonial span.swiper-pagination-bullet:nth-of-type(2) {
-  background: url(../public/images/testi-2.png) no-repeat center/cover !important;
-}
-
-.testimonial span.swiper-pagination-bullet:nth-of-type(3) {
-  background: url(../public/images/testi-3.png) no-repeat center/cover !important;
-}
-
-.testimonial span.swiper-pagination-bullet:nth-of-type(4) {
-  background: url(../public/images/testi-4.png) no-repeat center/cover !important;
-}
-
-.testimonial span.swiper-pagination-bullet:nth-of-type(5) {
-  background: url(../public/images/testi-1.png) no-repeat center/cover !important;
+  background: #0c6e6d !important;
 }
 
 .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  height: 110px !important;
-  width: 110px !important;
-  transform: scale(1.1) !important;
-  border: 5px solid #fff !important;
+  height: 12px !important;
+  width: 12px !important;
+  opacity: 1 !important;
 }
 
 .testimonial
@@ -341,6 +322,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .Service .swiper-slide.swiper-slide-active .service-btn {
   color: #0c6e6d;
+}
+
+/* Testimonial Box*/
+
+.testimonial .swiper-slide.swiper-slide-active .testi-box {
+  border-radius: 6px 80px 6px 6px !important;
 }
 
 /* Faq */

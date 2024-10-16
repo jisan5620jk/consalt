@@ -1,52 +1,57 @@
 /* eslint-disable no-unused-vars */
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestimonialCard from "./TestimonialCard";
-import TestimonialNavigation from "./TestimonialNavigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
+import TestimonialCard from './TestimonialCard';
+import border from '/images/hero_border.png';
+import testiThumb from '/images/auothor.png';
+import testiThumb2 from '/images/auothor2.png';
+import testiQuote from '/images/quote.png';
+import CountUp from 'react-countup';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+import serviceShape2 from '/images/service_shpe2.png';
+import serviceShape3 from '/images/about_shape_3.png';
+import contentShape from '/images/service_dot2.png';
+import serviceShape4 from '/images/tir.png';
 
 const testiData = [
   {
     id: 1,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiThumb: testiThumb,
+    testiQuote: testiQuote,
+    testiDesc: `“Conveniently transform architectures
+									diness equity invested Appropriately
+									proactives leadership skills without 
+									applications Consultant”`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Web Developer',
   },
   {
     id: 2,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiThumb: testiThumb2,
+    testiQuote: testiQuote,
+    testiDesc: `“Conveniently transform architectures
+									diness equity invested Appropriately
+									proactives leadership skills without 
+									applications Consultant”`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiName: 'David Miller',
+    testiDesignation: 'UI/UX Designer',
   },
   {
     id: 3,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiThumb: testiThumb,
+    testiQuote: testiQuote,
+    testiDesc: `“Conveniently transform architectures
+									diness equity invested Appropriately
+									proactives leadership skills without 
+									applications Consultant”`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 4,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 5,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiName: 'Anjelina Watson',
+    testiDesignation: 'Web Developer',
   },
 ];
 
@@ -64,10 +69,10 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       992: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
     },
   };
@@ -78,45 +83,124 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            SERVICE WE PROVIDE
-          </h5>
-          <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
-            Customer’s Awesome Feedback <br />
-            About Our <span className="text-PrimaryColor-0">Services</span>
-          </h1>
-        </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-[80px] md:pt-[150px]">
-                        <TestimonialCard
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
+    <section className='testimonial py-28 bg-[url(/images/testi_bg.png)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden'>
+      <div className='absolute -z-10 top-24 right-[35%] hidden 2xl:block animate-rotate'>
+        <img
+          src={serviceShape4}
+          draggable='false'
+        />
+      </div>
+      <div className='absolute -z-10 bottom-40 -left-40 hidden 2xl:block animate-rotate'>
+        <img
+          src={serviceShape3}
+          draggable='false'
+        />
+      </div>
+      <div className='absolute -z-10 top-36 right-[22%] hidden 2xl:block animate-rotate'>
+        <img
+          src={serviceShape4}
+          draggable='false'
+        />
+      </div>
+      <div className='Container'>
+        <div className='grid grid-cols-12'>
+          <div className='col-span-5'>
+            <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3'>
+              Testimonial
+            </h5>
+            <h1 className='font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+              Trusted By The Genius <br /> People With Consalt
+              <img
+                src={border}
+                draggable='false'
+                className='absolute bottom-0 left-0'
+              />
+            </h1>
+            <p className='font-FiraSans text-lg text-TextColor2-0 pt-[30px] pb-6'>
+              Media leadership skills before cross-media innovation{' '}
+              <br className='hidden sm:block' /> develop standardized platforms
+              without
+            </p>
+            <div className='flex items-center gap-[22px] border-y border-BorderColor-0 py-[26px] relative'>
+              <CountUp
+                start={-11}
+                prefix='4.'
+                end={98}
+                suffix={''}
+                className='font-FiraSans text-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[56px] xl:leading-[44px] text-PrimaryColor-0 font-medium border-r border-BorderColor-0 pr-[22px]'
+              />
+              <div>
+                <ul className='flex gap-[6px] items-center'>
+                  <li className='text-[#ffb609] text-xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                </ul>
+                <p className='font-FiraSans text-lg text-TextColor2-0 pt-1'>
+                  Avg. Clients Ratings
+                </p>
+              </div>
+              <div className='absolute -z-10 top-1/2 right-16 hidden 2xl:block animate-dance3'>
+                <img
+                  src={serviceShape2}
+                  draggable='false'
+                />
+              </div>
             </div>
-            <TestimonialNavigation />
-          </Swiper>
+            <h6 className='font-FiraSans text-TextColor2-0 flex items-center gap-2 pt-[18px]'>
+              <span className='text-PrimaryColor-0'>
+                <IoIosCheckmarkCircle size={'22'} />
+              </span>
+              100% Clients Satisfaction Gaurantee
+            </h6>
+          </div>
+          <div className='col-span-7'>
+            <Swiper
+              {...settings}
+              pagination={pagination}
+              modules={[Pagination]}
+            >
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiThumb,
+                    testiQuote,
+                    testiRatingIcon,
+                    testiName,
+                    testiDesignation,
+                    testiDesc,
+                  }) => {
+                    return (
+                      <SwiperSlide key={id}>
+                        <div className='pb-[52px]'>
+                          <TestimonialCard
+                            testiThumb={testiThumb}
+                            testiQuote={testiQuote}
+                            testiRatingIcon={testiRatingIcon}
+                            testiName={testiName}
+                            testiDesignation={testiDesignation}
+                            testiDesc={testiDesc}
+                          />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
