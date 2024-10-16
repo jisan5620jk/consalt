@@ -120,7 +120,7 @@ const Testimonial = () => {
               <br className='hidden sm:block' /> develop standardized platforms
               without
             </p>
-            <div className='flex items-center gap-[22px] border-y border-BorderColor-0 py-[26px] relative'>
+            <div className='flex items-center gap-[22px] border-y border-BorderColor-0 py-[26px] relative mr-10'>
               <CountUp
                 start={-11}
                 prefix='4.'
@@ -150,7 +150,7 @@ const Testimonial = () => {
                   Avg. Clients Ratings
                 </p>
               </div>
-              <div className='absolute -z-10 top-1/2 -translate-y-1/2 right-16 hidden 2xl:block animate-dance3'>
+              <div className='absolute -z-10 top-11  right-6 hidden 2xl:block animate-dance3'>
                 <img
                   src={serviceShape2}
                   draggable='false'
