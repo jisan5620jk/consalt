@@ -11,9 +11,8 @@ import testiThumb2 from '/images/auothor2.png';
 import testiQuote from '/images/quote.png';
 import CountUp from 'react-countup';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
-import serviceShape2 from '/images/service_shpe2.png';
-import serviceShape3 from '/images/about_shape_3.png';
-import contentShape from '/images/service_dot2.png';
+import serviceShape2 from '/images/about_shape_3.png';
+import serviceShape3 from '/images/service_shpe2.png';
 import serviceShape4 from '/images/tir.png';
 
 const testiData = [
@@ -83,22 +82,22 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial py-28 bg-[url(/images/testi_bg.png)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden'>
+    <section className='testimonial pt-28 pb-[220px] bg-[url(/images/testi_bg.png)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden'>
       <div className='absolute -z-10 top-24 right-[35%] hidden 2xl:block animate-rotate'>
         <img
           src={serviceShape4}
           draggable='false'
         />
       </div>
-      <div className='absolute -z-10 bottom-40 -left-40 hidden 2xl:block animate-rotate'>
+      <div className='absolute -z-10 top-1/4 -left-40 hidden 2xl:block animate-rotate'>
         <img
           src={serviceShape3}
           draggable='false'
         />
       </div>
-      <div className='absolute -z-10 top-36 right-[22%] hidden 2xl:block animate-rotate'>
+      <div className='absolute -z-10 right-10 bottom-10 hidden 2xl:block animate-rotate'>
         <img
-          src={serviceShape4}
+          src={serviceShape3}
           draggable='false'
         />
       </div>
@@ -151,7 +150,7 @@ const Testimonial = () => {
                   Avg. Clients Ratings
                 </p>
               </div>
-              <div className='absolute -z-10 top-1/2 right-16 hidden 2xl:block animate-dance3'>
+              <div className='absolute -z-10 top-1/2 -translate-y-1/2 right-16 hidden 2xl:block animate-dance3'>
                 <img
                   src={serviceShape2}
                   draggable='false'
