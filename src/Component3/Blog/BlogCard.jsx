@@ -3,45 +3,49 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({
   blogThumb,
-  blogDateIcon,
-  blogDate,
-  blogTagIcon,
-  blogTag,
+  blogThumbTitle,
   blogUrl,
   blogTitle,
-  blogBtn,
-  blogBtnIcon,
+  blogDesc,
+  blogDateIcon,
+  blogDate,
+  blogCommentIcon,
+  blogComment,
 }) => {
   return (
-    <div className="group p-5 transition-all duration-500 bg-white rounded-md border border-BorderColor2-0">
-      <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
+    <div className='group transition-all duration-500 bg-white rounded-xl border border-BorderColor2-0 overflow-hidden'>
+      <div className='relative z-10 rounded-lg overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0'>
         <img
           src={blogThumb}
-          className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
+          className='transition-all duration-500 scale-[1.01] group-hover:scale-110 w-full'
         />
+        <div className="absolute z-10 top-5 right-5">
+          <h6 className='relative z-10 overflow-hidden font-FiraSans uppercase rounded text-sm text-white bg-PrimaryColor-0 px-5 py-2 before:absolute before:right-0 before:w-0 before:h-full before:top-0 before:-z-10 before:transition-all before:duration-500 before:bg-[#ff9307] group-hover:before:w-full group-hover:before:left-0'>
+            {blogThumbTitle}
+          </h6>
+        </div>
       </div>
-      <div className="rounded-md relative z-20 bg-white transition-all duration-500 pt-8">
+      <div className='rounded-md px-9 pb-9 pt-[30px] relative z-20 bg-white transition-all duration-500'>
         <div>
-          <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px] mb-2">
-            <span className="text-PrimaryColor-0">{blogDateIcon}</span>
-            {blogDate}
-          </p>
           <Link to={blogUrl}>
-            <button className="font-FiraSans text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2">
+            <button className='font-FiraSans text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:underline group-hover:text-PrimaryColor-0'>
               {blogTitle}
             </button>
           </Link>
-          <div className="flex flex-col justify-between sm:flex-row lg:flex-col xl:flex-row gap-6 border-t border-BorderColor2-0 mt-7 pt-5">
-            <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
-              <span className="text-PrimaryColor-0 text-xl">{blogTagIcon}</span>
-              {blogTag}
+          <p className='font-FiraSans text-TextColor2-0 pt-3'>{blogDesc}</p>
+          <div className='flex flex-col justify-between sm:flex-row lg:flex-col xl:flex-row gap-6 border-t border-BorderColor2-0 mt-4 pt-4'>
+            <p className='font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]'>
+              <span className='text-PrimaryColor-0 text-[10px]'>
+                {blogDateIcon}
+              </span>
+              {blogDate}
             </p>
-            <Link to={blogUrl} className="inline-block ">
-              <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-FiraSans font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
-                {blogBtn}
-                {blogBtnIcon}
-              </button>
-            </Link>
+            <p className='font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]'>
+              <span className='text-PrimaryColor-0 text-xl'>
+                {blogCommentIcon}
+              </span>
+              {blogComment}
+            </p>
           </div>
         </div>
       </div>

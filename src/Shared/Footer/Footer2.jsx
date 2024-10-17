@@ -34,7 +34,7 @@ const Footer2 = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex lg:justify-center md:border-l lg:border-l-0 lg:border-x-2 border-BorderColor2-0 py-2">
+            <div className="flex lg:justify-center md:border-l lg:border-l-0 xl:border-x-2 border-BorderColor2-0 py-2">
               <Link to={"/"}>
                 <img src={footerLogo} draggable="false" />
               </Link>

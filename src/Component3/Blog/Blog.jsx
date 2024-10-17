@@ -1,91 +1,97 @@
-/* eslint-disable no-unused-vars */
-import { FaRegCalendarCheck } from "react-icons/fa6";
-import blogThumb from "/images/blog1.png";
-import blogThumb2 from "/images/blog2.png";
-import blogThumb3 from "/images/blog3.png";
+import { FaCircle } from "react-icons/fa6";
+import blogThumb from '/images/blog3_1.png';
+import blogThumb2 from '/images/blog3_2.png';
+import blogThumb3 from '/images/blog3_3.png';
+import border from '/images/hero_border.png';
 import BlogCard from "./BlogCard";
-import { GoArrowRight } from "react-icons/go";
-import { PiUserCircleFill } from "react-icons/pi";
+import { CiHeart } from "react-icons/ci";
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogThumbTitle: 'Creative',
+    blogDateIcon: <FaCircle />,
+    blogDate: '04 Mar, 2024',
+    blogCommentIcon: <CiHeart />,
+    blogComment: '2 Comments',
+    blogUrl: '/blog_details',
+    blogTitle: 'Globally disintermediate exten services resource',
+    blogDesc:
+      'Continually plagiarizes virtual web services action items. Globally build',
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "How to Secure your facebook Business Account",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogThumbTitle: 'Creative',
+    blogDateIcon: <FaCircle />,
+    blogDate: '14 Mar, 2024',
+    blogCommentIcon: <CiHeart />,
+    blogComment: '2 Comments',
+    blogUrl: '/blog_details',
+    blogTitle: 'Consulting Industry changing Business Landscape',
+    blogDesc:
+      'Continually plagiarizes virtual web services action items. Globally build',
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Better Context Menus With Safe Triangles",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogThumbTitle: 'Creative',
+    blogDateIcon: <FaCircle />,
+    blogDate: '24 Mar, 2024',
+    blogCommentIcon: <CiHeart />,
+    blogComment: '2 Comments',
+    blogUrl: '/blog_details',
+    blogTitle: 'Sustainability Consulting for Business Planning',
+    blogDesc:
+      'Continually plagiarizes virtual web services action items. Globally build',
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="py-28">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
-            IT Support For Business
+    <section className='bg-[url(/images/blog3_bg.png)] bg-no-repeat bg-center bg-cover py-28'>
+      <div className='Container'>
+        <div className='text-center'>
+          <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3'>
+            LATEST BLOG
           </h5>
-          <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
-            Ensuring Your Success Trusted <br />
-            IT Services Source
+          <h1 className='font-FiraSans font-semibold text-HeadingColor-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+            Read Our Latest Insights from the <br /> Latest Blog Articles
+            <img
+              src={border}
+              draggable='false'
+              className='absolute bottom-0 left-1/2 -translate-x-1/2'
+            />
           </h1>
         </div>
-        <div className="mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className='mt-[60px]'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
             {blogData.map(
               ({
                 id,
                 blogThumb,
+                blogThumbTitle,
                 blogDateIcon,
                 blogDate,
-                blogTagIcon,
-                blogTag,
+                blogCommentIcon,
+                blogComment,
                 blogUrl,
                 blogTitle,
-                blogBtn,
-                blogBtnIcon,
+                blogDesc,
               }) => {
                 return (
                   <div key={id}>
                     <BlogCard
                       blogThumb={blogThumb}
+                      blogThumbTitle={blogThumbTitle}
                       blogDateIcon={blogDateIcon}
                       blogDate={blogDate}
-                      blogTagIcon={blogTagIcon}
-                      blogTag={blogTag}
+                      blogCommentIcon={blogCommentIcon}
+                      blogComment={blogComment}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtn={blogBtn}
-                      blogBtnIcon={blogBtnIcon}
+                      blogDesc={blogDesc}
                     />
                   </div>
                 );
