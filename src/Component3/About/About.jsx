@@ -11,7 +11,7 @@ import { FaRegThumbsUp } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <section className='pb-[120px] pt-[170px] relative z-10'>
+    <section className='pb-[120px] pt-[170px] lg:pt-28 xl:pt-[170px] relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
           <div className='relative z-10'>
@@ -19,10 +19,10 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full 2xl:w-[inherit] -ml-12'
+              className='w-full 2xl:w-[inherit] lg:-ml-2 xl:-ml-12'
             />
-            <div className='absolute mr-12 -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 2xl:-top-[70px] 2xl:right-[56px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[180px] bg-BodyBg-0 rounded-full flex items-center justify-center border-[5px] border-white'>
-              <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational'>
+            <div className='absolute sm:mr-12 -top-8 sm:-top-16 right-6 md:-top-8 lg:-top-14 sm:right-2 md:right-8 lg:right-0 xl:right-8 xl:-top-20 2xl:-top-[70px] 2xl:right-[56px] size-[85px] sm:size-[142px] md:size-[180px] lg:size-[140px] xl:size-[180px] bg-BodyBg-0 rounded-full flex items-center justify-center border-2 sm:border-[5px] border-white'>
+              <div className='size-16 sm:size-24 md:size-32 lg:size-24 xl:size-[120px] animate-rotational'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 250.5 250.5'
@@ -71,7 +71,7 @@ const About = () => {
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
-            <div className='grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-b border-BorderColor-0 mt-9 pb-7 mb-9'>
+            <div className='grid items-center grid-cols-1 gap-7 sm:gap-1 md:gap-7 lg:gap-1 2xl:gap-7 sm:grid-cols-2 border-b border-BorderColor-0 mt-9 pb-7 mb-9'>
               <div className='flex items-center gap-5'>
                 <div className='relative z-10'>
                   <img

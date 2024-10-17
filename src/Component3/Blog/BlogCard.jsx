@@ -25,15 +25,15 @@ const BlogCard = ({
           </h6>
         </div>
       </div>
-      <div className='rounded-md px-9 pb-9 pt-[30px] relative z-20 bg-white transition-all duration-500'>
+      <div className='rounded-md px-4 sm:px-5 md:px-9 lg:px-5 xl:px-9 pb-9 pt-[30px] relative z-20 bg-white transition-all duration-500'>
         <div>
           <Link to={blogUrl}>
-            <button className='font-FiraSans text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:underline group-hover:text-PrimaryColor-0'>
+            <button className='font-FiraSans text-left font-medium text-lg sm:text-xl md:text-lg lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:underline group-hover:text-PrimaryColor-0'>
               {blogTitle}
             </button>
           </Link>
           <p className='font-FiraSans text-TextColor2-0 pt-3'>{blogDesc}</p>
-          <div className='flex flex-col justify-between sm:flex-row lg:flex-col xl:flex-row gap-6 border-t border-BorderColor2-0 mt-4 pt-4'>
+          <div className='flex justify-between border-t border-BorderColor2-0 mt-4 pt-4'>
             <p className='font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]'>
               <span className='text-PrimaryColor-0 text-[10px]'>
                 {blogDateIcon}

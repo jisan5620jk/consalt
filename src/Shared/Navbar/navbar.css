@@ -880,6 +880,12 @@ nav.main-menu-content > ul > li > a:hover > span {
   margin: 0;
 }
 
+@media screen and (max-width:991px) {
+  .header-area.style-three .header-logo {
+  margin: 16px 0;
+}
+}
+
 .header-area.style-three nav.main-menu-content > ul {
   display: flex;
   justify-content: end;
@@ -888,6 +894,18 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-area.style-three nav.main-menu-content > ul > li > a {
   padding: 38px 28px;
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+  .header-area.style-three nav.main-menu-content > ul > li > a {
+    padding: 38px 18px;
+}
+}
+
+@media screen and (min-width:1200px) and (max-width: 1399px) {
+.header-area.style-three nav.main-menu-content > ul {
+    margin-right: 10px;
+}
 }
 
 .header-area.style-three nav.main-menu-content > ul > li > a > span {
@@ -904,6 +922,10 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-area.style-three .menu-sidebar span {
   background: #0c6e6d;
+}
+
+.header-area.style-three .menu-bar span {
+    background: #000;
 }
 
 /* Header Sidebar */

@@ -30,7 +30,7 @@ const Footer3 = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex lg:justify-center md:border-l lg:border-l-0 xl:border-x-2 border-BorderColor2-0 py-2'>
+            <div className='flex md:justify-center md:border-l lg:border-l-0 xl:border-x-2 border-BorderColor2-0 py-2'>
               <Link to={'/'}>
                 <img
                   src={footerLogo}
@@ -86,11 +86,11 @@ const Footer3 = () => {
         <img
           src={footerShape2}
           draggable='false'
-          className='absolute -z-10 top-20 right-20 animate-dance2'
+          className='absolute -z-10 top-20 right-20 animate-dance2 hidden 2xl::block'
         />
         <div className='Container'>
-          <div className='grid grid-cols-12'>
-            <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+          <div className='grid grid-cols-12 gap-6 lg:gap-0'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4'>
               <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium'>
                 About Us
               </h4>
@@ -101,7 +101,7 @@ const Footer3 = () => {
               <form
                 action='#'
                 method='post'
-                className='relative w-8/12'
+                className='relative sm:w-8/12'
               >
                 <label
                   htmlFor='email'
@@ -126,7 +126,7 @@ const Footer3 = () => {
                 </div>
               </form>
             </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-2 xl:col-span-3'>
               <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[30px]'>
                 Company
               </h4>
@@ -188,7 +188,7 @@ const Footer3 = () => {
                 </li>
               </ul>
             </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-2'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-2 xl:col-span-2'>
               <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[30px]'>
                 Services
               </h4>
@@ -250,7 +250,7 @@ const Footer3 = () => {
                 </li>
               </ul>
             </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3'>
               <h4 className='font-FiraSans text-2xl text-HeadingColor-0 font-medium mb-[36px]'>
                 Latest Blog
               </h4>

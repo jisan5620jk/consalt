@@ -207,23 +207,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .testimonial .swiper-pagination {
-    gap: 5px !important;
-  }
 
-  .testimonial span.swiper-pagination-bullet {
-    width: 38px !important;
-    height: 38px !important;
-  }
-
-  .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 45px !important;
-    height: 45px !important;
-    transform: scale(1.1) !important;
-    border: 2px solid #fff !important;
-  }
-}
 
 .project .swiper-pagination {
   bottom: 0 !important;

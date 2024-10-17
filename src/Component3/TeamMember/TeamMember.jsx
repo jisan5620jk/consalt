@@ -84,7 +84,7 @@ const TeamMember = () => {
           <img
             src={aboutShape}
             draggable='false'
-            className='absolute -z-10 top-32 right-80 animate-dance3'
+            className='absolute -z-10 top-32 right-10 xl:right-80  animate-dance3 hidden md:block'
           />
 
           <div className='absolute -z-10 top-36 left-[22%] hidden 2xl:block animate-rotate'>
@@ -94,7 +94,7 @@ const TeamMember = () => {
             />
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[60px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-7 mt-[60px]'>
           {teamData.map(
             ({
               id,

@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='testi-box relative text-center bg-white shadow-cases px-10 pt-10 pb-9 rounded-md rounded-ss-[80px] transition-all duration-500 before:absolute before:right-0 before:bottom-0 before:w-0 before:h-[5px] before:rounded-lg before:z-10 before:bg-[#ff9307] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full'>
+    <div className='testi-box relative text-center bg-white shadow-cases px-3 sm:px-10 lg:px-4 2xl:px-10 pt-10 pb-9 rounded-md rounded-ss-[80px] transition-all duration-500 before:absolute before:right-0 before:bottom-0 before:w-0 before:h-[5px] before:rounded-lg before:z-10 before:bg-[#ff9307] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full'>
       <div className='relative flex items-center justify-center'>
         <img
           src={testiThumb}

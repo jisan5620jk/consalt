@@ -19,6 +19,7 @@ const ServiceCard = ({
         <img
           src={serviceThumb}
           draggable='false'
+          className='w-full'
         />
         <img
           src={serviceThumbShape}
@@ -40,7 +41,7 @@ const ServiceCard = ({
         <img
           src={contentShape}
           draggable='false'
-          className='service-content-shape absolute top-8 right-5 scale-0 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100'
+          className='hidden sm:block service-content-shape absolute top-8 right-5 scale-0 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100'
         />
         <h6 className='service-sub-title font-FiraSans text-[15px] text-white inline-block py-1 px-5 rounded overflow-hidden bg-PrimaryColor-0 uppercase mt-8 relative z-10 before:absolute before:right-0 before:top-0 before:h-full before:w-0 before:-z-10 before:bg-[#ff9307] before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0'>
           {serviceSubTilte}
@@ -66,7 +67,7 @@ const ServiceCard = ({
         <img
           src={contentShape}
           draggable='false'
-          className='service-content-shape absolute bottom-3 left-8 scale-0 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100'
+          className='hidden sm:block service-content-shape absolute bottom-3 left-8 md:left-2 scale-0 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100'
         />
       </div>
     </div>

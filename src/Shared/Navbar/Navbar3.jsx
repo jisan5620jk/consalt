@@ -473,7 +473,7 @@ const Navbar2 = () => {
                     <LuMoveRight size={'19'} />
                   </Link>
                 </div>
-                <div className='header-sidebar hidden size-[55px] bg-BodyBg-0 rounded-md lg:flex items-center justify-center cursor-pointer' ref={menuSideBarRef}>
+                <div className='header-sidebar hidden size-[55px] bg-BodyBg-0 rounded-md 2xl:flex items-center justify-center cursor-pointer' ref={menuSideBarRef}>
                   <button
                     className='menu-sidebar'
                   >

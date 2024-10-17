@@ -12,7 +12,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/hero_3_bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[900px] lg:h-[660px] xl:h-[750px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero_3_bg.jpg')] bg-cover bg-center bg-no-repeat h-[850px] sm:h-[1000px] md:h-[1180px] lg:h-[660px] xl:h-[750px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]'>
           <div className='relative'>
@@ -37,7 +37,7 @@ const Banner = () => {
             <p className='font-FiraSans text-TextColor2-0 mb-[38px] mt-6'>
               Continually plagiarize virtual web services with resource{' '}
               <br className='hidden xl:block 2xl:hidden' />
-              maximizing <br className='hidden 2xl:block' /> action items.
+              maximizing <br className='hidden md:block lg:hidden 2xl:block' /> action items.
               Globally build Buseness
             </p>
             <div className='flex flex-col sm:flex-row sm:items-center gap-8'>
@@ -71,14 +71,14 @@ const Banner = () => {
             <img
               src={bannerThumb}
               draggable='false'
-              className='2xl:max-w-[inherit] -mt-8'
+              className='2xl:max-w-[inherit] -mb-12 sm:-mt-8 2xl:-mt-16'
             />
             <img
               src={thumbDot}
               draggable='false'
               className='absolute left-1/2 -translate-x-1/2 top-24 -z-10'
             />
-            <div className='absolute top-1/2 -translate-y-1/2 right-0 bg-white pl-5 pr-[50px] py-5 rounded-md flex items-center gap-5 shadow-lg'>
+            <div className='absolute top-1/2 -translate-y-1/2 right-0 bg-white pl-5 pr-[50px] py-5 rounded-md hidden sm:flex items-center gap-5 shadow-lg'>
               <div className='size-[56px] rounded-full bg-[#ff9307] flex items-center justify-center text-2xl text-white'>
                 <FaRegCircleCheck />
               </div>

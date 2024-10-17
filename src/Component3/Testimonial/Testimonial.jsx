@@ -65,7 +65,7 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 2,
@@ -102,8 +102,8 @@ const Testimonial = () => {
         />
       </div>
       <div className='Container'>
-        <div className='grid grid-cols-12'>
-          <div className='col-span-5'>
+        <div className='grid grid-cols-6 lg:grid-cols-12'>
+          <div className='col-span-6 lg:col-span-5'>
             <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3'>
               Testimonial
             </h5>
@@ -117,10 +117,10 @@ const Testimonial = () => {
             </h1>
             <p className='font-FiraSans text-lg text-TextColor2-0 pt-[30px] pb-6'>
               Media leadership skills before cross-media innovation{' '}
-              <br className='hidden sm:block' /> develop standardized platforms
+              <br className='hidden sm:block lg:hidden xl:block' /> develop standardized platforms
               without
             </p>
-            <div className='flex items-center gap-[22px] border-y border-BorderColor-0 py-[26px] relative mr-10'>
+            <div className='flex items-center gap-[22px] border-y border-BorderColor-0 py-[26px] relative sm:mr-10'>
               <CountUp
                 start={-11}
                 prefix='4.'
@@ -164,7 +164,7 @@ const Testimonial = () => {
               100% Clients Satisfaction Gaurantee
             </h6>
           </div>
-          <div className='col-span-7'>
+          <div className='col-span-6 lg:col-span-7 mt-10 lg:mt-0'>
             <Swiper
               {...settings}
               pagination={pagination}
