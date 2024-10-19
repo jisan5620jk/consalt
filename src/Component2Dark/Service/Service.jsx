@@ -82,8 +82,8 @@ const Service = () => {
   };
 
   return (
-    <section className="relative z-10 pt-28 pb-[120px] bg-BodyBg4-0">
-      <div className="absolute -z-10 top-40 left-0 hidden 2xl:block">
+    <section className="relative z-10 pt-28 pb-[120px] bg-HeadingColor-0">
+      <div className="absolute -z-10 top-40 left-0 hidden 2xl:block opacity-5">
         <div className="relative animate-wiggle">
           <img src={serviceShape2} draggable="false" />
           <img
@@ -95,10 +95,10 @@ const Service = () => {
       </div>
       <div className="Container">
         <div className="mb-4 md:-mb-[100px] lg:-mb-[120px]">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
             SERVICES WE PROVIDE
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+          <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
             Individuals offer Professional <br /> Services we Provide
           </h1>
         </div>

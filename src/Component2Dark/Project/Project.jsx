@@ -37,19 +37,19 @@ const Project = () => {
     };
   }, []);
   return (
-    <section className="project relative z-10 pt-28 pb-28 lg:pb-0 xl:pb-[176px] 2xl:pb-[188px] bg-BodyBg4-0">
+    <section className="project relative z-10 pt-28 bg-DarkBg-0">
       <div className="Container">
         <div className="grid grid-cols-6 lg:grid-cols-12 items-center mb-10 lg:mb-0">
           <div className="col-span-6 lg:col-span-7">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               LATEST WORKS
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Visit the Real Results of <br /> Latest Case Studies
             </h1>
           </div>
           <div className="col-span-6 lg:col-span-5">
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-FiraSans text-TextColor-0">
               Globally engage cross-media leadership skills before cross-media
               develop standardized platforms without robust applications are go
               forward collaboration
@@ -57,7 +57,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-7 items-baseline mt-0 mx-2 2xl:mx-20 border-b border-BorderColor2-0 pb-28 lg:pb-0 xl:pb-[176px] 2xl:pb-[188px]">
         <div className="relative md:-top-[88px] lg:-top-[109px] xl:top-0 project-box2 rounded overflow-hidden z-10 group">
           <img src={projectThumb} draggable="false" className="w-full" />
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">

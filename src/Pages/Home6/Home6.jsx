@@ -1,16 +1,16 @@
-import About from "../../Component2Default/About/About";
-import Banner from "../../Component2Default/Banner/Banner";
-import Blog from "../../Component2Default/Blog/Blog";
-import CallBack from "../../Component2Default/CallBack/CallBack";
-import CallTo from "../../Component2Default/CallTo/CallTo";
-import Counter from "../../Component2Default/Counter/Counter";
-import Pricing from "../../Component2Default/Pricing/Pricing";
-import Project from "../../Component2Default/Project/Project";
-import Service from "../../Component2Default/Service/Service";
-import Skill from "../../Component2Default/Skill/Skill";
-import Testimonial from "../../Component2Default/Testimonial/Testimonial";
+import About from "../../Component2Classic/About/About";
+import Banner from "../../Component2Classic/Banner/Banner";
+import Blog from "../../Component2Classic/Blog/Blog";
+import CallBack from "../../Component2Classic/CallBack/CallBack";
+import CallTo from "../../Component2Classic/CallTo/CallTo";
+import Counter from "../../Component2Classic/Counter/Counter";
+import Pricing from "../../Component2Classic/Pricing/Pricing";
+import Project from "../../Component2Classic/Project/Project";
+import Service from "../../Component2Classic/Service/Service";
+import Skill from "../../Component2Classic/Skill/Skill";
+import Testimonial from "../../Component2Classic/Testimonial/Testimonial";
 
-const Home2 = () => {
+const Home6 = () => {
   return (
     <>
       <Banner />
@@ -28,4 +28,4 @@ const Home2 = () => {
   );
 };
 
-export default Home2;
+export default Home6;

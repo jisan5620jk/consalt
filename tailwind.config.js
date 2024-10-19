@@ -13,6 +13,7 @@ export default {
         TextColor: ['#a3b7b7'],
         TextColor2: ['#6b7a7a'],
         BodyBg: ['#e0f1df'],
+        DarkBg: ['#083c3c'],
         BodyBg2: ['#063232'],
         BodyBg3: ['#0c6d6d'],
         BodyBg4: ['#f4f8f9'],

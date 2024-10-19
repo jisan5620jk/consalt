@@ -54,7 +54,7 @@ const About = () => {
             <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               The Best Finance Consulting <br /> In Town Since 2007
             </h1>
-            <p className="font-FiraSans text-sm text-TextColor2-0">
+            <p className="font-FiraSans text-TextColor2-0">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and

@@ -889,7 +889,7 @@ nav.main-menu-content > ul > li:hover > a > span {
   color: #ffffff !important;
 }
 
-/* Header Style Two */
+/* Header Style Three */
 .header-area.style-three {
   background: transparent;
   position: relative;
@@ -947,6 +947,17 @@ nav.main-menu-content > ul > li:hover > a > span {
 
 .header-area.style-three .menu-bar span {
     background: #000;
+}
+
+/* Header Style Six */
+
+
+.header-area.style-two.style-six nav.main-menu-content > ul > li > a {
+  color: #053131;
+}
+
+.header-area.style-two.style-six .menu-sidebar span {
+    background: #053131;
 }
 
 /* Header Sidebar */

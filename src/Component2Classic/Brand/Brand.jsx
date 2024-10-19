@@ -31,36 +31,60 @@ const Brand = () => {
     },
   };
   return (
-    <div className="pt-[84px] relative z-10 border-t border-BorderColor2-0 mt-[120px]">
+    <div className='pt-[84px] relative z-10 border-t border-Secondarycolor-0 border-opacity-15 mt-[120px]'>
       <Swiper {...settings}>
         <SwiperSlide>
           <div>
-            <img src={brandThumb} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={brandThumb2} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb2}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={brandThumb3} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb3}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={brandThumb4} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb4}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={brandThumb5} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb5}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={brandThumb} draggable="false" className="m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]" />
+            <img
+              src={brandThumb}
+              draggable='false'
+              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+            />
           </div>
         </SwiperSlide>
       </Swiper>

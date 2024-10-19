@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiQuote,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row sm:px-5 md:px-0 lg:pl-6 lg:py-6 xl:p-0 sm:items-center gap-8 bg-white rounded-xl overflow-hidden relative group z-10">
+    <div className="flex flex-col sm:flex-row sm:px-5 md:px-0 lg:pl-6 lg:py-6 xl:p-0 sm:items-center gap-8 bg-BodyBg4-0 rounded-xl overflow-hidden relative group z-10">
       <div className="relative z-10">
         <img
           src={testiImg}

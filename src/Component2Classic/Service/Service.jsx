@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
 import serviceThumb from "/images/service_3.png";
 import serviceThumb2 from "/images/service_4.png";
 import serviceIcon from "/images/service_icon1.png";
 import serviceIcon2 from "/images/service_icon2.png";
-import serviceShape from "/images/service_shape1.png";
-import serviceShape2 from "/images/service_shape2.png";
 import ServiceCard from "./ServiceCard";
 import { GoArrowUpRight } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -83,16 +80,6 @@ const Service = () => {
 
   return (
     <section className="relative z-10 pt-28 pb-[120px] bg-BodyBg4-0">
-      <div className="absolute -z-10 top-40 left-0 hidden 2xl:block">
-        <div className="relative animate-wiggle">
-          <img src={serviceShape2} draggable="false" />
-          <img
-            src={serviceShape}
-            draggable="false"
-            className="absolute top-[40%] left-28 animate-rotational"
-          />
-        </div>
-      </div>
       <div className="Container">
         <div className="mb-4 md:-mb-[100px] lg:-mb-[120px]">
           <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
