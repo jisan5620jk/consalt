@@ -1,11 +1,7 @@
-/* eslint-disable no-unused-vars */
 import { Link } from 'react-router-dom';
 import Logo from '/images/logo.png';
-import homeOne from '/images/home-one.jpg';
-import homeTwo from '/images/home-three.jpg';
-import homeThree from '/images/home-two.jpg';
 import './navbar.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   FaChevronDown,
   FaEnvelope,
@@ -332,34 +328,70 @@ const Navbar2 = () => {
                           <FaChevronDown />
                         </span>
                       </Link>
-                      <div className='submenu has-homemenu mega-menu'>
-                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-3'>
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/'}>
-                                <img src={homeOne} />
-                                <h6>Live Demo</h6>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/'}>
+                            Buseness Consulting 01
+                            <span>
+                              <FaChevronDown />
+                            </span>
+                          </Link>
+                          <ul className='submenu !-top-[3px]'>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Creative</Link>
+                            </li>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Classic</Link>
+                            </li>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Dark</Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to={'/'}>
+                            Finance Consulting
+                            <span>
+                              <FaChevronDown />
+                            </span>
+                          </Link>
+                          <ul className='submenu !top-[50px]'>
+                            <li>
+                              <Link to={'/home4'}>
+                                Finance Consulting Creative
                               </Link>
-                            </div>
-                          </div>{' '}
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/home2'}>
-                                <img src={homeTwo} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>{' '}
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/home3'}>
-                                <img src={homeThree} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                            </li>
+                            <li>
+                              <Link to={'/home5'}>Finance Consulting Classic</Link>
+                            </li>
+                            <li>
+                              <Link to={'/home6'}>Finance Consulting Dark</Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to={'/'}>IT Consulting</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>
+                            Buseness Consulting 02
+                            <span>
+                              <FaChevronDown />
+                            </span>
+                          </Link>
+                          <ul className='submenu !top-[154px]'>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Creative</Link>
+                            </li>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Classic</Link>
+                            </li>
+                            <li>
+                              <Link to={'/'}>Buseness Consulting Dark</Link>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/'}>

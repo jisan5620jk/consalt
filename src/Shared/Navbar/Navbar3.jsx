@@ -1,11 +1,7 @@
-/* eslint-disable no-unused-vars */
 import { Link } from 'react-router-dom';
 import Logo from '/images/logo_2.png';
-import homeOne from '/images/home-one.jpg';
-import homeTwo from '/images/home-three.jpg';
-import homeThree from '/images/home-two.jpg';
 import './navbar.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   FaChevronDown,
   FaEnvelope,
@@ -338,32 +334,7 @@ const Navbar2 = () => {
                         </span>
                       </Link>
                       <div className='submenu has-homemenu mega-menu'>
-                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-3'>
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/'}>
-                                <img src={homeOne} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>{' '}
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/home2'}>
-                                <img src={homeTwo} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>{' '}
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/home3'}>
-                                <img src={homeThree} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </li>
                     <li className='has-dropdown'>

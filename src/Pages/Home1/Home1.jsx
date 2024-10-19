@@ -1,16 +1,16 @@
-import About from "../../Component1/About/About";
-import Banner from "../../Component1/Banner/Banner";
-import Blog from "../../Component1/Blog/Blog";
-import Brand from "../../Component1/Brand/Brand";
-import ContentSlider from "../../Component1/ContentSlider/ContentSlider";
-import Counter from "../../Component1/Counter/Counter";
-import Feature from "../../Component1/Feature/Feature";
-import LatestWork from "../../Component1/LatestWork/LatestWork";
-import Pricing from "../../Component1/Pricing/Pricing";
-import Service from "../../Component1/Service/Service";
-import TeamMember from "../../Component1/TeamMember/TeamMember";
-import Testimonial from "../../Component1/Testimonial/Testimonial";
-import Work from "../../Component1/Work/Work";
+import About from "../../Component1Default/About/About";
+import Banner from "../../Component1Default/Banner/Banner";
+import Blog from "../../Component1Default/Blog/Blog";
+import Brand from "../../Component1Default/Brand/Brand";
+import ContentSlider from "../../Component1Default/ContentSlider/ContentSlider";
+import Counter from "../../Component1Default/Counter/Counter";
+import Feature from "../../Component1Default/Feature/Feature";
+import LatestWork from "../../Component1Default/LatestWork/LatestWork";
+import Pricing from "../../Component1Default/Pricing/Pricing";
+import Service from "../../Component1Default/Service/Service";
+import TeamMember from "../../Component1Default/TeamMember/TeamMember";
+import Testimonial from "../../Component1Default/Testimonial/Testimonial";
+import Work from "../../Component1Default/Work/Work";
 
 const Home1 = () => {
   return (

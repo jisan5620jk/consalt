@@ -2,10 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Home1 from "../Pages/Home1/Home1";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
-import Main2 from "../Main/Main2";
-import Home2 from "../Pages/Home2/Home2";
-import Home3 from "../Pages/Home3/Home3";
-import Main3 from "../Main/Main3";
+import Main3 from "../Main/Main7";
+import Home7 from "../Pages/Home7/Home7";
+import Home4 from "../Pages/Home4/Home4";
+import Home5 from "../Pages/Home5/Home5";
+import Main4 from "../Main/Main4";
+import Main5 from "../Main/Main5";
 
 const router = createBrowserRouter([
   {
@@ -22,11 +24,22 @@ const router = createBrowserRouter([
    {
     path: "/",
     errorElement: <ErrorPage />,
-    element: <Main2 />,
+    element: <Main4 />,
     children: [
       {
-        path: "/home2",
-        element: <Home2 />,
+        path: "/home4",
+        element: <Home4 />,
+      },
+    ],
+  },
+   {
+    path: "/",
+    errorElement: <ErrorPage />,
+    element: <Main5 />,
+    children: [
+      {
+        path: "/home5",
+        element: <Home5 />,
       },
     ],
   },
@@ -37,7 +50,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home3",
-        element: <Home3 />,
+        element: <Home7 />,
       },
     ],
   },

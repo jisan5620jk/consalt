@@ -1,32 +1,31 @@
-import About from "../../Component4/About/About";
-import Banner from "../../Component4/Banner/Banner";
-import Blog from "../../Component4/Blog/Blog";
-import Brand from "../../Component4/Brand/Brand";
-import Counter from "../../Component4/Counter/Counter";
-import Feature from "../../Component4/Feature/Feature";
-import Process from "../../Component4/Process/Process";
-import ProcessBox from "../../Component4/Processbox/ProcessBox";
-import Service from "../../Component4/Service/Service";
-import TeamMember from "../../Component4/TeamMember/TeamMember";
-import Testimonial from "../../Component4/Testimonial/Testimonial";
-import Work from "../../Component4/Work/Work";
+import About from "../../Component2Default/About/About";
+import Banner from "../../Component2Default/Banner/Banner";
+import Blog from "../../Component2Default/Blog/Blog";
+import CallBack from "../../Component2Default/CallBack/CallBack";
+import CallTo from "../../Component2Default/CallTo/CallTo";
+import Counter from "../../Component2Default/Counter/Counter";
+import Pricing from "../../Component2Default/Pricing/Pricing";
+import Project from "../../Component2Default/Project/Project";
+import Service from "../../Component2Default/Service/Service";
+import Skill from "../../Component2Default/Skill/Skill";
+import Testimonial from "../../Component2Default/Testimonial/Testimonial";
 
 const Home4 = () => {
   return (
     <>
       <Banner />
-      <Brand />
-      <Feature />
-      <About />
       <Counter />
+      <About />
       <Service />
-      <Work />
-      <Process />
-      <ProcessBox />
-      <TeamMember />
+      <Skill />
+      <CallTo />
       <Testimonial />
+      <Project />
+      <Pricing />
+      <CallBack />
       <Blog />
     </>
   );
 };
+
 export default Home4;
