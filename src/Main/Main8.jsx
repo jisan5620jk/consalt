@@ -1,17 +1,17 @@
 import { Outlet } from "react-router-dom";
-import Footer4 from "../Shared/Footer/Footer4";
-import Navbar4 from "../Shared/Navbar/Navbar4";
+import Footer8 from "../Shared/Footer/Footer8";
+import Navbar8 from "../Shared/Navbar/Navbar8";
 import ScrollToTop from "../Shared/ScrollToTop/ScrollToTop";
 
 const Main8 = () => {
   return (
     <>
-      <Navbar4 />
+      <Navbar8 />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer4 />
+      <Footer8 />
     </>
   );
 };

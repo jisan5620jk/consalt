@@ -8,7 +8,9 @@ export default {
       },
       colors: {
         PrimaryColor: ['#0c6e6d'],
+        PrimaryColor2: ['#4d43f9'],
         Secondarycolor: ['#0b4b4b'],
+        Secondarycolor2: ['#0a1630'],
         HeadingColor: ['#063232'],
         TextColor: ['#a3b7b7'],
         TextColor2: ['#6b7a7a'],

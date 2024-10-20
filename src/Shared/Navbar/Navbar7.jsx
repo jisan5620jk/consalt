@@ -20,7 +20,7 @@ import { BiSearch } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { GiPhone } from 'react-icons/gi';
 
-const Navbar2 = () => {
+const Navbar7 = () => {
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -678,4 +678,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar7;

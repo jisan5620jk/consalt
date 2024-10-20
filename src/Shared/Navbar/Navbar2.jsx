@@ -362,7 +362,9 @@ const Navbar2 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to={'/home5'}>Finance Consulting Classic</Link>
+                              <Link to={'/home5'}>
+                                Finance Consulting Classic
+                              </Link>
                             </li>
                             <li>
                               <Link to={'/home6'}>Finance Consulting Dark</Link>
@@ -381,13 +383,19 @@ const Navbar2 = () => {
                           </Link>
                           <ul className='submenu !top-[154px]'>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Creative</Link>
+                              <Link to={'/home8'}>
+                                Buseness Consulting Creative
+                              </Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Classic</Link>
+                              <Link to={'/home9'}>
+                                Buseness Consulting Classic
+                              </Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Dark</Link>
+                              <Link to={'/home10'}>
+                                Buseness Consulting Dark
+                              </Link>
                             </li>
                           </ul>
                         </li>

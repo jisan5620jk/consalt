@@ -960,6 +960,42 @@ nav.main-menu-content > ul > li:hover > a > span {
     background: #053131;
 }
 
+/* Header Style Six */
+
+.header-area.style-two.style-eight {
+  background: #0a1630;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-area.style-two.style-eight nav.main-menu-content > ul > li > a {
+    color: #ffffff;
+    padding: 38px 29px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-area.style-two.style-eight nav.main-menu-content > ul > li > a {
+    padding: 38px 22px;
+}
+}
+
+.header-area.style-two.style-eight nav.main-menu-content > ul > li > a > span {
+    top: 44px;
+}
+
+.header-area.style-two.style-eight .menu-sidebar {
+    background: initial;
+    transform: rotate(-180deg);
+    position: relative;
+    top: 0;
+    background: #4d43f9;
+    padding: 9px 6px;
+    border-radius: 50px;
+}
+
+.header-area.style-two.style-eight .menu-sidebar span {
+    background: #fff;
+}
+
 /* Header Sidebar */
 
 /* Offcanvas */

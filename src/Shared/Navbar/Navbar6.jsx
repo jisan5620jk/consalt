@@ -243,7 +243,9 @@ const Navbar6 = () => {
         <div className='Container flex items-center justify-between h-[52px]'>
           <div className='flex items-center gap-8'>
             <div className=' sm:flex items-center gap-2 hidden'>
-              <h6 className='font-FiraSans text-[15px] text-PrimaryColor-0'>Mial :</h6>
+              <h6 className='font-FiraSans text-[15px] text-PrimaryColor-0'>
+                Mial :
+              </h6>
               <Link
                 to={'/'}
                 className='font-FiraSans text-[15px] text-TextColor2-0 transition-all duration-500 hover:text-PrimaryColor-0'
@@ -362,7 +364,9 @@ const Navbar6 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to={'/home5'}>Finance Consulting Classic</Link>
+                              <Link to={'/home5'}>
+                                Finance Consulting Classic
+                              </Link>
                             </li>
                             <li>
                               <Link to={'/home6'}>Finance Consulting Dark</Link>
@@ -378,18 +382,24 @@ const Navbar6 = () => {
                             <span>
                               <FaChevronDown />
                             </span>
+                            <ul className='submenu !top-[154px]'>
+                              <li>
+                                <Link to={'/home8'}>
+                                  Buseness Consulting Creative
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={'/home9'}>
+                                  Buseness Consulting Classic
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={'/home10'}>
+                                  Buseness Consulting Dark
+                                </Link>
+                              </li>
+                            </ul>
                           </Link>
-                          <ul className='submenu !top-[154px]'>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Creative</Link>
-                            </li>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Classic</Link>
-                            </li>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Dark</Link>
-                            </li>
-                          </ul>
                         </li>
                       </ul>
                     </li>

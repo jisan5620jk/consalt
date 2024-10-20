@@ -11,11 +11,10 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import { MdLocationPin } from 'react-icons/md';
+import { MdLightMode, MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
-import { LuMoveRight } from 'react-icons/lu';
 
-const Navbar = () => {
+const Navbar8 = () => {
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -54,7 +53,6 @@ const Navbar = () => {
     };
   }, []);
 
-  //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
   const bodyOverlayRef = useRef(null);
@@ -145,7 +143,7 @@ const Navbar = () => {
   }, [headerIcon]);
 
   return (
-    <>
+    <div className='px-2 xl:px-5 mt-2 xl:mt-5'>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -239,243 +237,229 @@ const Navbar = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area'
+        className='header-area style-two style-eight'
       >
-        <div className='Container'>
-          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
-            <div className='col-span-2'>
-              <div className='header-logo'>
-                <Link to={'/'}>
-                  <img
-                    src={Logo}
-                    draggable='false'
-                  />
+        <div className='bg-transparent rounded-md px-5 py-4 lg:py-0 md:px-10 xl:px-[60px] flex items-center justify-between lg:grid lg:grid-cols-12'>
+          <div className='col-span-2'>
+            <div className='header-logo'>
+              <Link to={'/'}>
+                <img
+                  src={Logo}
+                  draggable='false'
+                />
+              </Link>
+            </div>
+          </div>
+          <div className='lg:col-span-9 xl:col-span-8 2xl:col-span-7 hidden lg:block'>
+            <div className='header-main-menu text-center'>
+              <nav className='main-menu-content'>
+                <ul>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Home
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>
+                          Buseness Consulting 01
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !-top-[3px]'>
+                          <li>
+                            <Link to={'/'}>Buseness Consulting Creative</Link>
+                          </li>
+                          <li>
+                            <Link to={'/'}>Buseness Consulting Classic</Link>
+                          </li>
+                          <li>
+                            <Link to={'/'}>Buseness Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link to={'/'}>
+                          Finance Consulting
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !top-[50px]'>
+                          <li>
+                            <Link to={'/home4'}>
+                              Finance Consulting Creative
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home5'}>
+                              Finance Consulting Classic
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home6'}>Finance Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link to={'/'}>IT Consulting</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>
+                          Buseness Consulting 02
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !top-[154px]'>
+                          <li>
+                            <Link to={'/home8'}>
+                              Buseness Consulting Creative
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home9'}>
+                              Buseness Consulting Classic
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home10'}>Buseness Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Pages
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>about us</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>team</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>testimonial</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>cart</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>checkout</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>faq</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Service
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>service</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>service details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Project
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>project</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>project details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Blog
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>blog grid</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>blog right sidebar</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>blog left sidebar</Link>
+                      </li>
+                      <li>
+                        <Link to={'/'}>blog details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to={'/'}>Contact</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div className='lg:col-span-1 xl:col-span-2 2xl:col-span-3'>
+            <div className='header-right-box flex items-center gap-10 lg:gap-4 justify-end'>
+              <div className='hidden 2xl:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[25px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
+                <input
+                  type='search'
+                  name='search'
+                  id='search'
+                  placeholder='Search...'
+                  required
+                  className='w-[220px] h-[46px] rounded-full px-6 py-2 font-FiraSans text-sm text-TextColor-0 bg-transparent border border-white border-opacity-15'
+                />
+              </div>
+              <div className='hidden lg:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
+                <Link
+                  to={'/'}
+                  className='text-white flex items-center justify-center size-[46px] rounded-full border border-white border-opacity-15'
+                >
+                  <MdLightMode size={'20'} />
                 </Link>
               </div>
-            </div>
-            <div className='col-span-8 hidden lg:block'>
-              <div className='header-main-menu text-center'>
-                <nav className='main-menu-content'>
-                  <ul>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Home
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>
-                            Buseness Consulting 01
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !-top-[3px]'>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Creative</Link>
-                            </li>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Classic</Link>
-                            </li>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Dark</Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link to={'/'}>
-                            Finance Consulting
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[50px]'>
-                            <li>
-                              <Link to={'/home4'}>
-                                Finance Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home5'}>
-                                Finance Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home6'}>Finance Consulting Dark</Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link to={'/'}>IT Consulting</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>
-                            Buseness Consulting 02
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[154px]'>
-                            <li>
-                              <Link to={'/home8'}>
-                                Buseness Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home9'}>
-                                Buseness Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home10'}>
-                                Buseness Consulting Dark
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Pages
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>about us</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>team</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>testimonial</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>cart</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>checkout</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>faq</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Service
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>service</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>service details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Project
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>project</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>project details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Shop
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>shop</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>shop details</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>cart</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>checkout</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Blog
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>blog grid</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>blog right sidebar</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>blog left sidebar</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>blog details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to={'/'}>Contact</Link>
-                    </li>
-                  </ul>
-                </nav>
+              <div className='header-sidebar hidden lg:block'>
+                <button
+                  ref={menuSideBarRef}
+                  className='menu-sidebar'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
-            </div>
-            <div className='col-span-2'>
-              <div className='header-right-box flex items-center gap-10 lg:gap-4 justify-end'>
-                <div className='header-btn hidden lg:block'>
-                  <Link to={'/'}>
-                    get a quote<span></span>
-                    <LuMoveRight />
-                  </Link>
-                </div>
-                <div className='header-sidebar hidden lg:block lg:mt-5'>
-                  <button
-                    ref={menuSideBarRef}
-                    className='menu-sidebar'
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </div>
-                <div className='header-bar lg:hidden'>
-                  <button
-                    ref={menuBarRef}
-                    className='menu-bar'
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </div>
+              <div className='header-bar lg:hidden'>
+                <button
+                  ref={menuBarRef}
+                  className='menu-bar'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
@@ -615,8 +599,8 @@ const Navbar = () => {
         ref={bodyOverlay2Ref}
         className='body-overlay2'
       ></div>
-    </>
+    </div>
   );
 };
 
-export default Navbar;
+export default Navbar8;
