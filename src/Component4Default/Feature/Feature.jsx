@@ -1,8 +1,8 @@
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong } from 'react-icons/fa6';
 import featureIcon from '/images/feature1.png';
 import featureIcon2 from '/images/feature2.png';
 import featureIcon3 from '/images/feature3.png';
-import FeatureCard from "./FeatureCard";
+import FeatureCard from './FeatureCard';
 
 const FeatureData = [
   {
@@ -49,7 +49,7 @@ const Feature = () => {
             Engaging Consulting Exceptional
           </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:items-center lg:grid-cols-3 gap-7 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:items-center lg:grid-cols-3 gap-7 mt-10 features8-box'>
           {FeatureData.map(
             ({
               id,
@@ -61,10 +61,7 @@ const Feature = () => {
               featureBtnIcon,
             }) => {
               return (
-                <div
-                  key={id}
-                  className='feature8-box'
-                >
+                <div key={id}>
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureTitle={featureTitle}

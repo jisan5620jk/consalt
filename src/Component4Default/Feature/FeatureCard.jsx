@@ -10,8 +10,8 @@ const FeatureCard = ({
   featureBtnIcon,
 }) => {
   return (
-    <div className='flex gap-8 rounded-md bg-transparent group relative z-10'>
-      <div className='feature-icon size-[100px] rounded-full rounded-se-md bg-[#ffebeb] relative transition-all duration-500 flex justify-center items-center z-10 overflow-hidden group-hover:rounded-se-full'>
+    <div className='feature8-box flex gap-8 rounded-md bg-transparent group relative z-10'>
+      <div className='feature8-icon size-[100px] rounded-full rounded-se-md bg-[#ffebeb] relative transition-all duration-500 flex justify-center items-center z-10 overflow-hidden group-hover:rounded-se-full'>
         <img
           src={featureIcon}
           draggable='false'
