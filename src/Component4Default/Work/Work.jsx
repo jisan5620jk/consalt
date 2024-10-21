@@ -45,36 +45,41 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className="pt-28 pb-[120px] relative z-10">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <PiStarFourFill size={"14"} />
-            OUR WORK SHOWCASE
-            <PiStarFourFill size={"14"} />
-          </h5>
-          <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
-            Where Innovation Meets Success
-          </h1>
+    <section className='pt-28 pb-[120px] relative z-10'>
+      <div className='Container'>
+        <div className='flex justify-between flex-wrap items-center'>
+          <div>
+            <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
+              LATEST WORKS
+            </h5>
+            <h1 className='font-FiraSans font-semibold text-white inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+              Recently We’ve Finishd those <br />
+              Works Highly Satisfaction
+            </h1>
+          </div>
+          <div></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[56px]">
-          {WorkData.map(
-            ({ id, workThumb, workTitle, workDesc, workUrl, workBtn }) => {
-              return (
-                <>
-                  <div key={id}>
-                    <WorkCard
-                      workThumb={workThumb}
-                      workTitle={workTitle}
-                      workDesc={workDesc}
-                      workUrl={workUrl}
-                      workBtn={workBtn}
-                    />
-                  </div>
-                </>
-              );
-            }
-          )}
+        <div className='grid grid-cols-2 items-center mt-[56px]'>
+          <div></div>
+          <div>
+            {WorkData.map(
+              ({ id, workThumb, workTitle, workDesc, workUrl, workBtn }) => {
+                return (
+                  <>
+                    <div key={id}>
+                      <WorkCard
+                        workThumb={workThumb}
+                        workTitle={workTitle}
+                        workDesc={workDesc}
+                        workUrl={workUrl}
+                        workBtn={workBtn}
+                      />
+                    </div>
+                  </>
+                );
+              }
+            )}
+          </div>
         </div>
       </div>
     </section>
