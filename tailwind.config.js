@@ -12,6 +12,7 @@ export default {
         Secondarycolor: ['#0b4b4b'],
         Secondarycolor2: ['#0a1630'],
         HeadingColor: ['#063232'],
+        HeadingColor2: ['#09162f'],
         TextColor: ['#a3b7b7'],
         TextColor2: ['#6b7a7a'],
         BodyBg: ['#e0f1df'],
