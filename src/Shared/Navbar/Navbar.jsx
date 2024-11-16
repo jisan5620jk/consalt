@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from 'react-router-dom';
 import Logo from '/images/logo.png';
 import './navbar.css';
@@ -16,6 +17,23 @@ import { IoMdPaperPlane } from 'react-icons/io';
 import { LuMoveRight } from 'react-icons/lu';
 
 const Navbar = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+
+  const isSticky = (e) => {
+    const header = document.querySelector('.header-area');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -543,6 +561,126 @@ const Navbar = () => {
               <li>
                 <Link to={'/'}>
                   <button>Backup and Disaster Recovery</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
                 </Link>
               </li>
               <li>

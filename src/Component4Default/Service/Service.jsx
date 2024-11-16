@@ -5,6 +5,7 @@ import serviceIcon4 from '/images/service4.png';
 import ServiceCard from './ServiceCard';
 import { HiOutlineArrowUpRight } from 'react-icons/hi2';
 import './service.css';
+import { Link } from 'react-router-dom';
 
 const ServiceData = [
   {
@@ -92,6 +93,12 @@ const Service = () => {
               );
             }
           )}
+        </div>
+        <div className='flex items-center justify-center mt-14'>
+          <p className='font-FiraSans text-[15px] text-HeadingColor2-0'>
+            Feel free to reach out to our consulting{' '}
+            <Link to={'/service'} className='text-PrimaryColor2-0 underline'>Services</Link> for inquiries and assistance.
+          </p>
         </div>
       </div>
     </section>

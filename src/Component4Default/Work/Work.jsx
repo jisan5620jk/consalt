@@ -1,51 +1,43 @@
-/* eslint-disable no-unused-vars */
-import workThumb from "/images/work1.png";
-import workThumb2 from "/images/work2.png";
-import workThumb3 from "/images/work3.png";
-import workThumb4 from "/images/work4.png";
+import workThumb from "/images/work_img.png";
 import WorkCard from "./WorkCard";
-import { PiStarFourFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { HiOutlineArrowRight } from "react-icons/hi";
+import { RxArrowTopRight } from "react-icons/rx";
+import './work-box.css'
 
 const WorkData = [
   {
     id: 1,
-    workThumb: workThumb,
-    workTitle: "Market Analysis",
-    workDesc: "Tecnology",
-    workUrl: "/servie_details",
-    workBtn: <HiOutlineArrowRight />,
+    workTitle: 'New Business Implement',
+    workDesc: 'Technology',
+    workUrl: '/blog_details',
+    workBtn: <RxArrowTopRight />,
   },
   {
     id: 2,
-    workThumb: workThumb2,
-    workTitle: "Risk Assesment",
-    workDesc: "Tecnology",
-    workUrl: "/servie_details",
-    workBtn: <HiOutlineArrowRight />,
+    workTitle: 'Risk Assesment',
+    workDesc: 'Technology',
+    workUrl: '/blog_details',
+    workBtn: <RxArrowTopRight />,
   },
   {
     id: 3,
-    workThumb: workThumb3,
-    workTitle: "Invest Insights",
-    workDesc: "Tecnology",
-    workUrl: "/servie_details",
-    workBtn: <HiOutlineArrowRight />,
+    workTitle: 'Invest Insights',
+    workDesc: 'Technology',
+    workUrl: '/blog_details',
+    workBtn: <RxArrowTopRight />,
   },
   {
     id: 4,
-    workThumb: workThumb4,
-    workTitle: "Estate planning",
-    workDesc: "Tecnology",
-    workUrl: "/servie_details",
-    workBtn: <HiOutlineArrowRight />,
+    workTitle: 'Estate planning',
+    workDesc: 'Technology',
+    workUrl: '/blog_details',
+    workBtn: <RxArrowTopRight />,
   },
 ];
 
 const Work = () => {
   return (
-    <section className='pt-28 pb-[120px] relative z-10'>
+    <section className='pt-28 pb-[120px] bg-Secondarycolor2-0 relative z-10'>
       <div className='Container'>
         <div className='flex justify-between flex-wrap items-center'>
           <div>
@@ -57,28 +49,39 @@ const Work = () => {
               Works Highly Satisfaction
             </h1>
           </div>
-          <div></div>
-        </div>
-        <div className='grid grid-cols-2 items-center mt-[56px]'>
-          <div></div>
           <div>
-            {WorkData.map(
-              ({ id, workThumb, workTitle, workDesc, workUrl, workBtn }) => {
-                return (
-                  <>
-                    <div key={id}>
-                      <WorkCard
-                        workThumb={workThumb}
-                        workTitle={workTitle}
-                        workDesc={workDesc}
-                        workUrl={workUrl}
-                        workBtn={workBtn}
-                      />
-                    </div>
-                  </>
-                );
-              }
-            )}
+            <Link to={'/blog_grid'}>
+              <button className='primary-btn4 !bg-transparent !border-white hover:!border-PrimaryColor2-0 before:!bg-PrimaryColor2-0 !py-[15px] after:bg-opacity-50 after:!top-9'>{`Browse Works`}</button>
+            </Link>
+          </div>
+        </div>
+        <div className='grid grid-cols-2 gap-9 items-center mt-[44px]'>
+          <div>
+            <img
+              src={workThumb}
+              alt='Image'
+              draggable="false"
+            />
+          </div>
+          <div className="work-boxs">
+            {WorkData.map(({ id, workTitle, workDesc, workUrl, workBtn }) => {
+              return (
+                <>
+                  <div
+                    key={id}
+                    className='work-box'
+                  >
+                    <WorkCard
+                      workThumb={workThumb}
+                      workTitle={workTitle}
+                      workDesc={workDesc}
+                      workUrl={workUrl}
+                      workBtn={workBtn}
+                    />
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </div>
