@@ -1,8 +1,8 @@
-import workThumb from "/images/work_img.png";
-import WorkCard from "./WorkCard";
-import { Link } from "react-router-dom";
-import { RxArrowTopRight } from "react-icons/rx";
-import './work-box.css'
+import workThumb from '/images/work_img.png';
+import WorkCard from './WorkCard';
+import { Link } from 'react-router-dom';
+import { RxArrowTopRight } from 'react-icons/rx';
+import './work-box.css';
 
 const WorkData = [
   {
@@ -14,21 +14,21 @@ const WorkData = [
   },
   {
     id: 2,
-    workTitle: 'Risk Assesment',
+    workTitle: 'Finance Developments',
     workDesc: 'Technology',
     workUrl: '/blog_details',
     workBtn: <RxArrowTopRight />,
   },
   {
     id: 3,
-    workTitle: 'Invest Insights',
+    workTitle: 'Business Grow Planning',
     workDesc: 'Technology',
     workUrl: '/blog_details',
     workBtn: <RxArrowTopRight />,
   },
   {
     id: 4,
-    workTitle: 'Estate planning',
+    workTitle: 'Family Insurence Policy',
     workDesc: 'Technology',
     workUrl: '/blog_details',
     workBtn: <RxArrowTopRight />,
@@ -37,7 +37,7 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className='pt-28 pb-[120px] bg-Secondarycolor2-0 relative z-10'>
+    <section className='mx-5 pt-28 pb-[120px] bg-Secondarycolor2-0 relative z-10'>
       <div className='Container'>
         <div className='flex justify-between flex-wrap items-center'>
           <div>
@@ -60,10 +60,10 @@ const Work = () => {
             <img
               src={workThumb}
               alt='Image'
-              draggable="false"
+              draggable='false'
             />
           </div>
-          <div className="work-boxs">
+          <div className='work-boxs'>
             {WorkData.map(({ id, workTitle, workDesc, workUrl, workBtn }) => {
               return (
                 <>
