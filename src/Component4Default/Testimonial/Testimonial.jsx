@@ -1,57 +1,37 @@
-/* eslint-disable no-unused-vars */
-import testiImg from "/images/testi1.png";
-import testiImg2 from "/images/testi2.png";
-import testiImg3 from "/images/testi3.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import TestimonialCard from "./TestimonialCard";
-import { IoStar } from "react-icons/io5";
-import { PiStarFourFill } from "react-icons/pi";
+import testiImg from '/images/testi_img.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import TestimonialCard from './TestimonialCard';
+import { IoStar } from 'react-icons/io5';
+import { RiDoubleQuotesR } from 'react-icons/ri';
+import ServiceNavigation from './ServiceNavigation';
+import testiShape from '/images/testi_shape.png';
+import Blog from '../Blog/Blog';
 
 const testiData = [
   {
     id: 1,
     testiImg: testiImg,
     testiRatingIcon: <IoStar />,
-    testiName: "Founder & CEO",
-    testiDesignation: "Web Developer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiQuate: <RiDoubleQuotesR />,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Web Developer',
+    testiDesc: `“Conveniently transform error-free architectures whereas transform the
+									maximizing collaboration and idea-sharing. Intrinsicly an maintaince
+									team driven web-readiness vis-a-vis equity invested the moderns
+									Appropriately underwhelm”`,
   },
   {
     id: 2,
-    testiImg: testiImg2,
+    testiImg: testiImg,
     testiRatingIcon: <IoStar />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "UI/UX Designer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
-  },
-  {
-    id: 3,
-    testiImg: testiImg3,
-    testiRatingIcon: <IoStar />,
-    testiName: "Al-Amin Islam",
-    testiDesignation: "IT Specialist",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
-  },
-  {
-    id: 4,
-    testiImg: testiImg2,
-    testiRatingIcon: <IoStar />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-    testiDesc: `seargin is awe-inspiring. Their relentless of
-    justice and attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiQuate: <RiDoubleQuotesR />,
+    testiName: 'David Miller',
+    testiDesignation: 'UI/UX Designer',
+    testiDesc: `“Conveniently transform error-free architectures whereas transform the
+									maximizing collaboration and idea-sharing. Intrinsicly an maintaince
+									team driven web-readiness vis-a-vis equity invested the moderns
+									Appropriately underwhelm”`,
   },
 ];
 
@@ -66,30 +46,33 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
     },
   };
   return (
-    <section className="pt-28 pb-[120px] bg-white relative z-10">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <PiStarFourFill size={"14"} />
-            TESTIMONIAL
-            <PiStarFourFill size={"14"} />
-          </h5>
-          <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4 pb-1">
-            What Our Loving Clients Saying
-          </h1>
+    <section className='mx-5 pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
+      <img src={testiShape} alt="Shape" className='absolute top-28 right-1/3 invert-[1] opacity-50 size-[148px] animate-rotate hidden xl:block' />
+      <div className='Container pb-[120px]'>
+        <div className='flex justify-between flex-wrap items-center mb-4 md:-mb-[100px] lg:-mb-[130px]'>
+          <div>
+            <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
+              TESTIMONIALS
+            </h5>
+            <h1 className='font-FiraSans font-semibold text-HeadingColor2-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+              What Says our Satisfied Clients <br />
+              About Consultant Service
+            </h1>
+          </div>
+          <div></div>
         </div>
-        <div className="mt-[30px]">
+        <div className='mt-[30px]'>
           <Swiper {...settings}>
             <div>
               {testiData.map(
@@ -97,16 +80,18 @@ const Testimonial = () => {
                   id,
                   testiImg,
                   testiRatingIcon,
+                  testiQuate,
                   testiName,
                   testiDesignation,
                   testiDesc,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pt-3">
+                      <div className='pt-24 md:pt-[120px] lg:pt-[132px]'>
                         <TestimonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}
+                          testiQuate={testiQuate}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
                           testiDesc={testiDesc}
@@ -117,9 +102,11 @@ const Testimonial = () => {
                 }
               )}
             </div>
+            <ServiceNavigation />
           </Swiper>
         </div>
       </div>
+      <Blog />
     </section>
   );
 };

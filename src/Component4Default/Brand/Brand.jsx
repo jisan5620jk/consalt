@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import brandThumb from "/images/brand1.png";
-import brandThumb2 from "/images/brand2.png";
-import brandThumb3 from "/images/brand3.png";
-import brandThumb4 from "/images/brand4.png";
-import brandThumb5 from "/images/brand5.png";
+import brandThumb from "/images/brand_1.png";
+import brandThumb2 from "/images/brand_2.png";
+import brandThumb3 from "/images/brand_3.png";
+import brandThumb4 from "/images/brand_4.png";
+import brandThumb5 from "/images/brand_5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -33,37 +33,37 @@ const Brand = () => {
     },
   };
   return (
-    <div className="bg-HeadingColor-0 pt-[38px] pb-[76px]">
-      <div className="Container">
+    <div className='mx-5 bg-[#0b204a] py-14'>
+      <div className='Container'>
         <Swiper {...settings}>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb} />
+            <div className='flex justify-center'>
+              <img src={brandThumb} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb2} />
+            <div className='flex justify-center'>
+              <img src={brandThumb2} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb3} />
+            <div className='flex justify-center'>
+              <img src={brandThumb3} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb4} />
+            <div className='flex justify-center'>
+              <img src={brandThumb4} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb5} />
+            <div className='flex justify-center'>
+              <img src={brandThumb5} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center">
-              <img src={brandThumb3} />
+            <div className='flex justify-center'>
+              <img src={brandThumb3} alt="Brand Logo" draggable="false" className="transition-all duration-300 hover:brightness-0 hover:invert-[1]" />
             </div>
           </SwiperSlide>
         </Swiper>

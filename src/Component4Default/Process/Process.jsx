@@ -34,10 +34,10 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className='pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
+    <section className='mx-5 pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='font-FiraSans text-lg font-semibold text-PrimaryColor2-0'>
+          <h5 className='font-FiraSans text-sm sm:text-base font-semibold text-PrimaryColor2-0'>
             SIMPLE PROCESS
           </h5>
           <h1 className='font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor2-0 mt-[18px]'>
@@ -46,7 +46,8 @@ const Process = () => {
           </h1>
           <p className='font-FiraSans text-TextColor2-0 mt-[10px]'>
             Globally engage cross-media leadership skills before cross-media
-            innovation forward <br /> develop standardized platforms without robust
+            innovation forward <br /> develop standardized platforms without
+            robust
           </p>
         </div>
         <div className='pb-16 mt-[56px]'>

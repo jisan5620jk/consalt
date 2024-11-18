@@ -43,7 +43,7 @@ const ProcessBoxData = [
 
 const ProcessBox = () => {
   return (
-    <section className="py-[120px] relative bg-[url('/images/project-bg.png')] bg-cover bg-center bg-no-repeat">
+    <section className="mx-5 py-[120px] relative bg-[url('/images/project-bg.png')] bg-cover bg-center bg-no-repeat">
       <div className="Container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
             {ProcessBoxData.map(

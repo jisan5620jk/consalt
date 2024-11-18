@@ -1,30 +1,53 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
+const BlogCard = ({
+  blogThumb,
+  blogDateIcon,
+  blogDate,
+  blogPostBy,
+  blogUrl,
+  blogTitle,
+  blogBtn,
+  blogBtnIcon,
+}) => {
   return (
-    <div className="blog-box group rounded-md py-10 lg:mb-0 border-b border-BorderColor2-0 flex items-center gap-6 sm:gap-[55px]">
-      <div>
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl size-11 rounded-full bg-white border-2 border-BorderColor2-0 flex justify-center items-center">
-          {blogNumber}
-        </h5>
-      </div>
-      <div className="relative flex justify-between items-center w-full">
-        <Link to={"blogUrl"}>
-          <button className="blog-title relative z-10 font-FiraSans font-semibold text-xl sm:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-            {blogTitle}
-          </button>
-        </Link>
-        <Link to={"blogUrl"}>
-          <button className="blog-btn size-[50px] rounded-full flex items-center justify-center transition-all duration-500 text-2xl text-HeadingColor-0 group-hover:border-PrimaryColor-0 group-hover:text-white bg-white border-2 border-BorderColor2-0 relative z-10 before:absolute before:top-0 before:left-0 before:size-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rounded-full group-hover:before:scale-100">
-            {blogBtn}
-          </button>
-        </Link>
+    <div className="group transition-all duration-500 rounded-lg bg-white shadow-shades">
+      <div className="relative rounded-xl overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor2-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
         <img
           src={blogThumb}
-          draggable="false"
-          className="blog-thumb absolute left-0 opacity-0 -translate-x-1/2 top-0 -translate-y-1/2 transition-all duration-500 group-hover:left-3/4 group-hover:top-1/2 group-hover:opacity-100"
+          className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
+      </div>
+      <div className="rounded-b-lg relative z-20 flex justify-center transition-all duration-500 px-5 sm:px-7lg:px-5 2xl:px-[30px] pt-9 pb-6">
+        <div>
+          <div className="flex gap-6 mb-3">
+            <p className="font-FiraSans text-white py-1 px-4 bg-PrimaryColor2-0 inline-block rounded-r-full text-sm uppercase">
+              {blogPostBy}
+            </p>
+            <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+              <span className="text-PrimaryColo2r-0 text-[10px]">
+                {blogDateIcon}
+              </span>
+              {blogDate}
+            </p>
+          </div>
+          <Link to={blogUrl}>
+            <button className="font-FiraSans text-left font-semibold text-lg sm:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor2-0 mt-2 mb-5">
+              {blogTitle}
+            </button>
+          </Link>
+          <Link to={blogUrl} className="inline-block relative">
+            <button className="flex items-center gap-2 font-FiraSans uppercase overflow-hidden font-medium text-sm">
+              <span className="-ml-[76px] text-PrimaryColor2-0 transition-all duration-500 group-hover:ml-0">
+                {blogBtn}
+              </span>
+              <span className="text-[22px] text-PrimaryColor2-0">
+                {blogBtnIcon}
+              </span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
