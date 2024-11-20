@@ -8,7 +8,7 @@ const ProcessCard = ({
   processBtn,
 }) => {
   return (
-    <div className='group relative bg-white pl-10 pr-12 pt-10 pb-7 rounded-lg'>
+    <div className='group relative bg-white pl-6 sm:pl-10 pr-6 sm:pr-12 pt-10 pb-7 rounded-lg'>
       <div className='size-[78px] flex items-center justify-center rounded-full bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor2-0 before:-z-10 before:rounded-full before:scale-0 before:transition-all before:duration-500 group-hover:before:scale-100'>
         <img
           src={processIcon}

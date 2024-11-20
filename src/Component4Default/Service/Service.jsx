@@ -48,7 +48,7 @@ const ServiceData = [
 
 const Service = () => {
   return (
-    <section className='pt-28 pb-[120px] bg-white relative z-10 service8'>
+    <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] bg-white relative z-10 service8'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>

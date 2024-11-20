@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='flex flex-col md:items-center md:flex-row gap-5 md:gap-4 xl:gap-9 pb-8 border-b border-BorderColor2-0'>
+    <div className='flex flex-col lg:items-center lg:flex-row gap-5 md:gap-4 xl:gap-9 pb-8 border-b border-BorderColor2-0'>
       <div>
         <img
           src={testiImg}
@@ -26,7 +26,7 @@ const TestimonialCard = ({
             <li className='text-[#ff9c00] text-lg'>{testiRatingIcon}</li>
           </ul>
         </div>
-        <p className='font-FiraSans text-2xl leading-[38px] italic text-HeadingColor2-0 pt-5 mb-7'>
+        <p className='font-FiraSans text-base sm:text-xl md:text-2xl md:leading-[38px] italic text-HeadingColor2-0 pt-5 mb-7'>
           {testiDesc}
         </p>
         <h5 className='font-FiraSans font-medium text-HeadingColor2-0 text-xl transition-all duration-500 group-hover:text-white'>

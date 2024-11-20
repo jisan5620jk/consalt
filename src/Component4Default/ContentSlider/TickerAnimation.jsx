@@ -3,7 +3,7 @@ import './ticker-animation.css';
 
 const TickerAnimation = () => {
   return (
-    <div className='mx-2 sm:mx-5 lg:mx-2 xl:mx-5 ticker-animation-section'>
+    <div className='mx-2 lg:mx-5 ticker-animation-section'>
       <div className='ticker-animation'>
         <div className='ticker-animation-content'>
           <h1>Business Consultant</h1>

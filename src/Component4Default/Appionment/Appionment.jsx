@@ -4,9 +4,9 @@ import { MdCall } from 'react-icons/md';
 
 const Appionment = () => {
   return (
-    <section className='mx-5 bg-[url(/images/contact_bg.png)] py-28 bg-cover bg-center rounded-t-[140px]'>
+    <section className='mx-2 lg:mx-5 bg-[url(/images/contact_bg.png)] py-20 md:py-28 bg-cover bg-center rounded-t-3xl sm:rounded-t-[50px] md:rounded-t-[70px] lg:rounded-t-[100px] xl:rounded-t-[140px]'>
       <div className='Container'>
-        <div className='grid grid-cols-2 gap-10 2xl:gap-[92px] items-center relative z-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-[92px] items-center relative z-10'>
           <div>
             <h5 className='font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3'>
               GET IN TOUCH

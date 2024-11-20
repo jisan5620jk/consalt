@@ -6,7 +6,7 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 
 const Footer8 = () => {
   return (
-    <footer className='mx-5 mb-5 rounded-b-lg bg-Secondarycolor2-0 relative z-10 pt-28 overflow-hidden'>
+    <footer className='mx-2 lg:mx-5 mb-5 rounded-b-lg bg-Secondarycolor2-0 relative z-10 pt-28 overflow-hidden'>
       <div className='Container'>
         <div className='grid gap-y-7 grid-cols-12'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
@@ -34,7 +34,7 @@ const Footer8 = () => {
                   type='email'
                   name='email'
                   id='email'
-                  placeholder='Enter Your E-Mail*'
+                  placeholder='Enter E-Mail*'
                   required
                   className='w-full h-[56px] outline-none font-FiraSans border-b border-BorderColor2-0 bg-transparent py-4 text-white placeholder:text-white mb-4'
                 />

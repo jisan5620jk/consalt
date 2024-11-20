@@ -20,7 +20,7 @@ const TeamCard = ({
         />
       </div>
       <div className='text-center mt-8 pb-9 transition-all duration-500 group-hover:pb-[67px]'>
-        <h5 className='font-FiraSans font-semibold text-[22px] text-white'>
+        <h5 className='font-FiraSans font-semibold text-lg sm:text-[22px] text-white'>
           {teamTitle}
         </h5>
         <p className='font-FiraSans text-TextColor-0'>{teamDesc}</p>

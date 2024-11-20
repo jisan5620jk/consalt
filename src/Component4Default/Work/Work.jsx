@@ -37,7 +37,7 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className='mx-5 pt-28 pb-[120px] bg-Secondarycolor2-0 relative z-10'>
+    <section className='mx-2 lg:mx-5 pt-20 md:pt-28 pb-20 md:pb-[120px] bg-Secondarycolor2-0 relative z-10'>
       <div className='Container'>
         <div className='flex justify-between flex-wrap items-center'>
           <div>
@@ -55,7 +55,7 @@ const Work = () => {
             </Link>
           </div>
         </div>
-        <div className='grid grid-cols-2 gap-9 items-center mt-[44px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-9 items-center mt-[44px]'>
           <div>
             <img
               src={workThumb}
@@ -63,7 +63,7 @@ const Work = () => {
               draggable='false'
             />
           </div>
-          <div className='work-boxs'>
+          <div className='work-boxs mx-32'>
             {WorkData.map(({ id, workTitle, workDesc, workUrl, workBtn }) => {
               return (
                 <>

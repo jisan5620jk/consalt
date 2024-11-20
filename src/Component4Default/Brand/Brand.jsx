@@ -33,7 +33,7 @@ const Brand = () => {
     },
   };
   return (
-    <div className='mx-5 bg-[#0b204a] py-14'>
+    <div className='mx-2 lg:mx-5 bg-[#0b204a] py-14'>
       <div className='Container'>
         <Swiper {...settings}>
           <SwiperSlide>
