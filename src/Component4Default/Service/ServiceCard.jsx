@@ -9,7 +9,7 @@ const ServiceCard = ({
   serviceBtn,
 }) => {
   return (
-    <div className='service-single-box text-center px-[30px] lg:px-7 xl:px-[30px] pt-10 pb-[30px] rounded-lg bg-transparent bg-opacity-5 group overflow-hidden transition-all duration-500 relative z-10 before:absolute before:left-1/2 before:top-0 before:h-full before:w-0 before:bg-Secondarycolor2-0 before:transition-all before:duration-500 before:-z-10  hover:before:w-full hover:before:left-0'>
+    <div className='service-single-box text-center px-[30px] lg:px-2 xl:px-4 2xl:px-[30px] pt-10 pb-[30px] rounded-lg bg-transparent bg-opacity-5 group overflow-hidden transition-all duration-500 relative z-10 before:absolute before:left-1/2 before:top-0 before:h-full before:w-0 before:bg-Secondarycolor2-0 before:transition-all before:duration-500 before:-z-10  hover:before:w-full hover:before:left-0'>
       <div className='relative pb-[30px] z-10 flex justify-center'>
         <img
           src={serviceIcon}
@@ -20,7 +20,7 @@ const ServiceCard = ({
         {serviceSubTitle}
       </h6>
       <Link to={serviceUrl}>
-        <button className='font-FiraSans font-medium text-xl text-HeadingColor2-0 transition-all duration-500 group-hover:text-white'>
+        <button className='font-FiraSans font-medium text-xl lg:text-[17px] xl:text-xl text-HeadingColor2-0 transition-all duration-500 group-hover:text-white'>
           {serviceTitle}
         </button>
       </Link>

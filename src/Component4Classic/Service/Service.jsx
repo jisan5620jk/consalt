@@ -1,77 +1,74 @@
-/* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service7.png";
-import serviceIcon2 from "/images/service8.png";
-import serviceIcon3 from "/images/service9.png";
-import serviceIcon4 from "/images/service10.png";
-import ServiceCard from "./ServiceCard";
-import { PiStarFourFill } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import serviceIcon from '/images/service1.png';
+import serviceIcon2 from '/images/service2.png';
+import serviceIcon3 from '/images/service3.png';
+import serviceIcon4 from '/images/service4.png';
+import ServiceCard from './ServiceCard';
+import { HiOutlineArrowUpRight } from 'react-icons/hi2';
+import './service.css';
+import { Link } from 'react-router-dom';
 
 const ServiceData = [
   {
     id: 1,
     serviceIcon: serviceIcon,
-    serviceTitle: "Business Planning",
-    serviceDesc:
-      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
-    serviceBtn: "Read More",
+    serviceSubTitle: 'Solutions',
+    serviceTitle: 'Creative Design Works',
+    serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
+    serviceUrl: '/servie_details',
+    serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
     id: 2,
     serviceIcon: serviceIcon2,
-    serviceTitle: "Problem-Solving",
-    serviceDesc:
-      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
-    serviceBtn: "Read More",
+    serviceSubTitle: 'Solutions',
+    serviceTitle: 'Human Resources',
+    serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
+    serviceUrl: '/servie_details',
+    serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
     id: 3,
     serviceIcon: serviceIcon3,
-    serviceTitle: "Project Reporting",
-    serviceDesc:
-      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
-    serviceBtn: "Read More",
+    serviceSubTitle: 'Development',
+    serviceTitle: 'Global Business Const',
+    serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
+    serviceUrl: '/servie_details',
+    serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
     id: 4,
     serviceIcon: serviceIcon4,
-    serviceTitle: "Professional Team",
-    serviceDesc:
-      "Morem area are psum dolor com sitteme odern sectet aweur chat adipiscing always.",
-    serviceUrl: "/servie_details",
-    serviceBtn: "Read More",
+    serviceSubTitle: 'Consult',
+    serviceTitle: 'Insurence Consulting',
+    serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
+    serviceUrl: '/servie_details',
+    serviceBtn: <HiOutlineArrowUpRight />,
   },
 ];
 
 const Service = () => {
   return (
-    <section className="pt-28 pb-[120px] bg-HeadingColor-0 relative z-10">
-      <div className="Container">
-        <div className="grid gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h5 className="font-FiraSans text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <PiStarFourFill size={"14"} />
-              OUT TOPTECH SERVICES
-            </h5>
-            <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-4 mb-4">
-              Let’s Discover Our Service
-              <br /> Features Charter.
-            </h1>
-          </div>
-          <div className="flex lg:justify-end">
-            <Link to={"/about"}>
-              <button className="primary-btn4">{`Make An Appointment`}</button>
-            </Link>
-          </div>
+    <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] bg-white relative z-10 service8'>
+      <div className='Container'>
+        <div className='text-center'>
+          <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
+            SERVICES WE PROVIDES
+          </h5>
+          <h1 className='font-FiraSans font-semibold text-HeadingColor2-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+            Engaging Consulting exceptional <br />
+            Business Solutions
+          </h1>
+          <p className='font-FiraSans text-TextColor2-0 pb-6 max-w-[565px] w-full mx-auto'>
+            Seamlessly expedite extensible catalysts for change rather than 24/7
+            services methodologies. Appropriately benchmark innovative
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[34px]">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[54px] services8-box'>
           {ServiceData.map(
             ({
               id,
               serviceIcon,
+              serviceSubTitle,
               serviceTitle,
               serviceDesc,
               serviceUrl,
@@ -79,9 +76,13 @@ const Service = () => {
             }) => {
               return (
                 <>
-                  <div key={id}>
+                  <div
+                    key={id}
+                    className='service8-box'
+                  >
                     <ServiceCard
                       serviceIcon={serviceIcon}
+                      serviceSubTitle={serviceSubTitle}
                       serviceTitle={serviceTitle}
                       serviceDesc={serviceDesc}
                       serviceUrl={serviceUrl}
@@ -92,6 +93,12 @@ const Service = () => {
               );
             }
           )}
+        </div>
+        <div className='flex items-center justify-center mt-14'>
+          <p className='font-FiraSans text-[15px] text-HeadingColor2-0'>
+            Feel free to reach out to our consulting{' '}
+            <Link to={'/service'} className='text-PrimaryColor2-0 underline'>Services</Link> for inquiries and assistance.
+          </p>
         </div>
       </div>
     </section>

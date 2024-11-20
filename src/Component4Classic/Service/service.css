@@ -1,0 +1,19 @@
+.service8 .service8-box:nth-child(2n + 2) {
+  transform: translateY(-20px);
+}
+
+.service8 .services8-box > :nth-of-type(1) .service-single-box {
+  background: rgb(236 43 43 / 10%);
+}
+
+.service8 .services8-box > :nth-of-type(2) .service-single-box {
+  background: rgb(77 67 249 / 10%);
+}
+
+.service8 .services8-box > :nth-of-type(3) .service-single-box {
+  background: rgb(203 160 25 / 10%);
+}
+
+.service8 .services8-box > :nth-of-type(4) .service-single-box {
+  background: rgb(13 159 245 / 10%);
+}

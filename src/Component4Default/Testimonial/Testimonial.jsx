@@ -57,8 +57,12 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='mx-2 lg:mx-5 pt-20 md:pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
-      <img src={testiShape} alt="Shape" className='absolute top-28 right-1/3 invert-[1] opacity-50 size-[148px] animate-rotate hidden xl:block' />
+    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
+      <img
+        src={testiShape}
+        alt='Shape'
+        className='absolute top-28 right-1/3 invert-[1] opacity-50 size-[148px] animate-rotate hidden xl:block'
+      />
       <div className='Container pb-14 md:pb-20 lg::pb-[120px]'>
         <div className='flex justify-between flex-wrap items-center mb-4 md:-mb-[100px] lg:-mb-[130px]'>
           <div>

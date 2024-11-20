@@ -1,9 +1,14 @@
-import teamThumb from "/images/team_1.png";
-import teamThumb2 from "/images/team_2.png";
-import teamThumb3 from "/images/team_3.png";
-import teamThumb4 from "/images/team_2.png";
-import TeamCard from "./TeamCard";
-import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import teamThumb from '/images/team_1.png';
+import teamThumb2 from '/images/team_2.png';
+import teamThumb3 from '/images/team_3.png';
+import teamThumb4 from '/images/team_2.png';
+import TeamCard from './TeamCard';
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from 'react-icons/fa6';
 
 const teamData = [
   {
@@ -50,7 +55,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className='mx-2 lg:mx-5 py-20 md:py-28 bg-Secondarycolor2-0'>
+    <section className='mx-2 xl:mx-5 py-20 md:py-28 bg-Secondarycolor2-0'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans text-sm sm:text-base font-semibold text-PrimaryColor2-0'>

@@ -1,0 +1,12 @@
+.work-boxs .work-box:first-child div {
+ border-color: transparent;
+}
+
+.work-boxs .work-box div {
+ border-top: 1px solid #ffffff1a;
+}
+
+.work-boxs .work-box:hover div {
+ border-color: transparent;
+ border-radius: 12px;
+}

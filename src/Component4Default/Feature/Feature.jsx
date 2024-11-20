@@ -39,7 +39,7 @@ const FeatureData = [
 
 const Feature = () => {
   return (
-    <section className='pt-28 pb-[120px] relative bg-white feature8'>
+    <section id='feature' className='pt-28 pb-[120px] relative bg-white feature8'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>

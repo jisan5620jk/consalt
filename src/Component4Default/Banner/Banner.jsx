@@ -21,13 +21,13 @@ const Banner = () => {
   return (
     <div className='relative px-2 xl:px-5'>
       <div className='absolute z-50 left-1/2 -translate-x-1/2 bottom-[50px]'>
-        <Link to={'/'}>
+        <a href={'#feature'}>
           <button className='w-[30px] h-[60px] rounded-full border border-TextColor-0 flex items-end justify-center text-TextColor-0 text-[26px]'>
-            <span className="animate-wiggle -mb-[18px]">
+            <span className='animate-wiggle -mb-[18px]'>
               <LuArrowDown />
             </span>
           </button>
-        </Link>
+        </a>
       </div>
       <Swiper {...settings}>
         <SwiperSlide>

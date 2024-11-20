@@ -6,7 +6,7 @@ import { BsCheckLg } from "react-icons/bs";
 const About = () => {
   return (
     <section className='mx-2 xl:mx-5 relative z-10 rounded-lg bg-BodyBg-0 overflow-hidden'>
-      <div className='bg-Secondarycolor2-0 pt-20 md:pt-28 pb-20 md:pb-[120px] rounded-b-2xl sm:rounded-b-3xl md:rounded-b-[40px] 2xl:rounded-b-[140px]'>
+      <div className='bg-Secondarycolor2-0 pt-20 md:pt-28 pb-20 md:pb-[120px] xl:pb-[92px] 2xl:pb-[120px] rounded-b-2xl sm:rounded-b-3xl md:rounded-b-[40px] 2xl:rounded-b-[140px]'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px]'>
             <div className='relative'>
@@ -21,7 +21,7 @@ const About = () => {
                 Completely mesh leveraged total main for resource maximizing
                 applies applications. Credibly implement
               </p>
-              <div className='grid gap-3 sm:gap-0 sm:grid-cols-2 sm:items-center mb-11'>
+              <div className='grid gap-3 sm:gap-0 sm:items-center mb-11'>
                 <ul className='space-y-3'>
                   <li className='font-FiraSans text-base sm:text-lg w-full text-white font-medium flex items-center gap-2'>
                     <BsCheckLg
@@ -56,7 +56,7 @@ const About = () => {
               <img
                 src={aboutThumb}
                 draggable='false'
-                className='-mb-[104px] lg:-mb-[250px] ml-20 relative top-4'
+                className='-mb-[104px] xl:-mb-[250px] xl:ml-10 2xl:ml-20 relative top-4'
               />
             </div>
           </div>

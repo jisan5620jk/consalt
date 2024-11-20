@@ -34,7 +34,7 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className='mx-2 lg:mx-5 pt-20 md:pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
+    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans text-sm sm:text-base font-semibold text-PrimaryColor2-0'>
@@ -46,8 +46,8 @@ const Process = () => {
           </h1>
           <p className='font-FiraSans text-TextColor2-0 mt-[10px]'>
             Globally engage cross-media leadership skills before cross-media
-            innovation forward <br className='hidden md:block' /> develop standardized platforms without
-            robust
+            innovation forward <br className='hidden md:block' /> develop
+            standardized platforms without robust
           </p>
         </div>
         <div className='pb-16 mt-[56px]'>
