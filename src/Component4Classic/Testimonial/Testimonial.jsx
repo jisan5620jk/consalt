@@ -57,7 +57,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
+    <section className='pt-20 md:pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
       <img
         src={testiShape}
         alt='Shape'

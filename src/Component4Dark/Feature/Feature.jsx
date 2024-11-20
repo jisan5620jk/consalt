@@ -39,13 +39,13 @@ const FeatureData = [
 
 const Feature = () => {
   return (
-    <section id='feature' className='pt-28 pb-[120px] relative bg-white feature8'>
+    <section id='feature' className='pt-20 md:pt-28 relative bg-Secondarycolor2-0 feature8'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
             FEATURED SERVICES
           </h5>
-          <h1 className='font-FiraSans font-semibold text-HeadingColor2-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+          <h1 className='font-FiraSans font-semibold text-white inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
             Engaging Consulting Exceptional
           </h1>
         </div>

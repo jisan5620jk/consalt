@@ -4,7 +4,7 @@ import { MdCall } from 'react-icons/md';
 
 const Appionment = () => {
   return (
-    <section className='mx-2 xl:mx-5 bg-[url(/images/contact_bg.png)] py-20 md:py-28 bg-cover bg-center rounded-t-3xl sm:rounded-t-[50px] md:rounded-t-[70px] lg:rounded-t-[100px] xl:rounded-t-[140px]'>
+    <section className='bg-[url(/images/contact_bg.jpg)] py-20 md:py-28 bg-cover bg-center'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-[92px] items-center relative z-10'>
           <div>

@@ -19,7 +19,7 @@ const Banner = () => {
     duration: 3000,
   };
   return (
-    <div className='relative px-2 xl:px-5'>
+    <div className='relative'>
       <div className='absolute z-50 left-1/2 -translate-x-1/2 bottom-[50px]'>
         <a href={'#feature'}>
           <button className='w-[30px] h-[60px] rounded-full border border-TextColor-0 flex items-end justify-center text-TextColor-0 text-[26px]'>
@@ -31,7 +31,7 @@ const Banner = () => {
       </div>
       <Swiper {...settings}>
         <SwiperSlide>
-          <section className="bg-[url('/images/slider_bg.jpg')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[600px] lg:h-[660px] xl:h-[800px] flex items-center rounded-b-2xl sm:rounded-b-3xl md:rounded-b-[40px] 2xl:rounded-b-[140px]">
+          <section className="bg-[url('/images/slider_bg.jpg')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[600px] lg:h-[660px] xl:h-[800px] flex items-center">
             <div className='Container'>
               <div className='relative banner-content'>
                 <h1 className='font-FiraSans font-semibold text-white text-[26px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]'>

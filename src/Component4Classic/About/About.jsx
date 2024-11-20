@@ -5,8 +5,8 @@ import { BsCheckLg } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section className='mx-2 xl:mx-5 relative z-10 rounded-lg bg-BodyBg-0 overflow-hidden'>
-      <div className='bg-Secondarycolor2-0 pt-20 md:pt-28 pb-20 md:pb-[120px] xl:pb-[92px] 2xl:pb-[120px] rounded-b-2xl sm:rounded-b-3xl md:rounded-b-[40px] 2xl:rounded-b-[140px]'>
+    <section className='relative z-10 bg-BodyBg-0 overflow-hidden'>
+      <div className='bg-Secondarycolor2-0 pt-20 md:pt-28 pb-20 md:pb-[120px] xl:pb-[92px] 2xl:pb-[120px]'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px]'>
             <div className='relative'>

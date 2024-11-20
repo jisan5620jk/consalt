@@ -34,7 +34,7 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
+    <section className='pt-20 md:pt-28 pb-10 relative bg-BodyBg-0 z-10 '>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans text-sm sm:text-base font-semibold text-PrimaryColor2-0'>

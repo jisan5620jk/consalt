@@ -37,7 +37,7 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 pb-20 md:pb-[120px] bg-Secondarycolor2-0 relative z-10'>
+    <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] bg-Secondarycolor2-0 relative z-10'>
       <div className='Container'>
         <div className='flex justify-between flex-wrap items-center'>
           <div>

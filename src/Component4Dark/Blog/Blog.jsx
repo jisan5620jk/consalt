@@ -78,12 +78,12 @@ const Blog = () => {
   };
   return (
     <div className='Container'>
-      <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] border-t border-HeadingColor2-0 border-opacity-15 blog2'>
+      <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] border-t border-white border-opacity-15 blog2'>
         <div className='text-center'>
           <h5 className='font-FiraSans text-sm sm:text-base font-semibold text-PrimaryColor2-0'>
             LATEST BLOG
           </h5>
-          <h1 className='font-FiraSans font-bold text-base leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor2-0 mt-[18px]'>
+          <h1 className='font-FiraSans font-bold text-base leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]'>
             Read Our Latest Insights from the
             <br />
             Latest Blog Articles

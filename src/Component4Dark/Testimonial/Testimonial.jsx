@@ -57,19 +57,19 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='mx-2 xl:mx-5 pt-20 md:pt-28 bg-gradient-to-b from-BodyBg-0 to-transparent relative z-10'>
+    <section className='bg-Secondarycolor2-0 relative z-10'>
       <img
         src={testiShape}
         alt='Shape'
         className='absolute top-28 right-1/3 invert-[1] opacity-50 size-[148px] animate-rotate hidden xl:block'
       />
-      <div className='Container pb-14 md:pb-20 lg::pb-[120px]'>
+      <div className='Container pb-14 md:pb-20 lg:pb-[120px]'>
         <div className='flex justify-between flex-wrap items-center mb-4 md:-mb-[100px] lg:-mb-[130px]'>
           <div>
             <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
               TESTIMONIALS
             </h5>
-            <h1 className='font-FiraSans font-semibold text-HeadingColor2-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+            <h1 className='font-FiraSans font-semibold text-white inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
               What Says our Satisfied Clients <br />
               About Consultant Service
             </h1>

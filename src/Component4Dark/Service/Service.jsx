@@ -48,17 +48,17 @@ const ServiceData = [
 
 const Service = () => {
   return (
-    <section className='pt-20 md:pt-28 pb-20 md:pb-[120px] bg-white relative z-10 service8'>
+    <section className='pt-20 md:pt-28 bg-Secondarycolor2-0 relative z-10 service8'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor2-0 uppercase mb-3'>
             SERVICES WE PROVIDES
           </h5>
-          <h1 className='font-FiraSans font-semibold text-HeadingColor2-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
+          <h1 className='font-FiraSans font-semibold text-white inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] relative pb-4'>
             Engaging Consulting exceptional <br />
             Business Solutions
           </h1>
-          <p className='font-FiraSans text-TextColor2-0 pb-6 max-w-[565px] w-full mx-auto'>
+          <p className='font-FiraSans text-TextColor-0 pb-6 max-w-[565px] w-full mx-auto'>
             Seamlessly expedite extensible catalysts for change rather than 24/7
             services methodologies. Appropriately benchmark innovative
           </p>
@@ -95,7 +95,7 @@ const Service = () => {
           )}
         </div>
         <div className='flex items-center justify-center mt-14'>
-          <p className='font-FiraSans text-[15px] text-HeadingColor2-0'>
+          <p className='font-FiraSans text-[15px] text-white'>
             Feel free to reach out to our consulting{' '}
             <Link to={'/service'} className='text-PrimaryColor2-0 underline'>Services</Link> for inquiries and assistance.
           </p>

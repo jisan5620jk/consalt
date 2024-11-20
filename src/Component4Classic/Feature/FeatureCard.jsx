@@ -18,7 +18,7 @@ const FeatureCard = ({
         />
       </div>
       <div className='flex-1 overflow-hidden relative -mt-1'>
-        <h5 className='font-FiraSans font-medium text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px]-white pb-3'>
+        <h5 className='font-FiraSans font-medium text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] pb-3'>
           {featureTitle}
         </h5>
         <p className='font-FiraSans text-[15px] text-TextColor2-0'>
