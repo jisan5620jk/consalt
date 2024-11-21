@@ -348,15 +348,15 @@ const Navbar7 = () => {
                               <Link to={'/'}>Buseness Consulting Creative</Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Classic</Link>
+                              <Link to={'/home2'}>Buseness Consulting Classic</Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Dark</Link>
+                              <Link to={'/home3'}>Buseness Consulting Dark</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <Link to={'/'}>
+                          <Link to={'/home4'}>
                             Finance Consulting
                             <span>
                               <FaChevronDown />
@@ -379,10 +379,10 @@ const Navbar7 = () => {
                           </ul>
                         </li>
                         <li>
-                          <Link to={'/'}>IT Consulting</Link>
+                          <Link to={'/home7'}>IT Consulting</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>
+                          <Link to={'/hom8'}>
                             Buseness Consulting 02
                             <span>
                               <FaChevronDown />

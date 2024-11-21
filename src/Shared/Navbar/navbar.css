@@ -865,6 +865,29 @@ nav.main-menu-content > ul > li:hover > a > span {
 }
 
 /* Header Style Two */
+
+.header-area.header-classic .header-logo {
+  margin: 0;
+}
+
+.header-area.header-classic nav.main-menu-content > ul > li > a {
+    color: #ffffff;
+    padding: 38px 28px;
+}
+
+.header-area.header-classic nav.main-menu-content > ul > li > a > span {
+    top: 43px;
+}
+
+.header-area.header-classic .main-menu-mobile ul li > a {
+  color: #ffffff !important;
+}
+
+.header-area.header-classic .header-btn {
+    margin: 0;
+}
+
+/* Header Style Two */
 .header-area.style-two {
   background: transparent;
   position: relative;

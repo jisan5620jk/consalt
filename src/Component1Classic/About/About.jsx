@@ -1,4 +1,4 @@
-import aboutThumb from "/images/about_thumb.png";
+import aboutThumb from "/images/about2-image.png";
 import aboutShape from "/images/about_shape.png";
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa6";

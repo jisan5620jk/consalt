@@ -1,7 +1,8 @@
-import serviceThumb from "/images/service_thumb01.png";
+import serviceThumb from "/images/service_thumb01.jpg";
+import serviceThumb2 from "/images/service_thumb02.jpg";
+import serviceThumb3 from "/images/service_thumb03.jpg";
 import ServiceCard from "./ServiceCard";
 import { LuMoveRight } from "react-icons/lu";
-import serviceShape from "/images/service_rotate.png";
 
 const ServiceData = [
   {
@@ -14,7 +15,7 @@ const ServiceData = [
   },
   {
     id: 2,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb2,
     serviceTitle: "Cultivate Exceptional Net Works Markets",
     serviceUrl: "/",
     serviceBtn: "Read More",
@@ -22,7 +23,7 @@ const ServiceData = [
   },
   {
     id: 3,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb3,
     serviceTitle: "Communication is with World Infrastructure",
     serviceUrl: "/",
     serviceBtn: "Read More",
@@ -32,13 +33,10 @@ const ServiceData = [
 
 const Service = () => {
   return (
-    <section className="mx-2 xl:mx-5 bg-[url(/images/service-bg.png)] bg-cover bg-bottom bg-no-repeat pt-[206px] pb-[150px] relative lg:-mt-28 rounded-[40px] sm:rounded-b-[40px]">
-      <div className="size-[97px] rounded-full bg-PrimaryColor-0 flex items-center justify-center absolute left-1/2 -translate-x-1/2 top-[36px]">
-        <img src={serviceShape} className="animate-rotational" />
-      </div>
+    <section className="bg-HeadingColor-0 bg-cover bg-bottom bg-no-repeat pt-28 pb-[120px] relative">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white text-opacity-90 uppercase flex items-center justify-center gap-2 mb-3">
             SOLUTION APPROACH
           </h5>
           <h1 className="font-FiraSans font-semibold text-white text-sm leading-[24px] sm:text-2xl sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">

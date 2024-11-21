@@ -1,17 +1,17 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Shared/Navbar/Navbar";
 import ScrollToTop from "../Shared/ScrollToTop/ScrollToTop";
-import Footer from "../Shared/Footer/Footer";
+import Footer2 from "../Shared/Footer/Footer2";
+import Navbar2 from "../Shared/Navbar/Navbar2";
 
 const Main2 = () => {
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 };

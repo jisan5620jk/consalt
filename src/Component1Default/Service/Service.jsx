@@ -1,4 +1,6 @@
-import serviceThumb from "/images/service_thumb01.png";
+import serviceThumb from "/images/service_thumb01.jpg";
+import serviceThumb2 from "/images/service_thumb02.jpg";
+import serviceThumb3 from "/images/service_thumb03.jpg";
 import ServiceCard from "./ServiceCard";
 import { LuMoveRight } from "react-icons/lu";
 import serviceShape from "/images/service_rotate.png";
@@ -14,7 +16,7 @@ const ServiceData = [
   },
   {
     id: 2,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb2,
     serviceTitle: "Cultivate Exceptional Net Works Markets",
     serviceUrl: "/",
     serviceBtn: "Read More",
@@ -22,7 +24,7 @@ const ServiceData = [
   },
   {
     id: 3,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb3,
     serviceTitle: "Communication is with World Infrastructure",
     serviceUrl: "/",
     serviceBtn: "Read More",

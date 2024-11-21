@@ -12,7 +12,7 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import { MdLocationPin } from 'react-icons/md';
+import { MdLightMode, MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { LuMoveRight } from 'react-icons/lu';
 
@@ -295,15 +295,19 @@ const Navbar = () => {
                               <Link to={'/'}>Buseness Consulting Creative</Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Classic</Link>
+                              <Link to={'/home2'}>
+                                Buseness Consulting Classic
+                              </Link>
                             </li>
                             <li>
-                              <Link to={'/'}>Buseness Consulting Dark</Link>
+                              <Link to={'/home3'}>
+                                Buseness Consulting Dark
+                              </Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <Link to={'/'}>
+                          <Link to={'/home4'}>
                             Finance Consulting
                             <span>
                               <FaChevronDown />
@@ -326,10 +330,10 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li>
-                          <Link to={'/'}>IT Consulting</Link>
+                          <Link to={'/home7'}>IT Consulting</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>
+                          <Link to={'/hom8'}>
                             Buseness Consulting 02
                             <span>
                               <FaChevronDown />
@@ -467,22 +471,20 @@ const Navbar = () => {
               </div>
             </div>
             <div className='col-span-2'>
-              <div className='header-right-box flex items-center gap-10 lg:gap-4 justify-end'>
+              <div className='header-right-box flex items-center gap-10 lg:gap-4 2xl:gap-8 justify-end'>
                 <div className='header-btn hidden lg:block'>
                   <Link to={'/'}>
                     get a quote<span></span>
                     <LuMoveRight />
                   </Link>
                 </div>
-                <div className='header-sidebar hidden lg:block lg:mt-5'>
-                  <button
-                    ref={menuSideBarRef}
-                    className='menu-sidebar'
+                <div className='hidden lg:block relative top-3 before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
+                  <Link
+                    to={'/'}
+                    className='text-white flex items-center justify-center size-9 rounded-full bg-white bg-opacity-15'
                   >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
+                    <MdLightMode size={'20'} />
+                  </Link>
                 </div>
                 <div className='header-bar lg:hidden'>
                   <button
@@ -561,71 +563,6 @@ const Navbar = () => {
               <li>
                 <Link to={'/'}>
                   <button>Backup and Disaster Recovery</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
                 </Link>
               </li>
               <li>

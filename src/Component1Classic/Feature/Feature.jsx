@@ -4,49 +4,54 @@ import featureIcon3 from "/images/feature_icon03.png";
 import featureIcon4 from "/images/feature_icon04.png";
 import FeatureCard from "./FeatureCard";
 import featureShape from "/images/arrow.png";
+import { LuMoveRight } from "react-icons/lu";
 
 const featureData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: "Business Planning and Technologist",
+    featureTitle: 'Business Planning and Technologist',
     featureDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    featureUrl: "/",
-    featureNumber: "01",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    featureUrl: '/',
+    featureBtn: 'Read More',
+    featureBtnIcon: <LuMoveRight />,
   },
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: "Human home ones and Consulting",
+    featureTitle: 'Human home ones and Consulting',
     featureDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    featureUrl: "/",
-    featureNumber: "02",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    featureUrl: '/',
+    featureBtn: 'Read More',
+    featureBtnIcon: <LuMoveRight />,
   },
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: "Opportunity Global Business Service",
+    featureTitle: 'Opportunity Global Business Service',
     featureDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    featureUrl: "/",
-    featureNumber: "03",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    featureUrl: '/',
+    featureBtn: 'Read More',
+    featureBtnIcon: <LuMoveRight />,
   },
   {
     id: 4,
     featureIcon: featureIcon4,
-    featureTitle: "Insurance for Family Consulting",
+    featureTitle: 'Insurance for Family Consulting',
     featureDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    featureUrl: "/",
-    featureNumber: "04",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    featureUrl: '/',
+    featureBtn: 'Read More',
+    featureBtnIcon: <LuMoveRight />,
   },
 ];
 
 const Feature = () => {
   return (
-    <section className="mx-2 xl:mx-5 my-5 pt-28 pb-[120px] lg:pb-[196px] bg-[url(/images/feature_bg.png)] bg-cover bg-no-repeat bg-left lg:bg-bottom rounded-[40px] relative z-10">
+    <section className="pt-28 pb-[120px] bg-BodyBg-0 relative z-10">
       <div className="Container relative">
         <img
           src={featureShape}
@@ -72,7 +77,8 @@ const Feature = () => {
               featureTitle,
               featureDesc,
               featureUrl,
-              featureNumber,
+              featureBtn,
+              featureBtnIcon,
             }) => {
               return (
                 <div key={id} className="feature-box">
@@ -81,7 +87,8 @@ const Feature = () => {
                     featureTitle={featureTitle}
                     featureDesc={featureDesc}
                     featureUrl={featureUrl}
-                    featureNumber={featureNumber}
+                    featureBtn={featureBtn}
+                    featureBtnIcon={featureBtnIcon}
                   />
                 </div>
               );
