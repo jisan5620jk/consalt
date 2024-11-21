@@ -4,6 +4,7 @@ import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import testiProfile from '/images/testi_author.png';
 import { RiDoubleQuotesR } from 'react-icons/ri';
+import testiShape from "/images/testi2-shape.png"
 
 const testiData = [
   {
@@ -48,7 +49,8 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-2 xl:mx-5 relative z-10 overflow-hidden'>
+    <section className='py-28 bg-PrimaryColor-0 relative z-10 overflow-hidden'>
+      <img src={testiShape} alt="Image" draggable="false"className='absolute' />
       <div className='Container'>
         <div className='flex justify-center text-center'>
           <Swiper {...settings}>

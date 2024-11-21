@@ -9,7 +9,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className='relative text-center'>
-      <h2 className='text-5xl text-[#e0f3e0] text-center mx-auto'>{testiQuote}</h2>
+      <h2 className='text-5xl text-[#e0f3e0] flex justify-center'>{testiQuote}</h2>
       <ul className='flex gap-1 items-center justify-center mb-5 mt-5'>
         <li className='text-[#ffb609] text-xl'>{testiRatingIcon}</li>
         <li className='text-[#ffb609] text-xl'>{testiRatingIcon}</li>
