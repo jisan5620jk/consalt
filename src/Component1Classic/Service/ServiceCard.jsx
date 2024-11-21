@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const ServiceCard = ({
   serviceThumb,
   serviceTitle,
+  serviceDesc,
   serviceUrl,
   serviceBtn,
   btnIcon,
@@ -18,10 +19,11 @@ const ServiceCard = ({
             className='w-full transition-all duration-500 group-hover:scale-110'
           />
         </div>
-        <div className='bg-BodyBg2-0 px-[10px] sm:px-5 md:px-[10px] xl:px-5 relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-[url(/images/service-content-bg.png)] before:bg-no-repeat before:bg-cover before:bg-right before:w-full before:h-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:h-full pb-[10px] sm:pb-4'>
-          <h4 className='font-FiraSans font-medium text-lg sm:text-xl 2xl:text-[23px] text-white transition-all duration-500 group-hover:text-HeadingColor-0 pt-8 mb-4'>
+        <div className='bg-BodyBg2-0 px-[10px] sm:px-5 md:px-[10px] xl:px-5 relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-BodyBg-0 before:w-full before:h-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:h-full pb-[10px] sm:pb-7'>
+          <h4 className='font-FiraSans font-medium text-lg sm:text-xl 2xl:text-2xl text-white transition-all duration-500 group-hover:text-HeadingColor-0 pt-8 mb-4'>
             {serviceTitle}
           </h4>
+          <p className='font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-HeadingColor-0 group-hover:text-opacity-75 mb-4'>{serviceDesc}</p>
           <Link
             to={serviceUrl}
             className='inline-block relative'

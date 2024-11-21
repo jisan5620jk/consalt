@@ -12,7 +12,7 @@ const TeamCard = ({
 }) => {
   return (
     <div className="group relative">
-      <div className="relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-[#f5f8ed] before:w-full before:h-1/2 before:rounded-t-md before:-z-10">
+      <div className="relative overflow-hidden">
         <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
         <div className="absolute z-10 -top-1/3 -right-10 transition-all duration-500 group-hover:top-[112px]">
           <ul className="flex gap-3 -rotate-90">
@@ -47,7 +47,7 @@ const TeamCard = ({
           </ul>
         </div>
       </div>
-      <div className="relative transition-all duration-500rounded-md text-center pt-[22px] rounded-b-md">
+      <div className="relative transition-all duration-500 text-center pt-[22px]">
         <h5 className="font-FiraSans font-semibold text-2xl text-HeadingColor-0 transition-all duration-500 pb-1">
           {teamTitle}
         </h5>

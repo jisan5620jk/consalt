@@ -65,7 +65,6 @@ const LatestWork = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1000,
-    centeredSlides: true,
     initialSlide: 1,
     autoplay: true,
     breakpoints: {

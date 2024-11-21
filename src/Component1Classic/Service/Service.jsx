@@ -8,25 +8,31 @@ const ServiceData = [
   {
     id: 1,
     serviceThumb: serviceThumb,
-    serviceTitle: "Globally Enable Accurate System Sustainable",
-    serviceUrl: "/",
-    serviceBtn: "Read More",
+    serviceTitle: 'Globally Enable Accurate System Sustainable',
+    serviceDesc:
+      'Continually plagiarize virtual web services resource maximizing action items. Globally build front-end consult.',
+    serviceUrl: '/',
+    serviceBtn: 'Read More',
     btnIcon: <LuMoveRight />,
   },
   {
     id: 2,
     serviceThumb: serviceThumb2,
-    serviceTitle: "Cultivate Exceptional Net Works Markets",
-    serviceUrl: "/",
-    serviceBtn: "Read More",
+    serviceTitle: 'Cultivate Exceptional Net Works Markets',
+    serviceDesc:
+      'Continually plagiarize virtual web services resource maximizing action items. Globally build front-end consult.',
+    serviceUrl: '/',
+    serviceBtn: 'Read More',
     btnIcon: <LuMoveRight />,
   },
   {
     id: 3,
     serviceThumb: serviceThumb3,
-    serviceTitle: "Communication is with World Infrastructure",
-    serviceUrl: "/",
-    serviceBtn: "Read More",
+    serviceTitle: 'Communication is with World Infrastructure',
+    serviceDesc:
+      'Continually plagiarize virtual web services resource maximizing action items. Globally build front-end consult.',
+    serviceUrl: '/',
+    serviceBtn: 'Read More',
     btnIcon: <LuMoveRight />,
   },
 ];
@@ -51,6 +57,7 @@ const Service = () => {
               id,
               serviceThumb,
               serviceTitle,
+              serviceDesc,
               serviceUrl,
               serviceBtn,
               btnIcon,
@@ -60,6 +67,7 @@ const Service = () => {
                   <ServiceCard
                     serviceThumb={serviceThumb}
                     serviceTitle={serviceTitle}
+                    serviceDesc={serviceDesc}
                     serviceUrl={serviceUrl}
                     serviceBtn={serviceBtn}
                     btnIcon={btnIcon}
