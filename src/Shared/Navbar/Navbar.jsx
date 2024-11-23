@@ -257,7 +257,7 @@ const Navbar = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area'
+        className='header-area xl:mt-3 2xl:mt-0'
       >
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
@@ -478,7 +478,7 @@ const Navbar = () => {
                     <LuMoveRight />
                   </Link>
                 </div>
-                <div className='hidden lg:block relative top-3 before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
+                <div className='hidden xl:block relative top-3 xl:top-0 2xl:top-3 before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
                   <Link
                     to={'/'}
                     className='text-white flex items-center justify-center size-9 rounded-full bg-white bg-opacity-15'

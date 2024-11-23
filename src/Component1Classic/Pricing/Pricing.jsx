@@ -37,7 +37,7 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pt-[160px] pb-[120px] bg-BodyBg2-0">
+    <section className="relative overflow-hidden pt-[120px] pb-[120px] bg-BodyBg2-0">
       <div className="Container">
         <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12">
           <div className="col-span-6 lg:col-span-5 w-full mx-auto mr-10">

@@ -27,7 +27,7 @@ const counterData = [
 
 const Counter = () => {
   return (
-    <section className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 my-5 rounded-[40px] pt-[74px] pb-[54px] bg-BodyBg2-0 bg-no-repeat bg-cover bg-center">
+    <section className="pt-[74px] pb-[54px] bg-BodyBg2-0 bg-no-repeat bg-cover bg-center">
       <div className="Container">
         <div className="grid lg:grid-cols-2 lg:items-center gap-8 lg:gap-0 pb-7">
           <div>

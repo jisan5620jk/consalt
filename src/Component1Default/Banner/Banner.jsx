@@ -9,7 +9,7 @@ import { IoPlayOutline } from "react-icons/io5";
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <section className="mx-2 xl:mx-5 lg:mt-5 bg-Secondarycolor-0 lg:bg-opacity-0 lg:bg-[url('/images/banner.png')] bg-cover xl:bg-contain 2xl:bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[600px] xl:h-[548px] 2xl:h-[830px] flex items-center relative z-10 overflow-hidden rounded-[40px]">
+    <section className="mx-2 xl:mx-5 lg:mt-5 xl:mt-0 2xl:mt-5 bg-Secondarycolor-0 lg:bg-opacity-0 lg:bg-[url('/images/banner.png')] bg-cover xl:bg-contain 2xl:bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[600px] xl:h-[548px] 2xl:h-[830px] flex items-center relative z-10 overflow-hidden rounded-[40px]">
       <div className="Container">
         <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
           <div className="relative">
@@ -44,10 +44,10 @@ const Banner = () => {
             <img
               src={bannerThumb}
               draggable="false"
-              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] relative left-[124px]"
+              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] relative 2xl:left-[124px]"
             />
-            <div className="absolute top-[54%] -left-[58px] md:left-0 lg:-left-[40px] xl:-left-[58px] 2xl:-left-[42px] -translate-y-1/2">
-              <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
+            <div className="absolute top-[54%] -left-[58px] md:left-0 xl:-left-[58px] 2xl:-left-[42px] -translate-y-1/2">
+              <button className="size-14 sm:size-[90px] lg:size-[70px] xl:size-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
                 <IoPlayOutline
                   size={"30"}
                   className="text-white"

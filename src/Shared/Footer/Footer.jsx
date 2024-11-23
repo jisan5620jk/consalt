@@ -24,7 +24,7 @@ const Footer = () => {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Enter Your E-Mail*"
+                  placeholder="Enter E-Mail*"
                   required
                   className="w-full h-[56px] outline-none font-FiraSans border-b border-BorderColor2-0 bg-transparent py-4 text-white placeholder:text-white mb-4"
                 />
@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="absolute top-3 right-0">
                 <button
                   type="submit"
-                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-6 py-[6px] text-sm text-white font-FiraSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-6 py-[6px] text-sm text-white font-FiraSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
                 >
                   Subscribe
                 </button>

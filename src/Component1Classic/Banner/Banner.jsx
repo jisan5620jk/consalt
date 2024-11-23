@@ -40,7 +40,7 @@ const Banner = () => {
             <img
               src={bannerThumb}
               draggable="false"
-              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] -mb-11 relative left-[124px]"
+              className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] lg:-mb-24 xl:-mb-11 relative xl:left-[124px]"
             />
           </div>
         </div>

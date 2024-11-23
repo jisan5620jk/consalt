@@ -875,6 +875,12 @@ nav.main-menu-content > ul > li:hover > a > span {
     padding: 38px 28px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .header-area.header-classic nav.main-menu-content > ul > li > a {
+    padding: 38px 18px;
+}
+}
+
 .header-area.header-classic nav.main-menu-content > ul > li > a > span {
     top: 43px;
 }

@@ -478,7 +478,7 @@ const Navbar2 = () => {
                     <LuMoveRight />
                   </Link>
                 </div>
-                <div className='hidden lg:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
+                <div className='hidden xl:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
                   <Link
                     to={'/'}
                     className='text-white flex items-center justify-center size-9 rounded-full bg-white bg-opacity-15'
