@@ -29,7 +29,7 @@ const LatestWorkCard = ({
       </div>
       <Link
         to={latestWorkUrl}
-        className="latest-work-btn transition-all duration-500 absolute top-[40%] opacity-0 left-0 -translate-x-1/2 group-hover:left-1/2 group-hover:opacity-100"
+        className="latest-work-btn transition-all duration-500 absolute z-10 top-[40%] opacity-0 left-0 -translate-x-1/2 group-hover:left-1/2 group-hover:opacity-100"
       >
         <button className="size-[60px] shadow-shade rounded-full text-2xl flex items-center justify-center text-PrimaryColor-0 bg-BodyBg-0">
           {latestWorkBtn}
