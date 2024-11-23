@@ -1,18 +1,18 @@
-import About from "../../Component1Default/About/About";
-import Banner from "../../Component1Default/Banner/Banner";
-import Blog from "../../Component1Default/Blog/Blog";
-import Brand from "../../Component1Default/Brand/Brand";
-import ContentSlider from "../../Component1Default/ContentSlider/ContentSlider";
-import Counter from "../../Component1Default/Counter/Counter";
-import Feature from "../../Component1Default/Feature/Feature";
-import LatestWork from "../../Component1Default/LatestWork/LatestWork";
-import Pricing from "../../Component1Default/Pricing/Pricing";
-import Service from "../../Component1Default/Service/Service";
-import TeamMember from "../../Component1Default/TeamMember/TeamMember";
-import Testimonial from "../../Component1Default/Testimonial/Testimonial";
-import Work from "../../Component1Default/Work/Work";
+import About from '../../Component1Dark/About/About';
+import Banner from '../../Component1Dark/Banner/Banner';
+import Blog from '../../Component1Dark/Blog/Blog';
+import Brand from '../../Component1Dark/Brand/Brand';
+import ContentSlider from '../../Component1Dark/ContentSlider/ContentSlider';
+import Counter from '../../Component1Dark/Counter/Counter';
+import Feature from '../../Component1Dark/Feature/Feature';
+import LatestWork from '../../Component1Dark/LatestWork/LatestWork';
+import Pricing from '../../Component1Dark/Pricing/Pricing';
+import Service from '../../Component1Dark/Service/Service';
+import TeamMember from '../../Component1Dark/TeamMember/TeamMember';
+import Testimonial from '../../Component1Dark/Testimonial/Testimonial';
+import Work from '../../Component1Dark/Work/Work';
 
-const Home3 = () => {
+const Home2 = () => {
   return (
     <>
       <Banner />
@@ -32,4 +32,4 @@ const Home3 = () => {
   );
 };
 
-export default Home3;
+export default Home2;

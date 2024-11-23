@@ -2,7 +2,7 @@ import "./content-slider.css";
 
 const ContentSlider = () => {
   return (
-    <div className="content-slider-section">
+    <div className="content-slider-section bg-PrimaryColor-0">
       <div className="content-slider">
         <div className="content-slider-content">
           <h1>Business</h1>

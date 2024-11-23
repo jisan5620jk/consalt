@@ -51,25 +51,25 @@ const featureData = [
 
 const Feature = () => {
   return (
-    <section className="pt-28 pb-[120px] bg-BodyBg-0 relative z-10">
-      <div className="Container relative">
+    <section className='pt-28 pb-[120px] bg-[#093c3d] relative z-10'>
+      <div className='Container relative'>
         <img
           src={featureShape}
-          className="absolute top-0 right-16 animate-swing hidden xl:block"
+          className='absolute top-0 right-16 animate-swing hidden xl:block'
         />
-        <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+        <div className='text-center'>
+          <h5 className='font-FiraSans font-medium text-sm sm:text-base text-white uppercase flex items-center justify-center gap-2 mb-3'>
             Featured Service
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className='font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]'>
             Unlocking Your {`Business's`} Potential with
-            <br className="hidden sm:block" />
+            <br className='hidden sm:block' />
             the Best Innovate Consulting active and
-            <br className="hidden sm:block" />
+            <br className='hidden sm:block' />
             Dedicated Customers
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12'>
           {featureData.map(
             ({
               id,
@@ -81,7 +81,10 @@ const Feature = () => {
               featureBtnIcon,
             }) => {
               return (
-                <div key={id} className="feature-box">
+                <div
+                  key={id}
+                  className='feature-box'
+                >
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureTitle={featureTitle}

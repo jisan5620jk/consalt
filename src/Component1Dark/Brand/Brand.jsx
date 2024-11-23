@@ -32,41 +32,41 @@ const Brand = () => {
     },
   };
   return (
-    <div className="py-[94px]">
+    <div className="py-[94px] bg-PrimaryColor-0">
       <div className="Container relative z-10">
-        <h5 className="font-FiraSans text-HeadingColor-0 text-sm sm:text-lg flex justify-center relative before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-[50px] before:h-[2px] before:bg-PrimaryColor-0 mb-[72px]">
+        <h5 className="font-FiraSans text-white text-sm sm:text-lg flex justify-center relative before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-[50px] before:h-[2px] before:bg-white before:opacity-90 mb-[72px]">
           Worldwide <CountUp start={-11} end={1500} suffix={"+"} /> Trusted
           Clients with Consalt
         </h5>
         <Swiper {...settings}>
           <SwiperSlide>
             <div>
-              <img src={brandThumb} draggable="false" className="m-auto" />
+              <img src={brandThumb} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb2} draggable="false" className="m-auto" />
+              <img src={brandThumb2} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb3} draggable="false" className="m-auto" />
+              <img src={brandThumb3} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb4} draggable="false" className="m-auto" />
+              <img src={brandThumb4} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb5} draggable="false" className="m-auto" />
+              <img src={brandThumb5} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb} draggable="false" className="m-auto" />
+              <img src={brandThumb} draggable="false" className="m-auto transition-all duration-300 brightness-0 invert-[1] opacity-80 hover:opacity-100" />
             </div>
           </SwiperSlide>
         </Swiper>

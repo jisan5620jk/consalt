@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import workIcon from "/images/steps_1.png";
 import workIcon2 from "/images/steps_2.png";
 import workIcon3 from "/images/steps_3.png";
@@ -9,7 +8,6 @@ import { Link } from "react-router-dom";
 const WorkData = [
   {
     id: 1,
-    workNumber: "01",
     workIcon: workIcon,
     workTitle: "Strategic Work Planning",
     workDesc:
@@ -19,7 +17,6 @@ const WorkData = [
   },
   {
     id: 2,
-    workNumber: "02",
     workIcon: workIcon2,
     workTitle: "Monitoring and Evaluation",
     workDesc:
@@ -29,7 +26,6 @@ const WorkData = [
   },
   {
     id: 3,
-    workNumber: "03",
     workIcon: workIcon3,
     workTitle: "Completed Works",
     workDesc:
@@ -41,18 +37,18 @@ const WorkData = [
 
 const Work = () => {
   return (
-    <section className="pt-28 pb-[120px] bg-BodyBg-0 relative z-10">
+    <section className="pt-28 pb-[120px] bg-BodyBg2-0 relative z-10">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase flex items-center justify-center gap-2 mb-3">
             OUR WORKING STEPS
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             Engaging {`Consulting's`} exceptional
             <br />
             Involves a series of Steps
           </h1>
-          <p className="font-FiraSans text-TextColor2-0 pt-4">
+          <p className="font-FiraSans text-TextColor-0 pt-4">
             Globally engage cross-media leadership skills before cross-media
             innovation forward
             <br className="hidden md:block" /> develope standardized platforms
@@ -63,7 +59,6 @@ const Work = () => {
           {WorkData.map(
             ({
               id,
-              workNumber,
               workIcon,
               workTitle,
               workDesc,
@@ -74,7 +69,6 @@ const Work = () => {
                 <>
                   <div key={id}>
                     <WorkCard
-                      workNumber={workNumber}
                       workIcon={workIcon}
                       workTitle={workTitle}
                       workDesc={workDesc}
@@ -88,9 +82,9 @@ const Work = () => {
           )}
         </div>
         <div className="text-center mt-9">
-          <p className="font-FiraSans text-HeadingColor-0 font-medium text-sm">
+          <p className="font-FiraSans text-white font-medium text-sm">
             Feel free to reach out to our consulting{" "}
-            <Link to={"/service"} className="text-PrimaryColor-0 underline">
+            <Link to={"/service"} className="text-white underline-offset-4 underline">
               Services
             </Link>{" "}
             for inquiries and assistance.

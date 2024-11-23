@@ -5,9 +5,9 @@ import { FaEnvelopeOpen } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-BodyBg-0 relative">
+    <section className="py-[120px] bg-HeadingColor-0 relative">
       <div className="Container">
-        <h1 className="font-FiraSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
+        <h1 className="font-FiraSans font-semibold text-center text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
           Perform Market Research to gain <br /> Insights into Industry Trends
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
@@ -40,32 +40,32 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               ABOUT COMPANY
             </h5>
-            <h1 className="font-FiraSans font-medium text-HeadingColor-0 text-[20px] leading-[30px] sm:text-[22px] sm:leading-[32px] md:text-[28px] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
+            <h1 className="font-FiraSans font-medium text-white text-[20px] leading-[30px] sm:text-[22px] sm:leading-[32px] md:text-[28px] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
               Since 2007, We’re working Consulting agency
               <br className="hidden sm:block" />
               group of more than 120+ talented peoples
               <br className="hidden sm:block" />
               helps companies
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 mt-6">
+            <p className="font-FiraSans text-TextColor-0 mt-6">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
             <ul className="mt-5">
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0">
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-TextColor-0">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Professional Team Member
               </li>
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-TextColor-0 mt-3">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Any Problem Solving
               </li>
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-TextColor-0 mt-3">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Implement Business
               </li>
@@ -75,7 +75,7 @@ const About = () => {
                 <button className="primary-btn">{`Discover More`}</button>
               </Link>
               <Link to={"/"}>
-                <button className="flex items-center gap-2 font-FiraSans font-medium text-HeadingColor-0">
+                <button className="flex items-center gap-2 font-FiraSans font-medium text-TextColor-0">
                   <FaEnvelopeOpen />
                   example@gmail.com
                 </button>
