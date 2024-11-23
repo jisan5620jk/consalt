@@ -88,20 +88,24 @@ const Blog = () => {
     },
   };
   return (
-    <section className="py-28 blog">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+    <section className='py-28 blog bg-[#093c3d]'>
+      <div className='Container'>
+        <div className='text-center'>
+          <h5 className='font-FiraSans font-medium text-sm sm:text-base text-white uppercase flex items-center justify-center gap-2 mb-3'>
             LATEST BLOG
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className='font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]'>
             Read Our Latest Insights from the
             <br />
             Latest Blog Articles
           </h1>
         </div>
-        <div className="mt-[56px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+        <div className='mt-[56px]'>
+          <Swiper
+            {...settings}
+            pagination={pagination}
+            modules={[Pagination]}
+          >
             {BlogData.map(
               ({
                 id,
@@ -116,7 +120,7 @@ const Blog = () => {
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className="pb-[70px]">
+                    <div className='pb-[70px]'>
                       <BlogCard
                         blogThumb={blogThumb}
                         blogDateIcon={blogDateIcon}

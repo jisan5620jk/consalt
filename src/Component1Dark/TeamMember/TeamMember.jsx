@@ -1,44 +1,44 @@
-import teamThumb from "/images/team.jpg";
-import teamThumb2 from "/images/team1.jpg";
-import teamThumb3 from "/images/team2.jpg";
-import TeamCard from "./TeamCard";
+import teamThumb from '/images/team1.jpg';
+import teamThumb2 from '/images/team2.jpg';
+import teamThumb3 from '/images/team3.jpg';
+import TeamCard from './TeamCard';
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
-} from "react-icons/fa6";
+} from 'react-icons/fa6';
 
 const teamData = [
   {
     id: 1,
     teamThumb: teamThumb3,
-    teamTitle: "Connie Diaz",
+    teamTitle: 'Connie Diaz',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "Lead Developer",
+    teamDesc: 'Lead Developer',
   },
   {
     id: 2,
     teamThumb: teamThumb,
-    teamTitle: "Jone D. Alexon",
+    teamTitle: 'Jone D. Alexon',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "CEO & Founder",
+    teamDesc: 'CEO & Founder',
   },
   {
     id: 3,
     teamThumb: teamThumb2,
-    teamTitle: "James E. Huey",
+    teamTitle: 'James E. Huey',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
     socialIcon4: <FaPinterestP />,
-    teamDesc: "IT Expert",
+    teamDesc: 'IT Expert',
   },
 ];
 

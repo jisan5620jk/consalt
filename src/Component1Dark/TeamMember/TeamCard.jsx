@@ -12,34 +12,34 @@ const TeamCard = ({
 }) => {
   return (
     <div className="group relative">
-      <div className="relative overflow-hidden">
-        <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
+      <div className="relative rounded-md overflow-hidden">
+        <img src={teamThumb} className="w-full rounded-md xl:w-[inherit] m-auto" />
         <div className="absolute z-10 -top-1/3 -right-10 transition-all duration-500 group-hover:top-[112px]">
           <ul className="flex gap-3 -rotate-90">
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon}
                 </button>
               </Link>
             </li>
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon2}
                 </button>
               </Link>
             </li>
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon3}
                 </button>
               </Link>
             </li>
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon4}
                 </button>
               </Link>
