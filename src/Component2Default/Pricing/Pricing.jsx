@@ -64,7 +64,7 @@ const Pricing = () => {
               </li>
               <li className="flex items-center gap-2 text-HeadingColor-0 font-FiraSans font-medium">
                 <GiCheckMark className="text-PrimaryColor-0" />
-                Moneyback Gaurantee
+                24 Hours Supports
               </li>
             </ul>
             <Link to={"/contact"}>
