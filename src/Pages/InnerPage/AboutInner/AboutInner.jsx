@@ -1,11 +1,10 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Feature from "./Feature/Feature";
-import About from "./About/About";
-import TeamMember from "../../../Component1/TeamMember/TeamMember";
-import Counter from "../../../Component1/Counter/Counter";
-import Testimonial from "../../../Component1/Testimonial/Testimonial";
-import Brand from "../../../Component1/Brand/Brand";
+import About from "../../../Component2Default/About/About";
+import Counter from "../../../Component1Default/Counter/Counter";
+import TeamMember from "../../../Component1Default/TeamMember/TeamMember";
+import ContentSlider from "../../../Component1Default/ContentSlider/ContentSlider";
+import WhyChoose from "./WhyChoose/WhyChoose";
 
 const AboutInner = () => {
   return (
@@ -15,12 +14,11 @@ const AboutInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"About Us"}
       />
-      <Feature />
       <About />
-      <TeamMember />
       <Counter />
-      <Testimonial />
-      <Brand />
+      <TeamMember />
+      <ContentSlider />
+      <WhyChoose />
     </>
   );
 };

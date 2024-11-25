@@ -1061,6 +1061,58 @@ nav.main-menu-content > ul > li:hover > a > span {
   background: #fff;
 }
 
+/* Header Style Nine */
+
+.header-area.style-two.style-eight.style-eleven {
+  background: #f4f8f9;
+  border-radius: 0;
+}
+
+.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+  color: #0a1630;
+  padding: 38px 29px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+    padding: 38px 22px;
+  }
+}
+
+.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a > span {
+  top: 44px;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar {
+  background: initial;
+  transform: rotate(-180deg);
+  position: relative;
+  top: 0;
+  background: transparent;
+  padding: 9px 6px;
+  border-radius: 50px;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar span {
+  background: #0c6e6d;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(1) {
+    width: 22px;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(2) {
+    width: 16px;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(3) {
+    width: 10px;
+}
+
+.header-area.style-two.style-eight.style-eleven .menu-sidebar:hover span {
+  width: 22px;
+}
+
 /* Header Sidebar */
 
 /* Offcanvas */

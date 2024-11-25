@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import { Link } from 'react-router-dom';
-import Logo from '/images/logo.png';
+import Logo from '/images/logo_2.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -12,28 +11,12 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import { MdLightMode, MdLocationPin } from 'react-icons/md';
+import { MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
-import { LuMoveRight } from 'react-icons/lu';
+import { BiSearch } from 'react-icons/bi';
+import { LiaLongArrowAltRightSolid } from 'react-icons/lia';
 
-const Navbar2 = () => {
-  useEffect(() => {
-    window.addEventListener('scroll', isSticky);
-    return () => {
-      window.removeEventListener('scroll', isSticky);
-    };
-  });
-
-  /* Method that will fix header after a specific scrollable */
-
-  const isSticky = (e) => {
-    const header = document.querySelector('.header-area');
-    const scrollTop = window.scrollY;
-    scrollTop >= 250
-      ? header.classList.add('is-sticky')
-      : header.classList.remove('is-sticky');
-  };
-
+const Navbar11 = () => {
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -72,7 +55,6 @@ const Navbar2 = () => {
     };
   }, []);
 
-  //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
   const bodyOverlayRef = useRef(null);
@@ -163,7 +145,7 @@ const Navbar2 = () => {
   }, [headerIcon]);
 
   return (
-    <>
+    <div>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -257,240 +239,240 @@ const Navbar2 = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area header-classic'
+        className='header-area style-two style-eight style-eleven'
       >
-        <div className='Container'>
-          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
-            <div className='col-span-2'>
-              <div className='header-logo'>
+        <div className='bg-transparent rounded-md px-5 py-4 lg:py-0 md:px-10 xl:px-[60px] flex items-center justify-between lg:grid lg:grid-cols-12'>
+          <div className='col-span-2'>
+            <div className='header-logo'>
+              <Link to={'/'}>
+                <img
+                  src={Logo}
+                  draggable='false'
+                />
+              </Link>
+            </div>
+          </div>
+          <div className='lg:col-span-9 xl:col-span-8 2xl:col-span-7 hidden lg:block'>
+            <div className='header-main-menu text-center'>
+              <nav className='main-menu-content'>
+                <ul>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Home
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/'}>
+                          Buseness Consulting 01
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !-top-[3px]'>
+                          <li>
+                            <Link to={'/'}>Buseness Consulting Creative</Link>
+                          </li>
+                          <li>
+                            <Link to={'/home2'}>
+                              Buseness Consulting Classic
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home3'}>Buseness Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link to={'/home4'}>
+                          Finance Consulting
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !top-[50px]'>
+                          <li>
+                            <Link to={'/home4'}>
+                              Finance Consulting Creative
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home5'}>
+                              Finance Consulting Classic
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home6'}>Finance Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link to={'/home7'}>IT Consulting</Link>
+                      </li>
+                      <li>
+                        <Link to={'/home8'}>
+                          Buseness Consulting 02
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </Link>
+                        <ul className='submenu !top-[154px]'>
+                          <li>
+                            <Link to={'/home8'}>
+                              Buseness Consulting Creative
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home9'}>
+                              Buseness Consulting Classic
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to={'/home10'}>Buseness Consulting Dark</Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to={'/about'}>About</Link>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/service'}>
+                      Service
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/service'}>service</Link>
+                      </li>
+                      <li>
+                        <Link to={'/service_details'}>service details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Pages
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/about'}>About</Link>
+                      </li>
+                      <li>
+                        <Link to={'/service'}>service</Link>
+                      </li>
+                      <li>
+                        <Link to={'/service_details'}>service details</Link>
+                      </li>
+                      <li>
+                        <Link to={'/team'}>Team Member</Link>
+                      </li>
+                      <li>
+                        <Link to={'/pricing'}>Pricing</Link>
+                      </li>
+                      <li>
+                        <Link to={'/portfolio'}>Portfolio</Link>
+                      </li>
+                      <li>
+                        <Link to={'/portfolio_details'}>Portfolio details</Link>
+                      </li>
+                      <li>
+                        <Link to={'/contact'}>Contact</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Portfolio
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/portfolio'}>Portfolio</Link>
+                      </li>
+                      <li>
+                        <Link to={'/portfolio_details'}>Portfolio details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='has-dropdown'>
+                    <Link to={'/'}>
+                      Blog
+                      <span>
+                        <FaChevronDown />
+                      </span>
+                    </Link>
+                    <ul className='submenu'>
+                      <li>
+                        <Link to={'/blog_grid'}>blog grid</Link>
+                      </li>
+                      <li>
+                        <Link to={'/blog_right_sibebar'}>
+                          blog right sidebar
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={'/blog_left_sibebar'}>blog left sidebar</Link>
+                      </li>
+                      <li>
+                        <Link to={'/blog_details'}>blog details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to={'/contact'}>Contact</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div className='lg:col-span-1 xl:col-span-2 2xl:col-span-3'>
+            <div className='header-right-box flex items-center gap-10 lg:gap-7 justify-end'>
+              <div className='hidden xl:block relative'>
                 <Link to={'/'}>
-                  <img
-                    src={Logo}
-                    draggable='false'
-                  />
+                  <button className='text-HeadingColor-0 relative top-1'>
+                    <BiSearch size={'20'} />
+                  </button>
                 </Link>
               </div>
-            </div>
-            <div className='col-span-8 hidden lg:block'>
-              <div className='header-main-menu text-center'>
-                <nav className='main-menu-content'>
-                  <ul>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Home
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>
-                            Buseness Consulting 01
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !-top-[3px]'>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Creative</Link>
-                            </li>
-                            <li>
-                              <Link to={'/home2'}>
-                                Buseness Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home3'}>
-                                Buseness Consulting Dark
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link to={'/home4'}>
-                            Finance Consulting
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[50px]'>
-                            <li>
-                              <Link to={'/home4'}>
-                                Finance Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home5'}>
-                                Finance Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home6'}>Finance Consulting Dark</Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link to={'/home7'}>IT Consulting</Link>
-                        </li>
-                        <li>
-                          <Link to={'/home8'}>
-                            Buseness Consulting 02
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[154px]'>
-                            <li>
-                              <Link to={'/home8'}>
-                                Buseness Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home9'}>
-                                Buseness Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home10'}>
-                                Buseness Consulting Dark
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to={'/about'}>About</Link>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/service'}>
-                        Service
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/service'}>service</Link>
-                        </li>
-                        <li>
-                          <Link to={'/service_details'}>service details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Pages
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/about'}>About</Link>
-                        </li>
-                        <li>
-                          <Link to={'/service'}>service</Link>
-                        </li>
-                        <li>
-                          <Link to={'/service_details'}>service details</Link>
-                        </li>
-                        <li>
-                          <Link to={'/team'}>Team Member</Link>
-                        </li>
-                        <li>
-                          <Link to={'/pricing'}>Pricing</Link>
-                        </li>
-                        <li>
-                          <Link to={'/portfolio'}>Portfolio</Link>
-                        </li>
-                        <li>
-                          <Link to={'/portfolio_details'}>
-                            Portfolio details
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'/contact'}>Contact</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Portfolio
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/portfolio'}>Portfolio</Link>
-                        </li>
-                        <li>
-                          <Link to={'/portfolio_details'}>
-                            Portfolio details
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Blog
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/blog_grid'}>blog grid</Link>
-                        </li>
-                        <li>
-                          <Link to={'/blog_right_sibebar'}>
-                            blog right sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'/blog_left_sibebar'}>
-                            blog left sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'/blog_details'}>blog details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to={'/contact'}>Contact</Link>
-                    </li>
-                  </ul>
-                </nav>
+              <div className='hidden lg:block relative'>
+                <Link
+                  to={'/'}
+                  className='px-[34px] py-[17px] rounded-full font-FiraSans font-medium text-white overflow-hidden bg-PrimaryColor-0 flex items-center gap-2 relative z-10 before:absolute before:left-1/2 before:top-0 before:w-0 before:h-full before:-z-10 before:bg-HeadingColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0'
+                >
+                  Get A Quote
+                  <LiaLongArrowAltRightSolid size={'18'} />
+                </Link>
               </div>
-            </div>
-            <div className='col-span-2'>
-              <div className='header-right-box flex items-center gap-10 lg:gap-4 2xl:gap-8 justify-end'>
-                <div className='header-btn hidden lg:block'>
-                  <Link to={'/contact'}>
-                    get a quote<span></span>
-                    <LuMoveRight />
-                  </Link>
-                </div>
-                <div className='hidden xl:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
-                  <Link
-                    to={'/'}
-                    className='text-white flex items-center justify-center size-9 rounded-full bg-white bg-opacity-15'
-                  >
-                    <MdLightMode size={'20'} />
-                  </Link>
-                </div>
-                <div className='header-bar lg:hidden'>
-                  <button
-                    ref={menuBarRef}
-                    className='menu-bar'
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </div>
+              <div className='header-sidebar hidden 2xl:block'>
+                <button
+                  ref={menuSideBarRef}
+                  className='menu-sidebar'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div className='header-bar lg:hidden'>
+                <button
+                  ref={menuBarRef}
+                  className='menu-bar'
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
@@ -630,8 +612,8 @@ const Navbar2 = () => {
         ref={bodyOverlay2Ref}
         className='body-overlay2'
       ></div>
-    </>
+    </div>
   );
 };
 
-export default Navbar2;
+export default Navbar11;

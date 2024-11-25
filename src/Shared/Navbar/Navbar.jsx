@@ -333,7 +333,7 @@ const Navbar = () => {
                           <Link to={'/home7'}>IT Consulting</Link>
                         </li>
                         <li>
-                          <Link to={'/hom8'}>
+                          <Link to={'/home8'}>
                             Buseness Consulting 02
                             <span>
                               <FaChevronDown />
@@ -359,6 +359,25 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+                    <li>
+                      <Link to={'/about'}>About</Link>
+                    </li>
+                    <li className='has-dropdown'>
+                      <Link to={'/service'}>
+                        Service
+                        <span>
+                          <FaChevronDown />
+                        </span>
+                      </Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/service'}>service</Link>
+                        </li>
+                        <li>
+                          <Link to={'/service_details'}>service details</Link>
+                        </li>
+                      </ul>
+                    </li>
                     <li className='has-dropdown'>
                       <Link to={'/'}>
                         Pages
@@ -368,76 +387,48 @@ const Navbar = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>about us</Link>
+                          <Link to={'/about'}>About</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>team</Link>
+                          <Link to={'/service'}>service</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>testimonial</Link>
+                          <Link to={'/service_details'}>service details</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>cart</Link>
+                          <Link to={'/team'}>Team Member</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>checkout</Link>
+                          <Link to={'/pricing'}>Pricing</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>faq</Link>
+                          <Link to={'/portfolio'}>Portfolio</Link>
+                        </li>
+                        <li>
+                          <Link to={'/portfolio_details'}>
+                            Portfolio details
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/contact'}>Contact</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/'}>
-                        Service
+                        Portfolio
                         <span>
                           <FaChevronDown />
                         </span>
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>service</Link>
+                          <Link to={'/portfolio'}>Portfolio</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>service details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Project
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>project</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>project details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Shop
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/'}>shop</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>shop details</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>cart</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>checkout</Link>
+                          <Link to={'/portfolio_details'}>
+                            Portfolio details
+                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -450,21 +441,25 @@ const Navbar = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>blog grid</Link>
+                          <Link to={'/blog_grid'}>blog grid</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog right sidebar</Link>
+                          <Link to={'/blog_right_sibebar'}>
+                            blog right sidebar
+                          </Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog left sidebar</Link>
+                          <Link to={'/blog_left_sibebar'}>
+                            blog left sidebar
+                          </Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog details</Link>
+                          <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={'/'}>Contact</Link>
+                      <Link to={'/contact'}>Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -473,7 +468,7 @@ const Navbar = () => {
             <div className='col-span-2'>
               <div className='header-right-box flex items-center gap-10 lg:gap-4 2xl:gap-8 justify-end'>
                 <div className='header-btn hidden lg:block'>
-                  <Link to={'/'}>
+                  <Link to={'/contact'}>
                     get a quote<span></span>
                     <LuMoveRight />
                   </Link>
