@@ -87,7 +87,7 @@ const Work = () => {
             }
           )}
         </div>
-        <div className='text-center mt-9'>
+        <div className='text-center mt-9 px-7 mx-auto'>
           <p className='font-FiraSans text-HeadingColor-0 font-medium text-sm'>
             Feel free to reach out to our consulting{' '}
             <Link

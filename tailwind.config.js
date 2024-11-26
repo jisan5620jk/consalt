@@ -120,6 +120,7 @@ export default {
         shades: '0px 5px 40px rgba(189, 202, 202, 0.35)',
         shadow: '0px 30px 50px rgba(152,178,240,0.5)',
       },
+      dropShadow: { 'custom-shadow': '0px 10px 40px rgba(12, 110, 109, 0.1)' },
       lineHeight: {},
     },
   },

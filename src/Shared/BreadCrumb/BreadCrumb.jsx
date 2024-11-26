@@ -6,14 +6,17 @@ import line from '/images/line_shape.png';
 const BreadCrumb = ({
   breadCrumbTitle,
   breadCrumbIcon,
+  breadCrumbIcon2,
   url,
+  url2,
   breadCrumbLink,
+  breadCrumbLink2,
 }) => {
   return (
     <div className="relative z-10 before:-z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-[80%] before:bg-BodyBg4-0">
-      <div className="bg-[url('/images/breadcrumb_bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] text-center mx-3 sm:mx-10 md:mx-12 lg:mx-[66px] rounded-2xl md:rounded-[30px]">
+      <div className="bg-[url('/images/breadcrumb_bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] text-center mx-3 md:mx-10 lg:mx-[66px] rounded-2xl md:rounded-[30px]">
         <div className='Container'>
-          <h1 className='font-FiraSans font-semibold text-4xl sm:text-[48px] text-white capitalize relative z-10'>
+          <h1 className='font-FiraSans font-semibold text-4xl md:text-[48px] text-white capitalize relative z-10'>
             {breadCrumbTitle}
             <img
               src={line}
@@ -22,8 +25,8 @@ const BreadCrumb = ({
               className='absolute -bottom-4 left-1/2 -translate-x-1/2'
             />
           </h1>
-          <div className='mt-8 sm:mt-8 inline-block'>
-            <ul className='flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mx-auto text-center'>
+          <div className='mt-8 sm:mt-6 md:mt-8 inline-block'>
+            <ul className='flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center mx-auto text-center'>
               <li>
                 <Link to={'/'}>
                   <button className='font-FiraSans font-medium text-center text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'>
@@ -41,6 +44,18 @@ const BreadCrumb = ({
                 <Link to={url}>
                   <button className='font-FiraSans text-center font-medium capitalize text-white'>
                     {breadCrumbLink}
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <div className='text-white text-center hidden sm:block'>
+                  {breadCrumbIcon2}
+                </div>
+              </li>
+              <li>
+                <Link to={url2}>
+                  <button className='font-FiraSans text-center font-medium capitalize text-white'>
+                    {breadCrumbLink2}
                   </button>
                 </Link>
               </li>

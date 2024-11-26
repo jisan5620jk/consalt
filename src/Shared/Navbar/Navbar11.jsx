@@ -252,7 +252,7 @@ const Navbar11 = () => {
               </Link>
             </div>
           </div>
-          <div className='lg:col-span-9 xl:col-span-8 2xl:col-span-7 hidden lg:block'>
+          <div className='lg:col-span-8 2xl:col-span-7 hidden lg:block'>
             <div className='header-main-menu text-center'>
               <nav className='main-menu-content'>
                 <ul>
@@ -436,7 +436,7 @@ const Navbar11 = () => {
               </nav>
             </div>
           </div>
-          <div className='lg:col-span-1 xl:col-span-2 2xl:col-span-3'>
+          <div className='lg:col-span-2 2xl:col-span-3'>
             <div className='header-right-box flex items-center gap-10 lg:gap-7 justify-end'>
               <div className='hidden xl:block relative'>
                 <Link to={'/'}>
@@ -448,7 +448,7 @@ const Navbar11 = () => {
               <div className='hidden lg:block relative'>
                 <Link
                   to={'/'}
-                  className='px-[34px] py-[17px] rounded-full font-FiraSans font-medium text-white overflow-hidden bg-PrimaryColor-0 flex items-center gap-2 relative z-10 before:absolute before:left-1/2 before:top-0 before:w-0 before:h-full before:-z-10 before:bg-HeadingColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0'
+                  className='lg:px-[18px] lg:py-3 xl:px-[34px] xl:py-[17px] rounded-full font-FiraSans font-medium text-white overflow-hidden bg-PrimaryColor-0 flex items-center gap-2 relative z-10 before:absolute before:left-1/2 before:top-0 before:w-0 before:h-full before:-z-10 before:bg-HeadingColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0'
                 >
                   Get A Quote
                   <LiaLongArrowAltRightSolid size={'18'} />

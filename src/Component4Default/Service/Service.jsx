@@ -94,10 +94,16 @@ const Service = () => {
             }
           )}
         </div>
-        <div className='flex items-center justify-center mt-14'>
+        <div className='flex items-center justify-center text-center mt-14 px-7 mx-auto'>
           <p className='font-FiraSans text-[15px] text-HeadingColor2-0'>
             Feel free to reach out to our consulting{' '}
-            <Link to={'/service'} className='text-PrimaryColor2-0 underline'>Services</Link> for inquiries and assistance.
+            <Link
+              to={'/service'}
+              className='text-PrimaryColor2-0 underline'
+            >
+              Services
+            </Link>{' '}
+            for inquiries and assistance.
           </p>
         </div>
       </div>

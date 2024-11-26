@@ -23,6 +23,7 @@ import Main3 from '../Main/Main3';
 import Main11 from '../Main/Main11';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
+import ServiceDetails from '../Pages/InnerPage/ServiceDetails/ServiceDetails';
 
 const router = createBrowserRouter([
   {
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
       {
         path: '/service',
         element: <ServiceInner />,
+      },
+      {
+        path: '/service_details',
+        element: <ServiceDetails />,
       },
     ],
   },
