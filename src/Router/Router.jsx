@@ -24,6 +24,7 @@ import Main11 from '../Main/Main11';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
 import ServiceDetails from '../Pages/InnerPage/ServiceDetails/ServiceDetails';
+import PortfolioDetails from '../Pages/InnerPage/PortfolioDetails/PortfolioDetails';
 
 const router = createBrowserRouter([
   {
@@ -142,6 +143,10 @@ const router = createBrowserRouter([
       {
         path: '/service_details',
         element: <ServiceDetails />,
+      },
+      {
+        path: '/portfolio_details',
+        element: <PortfolioDetails />,
       },
     ],
   },

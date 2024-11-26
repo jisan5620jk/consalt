@@ -83,7 +83,6 @@ const Feature = () => {
               return (
                 <div
                   key={id}
-                  className='feature-box'
                 >
                   <FeatureCard
                     featureIcon={featureIcon}
