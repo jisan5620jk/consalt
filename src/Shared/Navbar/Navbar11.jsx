@@ -438,7 +438,7 @@ const Navbar11 = () => {
           </div>
           <div className='lg:col-span-2 2xl:col-span-3'>
             <div className='header-right-box flex items-center gap-10 lg:gap-7 justify-end'>
-              <div className='hidden xl:block relative'>
+              <div className='hidden 2xl:block relative'>
                 <Link to={'/'}>
                   <button className='text-HeadingColor-0 relative top-1'>
                     <BiSearch size={'20'} />
@@ -448,7 +448,7 @@ const Navbar11 = () => {
               <div className='hidden lg:block relative'>
                 <Link
                   to={'/'}
-                  className='lg:px-[18px] lg:py-3 xl:px-[34px] xl:py-[17px] rounded-full font-FiraSans font-medium text-white overflow-hidden bg-PrimaryColor-0 flex items-center gap-2 relative z-10 before:absolute before:left-1/2 before:top-0 before:w-0 before:h-full before:-z-10 before:bg-HeadingColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0'
+                  className='lg:px-[18px] lg:py-3 xl:px-7 xl:py-3 2xl:px-[34px] 2xl:py-[17px] rounded-full font-FiraSans font-medium text-white overflow-hidden bg-PrimaryColor-0 flex items-center gap-2 relative z-10 before:absolute before:left-1/2 before:top-0 before:w-0 before:h-full before:-z-10 before:bg-HeadingColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0'
                 >
                   Get A Quote
                   <LiaLongArrowAltRightSolid size={'18'} />

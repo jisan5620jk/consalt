@@ -1079,6 +1079,13 @@ nav.main-menu-content > ul > li:hover > a > span {
   }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+    color: #0a1630;
+    padding: 38px 24px;
+}
+}
+
 .header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a > span {
   top: 44px;
 }
