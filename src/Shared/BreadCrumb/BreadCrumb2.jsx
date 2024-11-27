@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import bgImage from '/images/breadcumb2.png';
 import { FaCircle } from "react-icons/fa6";
 
@@ -34,11 +33,11 @@ const BreadCrumb2 = () => {
                 </h6>
               </li>
               <li>
-                <Link to={'#comment'}>
+                <a href={'#comment'}>
                   <button className='font-FiraSans text-center text-white flex items-center gap-2 uppercase'>
                      <FaCircle size={'8'} className="text-PrimaryColor-0"/>Comments (1)
                   </button>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

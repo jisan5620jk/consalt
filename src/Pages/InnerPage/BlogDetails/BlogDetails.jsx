@@ -9,6 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import Icon from '/images/pagination_icon1.png';
 import Icon2 from '/images/pagination_icon2.png';
+import image from '/images/image.jpg'
 
 const BlogDetails = () => {
   return (
@@ -236,16 +237,47 @@ const BlogDetails = () => {
                   </Link>
                 </div>
               </div>
-              <h2 className='font-FiraSans font-semibold text-2xl sm:text-[36px] text-HeadingColor-0 pt-1'>
-                Benifits of Seles
-              </h2>
-              <p className='font-FiraSans text-TextColor2-0 mt-[22px]'>
-                Dramatically harness cross-platform best practices whereas
-                business services. Conveniently standards in innovation with
-                wireless Globally engage cross-media leadership best breed to
-                rather than bricks-and-clicks infomediaries monotonectally
-                standards
-              </p>
+              <div
+                id='comment'
+                className=''
+              >
+                <h4 className='font-FiraSans text-HeadingColor-0 text-[28px] font-medium'>
+                  Comments (1)
+                </h4>
+                <div className='flex gap-5 relative z-10 bg-white shadow-shades px-10 pt-12 pb-11 rounded-2xl mt-7'>
+                  <div className='w-[66px]'>
+                    <img
+                      src={image}
+                      alt='Image'
+                      draggable='false'
+                      className='rounded-full'
+                    />
+                  </div>
+                  <div className='flex-1'>
+                    <h6 className='font-FiraSans text-xl font-medium text-HeadingColor-0'>
+                      Jhon D. Alexon
+                    </h6>
+                    <p className='font-FiraSans text-[15px] text-TextColor2-0 mt-1'>
+                      24 October, 2024
+                    </p>
+                    <p className='font-FiraSans text-TextColor2-0 2xl:pr-7 mt-6'>
+                      Media leadership skills before cross-media innovation
+                      forward morph flexible whereas process-centric models
+                      Efficiently transform customer directed alignments for
+                      front-end meta Dramatically harness
+                    </p>
+                    <div className='absolute top-12 right-10'>
+                      <button className='font-FiraSans text-TextColor2-0 px-5 py-2 rounded-full bg-BodyBg4-0 text-sm uppercase font-medium transition-all duration-500 hover:text-white relative z-10 before:absolute before:left-0 before:top-0 before:size-full before:bg-PrimaryColor-0 before:scale-0 before:transition-all before:rounded-full before:-z-10 before:duration-500 hover:before:scale-100'>
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4 className='font-FiraSans text-HeadingColor-0 text-[28px] font-medium'>
+                Post A Comment
+              </h4>
+              <p className='font-FiraSans text-TextColor2-0'>{`Your E-Mail address will not be published.So, don't worry.`}</p>
             </div>
           </div>
         </div>
