@@ -9,7 +9,9 @@ import {
 import { Link } from 'react-router-dom';
 import Icon from '/images/pagination_icon1.png';
 import Icon2 from '/images/pagination_icon2.png';
-import image from '/images/image.jpg'
+import image from '/images/image.jpg';
+import { BsArrowRight } from 'react-icons/bs';
+import Blog from './Blog/Blog';
 
 const BlogDetails = () => {
   return (
@@ -17,7 +19,7 @@ const BlogDetails = () => {
       <BreadCrumb2 />
       <section className='pb-[120px]'>
         <div className='Container'>
-          <div className='pt-6 md:pt-[66px] px-4 md:px-[52px] 2xl:px-[110px] relative z-10 sm:-mt-[60px] bg-white rounded-3xl md:mx-10 lg:mx-0 xl:mx-14 2xl:mx-0'>
+          <div className='pt-6 sm:pt-10 lg:pt-[66px] px-4 md:px-10 2xl:px-[110px] relative z-10 sm:-mt-[60px] bg-white rounded-3xl md:mx-10 lg:mx-0 xl:mx-14 2xl:mx-0'>
             <div>
               <p className='font-FiraSans text-TextColor2-0 mt-3'>
                 Globally engage cross-media leadership skills before cross-media
@@ -53,7 +55,7 @@ const BlogDetails = () => {
               <h2 className='font-FiraSans font-semibold text-2xl sm:text-[36px] text-HeadingColor-0'>
                 Sales Benifits
               </h2>
-              <p className='font-FiraSans text-TextColor2-0 mt-[26px]'>
+              <p className='font-FiraSans text-TextColor2-0 mt-[29px]'>
                 Globally engage cross-media leadership skills before cross-media
                 innovation forward morph flexible whereas process-centric models
                 predomin Efficiently transform customer directed alignments for
@@ -64,7 +66,7 @@ const BlogDetails = () => {
                 engage based results with visionary models. Dramatically
                 harness-platform best
               </p>
-              <div className='grid gap-y-4 sm:grid-cols-2 md:grid-cols-3 mt-11 mb-9'>
+              <div className='grid gap-y-4 sm:grid-cols-2 md:grid-cols-3 mt-11 mb-14 pb-1'>
                 <div>
                   <ul className='space-y-[18px]'>
                     <li className='font-FiraSans text-HeadingColor-0 flex items-center gap-2'>
@@ -145,7 +147,7 @@ const BlogDetails = () => {
                 develop unique total linkage rather than high leadership.
                 Authoritatively conceptualize resource sucking`}
               </p>
-              <div className='flex items-center gap-7 justify-between flex-wrap mt-14'>
+              <div className='flex items-center gap-7 justify-between flex-wrap mt-14 pt-6'>
                 <div>
                   <ul className='flex items-center gap-2'>
                     <li>
@@ -211,7 +213,7 @@ const BlogDetails = () => {
                   </ul>
                 </div>
               </div>
-              <div className='flex items-center gap-7 justify-between flex-wrap border-y border-BorderColor-0 py-7 mt-14 mb-10'>
+              <div className='flex items-center gap-7 justify-between flex-wrap border-y border-BorderColor-0 py-7 mt-12 mb-20'>
                 <div>
                   <Link to={'#'}>
                     <button className='flex items-center gap-2 font-FiraSans font-medium text-lg text-HeadingColor-0'>
@@ -239,12 +241,12 @@ const BlogDetails = () => {
               </div>
               <div
                 id='comment'
-                className=''
+                className='pt-4'
               >
                 <h4 className='font-FiraSans text-HeadingColor-0 text-[28px] font-medium'>
                   Comments (1)
                 </h4>
-                <div className='flex gap-5 relative z-10 bg-white shadow-shades px-10 pt-12 pb-11 rounded-2xl mt-7'>
+                <div className='flex flex-col sm:flex-row gap-5 relative z-10 bg-white shadow-shades px-4 md:px-10 pt-6 md:pt-12 pb-5 md:pb-11 rounded-2xl mt-7'>
                   <div className='w-[66px]'>
                     <img
                       src={image}
@@ -274,14 +276,82 @@ const BlogDetails = () => {
                   </div>
                 </div>
               </div>
-              <h4 className='font-FiraSans text-HeadingColor-0 text-[28px] font-medium'>
-                Post A Comment
-              </h4>
-              <p className='font-FiraSans text-TextColor2-0'>{`Your E-Mail address will not be published.So, don't worry.`}</p>
+              <div>
+                <h4 className='font-FiraSans text-HeadingColor-0 text-[28px] font-medium mt-20 pt-2 mb-2'>
+                  Post A Comment
+                </h4>
+                <p className='font-FiraSans text-TextColor2-0'>{`Your E-Mail address will not be published.So, don't worry.`}</p>
+                <form
+                  action='#'
+                  method='post'
+                  className='space-y-[30px] mt-8'
+                >
+                  <textarea
+                    name='meassage'
+                    id='meassage'
+                    placeholder='Write Meassage...'
+                    className='w-full h-[194px] rounded-md bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans placeholder:text-TextColor2-0 outline-none border border-transparent focus:border-PrimaryColor-0 transition-all duration-500 py-3 px-7 resize-none -mb-[6px]'
+                  ></textarea>
+                  <div className='flex flex-col sm:flex-row gap-[30px]'>
+                    <input
+                      type='text'
+                      name='name'
+                      id='name'
+                      placeholder='Enter Name*'
+                      required
+                      className='w-full h-[65px] rounded-md bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans placeholder:text-TextColor2-0 outline-none border border-transparent focus:border-PrimaryColor-0 transition-all duration-500 py-3 px-7'
+                    />
+                    <input
+                      type='email'
+                      name='email'
+                      id='email'
+                      placeholder='Enter E-Mail*'
+                      required
+                      className='w-full h-[65px] rounded-md bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans placeholder:text-TextColor2-0 outline-none border border-transparent focus:border-PrimaryColor-0 transition-all duration-500 py-3 px-7'
+                    />
+                  </div>
+                  <input
+                    type='url'
+                    name='url'
+                    id='url'
+                    placeholder='Website Url'
+                    required
+                    className='w-full h-[65px] rounded-md bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans placeholder:text-TextColor2-0 outline-none border border-transparent focus:border-PrimaryColor-0 transition-all duration-500 py-3 px-7'
+                  />
+                  <label
+                    htmlFor='terms'
+                    className='flex items-center gap-2 cursor-pointer'
+                  >
+                    <input
+                      type='checkbox'
+                      name='terms'
+                      id='terms'
+                    />
+                    <p className='font-FiraSans text-TextColor2-0'>
+                      Save my iunformation in this browser for the next time I
+                      comment.
+                    </p>
+                  </label>
+                  <button
+                    type='submit'
+                    className='py-5 w-full bg-PrimaryColor-0 font-FiraSans rounded-md text-white flex items-center justify-center gap-2 uppercase relative z-10 group overflow-hidden'
+                  >
+                    Submit Comments{' '}
+                    <span className=''>
+                      <BsArrowRight size={'20'} />
+                    </span>
+                    <span className='absolute bg-HeadingColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                    <span className='absolute bg-HeadingColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                    <span className='absolute bg-HeadingColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                    <span className='absolute bg-HeadingColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <Blog />
     </>
   );
 };

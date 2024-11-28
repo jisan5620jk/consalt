@@ -52,7 +52,7 @@ const featureData = [
 
 const Feature = () => {
   return (
-    <section className='pt-28 pb-[120px] bg-white relative z-10'>
+    <section className='py-28 bg-white relative z-10'>
       <div className='Container relative'>
         <img
           src={featureShape}
