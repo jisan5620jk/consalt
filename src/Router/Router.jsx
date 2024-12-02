@@ -26,6 +26,8 @@ import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
 import ServiceDetails from '../Pages/InnerPage/ServiceDetails/ServiceDetails';
 import PortfolioDetails from '../Pages/InnerPage/PortfolioDetails/PortfolioDetails';
 import BlogDetails from '../Pages/InnerPage/BlogDetails/BlogDetails';
+import TeamInner from '../Pages/InnerPage/TeamInner/TeamInner';
+import PricingInner from '../Pages/InnerPage/PricingInner/PricingInner';
 
 const router = createBrowserRouter([
   {
@@ -152,6 +154,14 @@ const router = createBrowserRouter([
       {
         path: '/blog_details',
         element: <BlogDetails />,
+      },
+      {
+        path: '/team',
+        element: <TeamInner />,
+      },
+      {
+        path: '/pricing',
+        element: <PricingInner />,
       },
     ],
   },
