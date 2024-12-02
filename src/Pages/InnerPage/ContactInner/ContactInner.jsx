@@ -1,19 +1,17 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import ContactBox from "./ContactBox/ContactBox";
-import Map from "./Map";
-import ContactForm from "./ContactForm";
+import { FaArrowRightLong } from 'react-icons/fa6';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import Contact from './Contact';
+import Map from './Map';
 
 const ContactInner = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Contact Us"}
+        breadCrumbTitle={'Contact Us'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Contact Us"}
+        breadCrumbLink={'Contact Us'}
       />
-      <ContactBox />
-      <ContactForm />
+      <Contact />
       <Map />
     </>
   );
