@@ -230,7 +230,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  opacity: .5 !important;
+  opacity: 0.5 !important;
   border: none !important;
   background: #0c6e6d !important;
 }
@@ -245,8 +245,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(0);
 }
-
-
 
 .project .swiper-pagination {
   bottom: 0 !important;
@@ -359,7 +357,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .faq-button:hover {
   background: #f4f8f9;
   border-radius: 8px 8px 0 0;
-  border-bottom:  2px solid #00000013;
+  border-bottom: 2px solid #00000013;
 }
 
 .faq-button2[aria-expanded='true'],

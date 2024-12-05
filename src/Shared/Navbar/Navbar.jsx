@@ -34,7 +34,6 @@ const Navbar = () => {
       : header.classList.remove('is-sticky');
   };
 
-
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
