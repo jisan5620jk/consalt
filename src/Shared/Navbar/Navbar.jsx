@@ -34,43 +34,6 @@ const Navbar = () => {
       : header.classList.remove('is-sticky');
   };
 
-  //Menu Sidebar
-
-  const menuSideBarRef = useRef(null);
-  const sidebarContentRef = useRef(null);
-  const bodyOverlay2Ref = useRef(null);
-  const closeBtn2Ref = useRef(null);
-
-  useEffect(() => {
-    const menuSideBar = menuSideBarRef.current;
-    const sidebarContent = sidebarContentRef.current;
-    const bodyOverlay2 = bodyOverlay2Ref.current;
-    const closeBtn2 = closeBtn2Ref.current;
-
-    const addClasses = () => {
-      sidebarContent.classList.add('opened');
-      bodyOverlay2.classList.add('apply');
-    };
-
-    const removeClasses = () => {
-      sidebarContent.classList.remove('opened');
-      bodyOverlay2.classList.remove('apply');
-    };
-
-    if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-      menuSideBar.addEventListener('click', addClasses);
-      closeBtn2.addEventListener('click', removeClasses);
-      bodyOverlay2.addEventListener('click', removeClasses);
-    }
-
-    return () => {
-      if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-        menuSideBar.removeEventListener('click', addClasses);
-        closeBtn2.removeEventListener('click', removeClasses);
-        bodyOverlay2.removeEventListener('click', removeClasses);
-      }
-    };
-  }, []);
 
   //Menu Bar
   const menuBarRef = useRef(null);
@@ -161,7 +124,43 @@ const Navbar = () => {
       });
     }
   }, [headerIcon]);
+  //Menu Sidebar
 
+  const menuSideBarRef = useRef(null);
+  const sidebarContentRef = useRef(null);
+  const bodyOverlay2Ref = useRef(null);
+  const closeBtn2Ref = useRef(null);
+
+  useEffect(() => {
+    const menuSideBar = menuSideBarRef.current;
+    const sidebarContent = sidebarContentRef.current;
+    const bodyOverlay2 = bodyOverlay2Ref.current;
+    const closeBtn2 = closeBtn2Ref.current;
+
+    const addClasses = () => {
+      sidebarContent.classList.add('opened');
+      bodyOverlay2.classList.add('apply');
+    };
+
+    const removeClasses = () => {
+      sidebarContent.classList.remove('opened');
+      bodyOverlay2.classList.remove('apply');
+    };
+
+    if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
+      menuSideBar.addEventListener('click', addClasses);
+      closeBtn2.addEventListener('click', removeClasses);
+      bodyOverlay2.addEventListener('click', removeClasses);
+    }
+
+    return () => {
+      if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
+        menuSideBar.removeEventListener('click', addClasses);
+        closeBtn2.removeEventListener('click', removeClasses);
+        bodyOverlay2.removeEventListener('click', removeClasses);
+      }
+    };
+  }, []);
   return (
     <>
       <div className='offcanvas-area'>
@@ -283,7 +282,7 @@ const Navbar = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/'}>
                             Buseness Consulting 01
                             <span>
@@ -306,7 +305,7 @@ const Navbar = () => {
                             </li>
                           </ul>
                         </li>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/home4'}>
                             Finance Consulting
                             <span>
@@ -332,7 +331,7 @@ const Navbar = () => {
                         <li>
                           <Link to={'/home7'}>IT Consulting</Link>
                         </li>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/home8'}>
                             Buseness Consulting 02
                             <span>

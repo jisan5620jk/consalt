@@ -681,6 +681,14 @@ nav.main-menu-content > ul > li:hover > a > span {
   border-bottom: 0;
 }
 
+li.has-dropdown a span {
+  display: none;
+}
+
+li.has-dropdown a button span {
+  display: block;
+}
+
 .main-menu-mobile ul li > a {
   display: block;
   font-size: 16px;
@@ -866,23 +874,27 @@ nav.main-menu-content > ul > li:hover > a > span {
 
 /* Header Style Two */
 
+.header-area.header-classic {
+  padding: 14px 0;
+}
+
 .header-area.header-classic .header-logo {
   margin: 0;
 }
 
 .header-area.header-classic nav.main-menu-content > ul > li > a {
-    color: #ffffff;
-    padding: 38px 28px;
+  color: #ffffff;
+  padding: 38px 28px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .header-area.header-classic nav.main-menu-content > ul > li > a {
     padding: 38px 18px;
-}
+  }
 }
 
 .header-area.header-classic nav.main-menu-content > ul > li > a > span {
-    top: 43px;
+  top: 43px;
 }
 
 .header-area.header-classic .main-menu-mobile ul li > a {
@@ -890,7 +902,7 @@ nav.main-menu-content > ul > li:hover > a > span {
 }
 
 .header-area.header-classic .header-btn {
-    margin: 0;
+  margin: 0;
 }
 
 /* Header Style Two */
@@ -1024,7 +1036,6 @@ nav.main-menu-content > ul > li:hover > a > span {
   background: #fff;
 }
 
-
 /* Header Style Nine */
 
 .header-area.style-two.style-eight.style-nine {
@@ -1032,18 +1043,31 @@ nav.main-menu-content > ul > li:hover > a > span {
   border-radius: 0;
 }
 
-.header-area.style-two.style-eight.style-nine nav.main-menu-content > ul > li > a {
+.header-area.style-two.style-eight.style-nine
+  nav.main-menu-content
+  > ul
+  > li
+  > a {
   color: #0a1630;
   padding: 38px 29px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-area.style-two.style-eight.style-nine nav.main-menu-content > ul > li > a {
+  .header-area.style-two.style-eight.style-nine
+    nav.main-menu-content
+    > ul
+    > li
+    > a {
     padding: 38px 22px;
   }
 }
 
-.header-area.style-two.style-eight.style-nine nav.main-menu-content > ul > li > a > span {
+.header-area.style-two.style-eight.style-nine
+  nav.main-menu-content
+  > ul
+  > li
+  > a
+  > span {
   top: 44px;
 }
 
@@ -1068,25 +1092,42 @@ nav.main-menu-content > ul > li:hover > a > span {
   border-radius: 0;
 }
 
-.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+.header-area.style-two.style-eight.style-eleven
+  nav.main-menu-content
+  > ul
+  > li
+  > a {
   color: #0a1630;
   padding: 38px 29px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+  .header-area.style-two.style-eight.style-eleven
+    nav.main-menu-content
+    > ul
+    > li
+    > a {
     padding: 38px 18px;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a {
+  .header-area.style-two.style-eight.style-eleven
+    nav.main-menu-content
+    > ul
+    > li
+    > a {
     color: #0a1630;
     padding: 38px 24px;
-}
+  }
 }
 
-.header-area.style-two.style-eight.style-eleven nav.main-menu-content > ul > li > a > span {
+.header-area.style-two.style-eight.style-eleven
+  nav.main-menu-content
+  > ul
+  > li
+  > a
+  > span {
   top: 44px;
 }
 
@@ -1104,16 +1145,22 @@ nav.main-menu-content > ul > li:hover > a > span {
   background: #0c6e6d;
 }
 
-.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(1) {
-    width: 22px;
+.header-area.style-two.style-eight.style-eleven
+  .menu-sidebar
+  span:nth-child(1) {
+  width: 22px;
 }
 
-.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(2) {
-    width: 16px;
+.header-area.style-two.style-eight.style-eleven
+  .menu-sidebar
+  span:nth-child(2) {
+  width: 16px;
 }
 
-.header-area.style-two.style-eight.style-eleven .menu-sidebar span:nth-child(3) {
-    width: 10px;
+.header-area.style-two.style-eight.style-eleven
+  .menu-sidebar
+  span:nth-child(3) {
+  width: 10px;
 }
 
 .header-area.style-two.style-eight.style-eleven .menu-sidebar:hover span {

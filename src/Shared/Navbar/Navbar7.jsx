@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '/images/logo_2.png';
+import Logo2 from '/images/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -166,7 +167,7 @@ const Navbar7 = () => {
           <div className='offcanvas_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -336,7 +337,7 @@ const Navbar7 = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/'}>
                             Buseness Consulting 01
                             <span>
@@ -359,7 +360,7 @@ const Navbar7 = () => {
                             </li>
                           </ul>
                         </li>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/home4'}>
                             Finance Consulting
                             <span>
@@ -385,7 +386,7 @@ const Navbar7 = () => {
                         <li>
                           <Link to={'/home7'}>IT Consulting</Link>
                         </li>
-                        <li>
+                        <li className='has-dropdown'>
                           <Link to={'/home8'}>
                             Buseness Consulting 02
                             <span>

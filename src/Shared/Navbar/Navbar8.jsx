@@ -262,7 +262,7 @@ const Navbar8 = () => {
                       </span>
                     </Link>
                     <ul className='submenu'>
-                      <li>
+                      <li className='has-dropdown'>
                         <Link to={'/'}>
                           Buseness Consulting 01
                           <span>
@@ -283,7 +283,7 @@ const Navbar8 = () => {
                           </li>
                         </ul>
                       </li>
-                      <li>
+                      <li className='has-dropdown'>
                         <Link to={'/home4'}>
                           Finance Consulting
                           <span>
@@ -309,7 +309,7 @@ const Navbar8 = () => {
                       <li>
                         <Link to={'/home7'}>IT Consulting</Link>
                       </li>
-                      <li>
+                      <li className='has-dropdown'>
                         <Link to={'/home8'}>
                           Buseness Consulting 02
                           <span>

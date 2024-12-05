@@ -1,9 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import PricingFaq from "./Accordion/PricingFaq";
-import Pricing from "../../../Component3/Pricing/Pricing";
+import Portfolio from "./Portfolio/Portfolio";
 
-const PricingInner = () => {
+const PortfolioInner = () => {
   return (
     <>
       <BreadCrumb
@@ -11,12 +10,9 @@ const PricingInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"Pricing"}
       />
-      <Pricing />
-      <div>
-        <PricingFaq />
-      </div>
+      <Portfolio />
     </>
   );
 };
 
-export default PricingInner;
+export default PortfolioInner;

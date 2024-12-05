@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "fslightbox-react": "^1.7.6",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
     "node": "^22.6.0",
     "react": "^18.3.1",
     "react-animated-progress-bar": "^1.1.2",
