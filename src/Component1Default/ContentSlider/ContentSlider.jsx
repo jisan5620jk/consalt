@@ -1,4 +1,4 @@
-import "./content-slider.css";
+import "./content-slider2.css";
 
 const ContentSlider = () => {
   return (

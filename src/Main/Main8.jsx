@@ -1,13 +1,15 @@
-import { Outlet } from "react-router-dom";
-import Footer8 from "../Shared/Footer/Footer8";
-import Navbar8 from "../Shared/Navbar/Navbar8";
-import ScrollToTop from "../Shared/ScrollToTop/ScrollToTop";
+import { Outlet } from 'react-router-dom';
+import Footer8 from '../Shared/Footer/Footer8';
+import Navbar8 from '../Shared/Navbar/Navbar8';
+import BackToTop from '../Shared/BackToTop/BackToTop';
+import HelmetChanger from '../Shared/Helmet/Helmet';
 
 const Main8 = () => {
   return (
     <>
+      <HelmetChanger title={'Buseness Consulting Creative'} />
       <Navbar8 />
-      <ScrollToTop />
+      <BackToTop />
       <div>
         <Outlet />
       </div>
