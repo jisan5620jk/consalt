@@ -22,6 +22,24 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { GiPhone } from 'react-icons/gi';
 
 const Navbar7 = () => {
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-sticky');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -311,7 +329,7 @@ const Navbar7 = () => {
       </header>
       <div
         id='header-sticky'
-        className='header-area style-three'
+        className='header-area header-sticky style-three'
       >
         <div className='Container'>
           <div className='bg-transparent rounded-md flex items-center justify-between lg:grid lg:grid-cols-12'>
@@ -578,7 +596,7 @@ const Navbar7 = () => {
           <div className='sidebar_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -590,7 +608,10 @@ const Navbar7 = () => {
             </p>
           </div>
           <div>
-            <ul>
+            <div className='sidebar_service-title'>
+              <h5>What Services We Provide?</h5>
+            </div>
+            <ul className='service_list'>
               <li>
                 <Link to={'/'}>
                   <button>Managed IT Services</button>
@@ -635,7 +656,7 @@ const Navbar7 = () => {
           </div>
           <div className='sidebar_contact-info'>
             <div className='sidebar_contact-title'>
-              <h5>Contact Us</h5>
+              <h5>Have Questions? Contact Our Team!</h5>
             </div>
             <ul>
               <li>
@@ -672,24 +693,29 @@ const Navbar7 = () => {
                 </button>
               </div>
             </form>
-            <div className='status'></div>
           </div>
-          <div className='sidebar_social'>
-            <div className='sidebar-social-icon'>
+          <ul className='sidebar-social-icon'>
+            <li>
               <Link to={'/'}>
                 <FaFacebookF />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaXTwitter />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaPinterestP />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaLinkedinIn />
               </Link>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div

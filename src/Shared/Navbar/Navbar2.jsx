@@ -17,6 +17,8 @@ import { IoMdPaperPlane } from 'react-icons/io';
 import { LuMoveRight } from 'react-icons/lu';
 
 const Navbar2 = () => {
+  //sticky
+
   useEffect(() => {
     window.addEventListener('scroll', isSticky);
     return () => {
@@ -25,9 +27,8 @@ const Navbar2 = () => {
   });
 
   /* Method that will fix header after a specific scrollable */
-
-  const isSticky = (e) => {
-    const header = document.querySelector('.header-area');
+  const isSticky = () => {
+    const header = document.querySelector('.header-sticky');
     const scrollTop = window.scrollY;
     scrollTop >= 250
       ? header.classList.add('is-sticky')
@@ -257,7 +258,7 @@ const Navbar2 = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area header-classic'
+        className='header-area header-sticky header-classic'
       >
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>

@@ -19,6 +19,24 @@ import { ImFacebook2 } from 'react-icons/im';
 import { BiSearch } from 'react-icons/bi';
 
 const Navbar6 = () => {
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-sticky');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -305,7 +323,7 @@ const Navbar6 = () => {
       </header>
       <div
         id='header-sticky'
-        className='header-area style-two style-six'
+        className='header-area header-sticky style-two style-six'
       >
         <div className='Container'>
           <div className='bg-white rounded-md px-8 flex items-center justify-between lg:grid lg:grid-cols-12'>

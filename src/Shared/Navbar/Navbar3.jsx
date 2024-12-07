@@ -21,6 +21,27 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { GiPhone } from 'react-icons/gi';
 
 const Navbar2 = () => {
+  
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-sticky');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
+
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -310,7 +331,7 @@ const Navbar2 = () => {
       </header>
       <div
         id='header-sticky'
-        className='header-area style-three'
+        className='header-area header-sticky style-three'
       >
         <div className='Container'>
           <div className='bg-transparent rounded-md flex items-center justify-between lg:grid lg:grid-cols-12'>
