@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiQuote,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row sm:px-5 md:px-0 lg:pl-6 lg:py-6 xl:p-0 sm:items-center gap-8 bg-white rounded-xl overflow-hidden relative group z-10">
+    <div className="flex flex-col sm:flex-row sm:px-5 md:px-0 lg:pl-6 lg:py-6 xl:p-0 sm:items-center gap-8 bg-PrimaryColor-0 rounded-xl overflow-hidden relative group z-10">
       <div className="relative z-10">
         <img
           src={testiImg}
@@ -27,13 +27,13 @@ const TestimonialCard = ({
           <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
           <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
         </ul>
-        <p className="font-FiraSans text-TextColor2-0 mt-4 text-sm sm:text-base">
+        <p className="font-FiraSans text-TextColor-0 mt-4 text-sm sm:text-base">
           {testiDesc}
         </p>
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl mt-5 mb-2">
+        <h5 className="font-FiraSans font-semibold text-white text-xl mt-5 mb-2">
           {testiName}
         </h5>
-        <p className="font-FiraSans text-TextColor2-0">{testiDesignation}</p>
+        <p className="font-FiraSans text-TextColor-0">{testiDesignation}</p>
       </div>
     </div>
   );

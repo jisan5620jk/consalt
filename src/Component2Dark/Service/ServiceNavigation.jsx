@@ -13,7 +13,7 @@ const ServiceNavigation = () => {
         <GoArrowUpLeft size={"28"} />
       </button>
       <button
-        className="size-[60px] rounded-full overflow-hidden relative border border-PrimaryColor-0 text-white bg-PrimaryColor-0 flex items-center hover:text-HeadingColor-0 hover:border-BorderColor-0 justify-center transition-all duration-500 z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-HeadingColor-0 after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
+        className="size-[60px] rounded-full overflow-hidden relative border border-PrimaryColor-0 text-white bg-PrimaryColor-0 flex items-center hover:border-BorderColor-0 justify-center transition-all duration-500 z-10 after:absolute after:rounded-full after:top-0 after:left-0 after:bg-HeadingColor-0 after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100"
         onClick={() => swiper.slideNext()}
       >
         <GoArrowUpRight size={"28"} />
