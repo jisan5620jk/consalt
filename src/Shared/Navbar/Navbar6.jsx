@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '/images/logo_2.png';
+import Logo2 from '/images/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -590,7 +591,7 @@ const Navbar6 = () => {
           <div className='sidebar_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -602,7 +603,10 @@ const Navbar6 = () => {
             </p>
           </div>
           <div>
-            <ul>
+            <div className='sidebar_service-title'>
+              <h5>What Services We Provide?</h5>
+            </div>
+            <ul className='service_list'>
               <li>
                 <Link to={'/'}>
                   <button>Managed IT Services</button>
@@ -647,7 +651,7 @@ const Navbar6 = () => {
           </div>
           <div className='sidebar_contact-info'>
             <div className='sidebar_contact-title'>
-              <h5>Contact Us</h5>
+              <h5>Have Questions? Contact Our Team!</h5>
             </div>
             <ul>
               <li>
@@ -684,24 +688,29 @@ const Navbar6 = () => {
                 </button>
               </div>
             </form>
-            <div className='status'></div>
           </div>
-          <div className='sidebar_social'>
-            <div className='sidebar-social-icon'>
+          <ul className='sidebar-social-icon'>
+            <li>
               <Link to={'/'}>
                 <FaFacebookF />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaXTwitter />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaPinterestP />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaLinkedinIn />
               </Link>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div

@@ -132,7 +132,7 @@ const Pricing = () => {
                 </h6>
               </div>
               <Link
-                to={'/'}
+                to={'/pricing'}
                 className='flex justify-start'
               >
                 <button className='pricing-btn text-left font-FiraSans border border-white border-opacity-40 rounded-full text-TextColor-0 px-8 py-[10px] transition-all duration-500 group-hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100'>
@@ -210,7 +210,7 @@ const Pricing = () => {
                 </h6>
               </div>
               <Link
-                to={'/'}
+                to={'/pricing'}
                 className='flex justify-start'
               >
                 <button className='pricing-btn text-left font-FiraSans border border-white border-opacity-40 rounded-full text-TextColor-0 px-8 py-[10px] transition-all duration-500 group-hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100'>

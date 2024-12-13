@@ -1,36 +1,36 @@
-import workIcon from "/images/steps_1.png";
-import workIcon2 from "/images/steps_2.png";
-import workIcon3 from "/images/steps_3.png";
-import WorkCard from "./WorkCard";
-import { LuMoveRight } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import workIcon from '/images/steps_1.png';
+import workIcon2 from '/images/steps_2.png';
+import workIcon3 from '/images/steps_3.png';
+import WorkCard from './WorkCard';
+import { LuMoveRight } from 'react-icons/lu';
+import { Link } from 'react-router-dom';
 
 const WorkData = [
   {
     id: 1,
     workIcon: workIcon,
-    workTitle: "Strategic Work Planning",
+    workTitle: 'Strategic Work Planning',
     workDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    workUrl: "/servie_details",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    workUrl: '/service_details',
     workBtn: <LuMoveRight />,
   },
   {
     id: 2,
     workIcon: workIcon2,
-    workTitle: "Monitoring and Evaluation",
+    workTitle: 'Monitoring and Evaluation',
     workDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    workUrl: "/servie_details",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    workUrl: '/service_details',
     workBtn: <LuMoveRight />,
   },
   {
     id: 3,
     workIcon: workIcon3,
-    workTitle: "Completed Works",
+    workTitle: 'Completed Works',
     workDesc:
-      "Completely implement globals without impactful markets in conveniently done innovate customer directed",
-    workUrl: "/servie_details",
+      'Completely implement globals without impactful markets in conveniently done innovate customer directed',
+    workUrl: '/service_details',
     workBtn: <LuMoveRight />,
   },
 ];

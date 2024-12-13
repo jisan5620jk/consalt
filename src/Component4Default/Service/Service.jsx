@@ -14,7 +14,7 @@ const ServiceData = [
     serviceSubTitle: 'Solutions',
     serviceTitle: 'Creative Design Works',
     serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
-    serviceUrl: '/servie_details',
+    serviceUrl: '/service_details',
     serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
@@ -23,7 +23,7 @@ const ServiceData = [
     serviceSubTitle: 'Solutions',
     serviceTitle: 'Human Resources',
     serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
-    serviceUrl: '/servie_details',
+    serviceUrl: '/service_details',
     serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
@@ -32,7 +32,7 @@ const ServiceData = [
     serviceSubTitle: 'Development',
     serviceTitle: 'Global Business Const',
     serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
-    serviceUrl: '/servie_details',
+    serviceUrl: '/service_details',
     serviceBtn: <HiOutlineArrowUpRight />,
   },
   {
@@ -41,7 +41,7 @@ const ServiceData = [
     serviceSubTitle: 'Consult',
     serviceTitle: 'Insurence Consulting',
     serviceDesc: 'Seamlessly expedite extensible methodologies benchmark',
-    serviceUrl: '/servie_details',
+    serviceUrl: '/service_details',
     serviceBtn: <HiOutlineArrowUpRight />,
   },
 ];

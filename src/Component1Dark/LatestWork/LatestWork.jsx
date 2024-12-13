@@ -1,61 +1,61 @@
 /* eslint-disable no-unused-vars */
-import latestWorkThumb from "/images/work-1.jpg";
-import latestWorkThumb2 from "/images/work-2.jpg";
-import latestWorkThumb3 from "/images/work-3.jpg";
-import latestWorkThumb4 from "/images/work-4.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import LatestWorkCard from "./LatestWorkCard";
-import { HiMiniArrowUpRight } from "react-icons/hi2";
+import latestWorkThumb from '/images/work-1.jpg';
+import latestWorkThumb2 from '/images/work-2.jpg';
+import latestWorkThumb3 from '/images/work-3.jpg';
+import latestWorkThumb4 from '/images/work-4.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import LatestWorkCard from './LatestWorkCard';
+import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const LatestWorkData = [
   {
     id: 1,
     latestWorkThumb: latestWorkThumb,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
   {
     id: 2,
     latestWorkThumb: latestWorkThumb2,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
   {
     id: 3,
     latestWorkThumb: latestWorkThumb3,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
   {
     id: 4,
     latestWorkThumb: latestWorkThumb4,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
   {
     id: 5,
     latestWorkThumb: latestWorkThumb2,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
   {
     id: 6,
     latestWorkThumb: latestWorkThumb,
-    latestWorkTitle: "Business Implement",
-    latestWorkDesc: "Technology",
-    latestWorkUrl: "/project_details",
+    latestWorkTitle: 'Business Implement',
+    latestWorkDesc: 'Technology',
+    latestWorkUrl: '/portfolio_details',
     latestWorkBtn: <HiMiniArrowUpRight />,
   },
 ];

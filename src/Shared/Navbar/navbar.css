@@ -942,8 +942,8 @@ li.has-dropdown a button span {
 }
 
 .header-area.style-two nav.main-menu-content > ul > li > a {
-  color: #ffffff;
-  padding: 28px;
+    color: #ffffff;
+    padding: 28px 26px;
 }
 
 .header-area.style-two nav.main-menu-content > ul > li > a > span {

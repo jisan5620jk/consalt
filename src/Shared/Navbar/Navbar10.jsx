@@ -466,7 +466,7 @@ const Navbar10 = () => {
               </div>
               <div className='hidden lg:block relative'>
                 <Link
-                  to={'/'}
+                  to={'/home9'}
                   className='text-white flex items-center justify-center size-[46px] rounded-full border border-white border-opacity-15'
                 >
                   <MdLightMode size={'20'} />
@@ -524,7 +524,10 @@ const Navbar10 = () => {
             </p>
           </div>
           <div>
-            <ul>
+            <div className='sidebar_service-title'>
+              <h5>What Services We Provide?</h5>
+            </div>
+            <ul className='service_list'>
               <li>
                 <Link to={'/'}>
                   <button>Managed IT Services</button>
@@ -569,7 +572,7 @@ const Navbar10 = () => {
           </div>
           <div className='sidebar_contact-info'>
             <div className='sidebar_contact-title'>
-              <h5>Contact Us</h5>
+              <h5>Have Questions? Contact Our Team!</h5>
             </div>
             <ul>
               <li>
@@ -606,24 +609,29 @@ const Navbar10 = () => {
                 </button>
               </div>
             </form>
-            <div className='status'></div>
           </div>
-          <div className='sidebar_social'>
-            <div className='sidebar-social-icon'>
+          <ul className='sidebar-social-icon'>
+            <li>
               <Link to={'/'}>
                 <FaFacebookF />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaXTwitter />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaPinterestP />
               </Link>
+            </li>
+            <li>
               <Link to={'/'}>
                 <FaLinkedinIn />
               </Link>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div

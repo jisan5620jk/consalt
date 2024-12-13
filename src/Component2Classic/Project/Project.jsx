@@ -70,7 +70,7 @@ const Project = () => {
                 <h6 className='font-FiraSans text-[15px] text-white text-opacity-80 mb-2'>
                   Technology
                 </h6>
-                <Link to={'/project_details'}>
+                <Link to={'/portfolio_details'}>
                   <button className='font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left'>
                     Business Implement
                   </button>
@@ -106,7 +106,7 @@ const Project = () => {
                 <h6 className='font-FiraSans text-[15px] text-white text-opacity-80 mb-2'>
                   Technology
                 </h6>
-                <Link to={'/project_details'}>
+                <Link to={'/portfolio_details'}>
                   <button className='font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left'>
                     Business Implement
                   </button>
@@ -142,7 +142,7 @@ const Project = () => {
                 <h6 className='font-FiraSans text-[15px] text-white text-opacity-80 mb-2'>
                   Technology
                 </h6>
-                <Link to={'/project_details'}>
+                <Link to={'/portfolio_details'}>
                   <button className='font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left'>
                     Business Implement
                   </button>
@@ -178,7 +178,7 @@ const Project = () => {
                 <h6 className='font-FiraSans text-[15px] text-white text-opacity-80 mb-2'>
                   Technology
                 </h6>
-                <Link to={'/project_details'}>
+                <Link to={'/portfolio_details'}>
                   <button className='font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left'>
                     Business Implement
                   </button>
@@ -214,7 +214,7 @@ const Project = () => {
                 <h6 className='font-FiraSans text-[15px] text-white text-opacity-80 mb-2'>
                   Technology
                 </h6>
-                <Link to={'/project_details'}>
+                <Link to={'/portfolio_details'}>
                   <button className='font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left'>
                     Business Implement
                   </button>
