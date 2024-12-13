@@ -305,7 +305,7 @@ const Footer3 = () => {
         </div>
         <div className='Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between mt-[120px] py-6 border-t border-HeadingColor-0 border-opacity-20'>
           <p className='font-FiraSans text-HeadingColor-0 text-[15px]'>
-            Copyright © 2024{' '}
+            Copyright © {new Date().getFullYear()}{' '}
             <Link
               to={'/'}
               className='text-PrimaryColor-0'

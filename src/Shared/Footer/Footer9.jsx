@@ -222,7 +222,8 @@ const Footer9 = () => {
         <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-8 mt-[108px] border-t border-BorderColor2-0'>
           <div>
             <p className='font-FiraSans text-[15px] flex items-center text-white'>
-              Copyright &copy; 2024 Consalt. Designed & Developed by Dream-IT
+              Copyright &copy; {new Date().getFullYear()} Consalt. Designed &
+              Developed by Dream-IT
             </p>
           </div>
           <div>
