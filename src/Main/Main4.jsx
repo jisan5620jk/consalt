@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import Footer6 from '../Shared/Footer/Footer6';
 import Navbar4 from '../Shared/Navbar/Navbar4';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import AOS from 'aos';
@@ -10,6 +9,7 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Footer2 from '../Shared/Footer/Footer2';
 
 const Main4 = () => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const Main4 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer6 />
+      <Footer2 />
     </>
   );
 };
