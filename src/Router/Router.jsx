@@ -30,6 +30,7 @@ import TeamInner from '../Pages/InnerPage/TeamInner/TeamInner';
 import PricingInner from '../Pages/InnerPage/PricingInner/PricingInner';
 import ContactInner from '../Pages/InnerPage/ContactInner/ContactInner';
 import PortfolioInner from '../Pages/InnerPage/PortfolioInner/PortfolioInner';
+import BlogGrid from '../Pages/InnerPage/BlogGrid/BlogGrid';
 
 const router = createBrowserRouter([
   {
@@ -152,6 +153,10 @@ const router = createBrowserRouter([
       {
         path: '/portfolio_details',
         element: <PortfolioDetails />,
+      },
+      {
+        path: '/blog_grid',
+        element: <BlogGrid />,
       },
       {
         path: '/blog_details',

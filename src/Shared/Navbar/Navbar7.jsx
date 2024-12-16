@@ -516,16 +516,6 @@ const Navbar7 = () => {
                           <Link to={'/blog_grid'}>blog grid</Link>
                         </li>
                         <li>
-                          <Link to={'/blog_right_sibebar'}>
-                            blog right sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'/blog_left_sibebar'}>
-                            blog left sidebar
-                          </Link>
-                        </li>
-                        <li>
                           <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>

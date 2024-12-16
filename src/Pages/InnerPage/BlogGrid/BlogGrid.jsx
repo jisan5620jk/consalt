@@ -1,87 +1,80 @@
-/* eslint-disable no-unused-vars */
-import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogGridImg from "/images/blog-1.png";
-import blogGridImg2 from "/images/blog-2.png";
-import blogGridImg3 from "/images/blog-3.png";
-import blogGridImg4 from "/images/blog-4.png";
-import blogGridImg5 from "/images/blog-5.png";
-import blogGridImg6 from "/images/blog-6.png";
-import BlogGridCard from "./BlogGridCard";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import { LuArrowUpRight } from "react-icons/lu";
+import { FaAngleRight, FaArrowRightLong, FaCircle } from 'react-icons/fa6';
+import blogGridThumb from '/images/blog1.png';
+import blogGridThumb2 from '/images/blog2.png';
+import blogGridThumb3 from '/images/blog3.png';
+import blogGridThumb4 from '/images/blog4.png';
+import blogGridThumb5 from '/images/blog5.png';
+import blogGridThumb6 from '/images/blog6.png';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import BlogGridCard from './BlogGridCard';
+import { BsArrowRight } from 'react-icons/bs';
 
-const blogData = [
+const BlogData = [
   {
     id: 1,
-    blogGridImg: blogGridImg,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Solution This Business For is Marketing Blog",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb,
+    blogGridDateIcon: <FaCircle />,
+    blogGridDate: '04 Mar, 2024',
+    blogGridPostBy: 'TECHNOLOGY',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Globally disintermediate exten services Planning',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
   {
     id: 2,
-    blogGridImg: blogGridImg2,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Easy and Most Powerful Server and Platform.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb2,
+    blogGridDateIcon: <FaCircle />,
+    blogGridDate: '14 Mar, 2024',
+    blogGridPostBy: 'Business',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Sustainability Consulting for Business Planning',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
   {
     id: 3,
-    blogGridImg: blogGridImg3,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "In eu fringilla, accumsan purusvel sollicitudin.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb3,
+    blogGridDate: '24 Mar, 2024',
+    blogGridDateIcon: <FaCircle />,
+    blogGridPostBy: 'Consulting',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Consulting Industry changing Business Landscape',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
   {
     id: 4,
-    blogGridImg: blogGridImg4,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Vivamus vehicula nl purus at eros interdum.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb4,
+    blogGridDate: '17 May, 2024',
+    blogGridDateIcon: <FaCircle />,
+    blogGridPostBy: 'Consulting',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Consulting Industry changing Business Landscape',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
   {
     id: 5,
-    blogGridImg: blogGridImg5,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Optimizing IT Infrastructure for Cost Efficiency.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb5,
+    blogGridDate: '24 Jun, 2024',
+    blogGridDateIcon: <FaCircle />,
+    blogGridPostBy: 'Advising',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Globally disintermediate exten services Planning',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
   {
     id: 6,
-    blogGridImg: blogGridImg6,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Business Rules of Running to Web Solution.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogGridThumb: blogGridThumb6,
+    blogGridDate: '24 May, 2024',
+    blogGridDateIcon: <FaCircle />,
+    blogGridPostBy: 'IT Solution',
+    blogGridUrl: '/blog_details',
+    blogGridTitle: 'Consulting Industry changing Business Landscape',
+    blogGridBtn: 'Read More',
+    blogGridBtnIcon: <BsArrowRight />,
   },
 ];
 
@@ -89,34 +82,36 @@ const BlogGrid = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Blog Grid"}
+        breadCrumbTitle={'Blog Grid'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Grid"}
+        breadCrumbLink={'Blog Grid'}
       />
-      <section className="pt-28">
-        <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {blogData.map(
+      <section className='pt-28'>
+        <div className='Container'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
+            {BlogData.map(
               ({
                 id,
-                blogGridImg,
-                thumbContent,
-                thumbBtn,
+                blogGridThumb,
+                blogGridDateIcon,
+                blogGridDate,
+                blogGridPostBy,
+                blogGridUrl,
                 blogGridTitle,
-                postBy,
-                comments,
-                blogGridDesc,
+                blogGridBtn,
+                blogGridBtnIcon,
               }) => {
                 return (
                   <div key={id}>
                     <BlogGridCard
-                      blogGridImg={blogGridImg}
-                      thumbContent={thumbContent}
-                      thumbBtn={thumbBtn}
+                      blogGridThumb={blogGridThumb}
+                      blogGridDateIcon={blogGridDateIcon}
+                      blogGridDate={blogGridDate}
+                      blogGridPostBy={blogGridPostBy}
+                      blogGridUrl={blogGridUrl}
                       blogGridTitle={blogGridTitle}
-                      postBy={postBy}
-                      comments={comments}
-                      blogGridDesc={blogGridDesc}
+                      blogGridBtn={blogGridBtn}
+                      blogGridBtnIcon={blogGridBtnIcon}
                     />
                   </div>
                 );
@@ -126,24 +121,24 @@ const BlogGrid = () => {
         </div>
       </section>
       <div>
-        <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
+        <ul className='flex items-center gap-2 justify-center pb-[120px] pt-[80px]'>
           <li>
-            <button className="h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-BodyBg-0 flex justify-center items-center text-white transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-100 hover:before:scale-100'>
               01
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-BodyBg-0 flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               02
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-BodyBg-0 flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               03
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-FiraSans rounded-full border-BorderColor2-0 border bg-BodyBg-0 flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               <FaAngleRight />
             </button>
           </li>
