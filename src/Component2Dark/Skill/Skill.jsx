@@ -7,7 +7,7 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Skill = () => {
   return (
-    <section className='bg-DarkBg-0 pt-[120px] pb-28 lg:pb-10 xl:pb-0 relative z-10 overflow-hidden skill-section'>
+    <section className='bg-DarkBg-0 pt-[120px] pb-28 lg:pb-10 xl:pb-0 relative z-10 overflow-hidden skill-section dark'>
       <img
         src={skillShape2}
         draggable='false'

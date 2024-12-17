@@ -80,7 +80,7 @@ const Project = () => {
                 </p>
               </div>
               <div className='project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10'>
-                <Link to={'project_details'}>
+                <Link to={'/project_details'}>
                   <button className='rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                     View Details
                   </button>
@@ -116,7 +116,7 @@ const Project = () => {
                 </p>
               </div>
               <div className='project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10'>
-                <Link to={'project_details'}>
+                <Link to={'/project_details'}>
                   <button className='rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                     View Details
                   </button>
@@ -152,7 +152,7 @@ const Project = () => {
                 </p>
               </div>
               <div className='project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10'>
-                <Link to={'project_details'}>
+                <Link to={'/project_details'}>
                   <button className='rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                     View Details
                   </button>
@@ -188,7 +188,7 @@ const Project = () => {
                 </p>
               </div>
               <div className='project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10'>
-                <Link to={'project_details'}>
+                <Link to={'/project_details'}>
                   <button className='rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                     View Details
                   </button>
@@ -224,7 +224,7 @@ const Project = () => {
                 </p>
               </div>
               <div className='project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10'>
-                <Link to={'project_details'}>
+                <Link to={'/project_details'}>
                   <button className='rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                     View Details
                   </button>

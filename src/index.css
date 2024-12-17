@@ -71,6 +71,10 @@ body {
   right: 0;
 }
 
+.skill-section.dark h2.rect-progress-bar-percent {
+  color: white !important;
+}
+
 /* React Tab */
 
 .react-tabs__tab--selected::before {
