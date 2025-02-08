@@ -22,7 +22,7 @@ const FeatureCard = ({
           {featureTitle}
         </button>
       </Link>
-      <p className='font-FiraSans text-TextColor-0 pb-5 mt-3'>{featureDesc}</p>
+      <p className='font-FiraSans text-TextColor2-0 pb-5 mt-3'>{featureDesc}</p>
       <Link
         to={featureUrl}
         className='inline-block relative'

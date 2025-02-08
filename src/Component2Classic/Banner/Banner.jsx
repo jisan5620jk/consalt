@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import bannerThumb from "/images/hero_thumb_2.png";
-import bannerShape from "/images/hero_dot_shape.png";
-import bannerShape2 from "/images/hero_shape1.png";
-import bannerShape3 from "/images/hero_shape2.png";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
-import { LuPlaySquare } from "react-icons/lu";
-import { FaRegThumbsUp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import bannerThumb from '/images/hero_thumb_2.png';
+import bannerShape from '/images/hero_dot_shape.png';
+import bannerShape2 from '/images/hero_shape1.png';
+import bannerShape3 from '/images/hero_shape2.png';
+import { useState } from 'react';
+import FsLightbox from 'fslightbox-react';
+import { LuPlaySquare } from 'react-icons/lu';
+import { FaRegThumbsUp } from 'react-icons/fa';
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
@@ -49,9 +49,7 @@ const Banner = () => {
                 </button>
                 <FsLightbox
                   toggler={toggler}
-                  sources={[
-                    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                  ]}
+                  sources={['https://youtu.be/NKJ-6zCSk2E?si=VRPrxnY6DI0NY9II']}
                 />
               </div>
             </div>

@@ -38,7 +38,7 @@ const Brand = () => {
             <img
               src={brandThumb}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>
@@ -47,7 +47,7 @@ const Brand = () => {
             <img
               src={brandThumb2}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>
@@ -56,7 +56,7 @@ const Brand = () => {
             <img
               src={brandThumb3}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>
@@ -65,7 +65,7 @@ const Brand = () => {
             <img
               src={brandThumb4}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>
@@ -74,7 +74,7 @@ const Brand = () => {
             <img
               src={brandThumb5}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>
@@ -83,7 +83,7 @@ const Brand = () => {
             <img
               src={brandThumb}
               draggable='false'
-              className='m-auto transition-all duration-500 hover:brightness-0 hover:invert-[1]'
+              className='m-auto transition-all duration-500'
             />
           </div>
         </SwiperSlide>

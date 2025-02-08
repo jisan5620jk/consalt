@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import FsLightbox from 'fslightbox-react';
 import bannerThumb from '/images/hero_thumb3.png';
 import border from '/images/hero_border.png';
 import box from '/images/box.png';
 import thumbDot from '/images/hero3_dot_shape.png';
 import { LuPlaySquare } from 'react-icons/lu';
 import { FaRegThumbsUp } from 'react-icons/fa';
-import { FaRegCircleCheck } from "react-icons/fa6";
+import { FaRegCircleCheck } from 'react-icons/fa6';
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
@@ -37,8 +37,8 @@ const Banner = () => {
             <p className='font-FiraSans text-TextColor2-0 mb-[38px] mt-6'>
               Continually plagiarize virtual web services with resource{' '}
               <br className='hidden xl:block 2xl:hidden' />
-              maximizing <br className='hidden md:block lg:hidden 2xl:block' /> action items.
-              Globally build Buseness
+              maximizing <br className='hidden md:block lg:hidden 2xl:block' />{' '}
+              action items. Globally build Buseness
             </p>
             <div className='flex flex-col sm:flex-row sm:items-center gap-8'>
               <Link to={'/contact'}>
@@ -60,9 +60,7 @@ const Banner = () => {
                 </button>
                 <FsLightbox
                   toggler={toggler}
-                  sources={[
-                    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                  ]}
+                  sources={['https://youtu.be/NKJ-6zCSk2E?si=VRPrxnY6DI0NY9II']}
                 />
               </div>
             </div>

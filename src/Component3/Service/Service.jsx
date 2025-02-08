@@ -32,8 +32,8 @@ const ServiceData = [
   },
   {
     id: 2,
-    serviceSubTitle: 'Finance',
-    serviceTitle: 'Investment Idea',
+    serviceSubTitle: 'Offer',
+    serviceTitle: 'Investment Strategies',
     serviceDesc:
       'Seamlessly expedite extensible the business methodologies benchmark done',
     serviceUrl: '/service_details',
@@ -46,8 +46,8 @@ const ServiceData = [
   },
   {
     id: 3,
-    serviceSubTitle: 'Finance',
-    serviceTitle: 'Investment Idea',
+    serviceSubTitle: 'Services',
+    serviceTitle: 'Expert Investment',
     serviceDesc:
       'Seamlessly expedite extensible the business methodologies benchmark done',
     serviceUrl: '/service_details',
@@ -60,8 +60,8 @@ const ServiceData = [
   },
   {
     id: 4,
-    serviceSubTitle: 'Finance',
-    serviceTitle: 'Investment Idea',
+    serviceSubTitle: 'Financial',
+    serviceTitle: 'Smart Investment',
     serviceDesc:
       'Seamlessly expedite extensible the business methodologies benchmark done',
     serviceUrl: '/service_details',
