@@ -161,7 +161,10 @@ const Navbar8 = () => {
   }, [headerIcon]);
 
   return (
-    <div className='px-2 xl:px-5 mt-2 xl:mt-5'>
+    <div
+      className='px-2 xl:px-5 mt-2 xl:mt-5'
+      data-lenis-prevent
+    >
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}

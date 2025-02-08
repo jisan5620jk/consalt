@@ -168,7 +168,7 @@ const Navbar7 = () => {
   }, [headerIcon]);
 
   return (
-    <>
+    <div data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -332,7 +332,7 @@ const Navbar7 = () => {
         className='header-area header-sticky style-three'
       >
         <div className='Container'>
-          <div className='bg-transparent rounded-md flex items-center justify-between lg:grid lg:grid-cols-12'>
+          <div className='bg-transparent py-4 lg:py-0 rounded-md flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
               <div className='header-logo'>
                 <Link to={'/'}>
@@ -712,7 +712,7 @@ const Navbar7 = () => {
         ref={bodyOverlay2Ref}
         className='body-overlay2'
       ></div>
-    </>
+    </div>
   );
 };
 

@@ -62,7 +62,7 @@ const Pricing = () => {
             </Link>
           </div>
           <div className='col-span-6 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:items-start gap-7'>
-            <div className='pricing-box active group text-center bg-[#0a4243] rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
+            <div className='pricing-box active group text-center bg-[#0a4243] rounded-lg px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
               <div className='flex items-center gap-4'>
                 <div className='pricing-icon size-[76px] bg-PrimaryColor-0 relative z-10 rounded-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#119695] before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 flex justify-center items-center'>
                   <img
@@ -72,7 +72,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h6 className='pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-white font-semibold transition-all duration-500 mt-4 mb-1'>
+                  <h6 className='pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-white font-semibold transition-all duration-500 mt-4 mb-1'>
                     Starter Plan
                   </h6>
                   <p className='pricing-desc font-FiraSans text-TextColor-0 transition-all duration-500 mb-4'>
@@ -140,7 +140,7 @@ const Pricing = () => {
                 </button>
               </Link>
             </div>
-            <div className='lg:-mt-10 pricing-box group text-center bg-[#0a4243] rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
+            <div className='lg:-mt-10 pricing-box group text-center bg-[#0a4243] rounded-lg px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
               <div className='flex items-center gap-4'>
                 <div className='pricing-icon size-[76px] bg-PrimaryColor-0 relative z-10 rounded-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#119695] before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 flex justify-center items-center'>
                   <img
@@ -150,7 +150,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h6 className='pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-white font-semibold transition-all duration-500 mt-4 mb-1'>
+                  <h6 className='pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-white font-semibold transition-all duration-500 mt-4 mb-1'>
                     Premium Plan
                   </h6>
                   <p className='pricing-desc font-FiraSans text-TextColor-0 transition-all duration-500 mb-4'>

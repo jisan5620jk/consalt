@@ -1,37 +1,37 @@
-import { Link } from "react-router-dom";
-import { FaArrowRightLong } from "react-icons/fa6";
-import CountUp from "react-countup";
-import { useEffect } from "react";
-import pricingIcon from "/images/price_icon_01.png";
-import pricingIcon2 from "/images/price_icon_02.png";
-import icon from "/images/icon.png";
+import { Link } from 'react-router-dom';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import CountUp from 'react-countup';
+import { useEffect } from 'react';
+import pricingIcon from '/images/price_icon_01.png';
+import pricingIcon2 from '/images/price_icon_02.png';
+import icon from '/images/icon.png';
 
 const Pricing = () => {
   useEffect(() => {
     const handleMouseEnter = (event) => {
-      event.target.classList.add("active");
+      event.target.classList.add('active');
 
       // Remove 'active' class from siblings
       const parent = event.target.parentElement;
       if (parent) {
-        const siblings = parent.querySelectorAll(".pricing-box");
+        const siblings = parent.querySelectorAll('.pricing-box');
         siblings.forEach((sibling) => {
           if (sibling !== event.target) {
-            sibling.classList.remove("active");
+            sibling.classList.remove('active');
           }
         });
       }
     };
 
-    const elements = document.querySelectorAll(".pricing-box");
+    const elements = document.querySelectorAll('.pricing-box');
     elements.forEach((element) => {
-      element.addEventListener("mouseenter", handleMouseEnter);
+      element.addEventListener('mouseenter', handleMouseEnter);
     });
 
     // Clean up event listeners when component unmounts
     return () => {
       elements.forEach((element) => {
-        element.removeEventListener("mouseenter", handleMouseEnter);
+        element.removeEventListener('mouseenter', handleMouseEnter);
       });
     };
   }, []);
@@ -62,7 +62,7 @@ const Pricing = () => {
             </Link>
           </div>
           <div className='col-span-6 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:items-start gap-7'>
-            <div className='pricing-box group text-center bg-white rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-BodyBg-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
+            <div className='pricing-box group text-center bg-white rounded-lg px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-BodyBg-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
               <div className='flex items-center gap-4'>
                 <div className='pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center'>
                   <img
@@ -71,7 +71,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h6 className='pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1'>
+                  <h6 className='pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1'>
                     Starter Plan
                   </h6>
                   <p className='pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4'>
@@ -135,7 +135,7 @@ const Pricing = () => {
                 </button>
               </Link>
             </div>
-            <div className='lg:-mt-10 pricing-box active group text-center bg-white rounded-lg px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-BodyBg-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
+            <div className='lg:-mt-10 pricing-box active group text-center bg-white rounded-lg px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-BodyBg-0 before:rounded-md before:transition-all before:duration-500 hover:before:h-full'>
               <div className='flex items-center gap-4'>
                 <div className='pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center'>
                   <img
@@ -144,7 +144,7 @@ const Pricing = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h6 className='pricing-title text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1'>
+                  <h6 className='pricing-title text-xl sm:text-2xl lg:text-xl xl:text-[22px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1'>
                     Premium Plan
                   </h6>
                   <p className='pricing-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4'>

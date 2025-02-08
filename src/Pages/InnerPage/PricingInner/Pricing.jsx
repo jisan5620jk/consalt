@@ -129,7 +129,7 @@ const Pricing = () => {
               </button>
             </Link>
           </div>
-          <div className='pricing-box2 active group shadow-shades text-center bg-white rounded-2xl overflow-hidden px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-2xl before:transition-all before:duration-500 hover:before:h-full'>
+          <div className='pricing-box2 active group shadow-shades text-center bg-white rounded-2xl overflow-hidden px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-2xl before:transition-all before:duration-500 hover:before:h-full'>
             <div className='flex items-center gap-4'>
               <div className='pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#119695] before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center'>
                 <img
@@ -207,7 +207,7 @@ const Pricing = () => {
               </button>
             </Link>
           </div>
-          <div className='pricing-box2 group shadow-shades text-center bg-white rounded-2xl overflow-hidden px-8 lg:px-4 xl:px-8 pt-9 pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-2xl before:transition-all before:duration-500 hover:before:h-full'>
+          <div className='pricing-box2 group shadow-shades text-center bg-white rounded-2xl overflow-hidden px-5 sm:px-8 lg:px-4 xl:px-8 pt-5 sm:pt-9 pb-6 sm:pb-10 relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-full before:h-0 before:bg-PrimaryColor-0 before:rounded-2xl before:transition-all before:duration-500 hover:before:h-full'>
             <div className='flex items-center gap-4'>
               <div className='pricing-icon size-[76px] bg-BodyBg-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#119695] before:rounded-full before:scale-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:scale-100 rounded-full flex justify-center items-center'>
                 <img

@@ -163,7 +163,7 @@ const Navbar4 = () => {
   }, [headerIcon]);
 
   return (
-    <>
+    <div data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -260,7 +260,7 @@ const Navbar4 = () => {
         className='header-area header-sticky header-classic'
       >
         <div className='Container'>
-          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
+          <div className='flex items-center py-4 lg:py-0 justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
               <div className='header-logo'>
                 <Link to={'/'}>
@@ -465,7 +465,7 @@ const Navbar4 = () => {
                 </div>
                 <div className='hidden xl:block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[27px] before:h-20 before:w-[1px] before:bg-HeadingColor-0 before:opacity-10'>
                   <Link
-                    to={'/home4'}
+                    to={'/home5'}
                     className='text-white flex items-center justify-center size-9 rounded-full bg-white bg-opacity-15'
                   >
                     <MdLightMode size={'20'} />
@@ -486,7 +486,7 @@ const Navbar4 = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

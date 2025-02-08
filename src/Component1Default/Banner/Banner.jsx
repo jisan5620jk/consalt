@@ -25,7 +25,7 @@ const Banner = () => {
             <p className='font-FiraSans text-TextColor-0 mb-[38px] mt-[22px]'>
               Continually plagiarize virtual web services with resource{' '}
               <br className='hidden xl:block 2xl:hidden' />
-              maximizing <br className='hidden 2xl:block' /> action items.
+              maximizing <br className='hidden md:block lg:hidden 2xl:block' /> action items.
               Globally build front-end
             </p>
             <div className='flex flex-col sm:flex-row sm:items-center gap-8'>

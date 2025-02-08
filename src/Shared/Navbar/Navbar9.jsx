@@ -162,7 +162,7 @@ const Navbar9 = () => {
   }, [headerIcon]);
 
   return (
-    <div>
+    <div data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -179,7 +179,7 @@ const Navbar9 = () => {
           <div className='offcanvas_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>

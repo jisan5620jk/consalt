@@ -6,9 +6,9 @@ const PortfolioInner = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Affordable Price"}
+        breadCrumbTitle={"Our Portfolio"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Pricing"}
+        breadCrumbLink={"Portfolio"}
       />
       <Portfolio />
     </>

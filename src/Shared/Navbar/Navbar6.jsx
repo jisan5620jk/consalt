@@ -166,7 +166,10 @@ const Navbar6 = () => {
   }, [headerIcon]);
 
   return (
-    <div className='absolute z-50 w-full'>
+    <div
+      className='absolute z-50 w-full'
+      data-lenis-prevent
+    >
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -183,7 +186,7 @@ const Navbar6 = () => {
           <div className='offcanvas_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -327,7 +330,7 @@ const Navbar6 = () => {
         className='header-area header-sticky style-two style-six'
       >
         <div className='Container'>
-          <div className='bg-white rounded-md px-8 flex items-center justify-between lg:grid lg:grid-cols-12'>
+          <div className='bg-white rounded-md px-2 sm:px-8 py-4 lg:py-0 flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
               <div className='header-logo'>
                 <Link to={'/'}>

@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 51;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -38,6 +38,14 @@
 
 .header-area.style-two.style-eight.style-eleven .menu-bar span {
   background: #0c6e6d;
+}
+
+.header-area.is-sticky .menu-bar span {
+  background: #0c6e6d;
+}
+
+.header-area.header-classic.is-sticky .menu-bar span {
+  background: #fff;
 }
 
 .menu-bar:hover span:nth-child(1),
@@ -350,6 +358,10 @@
 
 .header-creative.is-sticky {
   @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
+}
+
+.header-area.header-sticky.header-classic.is-sticky {
+    background: #0c6e6d;
 }
 
 .header-creative.is-sticky .header-logo {
@@ -833,6 +845,9 @@ li.has-dropdown a button span {
 }
 
 @media only screen and (max-width: 991px) {
+  .header-logo {
+    margin: 0;
+  }
   .header-btn {
     margin: 0;
   }
@@ -893,13 +908,15 @@ li.has-dropdown a button span {
 
 /* Header Style Two */
 
-.header-area.header-classic {
-  padding: 14px 0;
-}
+@media screen and (min-width: 991px) {
+  .header-area.header-classic {
+    padding: 14px 0;
+  }
 
-.header-area.header-classic.is-sticky {
-  background: #063232;
-  padding: 8px;
+  .header-area.header-classic.is-sticky {
+    background: #063232;
+    padding: 8px;
+  }
 }
 
 .header-area.header-classic .header-logo {
@@ -942,8 +959,8 @@ li.has-dropdown a button span {
 }
 
 .header-area.style-two nav.main-menu-content > ul > li > a {
-    color: #ffffff;
-    padding: 28px 26px;
+  color: #ffffff;
+  padding: 28px 26px;
 }
 
 .header-area.style-two nav.main-menu-content > ul > li > a > span {
@@ -968,12 +985,6 @@ li.has-dropdown a button span {
 
 .header-area.style-three .header-logo {
   margin: 0;
-}
-
-@media screen and (max-width: 991px) {
-  .header-area.style-three .header-logo {
-    margin: 16px 0;
-  }
 }
 
 .header-area.style-three nav.main-menu-content > ul {
@@ -1025,6 +1036,10 @@ li.has-dropdown a button span {
 }
 
 .header-area.style-two.style-six .menu-sidebar span {
+  background: #053131;
+}
+
+.header-area.style-six .menu-bar span {
   background: #053131;
 }
 
@@ -1113,7 +1128,19 @@ li.has-dropdown a button span {
   background: #fff;
 }
 
+
+.header-area.style-eight.is-sticky .menu-bar span {
+  background: #fff;
+}
+
 /* Header Style Nine */
+
+
+.header-area.style-nine.is-sticky .menu-bar span {
+  background: #000;
+}
+
+/* Header Style Eleven */
 
 .header-area.style-two.style-eight.style-eleven {
   background: #f4f8f9;
